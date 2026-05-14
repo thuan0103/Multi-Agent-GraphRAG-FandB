@@ -73,3 +73,53 @@ main.py — FastAPI entrypoint, import router + agents, expose /chat endpoint
 docker-compose.yml — spin up toàn bộ stack một lệnh
 Makefile — shortcut: make generate-data, make train, make serve — tiện khi demo
 notebooks/ — EDA, demo interactive, không ảnh hưởng production code
+
+----------------------------------------------------------------------
+Cấu trúc phần B
+
+project/
+├── docker-compose.yml
+├── .env
+├── services/
+│   ├── embedding/          # B1.2 - FastAPI embedding service
+│   ├── reranker/           # B1.2 - Reranker service  
+│   ├── ingestion/          # B1.3 - Data ingestion pipeline
+│   ├── graph_rag/          # B1.1 + B1.2 - Graph RAG API
+│   └── llm_serving/        # B2.1~B2.4 - LLM serving + cache
+└── data/
+    ├── menu.csv
+    └── faq.csv
+
+----------------------------------------------------------------------
+├── src/
+│   ├── intent_extraction/
+│   │   ├── model.py
+│   │   ├── extractor.py
+│   │   ├── prompts.py
+│   │   └── paraphraser.py
+│   ├── cache/
+│   │   ├── semantic_cache.py
+│   │   ├── session_cache.py
+│   │   ├── invalidator.py
+│   │   └── stats.py
+│   └── guardrails/
+│       ├── tts_preprocessor.py
+│       ├── rate_limiter.py
+│       ├── fallback.py
+│       └── health.py
+├── training/
+│   ├── sft_intent.py
+│   ├── evaluate_intent.py
+│   └── quantize_edge.py
+├── data/
+│   ├── intent/
+│   │   ├── generate_intent_data.py
+│   │   └── sample_intent_data.jsonl
+│   └── cache_test_set/
+│       └── generate_cache_testset.py
+├── scripts/
+│   ├── run_edge_benchmark.py
+│   └── run_cache_benchmark.py
+└── tests/
+    ├── test_intent_extraction.py
+    └── test_cache.py
