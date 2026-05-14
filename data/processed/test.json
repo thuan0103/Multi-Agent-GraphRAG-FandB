@@ -1,0 +1,5947 @@
+[
+  {
+    "text": "Cho anh 1 ly cà phê đen đá, uống cho nhanh nhé.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "다음에 봐",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "Do you have free Wi-Fi, and what's the password?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "Đặt thêm 2 bánh quy và 1 ly nước cam.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "아이스 카페라떼로 바꿔주세요.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "Are pets allowed inside or is there a dog-friendly area?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "Any recommendations for a creamy latte or something with chocolate?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "Mình muốn uống ít đường, gợi ý cho tôi món nào nhé?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "What payment methods do you accept (cards, cash, mobile payments)?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "Rì rì rì",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "Tính tiền hộ anh nhé.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "Món nào mát và dễ uống cho ngày nóng vậy bạn tư vấn cho tôi với?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "콘센트가 어디에 있고 노트북 사용이 가능한가요?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "Quán có khu vực ngoài trời hoặc sân vườn cho khách không?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "단 음료를 피하고 싶은데 덜 달거나 무가당으로 바꿀 수 있는 음료가 있을까요?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "헉, 뭐지",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "La la la la... tiếng ồn vô nghĩa",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "ding",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "Bạn gợi ý món đặc sản của quán cho người lần đầu tới không?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "Tính tiền giúp mình nhé, mình thanh toán bằng thẻ ạ.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "Đặt cho tôi một espresso và cho biết quán có chỗ ngồi ngoài trời hay wifi miễn phí không?",
+    "label": 0,
+    "intent": "order",
+    "is_noise": true,
+    "language": "vi",
+    "reason": "Đặt đồ nhưng có kèm hỏi thông tin về chỗ ngồi/wifi (phân vân với faq về thông tin quán)."
+  },
+  {
+    "text": "Nếu mình thích vị chua nhẹ, bạn gợi ý món nào tốt nhất?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "추천 메뉴 좀 알려주실 수 있나요?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "애완동물 입장이 가능하나요?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "uhh, wait",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "Có món nào dành cho người mới bắt đầu uống cà phê và chưa quen vị đắng không?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "매출 개선을 위한 컨설팅 방향을 간단히 설명드릴 텐데, 이 내용이 FAQ에 자주 묻는 질문과 겹치는 부분이 있을 수도 있습니다.",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": true,
+    "language": "ko",
+    "reason": "주요 의도는 컨설팅 정보 제공이지만, FAQ와의 중복 언급으로 FAQ 의도가 떠오를 수 있다."
+  },
+  {
+    "text": "Hôm nay quán có món mới nào để thử không? Gợi ý cho mình với ạ.",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "실내 흡연 가능 여부는 어떻게 되나요?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "에휴...",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "hix hix",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "커피와 어울리는 디저트도 함께 추천해 주세요.",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "하아, 그냥 지나가네",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "May I pay now?",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "Có quy định mang thú cưng vào quán không?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "Hôm nay quán có món gì mát và giải khát để chọn?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "그냥 그러려니",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "I'll pay with card, please.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "Tính tiền giùm đi ạ.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "Có khu vực ngoài trời hoặc chỗ ngồi yên tĩnh để làm việc không?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "Do you have on-site parking or is there street parking nearby?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "Món mới gần đây của quán là gì và vị của nó như thế nào?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "초코케이크 하나도 함께 부탁드립니다.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "Cho tôi 1 ly cappuccino nóng nhé.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "제 취향에 맞는 음료를 추천해 주실 수 있을까요?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "오늘의 추천 음료 중 하나로 주문하고 싶은데, 재료 중 알레르기 위험 요소가 있는지 확인해 주실까요?",
+    "label": 0,
+    "intent": "order",
+    "is_noise": true,
+    "language": "ko",
+    "reason": "주문 의도가 강하지만 재료 알레르기 관련 문의는 FAQ/컨설팅 의도로도 해석될 수 있습니다."
+  },
+  {
+    "text": "결제 수단으로 어떤 게 가능한가요?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "콘센트가 있는 좌석이 따로 있나요?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "우유 없이 마실 수 있는 비건 옵션이 있나요?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "Xoẹt xẹt...",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "Mình muốn được tư vấn chọn đồ uống và bánh phù hợp cho nhóm ở quán cà phê này, có thể gợi ý combo phổ biến và cho biết cách ghi chú để đặt trước không?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": true,
+    "language": "vi",
+    "reason": "Phần lớn là yêu cầu tư vấn (tư vấn thực đơn và combo), nhưng có sự nhắc đến việc đặt trước khiến người đọc nghĩ đến việc đặt hàng."
+  },
+  {
+    "text": "Hướng dẫn anh cách tối ưu vận hành quán và nếu em không phản hồi, có thể bỏ qua phần này để tập trung vào thực thi.",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": true,
+    "language": "vi",
+    "reason": "Câu có yếu tố bỏ qua/hành động ignore; có thể được đọc như 'ignore' hoặc vẫn là tư vấn."
+  },
+  {
+    "text": "Gọi thêm một bánh mì và một ly nước cam nhé, cho anh.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "hô hô",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "헉, 어쩌지?",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "Quán có nhận thú cưng hay có khu vực dành cho thú cưng không?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "음... 잠시만요",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "샌드위치 하나 추가하고 총액 좀 알려주실 수 있을까요?",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "glorp glorp",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "Cho tôi 1 ly cà phê sữa đá, đừng đường nhé.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "Bên đây cho anh một ly cà phê espresso đá, thêm chút đường nhé.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "grrr",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "반려동물과 함께 들어가도 되나요?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "계산해서 총액이 얼마인지 알려 주세요.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "Bạn gợi ý cho tôi món uống ngon nhất hôm nay là gì?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "이번 주 세션에서 매장 개선 방향을 함께 정해보고 싶은데, 절차와 비용 정보가 어떻게 되는지 알려 주세요.",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": true,
+    "language": "ko",
+    "reason": "컨설팅 의도가 드러나지만 '절차와 비용 정보'를 묻는 형식은 FAQ 스타일 문의나 일반 정보 요청으로 오해될 여지가 있다."
+  },
+  {
+    "text": "xì xào xào xạo",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "와이파이 비밀번호 알려주실 수 있나요?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "어... 이게 뭐지",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "Mình muốn cà phê có hương vị đặc trưng, gợi ý cho mình món nào?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "라떼 종류 중에서 비슷한 맛으로 다른 메뉴가 있나요?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "예산에 맞춘 가성비 좋은 추천 메뉴가 있을까요?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "그런데 말야...",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "테이크아웃으로 마시기 좋은 메뉴가 뭐가 있을까요?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "오늘의 추천 음료와 함께 알레르기 정보도 같이 알려주실 수 있나요?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": true,
+    "language": "ko",
+    "reason": "메뉴와 알레르기 정보에 관한 FAQ라는 점이 분명하지만, '추천 음료' 요청은 직원의 맞춤 상담(컨설턴트 의도)으로도 읽힐 수 있어 모호합니다."
+  },
+  {
+    "text": "Could you ring that up? What's the total?",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "오늘의 스페셜 메뉴를 알려주실 수 있나요?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "Bạn có món cà phê đặc trưng nào của quán để mình thử không?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "화장실은 어디에 있고 이용 가능 시간은 어떻게 되나요?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "에이, 몰라",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "Nếu tôi thích vị chua thanh, nên chọn món gì cho hợp lý?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "Which payment methods do you accept?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "blabla",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "Tính tiền cho em được không ạ?",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "Bíp bíp ừm",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "영업 시간은 몇 시에 시작하고 몇 시에 종료되나요?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "I'm looking for a good recommendation; any lighter options?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "Mang về cho tôi 1 ly latte và cho hóa đơn.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "실내 좌석과 야외 좌석은 모두 이용 가능한가요?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "Xin cho tôi một americano, và cho biết khi thanh toán có thể trả bằng thẻ hoặc chuyển khoản không?",
+    "label": 0,
+    "intent": "order",
+    "is_noise": true,
+    "language": "vi",
+    "reason": "Đặt món đồng thời yêu cầu thông tin thanh toán; phần hỏi về thanh toán có thể được xem như mục đích faq, khiến câu khó phân định giữa order và faq."
+  },
+  {
+    "text": "앗!",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "반려동물 입장은 가능할까요?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "카페라떼 중간 사이즈로 하나 주세요.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "Are you wheelchair accessible and do you have a ramp?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "달콤함을 줄이고 깔끔한 맛의 음료로 골라 주실 수 있을까요?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "Anh ơi, làm 2 cốc espresso đá cho nhóm mình.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "I'd like a large latte with oat milk, please.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "Cho tôi 1 ly cà phê sữa đá, thêm đá nhiều và ít đường nhé.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "당도가 낮은 음료로 추천해 주세요.",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "Bùm bùm bùm",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "인기 있는 음료 하나 골라 주실 수 있을까요?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "Could I get a latte to go, please?",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "아메리카노 하나 주세요.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "I'm evaluating an onboarding framework for a cafe client; could you point me to your FAQ if I'm missing something, while we discuss the consultant angle?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": true,
+    "language": "en",
+    "reason": "Presents a consultant task while referencing an FAQ, causing ambiguity between consultant and faq."
+  },
+  {
+    "text": "헤이",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "hí hửng vô nghĩa",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "Em thanh toán luôn ạ.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "주차장은 어디에 있나요?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "Could you walk me through your bean selection and brewing setup for a team, and do you have an FAQ I should review after the session?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": true,
+    "language": "en",
+    "reason": "Primarily seeks consulting guidance but also references an FAQ as a follow-up resource, causing ambiguity between consultant and FAQ."
+  },
+  {
+    "text": "May I have a hot chocolate and a croissant?",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "조용한 좌석이나 별도 구역이 있나요?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "화장실 위치가 어디에 있고 이용 시간은 어떻게 되나요?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "Can I get a medium cappuccino to go?",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "tiếng ồn thoáng qua",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "bùm tách",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "Gọi thêm bánh mì trứng và 1 ly nước cam nhé.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "Có combo đồ uống và món ăn nhẹ nào phù hợp để thưởng thức tại đây không?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "... nhiều tiếng ồn",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "Mình muốn nhận tư vấn về món phù hợp với khẩu vị của mình, bạn gợi ý món nào không?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": true,
+    "language": "vi",
+    "reason": "Câu này nhằm nhận lời khuyên món ăn dựa trên khẩu vị (consultant) nhưng đồng thời vẫn là yêu cầu thông tin về món (faq)."
+  },
+  {
+    "text": "gobbledygook",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "사진 촬영이나 영상 촬영은 가능한가요?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "저기... 잠깐만",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "Do you have a loyalty program or rewards, and how does it work?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "Could you bring me the bill, please?",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "Cô ơi cho tôi 1 ly cà phê đen đá, không đường ạ.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "Is there parking nearby or access to public transit?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "Can you point me to a good option from the menu?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "Could I get a no-foam cappuccino and a blueberry muffin?",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "Can you bring me the check when you have a moment?",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "오늘 신메뉴 중에서 어떤 게 괜찮을까요?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "화장실 위치와 이용 시간은 어떻게 되나요?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "bíp bíp zzzz tí tách",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "I'll take a macchiato, and should I just skip the small talk?",
+    "label": 0,
+    "intent": "order",
+    "is_noise": true,
+    "language": "en",
+    "reason": "Order plus implication of avoiding conversation (ignore)"
+  },
+  {
+    "text": "Cho tôi thêm cappuccino không đường, vừa thôi.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "최근에 나온 신메뉴가 있나요? 소개해 주세요.",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "Do you have almond milk, and is there an extra charge if I add it to my drink?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": true,
+    "language": "en",
+    "reason": "FAQ about customization and pricing; could indicate preparing to place an order."
+  },
+  {
+    "text": "brrr...",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "Do you have any house specialties you would recommend?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "흠, 글쎄...",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "Can I get a medium latte to go, and is there any price difference if I add almond milk?",
+    "label": 0,
+    "intent": "order",
+    "is_noise": true,
+    "language": "en",
+    "reason": "Primarily an order, but asks about price/options, which could be seen as FAQ/consultation."
+  },
+  {
+    "text": "well, you know",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "카푸치노 두 잔 아이스로 부탁드립니다.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "Cho anh 1 cốc espresso đen, uống nóng.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "Bạn giới thiệu món đặc biệt của quán và món nào phù hợp cho lần đầu đến đây?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "블루베리 머핀 하나 추가하고 결제해 주세요.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "아이스 카페라떼 큰 사이즈로 주세요.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "아이스 카페모카 한 잔, 휘핑은 빼 주세요.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "Muốn đặt hai ly latte và hỏi thêm món đặc biệt của quán hôm nay là gì?",
+    "label": 0,
+    "intent": "order",
+    "is_noise": true,
+    "language": "vi",
+    "reason": "Mục đích chính là đặt món hai ly latte, nhưng câu còn kèm hỏi về món đặc biệt của quán nên dễ bị nhầm với mục đích faq."
+  },
+  {
+    "text": "Do you offer samples of different beans so I can decide what to buy?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": true,
+    "language": "en",
+    "reason": "FAQ about products, but mentions samples, which could imply placing an order or selection process."
+  },
+  {
+    "text": "Is there on-site parking or nearby street parking available?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "mình tự thoại: sao nhỉ",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "음... 이게 무슨 말이지",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "흡연 구역이 있나요? 금연 구역은 어디에 있나요?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "Quán có lối vào dành cho người khuyết tật và thang máy không?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "어… 무슨 말인지",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "흠... 말문이 막히네",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "오늘의 인기 음료를 맛과 향으로 간단히 설명해 주실 수 있나요?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "그런 거였나...",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "One hot chocolate and a croissant, please.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "Món nào thanh mát và dễ uống nhất hôm nay?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "Nói một mình như độc thoại vô nghĩa giữa tiếng ồn",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "Is there parking available nearby, and do you have bike racks?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "One drip coffee to go, black.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "Can I get the bill/check, please?",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "I’d love a staff pick—what do you recommend?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "Wifi mật khẩu gì?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "Pip pip",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "아메리카노 한 잔과 초코케이크 하나 부탁합니다.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "What is your best seller right now?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "Tính tiền đi ạ, em đang vội.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "Bíp bíp, zì zà, clik clak",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "Có chỗ đỗ xe ở quán hoặc gần đó không?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "제 취향에 맞는 음료를 찾아주실 수 있을까요?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "Quán có nhận đặt chỗ trước cho bàn hay tổ chức sự kiện không?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "화장실은 어디에 있고 이용 시간은 어떻게 되나요?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "Do you have free Wi-Fi, and what's the network password?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "I'll have a black coffee and a croissant.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "어... 저도 몰라",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "Could you ignore the standard menu for now and focus on a tailored consulting plan for our program?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": true,
+    "language": "en",
+    "reason": "Explicitly introduces 'ignore' as an alternative intent, creating ambiguity between consultant and ignore."
+  },
+  {
+    "text": "어… 지금 뭐지?",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "엘리베이터가 있나요?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "Bạn có thể giới thiệu cho mình món cà phê có hương vị trái cây được không?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "매장 운영 프로세스의 효율화에 대해 현장 자문이 필요합니다. 데이터 수집 방법과 보고 주기도 함께 검토해 주세요. 혹시 이러한 내용이 주문 페이지나 FAQ 중 어디에 밝히면 좋을지도 간단히 제안해 주실 수 있나요?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": true,
+    "language": "ko",
+    "reason": "현장 자문 요청이 주 의도이지만 데이터 수집/보고 주기 언급과 함께 주문 페이지/FAQ를 언급해 의도 간 혼합이 생깁니다. 이로 인해 컨설턴트/주문/FAQ 간 해석이 달라질 여지가 있습니다."
+  },
+  {
+    "text": "아메리카노 작은 사이즈로 포장해 주세요.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "I'd like to pay the bill now.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "초코머핀 하나 추가하고 쿠키 세트로 결제할게요.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "Có lựa chọn nào cho cà phê đậm vị nhưng ít đắng không ạ?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "Bạn gợi ý cho tôi món đặc trưng của quán hôm nay là gì?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "어린이 동반이 가능한가요?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "hmm, chưa nghĩ ra gì",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "라떼 종류 중에서 어떤 게 제일 잘 어울릴지 상담해 주실 수 있을까요?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "Bạn có thể tư vấn về các loại cà phê đặc trưng và hương vị, và cho biết quán có FAQ về chương trình thành viên hay khuyến mãi hiện tại không?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": true,
+    "language": "vi",
+    "reason": "Chủ yếu là yêu cầu tư vấn về cà phê và hương vị, nhưng có yếu tố FAQ khiến người đọc phân vân với intent FAQ."
+  },
+  {
+    "text": "I'll have an iced Americano and an almond croissant.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "바닐라 라떼 큰 사이즈로 하나 주세요.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "hì hì",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "테이크아웃으로 커피 하나와 샌드위치 하나 주문하고 결제할게요.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "này này...",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "What sizes do you offer for lattes and which plant milks are available?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": true,
+    "language": "en",
+    "reason": "FAQ about menu options and prices, but could hint at placing an order for a specific drink."
+  },
+  {
+    "text": "Món nào dành cho người thích hương vị nhẹ, không quá đậm?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "I'll have a vanilla latte with oat milk, and what's your best recommendation for a cold drink?",
+    "label": 0,
+    "intent": "order",
+    "is_noise": true,
+    "language": "en",
+    "reason": "Ambiguous: requests a recommendation (consultant) while placing an order."
+  },
+  {
+    "text": "ㅠㅠ",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "Quán nhận những phương thức thanh toán nào (tiền mặt, thẻ, ví điện tử)?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "Quán có cho phép mang theo thú cưng hoặc có khu vực dành riêng cho thú cưng không?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "현장에서 결제하겠습니다.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "가장 인기 있는 메뉴로 추천해 주실 수 있나요?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "바닐라 라떼에 시나몬 토핑 추가해 주세요.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "카페 내 흡연 구역이 있나요?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "Có món gì ngon nhất ở quán hôm nay ạ?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "Where's the register? I want to pay.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "Có món gì ngon ở quán không?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "Xem menu và giá hiện tại của đồ uống, mình đang cân nhắc đặt một ly.",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": true,
+    "language": "vi",
+    "reason": "Mục đích chính là tra cứu thông tin (menu & giá), nhưng câu cũng ngụ ý sẽ đặt hàng nên dễ bị hiểu nhầm với mục tiêu order."
+  },
+  {
+    "text": "Mình gọi thêm bánh mì nướng phô mai.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "실내 좌석과 야외 좌석은 어디에 위치해 있나요?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "Is the cafe accessible for someone using a wheelchair?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "Có chỗ đỗ xe ở đâu hoặc bãi gửi xe gần quán không?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "One croissant and a chai latte to go.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "What are your regular hours today and on weekends?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "I'm here for a quick consult on setting up a corporate coffee program and might place a sample order afterward—could we cover the options today?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": true,
+    "language": "en",
+    "reason": "The line foregrounds a consulting goal but hints at placing an order afterward, creating ambiguity between consultant and order intents."
+  },
+  {
+    "text": "아메리카노 한 잔만 주문할게요.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "카페라떼 하나만 주문합니다.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "어... 이거 뭐지?",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "포장 가능 여부와 함께 가장 인기 있는 메뉴의 가격대도 간단히 알려주실 수 있을까요?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": true,
+    "language": "ko",
+    "reason": "정보 요청으로 보이지만, '포장'은 주문 관련 의도로, '가장 인기 있는 메뉴의 가격대'는 가격 정보 요청이면서 컨설팅(추천) 의도로 해석될 여지가 있습니다."
+  },
+  {
+    "text": "Mình muốn uống thanh nhẹ, gợi ý cho mình vài lựa chọn được không?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "잠깐만 생각나네",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "Xin cho xem nhanh menu hôm nay và bảng giá, mình có thể đặt bánh kèm cà phê được không?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": true,
+    "language": "vi",
+    "reason": "Câu hỏi chủ yếu về menu và bảng giá (FAQ), nhưng chữ 'đặt bánh kèm cà phê' gợi ý hướng đến đặt món (order), tạo sự mơ hồ."
+  },
+  {
+    "text": "Bạn gợi ý cho tôi một đồ uống đặc biệt của quán mà không quá đậm vị cà phê được không?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "I'm in the mood for something fruity - what do you suggest?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "ummm",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "오늘의 추천 메뉴 중 하나로 주문해도 될까요?",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "Bạn tư vấn một combo đồ uống cho buổi chiều mát với hương vị trái cây được không?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "Em ơi, tính tiền cho tôi được không?",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "영업시간은 어떻게 되나요? 평일과 주말에 차이가 있나요?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "uhm uh...",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "쿠키 하나랑 아이스티 하나 테이크아웃으로 주문합니다.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "Quán có món nào nổi bật hôm nay không?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "Đang nóng, bạn tư vấn một đồ uống giải nhiệt ngon nhất hôm nay là gì?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "Hmmmm...",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "What are your hours of operation?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "오늘 휴무일이 있나요?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "어쩌지",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "tít tít",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "샌드위치 하나랑 커피 하나 합쳐서 계산해 주세요.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "오늘 핫한 신메뉴가 있나요? 추천해 주세요.",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "바닐라 라떼 두 잔과 쿠키 하나 주문하고 결제해 주세요.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "Có cho phép mang thú cưng hoặc có khu vực dành cho thú cưng không?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "hì hì hì",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "I'll grab a cappuccino, and is there a quiet spot I could work from?",
+    "label": 0,
+    "intent": "order",
+    "is_noise": true,
+    "language": "en",
+    "reason": "Order for a drink, plus a question about seating/space (consultant)."
+  },
+  {
+    "text": "Mình có thể đặt món mang về ở quán cà phê này và xem có chương trình khuyến mãi đang áp dụng không?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": true,
+    "language": "vi",
+    "reason": "Vừa có ý đặt món mang về (order) vừa hỏi về khuyến mãi (FAQ), nên dễ bị mơ hồ giữa hai intents."
+  },
+  {
+    "text": "Tui muốn thanh toán ngay bây giờ.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "Cho em 1 ly cà phê sữa đá và tính tiền luôn nhé.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "카페라떼 두 잔하고 머핀 하나 추가해 주세요.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "응?",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "Is there parking available or any nearby spots?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "Could you suggest something for me?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "Bạn gợi ý món ngon nhất hôm nay ở quán là gì?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "실내 흡연 구역이 있나요?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "I'd like to settle up for these coffees.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "크루아상 하나랑 바닐라 라떼 하나 주문할게요.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "Cho tôi một cappuccino, và món đặc biệt hôm nay là gì?",
+    "label": 0,
+    "intent": "order",
+    "is_noise": true,
+    "language": "vi",
+    "reason": "Có thể hiểu là đang đặt một cappuccino, nhưng phần hỏi món đặc biệt hôm nay khiến người đọc phân vân giữa đặt đồ (order) và hỏi thông tin về menu (faq)."
+  },
+  {
+    "text": "Is there parking available, and is it free?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "Cho hóa đơn và thanh toán luôn nhé.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "Món nào có caffeine vừa phải để uống trong buổi chiều?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "Có khu vực dành cho trẻ em hoặc ghế cao cho trẻ em không?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "Do you have vegan or dairy-free milk options available?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "Hôm nay uống gì cho mát và dễ chịu khi trời nóng?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "Món signature nào nên thử khi lần đầu đến quán?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "Quán có thể nhận đặt chỗ trước hoặc giữ chỗ khi đông khách không?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "영업 시간은 언제까지인가요?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "Could I get a medium cappuccino with almond milk?",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "초코칩 쿠키 하나 추가하고 계산해 주세요.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "Gọi thêm 1 bánh mì phô mai và 1 ly trà đá.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "ehm vậy đấy",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "I'll have a mocha and a blueberry muffin, please.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "I'm looking for a good coffee, what do you recommend?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "Có chỗ đỗ xe gần quán hoặc bãi gửi xe cho khách không?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "오늘의 추천 음료 하나랑 머핀 하나 주문할게요.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "Quán cho phép mang thú cưng vào không?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "What's the most popular drink right now?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "Do you have accessible entrances and restrooms for customers with mobility needs?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "카드로 결제해도 될까요?",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "아하? 그렇지",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "Quán có chỗ đỗ xe cho khách không?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "Is the cafe wheelchair accessible and are there facilities for customers with mobility needs?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "Tôi có thể xem menu và gọi món tại quầy luôn được không?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": true,
+    "language": "vi",
+    "reason": "Câu này có thể được dùng để hỏi thông tin chung (faq) về menu, nhưng cũng có thể hiểu là mong muốn đặt món tại quầy (order)."
+  },
+  {
+    "text": "Add a blueberry muffin to my order.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "Gọi thêm 1 bánh ngọt và 1 ly espresso cho tôi.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "아메리카노 아이스 두 잔으로 주문합니다.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "During a meeting with a potential cafe client, what's the simplest way to present your pricing, and should I ignore any questions you can't answer right away?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": true,
+    "language": "en",
+    "reason": "Ambiguity with ignore: suggests ignoring certain questions, blending consultancy with ignoring."
+  },
+  {
+    "text": "Tính tiền giùm tôi 2 ly latte và 1 bánh quy.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "우유를 식물성 우유로 바꿔서 만들 수 있는 음료가 있나요?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "Nếu tôi muốn uống đồ lạnh nhưng không quá đậm, bạn tư vấn món nào?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "덜 달게 마실 수 있는 음료가 있을까요? 추천 부탁드려요.",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "카페라떼 큰 사이즈로 포장해서 가져갈게요.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "Quán có nhận thanh toán bằng thẻ và ví điện tử không?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "Eh ui...",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "Tính tiền giúp em với ạ.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "음, 잠깐만",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "ừm ừm, đang suy nghĩ linh tinh",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "What happens if I show up with a question but don’t place an order right away?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": true,
+    "language": "en",
+    "reason": "Policy-oriented and about behavior; could be read as ignoring the order, creating ambiguity with ignore."
+  },
+  {
+    "text": "Có thể tư vấn combo đồ uống và bánh phù hợp cho buổi chiều không?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "오늘 시도해볼 만한 메뉴로 하나 골라 주실 수 있을까요?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "하아... 그냥 생각나서",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "흠... 생각 중이야",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "What's your most popular drink right now?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "신메뉴 중에서 제 취향에 맞는 걸 골라 주실래요?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "흡연 구역이 따로 있나요?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "gah",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "오.. 헛",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "Mình thích đồ uống ít ngọt, bạn tư vấn món phù hợp nhé.",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "Mấy giờ mở cửa và đóng cửa của quán?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "Bạn có thể tư vấn cho mình loại cà phê phù hợp với khẩu vị hôm nay và nếu đồng ý, mình sẽ đặt ngay một ly theo gợi ý của bạn.",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": true,
+    "language": "vi",
+    "reason": "Phần câu chủ yếu là yêu cầu tư vấn (consultant) nhưng có gắn hành động đặt hàng ở cuối câu (đặt ngay một ly), khiến người đọc có thể hiểu nhầm đây là đang chuẩn bị đặt hàng (order)."
+  },
+  {
+    "text": "Bíp bíp... ti tít...",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "Quán có chỗ ngồi ngoài trời và khu vực yên tĩnh để làm việc không?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "카페라떼 작은 사이즈로 하나 주문할게요.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "bùm bùm... tí tách...",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "Quy định về thú cưng và hút thuốc ở quán như thế nào?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "Rì rầm rì rì",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "음, 이따 말할게요",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "ờ, ừ, à",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "Do you host events or offer space for meetings or study groups?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "ok nha",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "화장실 위치를 알려 주실 수 있나요?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "Chị ơi cho mình thêm bánh mì và nước lọc nhé.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "eh hem",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "그냥 그러네",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "tút tút, tiếng loa rè",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "Có món nào có vị đậm nhưng ngọt vừa phải để mình thử không?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "What data do you collect on customer visits here, and could you point me to the FAQ while we chat?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": true,
+    "language": "en",
+    "reason": "Consulting question about data; mentions FAQ to hint at another intent."
+  },
+  {
+    "text": "Tớ đặt 1 ly latte đá, không đường.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "에헤라",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "I'm looking for something balanced. What would you suggest?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "Would a brief walkthrough of your shop’s operations count as a consultation, or should I just order and chat?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": true,
+    "language": "en",
+    "reason": "Ambiguous between initiating a consultation and simply ordering and chatting."
+  },
+  {
+    "text": "Hôm nay có món đặc biệt nào cho mùa hè không?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "giggle",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "What are your hours on weekdays and weekends?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "장애인 출입이 편리한 시설이 있나요?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "신메뉴 개발을 위해 컨설턴트의 조언을 받고 싶은데, 우선 메뉴판에 있는 가격과 구성도 함께 확인해 주실까요?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": true,
+    "language": "ko",
+    "reason": "컨설턴트와의 조언이 주된 의도이나, '가격과 구성' 요청은 FAQ나 주문 맥락으로 오해될 소지가 있음."
+  },
+  {
+    "text": "glitch glitch glitch",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "I'd like to settle up now.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "네?",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "Can you recommend a refreshing cold coffee option?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "Nếu trời nóng, bạn đề xuất món nước uống nào vừa mát vừa ngon?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "Bạn gợi ý cho tôi món ít ngọt nên thử không?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "Could I get an iced caramel macchiato and a croissant?",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "I'll have a croissant and a latte.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "카페인 없이 마실 수 있는 음료가 있을까요?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "카페라떼 작은 사이즈 하나 주세요.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "Which drinks are the house specialties?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "Quán có khu vực tiếp cận cho người khuyết tật hoặc thang máy không?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "그럴까요...",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "uhm, gì đó",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "One drip coffee, please. Is there any special discount today?",
+    "label": 0,
+    "intent": "order",
+    "is_noise": true,
+    "language": "en",
+    "reason": "Includes a question about discounts/offers; adds an FAQ-like element to an otherwise straightforward order."
+  },
+  {
+    "text": "Tính tiền giùm mình, thanh toán bằng thẻ được không?",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "I'll pay by card, please.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "hmm xong chưa",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "Quán hoạt động từ mấy giờ đến mấy giờ?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "I'll order a cappuccino, and which beans are on the board today?",
+    "label": 0,
+    "intent": "order",
+    "is_noise": true,
+    "language": "en",
+    "reason": "Primarily places an order, but asks about the beans (information about product details), causing ambiguity with FAQ."
+  },
+  {
+    "text": "야외 좌석이 있나요?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "Could I get a medium drip coffee and a croissant?",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "What time do you close on weekdays?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "Mình cần lời khuyên nhanh về cách chọn đồ uống phù hợp cho buổi làm việc ở quán, và nếu bạn bỏ qua câu hỏi này thì mình sẽ tự xem menu ở quầy.",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": true,
+    "language": "vi",
+    "reason": "Nội dung chủ yếu là tư vấn, nhưng câu chữ gợi ý việc bỏ qua câu hỏi (ignore) khiến người đọc nghi ngờ intent khác."
+  },
+  {
+    "text": "Tính tiền giúp em nhanh nhé.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "Oat milk latte to go, please.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "What coffee would you recommend to pair with this pastry?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "아무 말 없이",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "Dạ cho em 1 ly latte nóng, thêm đường vừa phải và 1 chiếc bánh quy.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "달지 않게 마실 수 있는 음료가 뭔가요?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "Món nào có vị ca cao đậm mà vẫn cân bằng?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "카페라떼 핫으로 한 잔, 크루아상 하나도 같이 주세요.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "I'll take a latte, and do you have any dairy-free options?",
+    "label": 0,
+    "intent": "order",
+    "is_noise": true,
+    "language": "en",
+    "reason": "Order for a latte, plus a question about dietary options (faq)."
+  },
+  {
+    "text": "Cho tôi 1 ly latte nóng, thêm ít đường ạ.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "Xin hoá đơn cho phần vừa rồi.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "Are dogs allowed inside or in the outdoor area?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "Wifi có mật khẩu không?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "결제 수단으로 현금 외에 카드나 모바일 결제가 가능한가요?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "I'll have a drip coffee and a blueberry muffin.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "하이",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "Hôm nay trời nóng, bạn gợi ý đồ uống mát và dễ uống nhất là gì?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "그냥 흘려듣기",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "새로 나온 메뉴가 있나요? 추천해 주세요.",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "... tạch tạch tạch ...",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "Món cà phê nào nên thử cho người mới đến quán?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "Could you share a quick FAQ on your consulting packages while I sketch out a project proposal?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": true,
+    "language": "en",
+    "reason": "Ambiguous between consultant (sketching a proposal) and FAQ (checking the FAQ)."
+  },
+  {
+    "text": "Mã wifi của quán là gì và có cần đăng nhập hay giới hạn sử dụng không?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "Do I need a reservation to sit inside, or is it first-come, first-served?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "휠체어로 출입할 수 있는 출입구가 있나요?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "비건 옵션으로 맛있게 즐길 수 있는 메뉴가 있을까요?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "그냥 흘려버리는 말",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "좌석은 예약이 가능한가요, 아니면 현장에서 먼저 자리를 잡아야 하나요?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "Quán có chỗ đỗ xe hoặc bãi đỗ xe gần quán không?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "Tch tch",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "bùm bùm tì tì",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "Gọi thêm bánh ngọt Macaron.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "Cho tôi 1 ly cà phê sữa đá, thêm đá nhiều nhé.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "현금으로 결제할게요. 계산대가 어디예요?",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "흐흐",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "eh, what?",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "오늘의 신메뉴나 추천 조합이 있나요?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "Can I pay now and get a receipt, please?",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "blah blah blah",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "Hôm nay uống gì cho mát và dễ chịu tại quán này?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "Gọi cho tui 1 ly espresso đậm, bỏ đường nha.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "Cho em cappuccino nóng, không đường nha.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "I'd like a cappuccino with almond milk, please.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "덜 달게 마시고 싶은데 어떤 메뉴가 좋을까요?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "If I want a caffeine boost, what's the best pick for today?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "If I had a craving for a quick pick-me-up, what would you pick?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "음, 생각 중",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "카페 운영 개선을 위한 전문 상담을 받고 싶은데, 자주 묻는 질문으로 정리된 자료가 있다면 먼저 공유해 주세요.",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": true,
+    "language": "ko",
+    "reason": "상담 의도는 분명하지만, ‘자주 묻는 질문 자료’라는 표현이 FAQ를 요청하는 것으로 해석될 여지가 있어 혼동될 수 있습니다."
+  },
+  {
+    "text": "ừm ừm",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "What are your opening hours and closing times?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "bình bình thôi",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "Tí tí",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "Do you have outdoor seating or a quiet area for working or studying?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "I will have a medium latte with almond milk, please.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "Is the cafe accessible for wheelchair users and do you have accessible restrooms?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "Gọi dùm cho anh 1 bánh mì phô mai và 1 cà phê sữa đá.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "휴대폰 충전 포인트가 있나요?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "우유 대체 옵션과 함께 어울리는 음료를 추천해 주세요.",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "단맛을 줄인 음료로 어떤 게 잘 어울릴까요?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "더블샷 에스프레소로 주문하고 결제는 카드로 하겠습니다.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "전원 콘센트가 있는 좌석이 있나요?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "영업 시간은 언제부터 언제까지인가요?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "What are your hours?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "Có món gì ngon nhất hôm nay được gợi ý cho tôi không?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "Cho tôi 1 ly cà phê sữa đá, thêm ít đường nhé.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "그럴 수도 있겠다",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "아이스 카페 모카 작은 사이즈 하나 주세요.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "야외 좌석은 이용 가능한가요?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "Do you allow dogs or other pets inside or on the patio?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "uhm thôi",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "I'm looking for something new—what would you recommend?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "I'll have a double espresso.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "hí hí",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "콘센트는 어디에 있나요?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "Eh, tiếp tục",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "그냥 흘려보내는 말",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "Có chương trình ưu đãi, thẻ thành viên hoặc tích điểm cho khách hàng không?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "Giờ mở cửa của quán là mấy giờ và không cần gợi ý thêm gì?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": true,
+    "language": "vi",
+    "reason": "mơ hồ với intent 'ignore' vì câu này là yêu cầu thông tin giờ mở cửa nhưng kèm theo yêu cầu bỏ qua gợi ý thêm, có thể bị hiểu là bỏ qua các gợi ý."
+  },
+  {
+    "text": "Gợi ý cho tôi món ít ngọt và không quá đậm được không?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "애완동물 동반 가능하나요?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "Quán có khu vực ngoài trời hoặc ghế ngồi thoải mái cho làm việc nhóm không?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "테이크아웃으로 주문하고 바로 결제할게요.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "오늘 인기 메뉴가 뭔가요?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "Quán có khu vực yên tĩnh hoặc phòng riêng cho làm việc không?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "Mình muốn uống nóng tối nay, có món nào ấm và thơm để chọn không?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "주차장은 어디에 있고 몇 대까지 주차 가능해요?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "가볍게 마시기 좋은 음료를 추천해 주세요.",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "Cho tôi cà phê cappuccino đậm một chút và thêm đường.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "Quán có thang máy hoặc bàn ghế dành cho người khuyết tật không?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "What is your address and where are you located?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "What are your house specialties?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "ờ, nghe này",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "Quán có khu vực ngoài trời cho khách ngồi uống cà phê không?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "Is there parking or public transit access nearby?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "디카페인 옵션으로 추천해 주실 수 있나요?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "오늘의 할인 적용되나요? 그럼 아이스 아메리카노 하나와 머핀 하나로 주문하고 싶어요.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": true,
+    "language": "ko",
+    "reason": "할인 여부에 대한 문의가 포함되어 있어 FAQ 의도가 읽히기 쉽지만, 동시에 주문을 제시하고 있어 모호하다."
+  },
+  {
+    "text": "커피 대신 차나 과일 음료로 추천해 주실 만한 게 있을까요?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "신메뉴 중에서 숨은 보석 같은 게 있나요? 추천해 주세요.",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "가장 인기 있는 음료로 하나 주문하고 싶어요. 그 음료의 알레르기 정보나 성분도 알려주실 수 있나요?",
+    "label": 0,
+    "intent": "order",
+    "is_noise": true,
+    "language": "ko",
+    "reason": "주문 의도와 함께 알레르기 정보 등 재료 관련 문의가 포함되어 있어 의도 혼동이 발생합니다."
+  },
+  {
+    "text": "Could I get a vanilla latte with skim milk?",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "Quán có phục vụ mang về (takeaway) không?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "Cho tôi 1 ly cà phê sữa đá, cho ít đường nhé.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "Is your shop wheelchair accessible?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "Món uống nào mát và phù hợp ngày nắng như hôm nay?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "What are your opening hours today?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "puff",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "tic tac",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "What's popular right now at this cafe?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "Mình đang tự nói một mình...",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "What's your address, and is there a map or directions page on your site?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "카라멜 마끼아또 하나 추가로 주세요.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "What would you recommend I try?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "I'll have a croissant and a cappuccino.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "Giờ mở cửa của quán là khi nào, mình sẽ ghé qua sau?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": true,
+    "language": "vi",
+    "reason": "Câu hỏi về giờ mở cửa (faq) nhưng có ý ám chỉ sẽ ghé sau, có thể bị hiểu là bỏ qua trao đổi (ignore)."
+  },
+  {
+    "text": "현금과 카드 결제 모두 가능한가요?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "메뉴에 없는 재료로 만들어도 될까요?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": true,
+    "language": "ko",
+    "reason": "주된 의도는 맞춤식 요청 여부를 묻는 FAQ에 해당하지만, 특정 재료를 제외하는 행위가 표준 레시피를 '무시'하는지 여부를 묻는 의도로도 혼동될 수 있습니다."
+  },
+  {
+    "text": "자주 묻는 질문에 있는 답변처럼 보일 수 있지만, 현재 상황에 맞춘 구체적 조언을 부탁드립니다.",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": true,
+    "language": "ko",
+    "reason": "컨설팅 의도가 명확하지만 FAQ 형태의 답변으로 해석될 여지가 있어 모호성 유발."
+  },
+  {
+    "text": "이 메뉴 하나 골라서 주세요; 어떤 커피가 제일 잘 어울리나요?",
+    "label": 0,
+    "intent": "order",
+    "is_noise": true,
+    "language": "ko",
+    "reason": "주문 의도가 주된 내용이지만, '어떤 커피가 제일 잘 어울리나요?'라는 추천 요청이 있어 consultant로 오해될 수 있고, FAQ 맥락으로 읽힐 여지도 있음."
+  },
+  {
+    "text": "Gọi thêm 1 bánh quy và 1 ly latte.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "향이 강한 커피를 원하는데 어떤 메뉴가 좋을까요?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "고객 흐름 분석에 대해 상담이 필요합니다. 이 대화를 FAQ에 남길지, 아니면 지금 바로 컨설팅을 시작할지 결정해 주실 수 있을까요?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": true,
+    "language": "ko",
+    "reason": "FAQ 여부를 묻는 부분이 포함되어 있어 faq 의도로도 해석될 수 있지만 컨설팅 요청이 주된 흐름이다."
+  },
+  {
+    "text": "Ê ơi",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "추천 하나만 해주시면 그걸로 바로 주문할게요.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": true,
+    "language": "ko",
+    "reason": "상세 선택 없이 추천을 요구하는 상황이지만 결국 주문으로 이어지므로 의도가 중첩되어 모호함."
+  },
+  {
+    "text": "Gọi thêm bánh mì và ly nước cam, cho tôi để mang về.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "오늘의 인기 메뉴를 알려주세요.",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "테이크아웃으로 가져갈 건데 계산도 같이 부탁드립니다.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "Mình thích vị chua nhẹ và hương hoa, gợi ý cho mình món phù hợp?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "좌석 예약은 가능한가요? 예약 정책이 어떻게 되나요?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "I'll take a caramel macchiato—what substitutions or customizations do you offer?",
+    "label": 0,
+    "intent": "order",
+    "is_noise": true,
+    "language": "en",
+    "reason": "Ambiguity between ordering and asking about substitutions/customizations (consultant/faq)."
+  },
+  {
+    "text": "ㅋㅌ",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "umm, I guess",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "Có chỗ đỗ xe hoặc bãi gửi xe gần quán không và có thu phí không?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "유제품 알레르기가 있는데 마실 수 있는 음료를 추천해 주세요.",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "영업 시간은 공휴일에도 동일한가요?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "Quán có khu vực ngoài trời và chỗ ngồi yên tĩnh cho làm việc không?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "I'll have a vanilla latte and a blueberry muffin.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "단 음료 위주로 추천해주실 수 있나요?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "Quán chấp nhận thanh toán bằng thẻ tín dụng hoặc ví điện tử không?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "Do you host events like live music or special nights?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "erm, just a moment",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "저당으로 마시고 싶은데 어떤 메뉴가 좋을까요?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "I'm undecided, what's a must-try on the menu?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "Quán có khu vực ngoài trời và bàn ghế ngoài trời không?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "카페 내 좌석 예약이 가능한가요?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "Gọi cho em một ly mocha và miếng cheesecake, tính tiền nhanh nhé.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "I'm in the mood for something not too sweet, what would you suggest?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "What is your house specialty right now?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "I'd like a caramel macchiato and a croissant.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "Tính tiền dùm em với ạ.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "오늘 인기 있는 메뉴 중에서 제 취향에 맞는 걸 골라 주세요.",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "Lủng củng lủng lẳng",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "What would you recommend for a balanced cup of coffee?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "Có món nào phù hợp cho người mới làm quen với cà phê không?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "Có món lạnh hoặc sinh tố nào đang hot mà bạn giới thiệu cho mình không?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "Do you offer dairy-free or plant-based milk options?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "I'll take the almond milk cappuccino, no foam.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "Are dogs allowed in the shop or on the patio?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "bốp cái",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "I'd like a decaf latte and a croissant, please.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "Xin tính tiền cho tôi với.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "설탕을 줄인 음료로 추천해 주실 수 있나요?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "I'm here for a quick consult on optimizing your cafe's supplier contracts; should we also sample a decaf batch to test the plan?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": true,
+    "language": "en",
+    "reason": "Primarily a consultant discussion, but the mention of sampling a batch could be mistaken for an ordering action."
+  },
+  {
+    "text": "Cho em một cappuccino không đường, thêm bọt sữa cho vừa.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "Làm ơn mang thêm một cái bánh ngọt và nước lọc.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "영업시간은 몇 시까지인가요?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "이 라떼 하나 주세요, 취향에 맞춰 맛 조절 방법도 알려주실 수 있나요?",
+    "label": 0,
+    "intent": "order",
+    "is_noise": true,
+    "language": "ko",
+    "reason": "주문은 명확하지만 맛 조절에 대한 조언을 구하는 문장으로 컨설턴트 의도와 혼동될 여지가 있습니다."
+  },
+  {
+    "text": "What are your top picks or signature drinks today?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "혼잡 시간대에 자리 안내 없이도 앉아 있을 수 있는지와 대기 시간 정보를 간단히 알려 주실 수 있을까요?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": true,
+    "language": "ko",
+    "reason": "좌석 정책에 관한 FAQ 같지만, 자리 배정 방식이나 대기 정보를 이미 알고 싶어 하는 맥락에서 주문/행정적 의도로도 해석될 수 있어 모호합니다."
+  },
+  {
+    "text": "우유를 두유로 바꿔도 될까요? 어떤 메뉴가 어울리나요?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "상큼하고 가볍게 마실 수 있는 음료로 추천해 주세요.",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "Có ghế hoặc khu vực dành cho trẻ em không?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "Mình đang nói chuyện với gió vu vơ",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "카페라떼 두 잔이랑 애플파이 하나 포장해 주세요.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "치즈케이크 하나랑 핫초코 하나 더 추가로 주문할게요.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "카페인 적당한 음료로 뭐가 좋을까요? 추천 부탁드립니다.",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "오늘의 추천 메뉴가 뭐예요? 어떤 걸 골라야 할지 도와주세요.",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "무가당 음료나 더 순한 단맛의 메뉴를 추천해 주세요.",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "어... 잠시 멈춤",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "최근에 나온 신메뉴 중에서 어떤 게 제일 맛있나요?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "Cho một ly latte không đường, thêm sữa ít.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "What time do you close tonight?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "Khách có thể thanh toán bằng những phương thức nào?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "What’s your exact address and is there good public transit access?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "Can you make that a decaf?",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "Có món nào phù hợp để ghép với bánh ngọt của quán hôm nay không?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "Gọi thêm bánh mì trứng ốp la và một ly nước cam.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "I would like a black coffee, no sugar.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "장애인 이용 편의 시설이 마련되어 있나요?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "Quán có chỗ cho người khuyết tật và thang máy không?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "결제 방법은 어떤 게 있나요?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "hích hích",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "Could I get a latte with oat milk?",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "Có khu vực dành cho thú cưng hoặc cho phép mang thú cưng vào quán hay không?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "I would love a suggestion, what is a crowd favorite here?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "계절 메뉴나 신메뉴가 있나요? 무엇이 좋나요?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "Có đồ uống nào không caffeine để uống buổi tối không?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "Tớ muốn thanh toán luôn, tính tiền giúp mình với.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "다음 분기 매출 개선을 위한 실행 가능한 전략과 로드맵을 제시해 주세요.",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": true,
+    "language": "ko",
+    "reason": "주된 의도는 컨설팅(전략 제안)이지만, '제시해 주세요'의 명령형 표현이 주문 의도로 오해될 가능성이 있다."
+  },
+  {
+    "text": "저기... 이거 뭐지?",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "음, 그러네",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "Gọi thêm bánh mì và nước cam ạ.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "tút tút",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "Two coffees to take away, one with almond milk.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "Mình thích vị chua nhẹ, gợi ý thử món nào không?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "Do you have dairy-free milk or other non-dairy options?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "Blink",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "와이파이 비밀번호는 어디서 얻을 수 있나요?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "Mình muốn uống mát, gợi ý đồ uống lạnh ngon nhất trong menu là gì?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "총합이 얼마인지 알려 주세요.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "Hôm nay nên uống món gì để mát và tỉnh táo?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "One cappuccino to go and a blueberry muffin.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "For a client discovery session, could you review our questions and, if appropriate, help me place a team coffee order before we begin?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": true,
+    "language": "en",
+    "reason": "Combines consulting activity with mention of placing a team coffee order, creating ambiguity with order."
+  },
+  {
+    "text": "What is popular today?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "당도 조절 가능한 음료로 추천해 주실 수 있을까요?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "Có món nào phù hợp cho người ăn chay mà vẫn ngon không?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "Quán có cho phép mang thú cưng không và có điều kiện gì không?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "요즘 인기 있는 메뉴가 어떤 게 있나요?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "오늘 추천해 주실 만한 음료가 있나요?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "다음 방문에 컨설팅 일정만 먼저 잡아두고, 필요 없으면 무시해도 된다고 메모해 두면 좋겠습니다.",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": true,
+    "language": "ko",
+    "reason": "주요 의도는 컨설팅 일정 확인이지만, '무시해도 된다'는 표현이 ignore 의도로 오해될 수 있다."
+  },
+  {
+    "text": "What are your most popular drinks right now?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "Lấy cho tôi 1 ly latte nhiều bọt sữa và 1 ly nước cam.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "brrr bùm bùm",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "그랬나",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "Are dogs allowed on the patio or inside?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "Xin anh tư vấn cho em một kế hoạch tăng trưởng ngắn hạn cho quán cà phê và cho biết danh sách đơn hàng mẫu sẽ được chuẩn bị cho buổi khai trương.",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": true,
+    "language": "vi",
+    "reason": "Mặc dù câu hướng tới tư vấn (consultant), phần đề cập 'danh sách đơn hàng mẫu' khiến nó có thể liên tưởng đến việc đặt hàng (order)."
+  },
+  {
+    "text": "Mình là người mới uống cafe, gợi ý cho tôi món phù hợp cho người mới?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "신제품 라인업과 가격 정책에 대한 컨설팅과 함께 FAQ 형식의 빠른 안내도 가능할지 궁금합니다.",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": true,
+    "language": "ko",
+    "reason": "주로 컨설팅을 원한다는 점은 명확하나, 'FAQ 형식의 빠른 안내'라는 표현은 정보 제공 요청으로도 해석되어 의도 혼동이 발생할 수 있다."
+  },
+  {
+    "text": "I'm not sure what to get, do you have a recommendation?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "Có khu vực ngoài trời cho khách không?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "Có chỗ ngồi ngoài trời hoặc khu vực yên tĩnh để làm việc không?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "Bạn tư vấn món nào phù hợp với người thích vị chua nhẹ?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "Píu píu",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "Could I have a large cappuccino and a blueberry muffin?",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "I'd like to order a medium latte with oat milk, please.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "신메뉴 중에서 추천해주실 만한 게 있나요?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "Mình lấy một ly cà phê phin đá và 1 bánh mì xíu mại, tính tiền giúp nhé.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "I'd like to pay for this now.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "Could you suggest a light, smooth option?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "Bùm ầm ầm",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "Có chỗ đậu xe ô tô hoặc xe máy ngay trước quán không?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "브라우니 하나 더 주문하고 계산해 주세요.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "gah blargh",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "Could I pay at the counter, please?",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "Do you offer a loyalty program or any customer rewards?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "Quán có nhận đặt tiệc hoặc đặt bàn cho nhóm không?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "Mình thích vị cà phê dịu, gợi ý cho mình món nào ít đắng và dễ uống?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "... 그리고 뭐지?",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "bùm tạch tạch",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "그냥 아무 말",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "Cho mình thêm 1 miếng bánh và 1 ly trà sữa, tính tiền nha.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "다음 분기 전략 제안서를 검토하고 핵심 지표를 보강하는 작업을 진행해 주실 수 있을까요?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": true,
+    "language": "ko",
+    "reason": "주된 의도는 컨설팅 작업 요청이지만, '진행해 주실 수 있을까요?'라는 표현이 비지시적 주문처럼 들리거나 FAQ의 절차 안내처럼 읽힐 여지가 있어 모호합니다."
+  },
+  {
+    "text": "I'd like to settle my tab, please.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "아메리카노 아이스 한 잔과 샌드위치 하나 추가해 주세요.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "저기… 잠깐",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "Is there parking or bike racks nearby?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "bing bong",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "What's your exact address and the best way to get there by public transit?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "Gọi thêm bánh mì trứng và 1 ly nước cam.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "오늘 새로 나온 신메뉴가 있나요? 맛이 어떤가요?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "매출 개선을 위한 상담을 요청드리며, 실행 계획의 우선순위를 함께 정해 주실 수 있을까요?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": true,
+    "language": "ko",
+    "reason": "의도는 전문 상담이지만, ‘정해 주실 수 있을까요?’ 표현이 지시나 요청으로 오해될 수 있어 혼동 가능."
+  },
+  {
+    "text": "치즈케이크 하나랑 커피 하나 주문하고 계산해 주세요.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "포장해 가도 될까요?",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "Cho em cappuccino ít đường, thêm sữa đặc.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "Do you offer a loyalty program or any subscription options for regulars?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "Do you allow dogs in outdoor seating?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "애완동물 출입이 가능한지와 반려동물 동반 규정은 무엇인가요?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "그냥 혼잣말 해봤다",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "치즈케이크 한 조각과 아이스 카페모카 하나 포장해 주세요.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "Quán nhận thanh toán bằng thẻ tín dụng và ví điện tử không?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "카드로 결제하고 포장해 주세요.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "Is there parking available or on-street parking nearby?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "Hmm ừm eh ừm",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "tzzt...",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "좌석 예약은 가능할까요?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "What time do you close on weekdays and weekends?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "Mình đang lảm nhảm một chút thôi",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "Bạn giới thiệu cho tôi một ly đặc sản đang hot ở quán hôm nay?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "시그니처 음료 중에서 무엇을 고르면 좋을까요?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "Có khu vực ngoài trời hoặc sân vườn cho khách ngồi không?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "메뉴 구성 개선을 위한 컨설팅을 요청합니다. 먼저 FAQ 스타일의 자주 묻는 질문 목록을 받아보고, 그다음에 상담으로 진행하는 게 가능할지 판단하고 싶습니다.",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": true,
+    "language": "ko",
+    "reason": "컨설팅이 주된 의도이지만 FAQ 목록 수령과 상담 여부 목표가 FAQ 의도와 혼동될 수 있습니다."
+  },
+  {
+    "text": "I can ignore the menu and observe the workflow—should I place a drink order while we discuss optimization?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": true,
+    "language": "en",
+    "reason": "Primarily consultant; explicit reference to ignoring the menu creates ambiguity with the 'ignore' intent while also hinting at an order."
+  },
+  {
+    "text": "당도 조절이 가능한 음료가 있다면 어떤 게 있나요?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "Quán có lối tiếp cận cho người khuyết tật hoặc thang máy không?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "Do you roast your own beans or source them from other roasters?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "blorp blip",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "Bạn có gợi ý đồ uống lạnh phù hợp với thời tiết nóng không?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "Tính tiền giùm tôi với ạ.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "이 메뉴의 알레르기 정보와 칼로리 표기가 모두 포함되어 있나요?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": true,
+    "language": "ko",
+    "reason": "정보 확인을 위한 FAQ 성격의 문장이지만, 특정 메뉴를 선택할 때 필요한 맞춤 정보를 요구하는 의도로 읽힐 수 있어 혼동 가능성이 있습니다."
+  },
+  {
+    "text": "Mình đang tìm loại cà phê phù hợp cho buổi chiều, bạn có thể tư vấn giúp mình được không?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": true,
+    "language": "vi",
+    "reason": "Câu hỏi mang tính tư vấn sản phẩm (consultant), nhưng vẫn thuộc phạm vi thông tin về lựa chọn menu/loại cà phê (faq)."
+  },
+  {
+    "text": "blorple",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "Wifi có mật khẩu hay truy cập miễn phí?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "Có đồ uống nào mát và phù hợp để uống ngày nóng không?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "What’s popular on the menu at the moment?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "테이크아웃으로 커피 한 잔 포장해 주세요.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "그럴 수 있겠네",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "Do you provide free Wi-Fi and what's the password?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "지금 남은 재고로 어떤 음료를 추천해 주실 수 있나요?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": true,
+    "language": "ko",
+    "reason": "주로 메뉴/재고 정보를 다루는 FAQ에 해당하지만, '추천'이 붙어 있어 주문에 대한 의도도 포함될 수 있어 모호함."
+  },
+  {
+    "text": "그건 또 모르겠네",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "Cho tui 1 ly latte không đường, thêm đá nhiều nha.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "Do you have accessibility features such as a ramp or accessible restroom?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "What payment methods do you accept—cash, card, or mobile payments?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "포장해서 가져갈 수 있나요? 그럼 커피 하나 주문하겠습니다.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": true,
+    "language": "ko",
+    "reason": "포장 가능 여부 문의가 포함돼 있어 정책 확인 의도가 보이지만 최종적으로는 주문이 이어지므로 모호함."
+  },
+  {
+    "text": "Mình muốn nhận lời khuyên về cách mở quán mới, nếu bạn không thể giúp mình có thể bỏ qua câu hỏi này được không?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": true,
+    "language": "vi",
+    "reason": "Mô tả một lời đề nghị tư vấn rõ ràng, nhưng câu còn nêu khả năng bỏ qua (ignore), khiến người đọc phân vân giữa consultant và ignore."
+  },
+  {
+    "text": "그거 어쩌지...",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "초콜릿 머핀 하나 추가하고 계산해 주세요.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "Có nhận thanh toán bằng thẻ hay chỉ tiền mặt?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "오늘의 추천 음료가 뭔가요?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "Có chỗ đỗ xe không?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "오늘 영업 마감 시간은 몇 시예요?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "크루아상 하나랑 핫초코 하나, 같이 부탁드립니다.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "Có chỗ ngồi ngoài trời hoặc khu vực dành cho nhóm đông không?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "Are pets allowed in the shop?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "Tính tiền dùm em với 2 ly nước và 1 bánh mì nhé.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "블루베리 머핀 하나 추가하고 결제하려고요.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "Is there parking available nearby or on-site?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "Can I pay by card?",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "Có cho phép mang thú cưng vào quán hoặc có khu vực dành cho thú cưng không?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "이거 카드로 결제해도 될까요?",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "Are dogs allowed inside, or is the cafe pet-free?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "흠, 생각 좀",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "포장해서 가져가도 될까요? 총액도 알려주세요.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "anyway...",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "I'm here to assess your cafe operations—could we map order prep times as I place a latte?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": true,
+    "language": "en",
+    "reason": "Primarily consultant; includes an order action that creates ambiguity with the 'order' intent."
+  },
+  {
+    "text": "카드로 결제 가능해요?",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "Quán có nhận đặt mang về và bảng giá cho từng loại nước không?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": true,
+    "language": "vi",
+    "reason": "Mơ hồ giữa intent FAQ (hỏi về dịch vụ và bảng giá) và intent Order (đặt hàng mang về), khiến câu chữ có thể hiểu là cả hai mục đích."
+  },
+  {
+    "text": "I'd like an espresso, and is there a loyalty program I should sign up for?",
+    "label": 0,
+    "intent": "order",
+    "is_noise": true,
+    "language": "en",
+    "reason": "Order request combined with inquiry about loyalty program (FAQ/consultant)."
+  },
+  {
+    "text": "Giờ mở cửa hôm nay có nhận đặt trước bánh ngọt cho sáng mai không?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": true,
+    "language": "vi",
+    "reason": "Câu hỏi tập trung vào giờ mở cửa và việc đặt trước món; có thể đồng thời bị hiểu như đang lên kế hoạch đặt món (order)."
+  },
+  {
+    "text": "잠시만 생각나지 않아",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "Có khu vực ngoài trời hoặc chỗ ngồi yên tĩnh cho khách không?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "Is there a recommended order for customizing drinks, or should I just tell you what I want?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": true,
+    "language": "en",
+    "reason": "Suggests a consultant-like process but also involves placing an order; ambiguity between consulting and ordering."
+  },
+  {
+    "text": "Nếu thích vị sữa béo và caffeine ít, món nào phù hợp?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "어... 모르겠다",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "Could you make that iced with an extra shot?",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "Could I get a cappuccino and would you recommend any pastry to go with it?",
+    "label": 0,
+    "intent": "order",
+    "is_noise": true,
+    "language": "en",
+    "reason": "Primarily an order, but also asks for a recommendation (ambiguity with consultant/faq)."
+  },
+  {
+    "text": "Ehehe",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "tiếng ồn vô thanh ngoài cửa",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "Gọi thêm bánh mì thịt cho bàn này nhé.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "Two Americanos to go, please.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "카페라떼에 휘핑 추가하고 결제해 주세요.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "Gọi thêm bánh mì và một ly nước cam.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "glip glop glop",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "Is the shop accessible for wheelchairs and strollers?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "디저트와 함께 먹기 좋은 음료 추천해 주세요.",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "으음, 그냥 생각나서",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "I'll have a chai latte as well.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "Tính tiền hộ chị ạ.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "Địa chỉ và số điện thoại liên hệ của quán là gì?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "그냥 말했지",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "píp píp",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "Này, ơ, ừm",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "à ừm",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "Eh nhỉ",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "Thanh toán bằng thẻ, cho xem hóa đơn.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "Món nào phù hợp cho người thích cà phê đen nhưng không quá đắng?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "Nếu muốn thưởng thức cà phê Việt cổ điển, gợi ý món gì?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "저당 옵션이나 무유당 음료가 있나요?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "그나저나",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "Do you have a partnerships FAQ, or would you advise scheduling a consult with a manager to discuss a collaboration?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": true,
+    "language": "en",
+    "reason": "Primarily about the FAQ, but also suggests a potential consultation with a manager."
+  },
+  {
+    "text": "Quán có lối vào và khu vực dành cho người khuyết tật không?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "Cho tôi 1 ly cà phê sữa đá, thêm đá nhiều nhá.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "Tính tiền cho bàn này giúp nhé.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "주차장은 이용 가능할까요?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "포인트 적립 방식은 어떻게 되나요?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": true,
+    "language": "ko",
+    "reason": "로열티 정책에 관한 FAQ로 읽히지만, 주문 시 할인이나 혜택 여부를 즉시 알고 싶어하는 의도로도 해석될 수 있어 혼동될 수 있습니다."
+  },
+  {
+    "text": "주차장은 매장 주변에 있나요?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "추천해주실 만한 메뉴가 뭐가 있나요?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "I'll have an espresso macchiato, no sugar.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "What’s the fastest way to get my coffee for pickup, and do you have any tips for a smooth visit?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": true,
+    "language": "en",
+    "reason": "Asks about pickup speed (order) but also asks for tips (consultant), mixing intents."
+  },
+  {
+    "text": "Món nào mát và dễ uống cho ngày nóng ạ?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "Tôi muốn một latte và có thể gợi ý món nào ngon cho buổi chiều không?",
+    "label": 0,
+    "intent": "order",
+    "is_noise": true,
+    "language": "vi",
+    "reason": "Đầu câu là yêu cầu đặt món, nhưng phần hỏi gợi ý món ăn mang tính consultant khiến người đọc phân vân giữa order và tư vấn món."
+  },
+  {
+    "text": "What are your weekend hours?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "Can you recommend something that's not too sweet?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "I'll have an iced coffee to go.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "Hừm...",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "그냥 지나가듯이",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "아메리카노 한 잔 부탁드립니다.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "xì xào xào xạc",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "가장 많이 팔리는 커피를 추천해 주세요. 어떤 기준으로 추천하시는지 궁금합니다.",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": true,
+    "language": "ko",
+    "reason": "추천은 컨설턴트/조언 의도로 보일 수 있지만, 정보 제공의 FAQ로도 해석 가능"
+  },
+  {
+    "text": "에이, 뭐 상관없지",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "Bạn có thể gợi ý đồ uống phù hợp cho tôi hôm nay không?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": true,
+    "language": "vi",
+    "reason": "Câu này nghe như hỏi gợi ý món ăn uống (faq), nhưng cũng có thể được xem là staff tư vấn cá nhân (consultant)."
+  },
+  {
+    "text": "Có chỗ gửi xe hoặc bãi đỗ xe ở gần quán không?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "What payment methods do you accept (cash, cards, mobile pay)?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "Có chỗ đỗ xe không và gửi xe ở đâu?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "If we ignore the menu for now, what onboarding steps do you take with new clients?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": true,
+    "language": "en",
+    "reason": "Questions onboarding (consulting) while instructing to ignore the menu, blending ignore intent."
+  },
+  {
+    "text": "Cho tôi 2 ly sữa chua đá và 1 chiếc bánh quy.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "Ting-tang-tong",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "레몬에이드 하나 주세요, 여기서 결제할게요.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "아, 그럼...",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "Có không gian riêng cho họp nhóm hoặc tổ chức sự kiện nhỏ tại quán không?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "Mình muốn thử món mới, quán có món đặc sắc nào tuần này không?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "오늘의 추천 음료 아이스 버전으로 하나 주세요.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "What would you suggest as a daily special?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "카푸치노 작은 사이즈 하나와 쿠키 하나 포장해 주세요.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "자주 묻는 질문처럼 이 전략의 핵심 가정과 한계를 간단히 설명해 드리겠습니다.",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": true,
+    "language": "ko",
+    "reason": "FAQ를 언급하며 독자에게 정보 제공의 맥락을 암시하지만 실제 내용은 제안과 해설에 초점을 둔 컨설턴트 발화로, FAQ로 읽힐 가능성이 있습니다."
+  },
+  {
+    "text": "What would you advise on pricing and promotions for the new menu, and should I go ahead and place a latte while we discuss?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": true,
+    "language": "en",
+    "reason": "Consulting on pricing/promotions; the note about placing a latte introduces an ordering action."
+  },
+  {
+    "text": "Bạn có thể đề xuất một combo đồ uống và bánh ngon để thử không?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "Một ly cappuccino nóng, thêm đường ít cho nhé.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "그저 지나가는 말",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "I'll pay now, thanks.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "Do you have a drink you would suggest for someone new here?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "Do you have a drive-thru or curbside pickup?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "Mình muốn gọi thêm 2 ly nước ép dứa và 1 bánh quy.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "좌석 예약은 필요하나요, 아니면 당일에 선착순인가요?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "결제 방법으로 카드와 현금 중 어떤 것이 가능한가요?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "Cho tui một cappuccino và bánh quy, tính tiền giúp tui với.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "Where are you located and is there public transport access?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "Is there parking nearby, and is it free?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "Hôm nay có đồ uống nào mát và thanh nhẹ để uống không?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "Có món nào nổi bật hôm nay để thử không?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "오늘의 영업시간과 휴일 여부는 어디에서 확인할 수 있나요?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": true,
+    "language": "ko",
+    "reason": "정보를 찾는 FAQ 성격이 강하지만, 방문 계획을 세우려는 의도나 직원의 현장 안내를 바로 원한다는 상담 의도로 혼동될 수 있다."
+  },
+  {
+    "text": "Anything not too bitter or strong you'd recommend?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "현금 없이 카드나 모바일 결제가 가능한가요?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "Is the cafe wheelchair accessible?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "I'll have a croissant and a caramel macchiato.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "Is there parking available at or near the cafe?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "Hôm nay quán có món đặc biệt nào nên thử không?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "테이크아웃으로 커피 한 잔과 샌드위치 하나 주문합니다.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "Có thể đặt bàn trước hoặc giữ chỗ trước cho ngày hôm nay không?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "I am trying to find nutrition and ingredient info, should I check the FAQ or ask a barista for details?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": true,
+    "language": "en",
+    "reason": "Centers on FAQ for info but presents the option to consult a barista, creating consultant ambiguity."
+  },
+  {
+    "text": "새로 나온 메뉴 중에서 추천해 주실 만한 게 있나요?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "Quán mở cửa từ lúc nào đến lúc nào?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "shhh",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "Is there parking nearby or any parking options for customers?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "nshdflk",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "이번 주 신메뉴나 시즌 한정 메뉴가 있다면 추천해 주세요.",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "Mình muốn thử món cafe đặc sắc kết hợp, gợi ý cho mình món nào ngon?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "I'll grab a mocha, and do you think I should go for the large for an afternoon meeting?",
+    "label": 0,
+    "intent": "order",
+    "is_noise": true,
+    "language": "en",
+    "reason": "Orders a beverage but asks for size guidance, implying a consultation."
+  },
+  {
+    "text": "Có khu vực ngoài trời và chỗ ngồi dành cho người khuyết tật không?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "음, 잠깐...",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "Có món nào phù hợp để kết hợp với bánh ngọt không?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "Có thể đặt bàn trước cho nhóm từ 4-6 người và có yêu cầu đặt cọc không?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "Cho tôi 1 ly cà phê sữa đá ạ.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "아메리카노 큰 사이즈 하나와 오늘의 디저트 하나로 주문하고 싶은데, 포장 규정도 같이 알려 주실 수 있나요?",
+    "label": 0,
+    "intent": "order",
+    "is_noise": true,
+    "language": "ko",
+    "reason": "주문 의도가 명확하게 드러나지만, 포장 규정 문의가 있어 정책 정보(FQA) 가능성도 함께 내포되어 있어 모호합니다."
+  },
+  {
+    "text": "오늘 새로 나온 계절 한정 메뉴가 있나요? 있다면 추천 부탁드려요.",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "Các phương thức thanh toán được chấp nhận tại quán là gì?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "Mình thích hương cacao nhẹ; món nào sẽ phù hợp với sở thích này?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "카페인 양이 적은 음료로 추천해 주세요.",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "Có món đặc sản của quán nên thử khi tới đây không?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "Do you have non-dairy milks available, and could a barista customize my drink to my preference?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": true,
+    "language": "en",
+    "reason": "Primarily about available dairy-free milks (faq) and customization (order/consultant), causing ambiguity."
+  },
+  {
+    "text": "Làm ơn cho em một ly cà phê sữa nóng, ít đá.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "총 금액이 얼마인지 알려주실 수 있나요?",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "vù vù",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "Ơi, nghe này",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "Em ơi cho thêm 1 chiếc bánh quy và 1 ly latte, tính tiền cho mình nhé.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "이 집에서 가장 인기 있는 시그니처 음료가 뭔가요?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "음하하, 그냥 지나가네",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "Các phương thức thanh toán được chấp nhận là gì (tiền mặt, thẻ, ví điện tử)?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "아, 음...",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "Is parking available nearby or on-site?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "비건 옵션으로 추천해 주실 만한 음료가 있나요?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "Is there parking available on-site or nearby?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "그냥 흘러가네",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "결제는 카드로 할게요.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "에이... 왜 이래",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "매출 개선을 위한 컨설팅을 의뢰하고 싶은데, 필요 자료와 일정에 대해 먼저 말씀해 주실 수 있나요?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": true,
+    "language": "ko",
+    "reason": "컨설팅 의뢰를 기본으로 하지만, '필요 자료와 일정에 대해 먼저 말씀'은 주문(구매)이나 FAQ에서 자주 나오는 정보 요청으로 읽힐 수 있습니다."
+  },
+  {
+    "text": "Có món ngon nào nên thử khi đến quán hôm nay?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "ssshhh...",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "오늘 어떤 음료를 추천하시나요?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "영업 시간은 몇 시에 시작하고 몇 시에 마감하나요?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "FAQ에 실릴 핵심 이슈와 그에 대한 명확한 답변 초안을 함께 제시해 주세요.",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": true,
+    "language": "ko",
+    "reason": "주된 의도는 컨설팅이지만, FAQ 형식에 직접 연결되어 있어 FAQ 의도와 혼동 가능."
+  },
+  {
+    "text": "오늘의 베스트셀러를 알려주실 수 있을까요?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "Anh ơi, cho em một ly latte đá thêm ít đường.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "Gợi ý cho tôi món ít ngọt, dễ uống được không?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "Quán có khu vực ngoài trời và chỗ ngồi thoải mái cho khách không?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "Cho thêm 1 bánh ngọt kem tươi.",
+    "label": 0,
+    "intent": "order",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "Mình sẽ gọi bánh mì thịt và nước cam, và cho biết wifi mật khẩu cũng như giờ mở cửa của quán hôm nay là gì?",
+    "label": 0,
+    "intent": "order",
+    "is_noise": true,
+    "language": "vi",
+    "reason": "Phần lớn là đặt hàng, nhưng câu chứa thông tin FAQ về wifi và giờ mở cửa, khiến có thể hiểu như đang hỏi đáp thông tin chứ không chỉ mua đồ."
+  },
+  {
+    "text": "Bâng quơ vu vơ...",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "주문하려고 하는데 이 메뉴에 알레르기 유발 성분이 뭔지 먼저 알려주실 수 있나요?",
+    "label": 0,
+    "intent": "order",
+    "is_noise": true,
+    "language": "ko",
+    "reason": "주문 의도이지만 재료 정보 제공은 FAQ적 맥락으로 읽힐 수 있어 혼동 가능성이 있습니다."
+  },
+  {
+    "text": "Mã wifi của quán là gì?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "Gợi ý cho tôi món uống ít ngọt và thanh mát được không?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "Is there parking available nearby?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "커피 메뉴 구성과 직원 교육에 대한 컨설팅 제안을 드리려 하는데, 이와 관련해 오늘의 주문 현황도 간단히 공유해 주실 수 있을까요?",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": true,
+    "language": "ko",
+    "reason": "컨설팅 제안을 전제로 하지만 '오늘의 주문 현황' 공유 요청이 있어 주문 관련 의도와의 혼동 가능성이 있다."
+  },
+  {
+    "text": "like so",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "en"
+  },
+  {
+    "text": "Quán nhận thanh toán bằng những phương thức nào?",
+    "label": 2,
+    "intent": "faq",
+    "is_noise": false,
+    "language": "vi"
+  },
+  {
+    "text": "앗, 잠깐",
+    "label": 3,
+    "intent": "ignore",
+    "is_noise": false,
+    "language": "ko"
+  },
+  {
+    "text": "Bạn gợi ý cho mình món ít ngọt với vị dịu nhẹ nhé.",
+    "label": 1,
+    "intent": "consultant",
+    "is_noise": false,
+    "language": "vi"
+  }
+]

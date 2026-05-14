@@ -1,0 +1,11 @@
+# Bỏ qua các file model nặng
+models/*.bin
+models/*.safetensors
+models/*.pth
+models/*.gguf
+models/*.onnx
+
+# Bỏ qua các môi trường ảo
+venv/
+__pycache__/
+.env

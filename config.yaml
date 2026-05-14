@@ -1,0 +1,49 @@
+# config.yaml
+pipeline:
+  total_samples: 8800          # sinh dư ~10% để sau dedup vẫn đủ 4000
+  samples_per_intent: 1700
+  hard_sample_ratio: 0.0     # 12% hard samples (ambiguous)
+  batch_size: 20               # số samples gọi async mỗi batch
+  max_concurrent: 10           # asyncio.Semaphore limit
+  checkpoint_dir: data/checkpoints
+  output_dir: data/synthetic
+  languages: [vi, en, ko]          # dễ thêm ngôn ngữ thứ 3
+
+  intents:
+    - label: 0
+      name: order
+    - label: 1
+      name: consultant
+    - label: 2
+      name: faq
+    - label: 3
+      name: ignore
+
+router:
+  model_id: "models/Qwen2.5-1.5B-Instruct" # Qwen/Qwen2.5-1.5B-Instruct
+  max_new_tokens: 20
+  temperature: 0.0             # deterministic để JSON ổn định
+  latency_target_ms: 200
+  latency_excellent_ms: 100
+  latency_good_ms: 500
+  latency_slow_ms: 1000
+
+training:
+  base_model: "models/Qwen2.5-1.5B-Instruct"
+  output_dir: models/router-sft
+  num_epochs: 3
+  batch_size: 1 #16
+  learning_rate: 2.0e-4
+  target_accuracy: 0.92
+
+session:
+  history_window: 5
+  context_window_threshold: 0.70
+  ttl_minutes: 30
+  cleanup_interval_seconds: 120
+
+queue:
+  max_concurrent_llm: 3        # tránh OOM trên RTX 3060
+  request_timeout_seconds: 60
+  retry_attempts: 3
+  retry_base_delay: 1.0

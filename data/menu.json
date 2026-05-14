@@ -1,0 +1,60 @@
+{
+    "drinks": [
+        {
+            "name": "Cà phê sữa đá",
+            "name_en": "Iced Milk Coffee",
+            "name_kr": "연유 아이스 커피",
+            "price": 35000
+        },
+        {
+            "name": "Bạc xỉu",
+            "name_en": "Bac Xiu",
+            "name_kr": "박시우 커피",
+            "price": 35000
+        },
+        {
+            "name": "Cà phê đen đá",
+            "name_en": "Iced Black Coffee",
+            "name_kr": "아이스 블랙 커피",
+            "price": 25000
+        },
+        {
+            "name": "Trà sữa",
+            "name_en": "Milk Tea",
+            "name_kr": "밀크티",
+            "price": 45000
+        },
+        {
+            "name": "Sinh tố bơ",
+            "name_en": "Avocado Smoothie",
+            "name_kr": "아보카도 스무디",
+            "price": 55000
+        },
+        {
+            "name": "Nước ép cam",
+            "name_en": "Orange Juice",
+            "name_kr": "오렌지 주스",
+            "price": 40000
+        }
+    ],
+    "food": [
+        {
+            "name": "Bánh mì",
+            "name_en": "Banh Mi",
+            "name_kr": "반미",
+            "price": 25000
+        },
+        {
+            "name": "Bánh croissant",
+            "name_en": "Croissant",
+            "name_kr": "크루아상",
+            "price": 35000
+        },
+        {
+            "name": "Bánh tiramisu",
+            "name_en": "Tiramisu",
+            "name_kr": "티라미수",
+            "price": 45000
+        }
+    ]
+}
