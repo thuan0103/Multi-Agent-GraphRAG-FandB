@@ -1,7 +1,7 @@
 # src/agents/faq_agent.py
 """
-FAQ Agent: hỏi đáp chung với Hybrid RAG.
-Pipeline ưu tiên: graph_rag:8004 (Neo4j + bge-m3 + reranker)
+FAQ Agent: hỏi đáp chung với Hybrid RAG + Graph Expansion.
+Pipeline ưu tiên: graph_rag:8004 (Neo4j + bge-m3 + reranker + NEXT/MENTIONS expand)
 Fallback: in-memory keyword/semantic search từ data/faq.json
 """
 
@@ -13,7 +13,7 @@ from pathlib import Path
 import httpx
 from openai import AsyncOpenAI
 from dotenv import load_dotenv
-from .base import BaseAgent, AgentResponse
+from .base import BaseAgent, AgentResponse, _make_openai_client
 from .prompts.faq_prompt import FAQ_SYSTEM_VI, FAQ_SYSTEM_EN
 
 load_dotenv()
@@ -40,7 +40,7 @@ class FAQAgent(BaseAgent):
 
     def __init__(self, config: dict, faq_path: str = "data/faq.json"):
         super().__init__(config)
-        self.client = AsyncOpenAI(api_key=os.getenv("API_OPENAI"))
+        self.client, self.llm_model = _make_openai_client()
         self.faq_docs = self._load_faq(faq_path)   # dùng khi fallback
 
     def _load_faq(self, path: str) -> list[dict]:
@@ -49,14 +49,10 @@ class FAQAgent(BaseAgent):
         logger.warning(f"FAQ file not found at {path}, using defaults")
         return DEFAULT_FAQ
 
-    # ── RAG: gọi graph_rag:8004 ──────────────────────────────────────
+    # ── RAG step 1: vector search ─────────────────────────────────────
 
     async def _search_graph_rag(self, query: str) -> tuple[list[dict], bool]:
-        """
-        Gọi graph_rag:8004/search.
-        Trả về (docs, from_cache).
-        Raise exception nếu service không available.
-        """
+        """Call graph_rag:8004/search. Returns (docs, from_cache)."""
         async with httpx.AsyncClient(timeout=8.0) as client:
             resp = await client.post(
                 f"{GRAPH_RAG_URL}/search",
@@ -68,7 +64,6 @@ class FAQAgent(BaseAgent):
         results = data.get("results", [])
         docs = []
         for r in results:
-            # FAQ chunk: có doc_type='faq', text="Q: ... A: ...", question
             if r.get("type") == "chunk":
                 docs.append({
                     "id":       r.get("id", ""),
@@ -79,6 +74,18 @@ class FAQAgent(BaseAgent):
                     "source":   "neo4j",
                 })
         return docs, data.get("from_cache", False)
+
+    # ── RAG step 2: graph expansion ───────────────────────────────────
+
+    async def _expand_chunks(self, chunk_ids: list[str]) -> dict:
+        """Call graph_rag:8004/expand — get NEXT/PREV neighbors + MENTIONS entities."""
+        async with httpx.AsyncClient(timeout=8.0) as client:
+            resp = await client.post(
+                f"{GRAPH_RAG_URL}/expand",
+                json={"chunk_ids": chunk_ids},
+            )
+            resp.raise_for_status()
+        return resp.json()
 
     # ── Fallback: in-memory search ────────────────────────────────────
 
@@ -121,7 +128,6 @@ class FAQAgent(BaseAgent):
         for doc in docs:
             q = doc.get("question", "")
             a = doc.get("answer", "")
-            # graph_rag trả về "Q: ... A: ..." trong field answer/text
             if a.startswith("Q:"):
                 lines.append(a)
             else:
@@ -137,22 +143,47 @@ class FAQAgent(BaseAgent):
         language: str,
         session_id: str,
     ) -> AgentResponse:
-        # Ưu tiên graph_rag thật, fallback về in-memory
         from_graph_rag = False
-        from_cache     = False
+        from_cache = False
+        expanded_count = 0
+
         try:
+            # Step 1: vector search
             docs, from_cache = await self._search_graph_rag(query)
-            if docs:
-                from_graph_rag = True
-                logger.info(f"[FAQAgent] graph_rag returned {len(docs)} chunks "
-                            f"(cache={from_cache})")
-            else:
+            if not docs:
                 raise ValueError("empty result from graph_rag")
+            from_graph_rag = True
+
+            # Step 2: graph expansion — NEXT/PREV neighbors + MENTIONS entities
+            chunk_ids = [d["id"] for d in docs if d.get("id")]
+            if chunk_ids:
+                try:
+                    expand_data = await self._expand_chunks(chunk_ids)
+                    neighbors = expand_data.get("neighbors", [])
+                    seen_ids = {d.get("id") for d in docs}
+                    for nb in neighbors:
+                        nid = nb.get("id", "")
+                        if nid and nid not in seen_ids:
+                            docs.append({
+                                "id":       nid,
+                                "question": nb.get("question", ""),
+                                "answer":   nb.get("text", ""),
+                                "tags":     [nb.get("doc_type", "faq")],
+                                "score":    0.0,
+                                "source":   "neo4j_expanded",
+                            })
+                            seen_ids.add(nid)
+                            expanded_count += 1
+                    logger.info(f"[FAQAgent] +{expanded_count} expanded neighbors, "
+                                f"{len(expand_data.get('entities', []))} entities")
+                except Exception as ex:
+                    logger.warning(f"[FAQAgent] expand failed: {ex}")
+
         except Exception as e:
             logger.warning(f"[FAQAgent] graph_rag unavailable: {e} → fallback")
             docs = self._hybrid_retrieve_local(query)
 
-        faq_context    = self._format_faq_context(docs)
+        faq_context     = self._format_faq_context(docs)
         history_context = self._build_history_context(history)
 
         system_prompt = (FAQ_SYSTEM_VI if language == "vi" else FAQ_SYSTEM_EN).format(
@@ -161,7 +192,7 @@ class FAQAgent(BaseAgent):
         )
 
         response = await self.client.chat.completions.create(
-            model="gpt-4o-mini",
+            model=self.llm_model,
             messages=[
                 {"role": "system", "content": system_prompt},
                 {"role": "user",   "content": query},
@@ -181,7 +212,8 @@ class FAQAgent(BaseAgent):
                 "retrieved_faq_ids": [d.get("id", "") for d in docs],
                 "rag_source":        "neo4j" if from_graph_rag else "fallback",
                 "from_cache":        from_cache,
-                "rag_pipeline":      "graph_rag+reranker" if from_graph_rag else "keyword+ngram",
+                "expanded_nodes":    expanded_count,
+                "rag_pipeline":      "graph_rag+expand+reranker" if from_graph_rag else "keyword+ngram",
             },
             language=language,
         )

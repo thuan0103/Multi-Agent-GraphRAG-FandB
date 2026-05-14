@@ -4,7 +4,7 @@
       "name": "Cà Phê Đen",
       "name_en": "",
       "price": 25000,
-      "description": "",
+      "description": "Cà phê đen truyền thống pha phin",
       "tags": [
         "coffee"
       ]
@@ -13,7 +13,16 @@
       "name": "Cà Phê Đen",
       "name_en": "",
       "price": 30000,
-      "description": "",
+      "description": "Cà phê đen truyền thống pha phin",
+      "tags": [
+        "coffee"
+      ]
+    },
+    {
+      "name": "Cà Phê Đen",
+      "name_en": "",
+      "price": 35000,
+      "description": "Cà phê đen truyền thống pha phin",
       "tags": [
         "coffee"
       ]
@@ -22,7 +31,7 @@
       "name": "Cà Phê Sữa",
       "name_en": "",
       "price": 30000,
-      "description": "",
+      "description": "Cà phê phin pha với sữa đặc ngọt béo",
       "tags": [
         "coffee"
       ]
@@ -31,7 +40,25 @@
       "name": "Cà Phê Sữa",
       "name_en": "",
       "price": 35000,
-      "description": "",
+      "description": "Cà phê phin pha với sữa đặc ngọt béo",
+      "tags": [
+        "coffee"
+      ]
+    },
+    {
+      "name": "Cà Phê Sữa",
+      "name_en": "",
+      "price": 40000,
+      "description": "Cà phê phin pha với sữa đặc ngọt béo",
+      "tags": [
+        "coffee"
+      ]
+    },
+    {
+      "name": "Bạc Xỉu",
+      "name_en": "",
+      "price": 30000,
+      "description": "Ít cà phê nhiều sữa vị nhẹ ngọt",
       "tags": [
         "coffee"
       ]
@@ -40,7 +67,25 @@
       "name": "Bạc Xỉu",
       "name_en": "",
       "price": 35000,
-      "description": "",
+      "description": "Ít cà phê nhiều sữa vị nhẹ ngọt",
+      "tags": [
+        "coffee"
+      ]
+    },
+    {
+      "name": "Bạc Xỉu",
+      "name_en": "",
+      "price": 40000,
+      "description": "Ít cà phê nhiều sữa vị nhẹ ngọt",
+      "tags": [
+        "coffee"
+      ]
+    },
+    {
+      "name": "Cappuccino",
+      "name_en": "",
+      "price": 40000,
+      "description": "Espresso với foam sữa mịn đặc trưng Ý",
       "tags": [
         "coffee"
       ]
@@ -49,7 +94,25 @@
       "name": "Cappuccino",
       "name_en": "",
       "price": 45000,
-      "description": "",
+      "description": "Espresso với foam sữa mịn đặc trưng Ý",
+      "tags": [
+        "coffee"
+      ]
+    },
+    {
+      "name": "Cappuccino",
+      "name_en": "",
+      "price": 50000,
+      "description": "Espresso với foam sữa mịn đặc trưng Ý",
+      "tags": [
+        "coffee"
+      ]
+    },
+    {
+      "name": "Latte",
+      "name_en": "",
+      "price": 45000,
+      "description": "Espresso pha sữa tươi mềm mịn vị nhẹ",
       "tags": [
         "coffee"
       ]
@@ -58,7 +121,25 @@
       "name": "Latte",
       "name_en": "",
       "price": 50000,
-      "description": "",
+      "description": "Espresso pha sữa tươi mềm mịn vị nhẹ",
+      "tags": [
+        "coffee"
+      ]
+    },
+    {
+      "name": "Latte",
+      "name_en": "",
+      "price": 55000,
+      "description": "Espresso pha sữa tươi mềm mịn vị nhẹ",
+      "tags": [
+        "coffee"
+      ]
+    },
+    {
+      "name": "Americano",
+      "name_en": "",
+      "price": 35000,
+      "description": "Espresso pha loãng với nước nóng vị đậm",
       "tags": [
         "coffee"
       ]
@@ -67,7 +148,25 @@
       "name": "Americano",
       "name_en": "",
       "price": 40000,
-      "description": "",
+      "description": "Espresso pha loãng với nước nóng vị đậm",
+      "tags": [
+        "coffee"
+      ]
+    },
+    {
+      "name": "Americano",
+      "name_en": "",
+      "price": 45000,
+      "description": "Espresso pha loãng với nước nóng vị đậm",
+      "tags": [
+        "coffee"
+      ]
+    },
+    {
+      "name": "Cold Brew",
+      "name_en": "",
+      "price": 50000,
+      "description": "Ủ lạnh 12 giờ vị thanh nhẹ ít đắng",
       "tags": [
         "coffee"
       ]
@@ -76,7 +175,16 @@
       "name": "Cold Brew",
       "name_en": "",
       "price": 55000,
-      "description": "nước lạnh",
+      "description": "Ủ lạnh 12 giờ vị thanh nhẹ ít đắng",
+      "tags": [
+        "coffee"
+      ]
+    },
+    {
+      "name": "Cà Phê Muối",
+      "name_en": "",
+      "price": 40000,
+      "description": "Kem muối béo phủ trên espresso đậm đà",
       "tags": [
         "coffee"
       ]
@@ -85,7 +193,160 @@
       "name": "Cà Phê Muối",
       "name_en": "",
       "price": 45000,
-      "description": "",
+      "description": "Kem muối béo phủ trên espresso đậm đà",
+      "tags": [
+        "coffee"
+      ]
+    },
+    {
+      "name": "Cà Phê Muối",
+      "name_en": "",
+      "price": 50000,
+      "description": "Kem muối béo phủ trên espresso đậm đà",
+      "tags": [
+        "coffee"
+      ]
+    },
+    {
+      "name": "Cà Phê Trứng",
+      "name_en": "",
+      "price": 45000,
+      "description": "Espresso với kem trứng đánh bông thơm béo",
+      "tags": [
+        "coffee"
+      ]
+    },
+    {
+      "name": "Cà Phê Trứng",
+      "name_en": "",
+      "price": 50000,
+      "description": "Espresso với kem trứng đánh bông thơm béo",
+      "tags": [
+        "coffee"
+      ]
+    },
+    {
+      "name": "Espresso",
+      "name_en": "",
+      "price": 30000,
+      "description": "Shot espresso chuẩn nồng độ cao",
+      "tags": [
+        "coffee"
+      ]
+    },
+    {
+      "name": "Macchiato",
+      "name_en": "",
+      "price": 40000,
+      "description": "Espresso với lớp sữa tươi nhẹ bên trên",
+      "tags": [
+        "coffee"
+      ]
+    },
+    {
+      "name": "Macchiato",
+      "name_en": "",
+      "price": 45000,
+      "description": "Espresso với lớp sữa tươi nhẹ bên trên",
+      "tags": [
+        "coffee"
+      ]
+    },
+    {
+      "name": "Flat White",
+      "name_en": "",
+      "price": 50000,
+      "description": "Double shot espresso với sữa microfoam mịn",
+      "tags": [
+        "coffee"
+      ]
+    },
+    {
+      "name": "Iced Latte",
+      "name_en": "",
+      "price": 50000,
+      "description": "Latte phục vụ lạnh với đá viên",
+      "tags": [
+        "coffee"
+      ]
+    },
+    {
+      "name": "Iced Latte",
+      "name_en": "",
+      "price": 55000,
+      "description": "Latte phục vụ lạnh với đá viên",
+      "tags": [
+        "coffee"
+      ]
+    },
+    {
+      "name": "Iced Cappuccino",
+      "name_en": "",
+      "price": 50000,
+      "description": "Cappuccino lạnh sảng khoái mùa hè",
+      "tags": [
+        "coffee"
+      ]
+    },
+    {
+      "name": "Mocha",
+      "name_en": "",
+      "price": 55000,
+      "description": "Espresso kết hợp chocolate và sữa tươi",
+      "tags": [
+        "coffee"
+      ]
+    },
+    {
+      "name": "Mocha",
+      "name_en": "",
+      "price": 60000,
+      "description": "Espresso kết hợp chocolate và sữa tươi",
+      "tags": [
+        "coffee"
+      ]
+    },
+    {
+      "name": "Caramel Macchiato",
+      "name_en": "",
+      "price": 55000,
+      "description": "Vị caramel ngọt béo hòa quyện espresso",
+      "tags": [
+        "coffee"
+      ]
+    },
+    {
+      "name": "Brown Sugar Latte",
+      "name_en": "",
+      "price": 55000,
+      "description": "Đường nâu rang thơm với espresso và sữa tươi",
+      "tags": [
+        "coffee"
+      ]
+    },
+    {
+      "name": "Coconut Latte",
+      "name_en": "",
+      "price": 55000,
+      "description": "Latte vị dừa thơm mát nhiệt đới",
+      "tags": [
+        "coffee"
+      ]
+    },
+    {
+      "name": "Iced Americano",
+      "name_en": "",
+      "price": 40000,
+      "description": "Americano lạnh giải nhiệt nhanh",
+      "tags": [
+        "coffee"
+      ]
+    },
+    {
+      "name": "Iced Americano",
+      "name_en": "",
+      "price": 45000,
+      "description": "Americano lạnh giải nhiệt nhanh",
       "tags": [
         "coffee"
       ]
@@ -93,8 +354,35 @@
     {
       "name": "Trà Đào",
       "name_en": "",
+      "price": 30000,
+      "description": "Trà xanh thơm với đào ngọt mát",
+      "tags": [
+        "tea"
+      ]
+    },
+    {
+      "name": "Trà Đào",
+      "name_en": "",
       "price": 35000,
-      "description": "",
+      "description": "Trà xanh thơm với đào ngọt mát",
+      "tags": [
+        "tea"
+      ]
+    },
+    {
+      "name": "Trà Đào",
+      "name_en": "",
+      "price": 40000,
+      "description": "Trà xanh thơm với đào ngọt mát",
+      "tags": [
+        "tea"
+      ]
+    },
+    {
+      "name": "Trà Vải",
+      "name_en": "",
+      "price": 30000,
+      "description": "Trà xanh kết hợp vị vải thơm ngọt",
       "tags": [
         "tea"
       ]
@@ -103,7 +391,16 @@
       "name": "Trà Vải",
       "name_en": "",
       "price": 35000,
-      "description": "",
+      "description": "Trà xanh kết hợp vị vải thơm ngọt",
+      "tags": [
+        "tea"
+      ]
+    },
+    {
+      "name": "Trà Tắc",
+      "name_en": "",
+      "price": 25000,
+      "description": "Trà đen với tắc tươi chua ngọt dễ uống",
       "tags": [
         "tea"
       ]
@@ -112,7 +409,16 @@
       "name": "Trà Tắc",
       "name_en": "",
       "price": 30000,
-      "description": "",
+      "description": "Trà đen với tắc tươi chua ngọt dễ uống",
+      "tags": [
+        "tea"
+      ]
+    },
+    {
+      "name": "Hồng Trà Sữa",
+      "name_en": "",
+      "price": 40000,
+      "description": "Hồng trà đậm kết hợp sữa tươi béo ngậy",
       "tags": [
         "tea"
       ]
@@ -121,7 +427,16 @@
       "name": "Hồng Trà Sữa",
       "name_en": "",
       "price": 45000,
-      "description": "",
+      "description": "Hồng trà đậm kết hợp sữa tươi béo ngậy",
+      "tags": [
+        "tea"
+      ]
+    },
+    {
+      "name": "Hồng Trà Sữa",
+      "name_en": "",
+      "price": 50000,
+      "description": "Hồng trà đậm kết hợp sữa tươi béo ngậy",
       "tags": [
         "tea"
       ]
@@ -129,17 +444,161 @@
     {
       "name": "Matcha Latte",
       "name_en": "",
+      "price": 50000,
+      "description": "Matcha Nhật Bản cấp độ ceremony với sữa tươi",
+      "tags": [
+        "coffee"
+      ]
+    },
+    {
+      "name": "Matcha Latte",
+      "name_en": "",
       "price": 55000,
-      "description": "",
+      "description": "Matcha Nhật Bản cấp độ ceremony với sữa tươi",
+      "tags": [
+        "coffee"
+      ]
+    },
+    {
+      "name": "Matcha Latte",
+      "name_en": "",
+      "price": 60000,
+      "description": "Matcha Nhật Bản cấp độ ceremony với sữa tươi",
+      "tags": [
+        "coffee"
+      ]
+    },
+    {
+      "name": "Oolong Sữa",
+      "name_en": "",
+      "price": 45000,
+      "description": "Trà oolong cao cấp pha sữa tươi béo thơm",
       "tags": [
         "tea"
+      ]
+    },
+    {
+      "name": "Oolong Sữa",
+      "name_en": "",
+      "price": 50000,
+      "description": "Trà oolong cao cấp pha sữa tươi béo thơm",
+      "tags": [
+        "tea"
+      ]
+    },
+    {
+      "name": "Trà Hoa Cúc",
+      "name_en": "",
+      "price": 30000,
+      "description": "Trà hoa cúc dịu nhẹ thư giãn tinh thần",
+      "tags": [
+        "tea"
+      ]
+    },
+    {
+      "name": "Trà Lài",
+      "name_en": "",
+      "price": 30000,
+      "description": "Trà lài hương thơm thanh tao dịu nhẹ",
+      "tags": [
+        "tea"
+      ]
+    },
+    {
+      "name": "Trà Gừng Mật Ong",
+      "name_en": "",
+      "price": 35000,
+      "description": "Ấm bụng tăng sức đề kháng vị cay dịu",
+      "tags": [
+        "tea"
+      ]
+    },
+    {
+      "name": "Thai Milk Tea",
+      "name_en": "",
+      "price": 45000,
+      "description": "Trà sữa Thái béo ngậy màu cam đặc trưng",
+      "tags": [
+        "tea"
+      ]
+    },
+    {
+      "name": "Thai Milk Tea",
+      "name_en": "",
+      "price": 50000,
+      "description": "Trà sữa Thái béo ngậy màu cam đặc trưng",
+      "tags": [
+        "tea"
+      ]
+    },
+    {
+      "name": "Taro Milk Tea",
+      "name_en": "",
+      "price": 50000,
+      "description": "Trà sữa khoai môn tím thơm béo có trân châu",
+      "tags": [
+        "tea"
+      ]
+    },
+    {
+      "name": "Taro Milk Tea",
+      "name_en": "",
+      "price": 55000,
+      "description": "Trà sữa khoai môn tím thơm béo có trân châu",
+      "tags": [
+        "tea"
+      ]
+    },
+    {
+      "name": "Trà Lạnh Chanh",
+      "name_en": "",
+      "price": 30000,
+      "description": "Trà xanh lạnh với chanh tươi sảng khoái",
+      "tags": [
+        "tea"
+      ]
+    },
+    {
+      "name": "Trà Lạnh Chanh",
+      "name_en": "",
+      "price": 35000,
+      "description": "Trà xanh lạnh với chanh tươi sảng khoái",
+      "tags": [
+        "tea"
+      ]
+    },
+    {
+      "name": "Matcha Cold Brew",
+      "name_en": "",
+      "price": 60000,
+      "description": "Matcha ủ lạnh kết hợp sữa tươi vị đắng nhẹ thanh",
+      "tags": [
+        "coffee"
+      ]
+    },
+    {
+      "name": "Sinh Tố Xoài",
+      "name_en": "",
+      "price": 50000,
+      "description": "Xoài chín thơm xay mịn bổ dưỡng",
+      "tags": [
+        "smoothie"
       ]
     },
     {
       "name": "Sinh Tố Xoài",
       "name_en": "",
       "price": 55000,
-      "description": "",
+      "description": "Xoài chín thơm xay mịn bổ dưỡng",
+      "tags": [
+        "smoothie"
+      ]
+    },
+    {
+      "name": "Sinh Tố Bơ",
+      "name_en": "",
+      "price": 55000,
+      "description": "Bơ Đắk Lắk xay mịn béo ngậy giàu dinh dưỡng",
       "tags": [
         "smoothie"
       ]
@@ -148,9 +607,63 @@
       "name": "Sinh Tố Bơ",
       "name_en": "",
       "price": 60000,
-      "description": "",
+      "description": "Bơ Đắk Lắk xay mịn béo ngậy giàu dinh dưỡng",
       "tags": [
         "smoothie"
+      ]
+    },
+    {
+      "name": "Sinh Tố Dâu",
+      "name_en": "",
+      "price": 55000,
+      "description": "Dâu tây tươi xay sệt vị chua ngọt hấp dẫn",
+      "tags": [
+        "smoothie"
+      ]
+    },
+    {
+      "name": "Sinh Tố Dâu",
+      "name_en": "",
+      "price": 60000,
+      "description": "Dâu tây tươi xay sệt vị chua ngọt hấp dẫn",
+      "tags": [
+        "smoothie"
+      ]
+    },
+    {
+      "name": "Sinh Tố Dưa Lưới",
+      "name_en": "",
+      "price": 55000,
+      "description": "Dưa lưới ngọt mát xay mịn giải nhiệt",
+      "tags": [
+        "smoothie"
+      ]
+    },
+    {
+      "name": "Sinh Tố Mixed Berry",
+      "name_en": "",
+      "price": 60000,
+      "description": "Hỗn hợp berry tươi giàu antioxidant",
+      "tags": [
+        "smoothie"
+      ]
+    },
+    {
+      "name": "Sinh Tố Sầu Riêng",
+      "name_en": "",
+      "price": 75000,
+      "description": "Sầu riêng cao cấp xay mịn béo thơm nức",
+      "tags": [
+        "smoothie"
+      ]
+    },
+    {
+      "name": "Nước Ép Cam",
+      "name_en": "",
+      "price": 40000,
+      "description": "Cam vắt tươi nguyên chất không đường",
+      "tags": [
+        "juice"
       ]
     },
     {
@@ -165,17 +678,116 @@
     {
       "name": "Nước Ép Dưa Hấu",
       "name_en": "",
-      "price": 40000,
-      "description": "Dưa hấu ép tươi mát giải nhiệt",
+      "price": 35000,
+      "description": "Dưa hấu ép tươi mát giải nhiệt mùa hè",
       "tags": [
         "juice"
       ]
     },
     {
-      "name": "Cà Phê Trứng",
+      "name": "Nước Ép Dưa Hấu",
+      "name_en": "",
+      "price": 40000,
+      "description": "Dưa hấu ép tươi mát giải nhiệt mùa hè",
+      "tags": [
+        "juice"
+      ]
+    },
+    {
+      "name": "Nước Ép Táo",
+      "name_en": "",
+      "price": 45000,
+      "description": "Táo ép tươi nguyên chất giàu vitamin",
+      "tags": [
+        "juice"
+      ]
+    },
+    {
+      "name": "Nước Ép Táo",
       "name_en": "",
       "price": 50000,
-      "description": "",
+      "description": "Táo ép tươi nguyên chất giàu vitamin",
+      "tags": [
+        "juice"
+      ]
+    },
+    {
+      "name": "Nước Ép Dứa",
+      "name_en": "",
+      "price": 40000,
+      "description": "Dứa ép tươi kết hợp gừng tăng sức đề kháng",
+      "tags": [
+        "juice"
+      ]
+    },
+    {
+      "name": "Nước Ép Mix Cam Dứa",
+      "name_en": "",
+      "price": 50000,
+      "description": "Hỗn hợp cam và dứa cân bằng vị chua ngọt",
+      "tags": [
+        "juice"
+      ]
+    },
+    {
+      "name": "Nước Ép Mix Cam Dứa",
+      "name_en": "",
+      "price": 55000,
+      "description": "Hỗn hợp cam và dứa cân bằng vị chua ngọt",
+      "tags": [
+        "juice"
+      ]
+    },
+    {
+      "name": "Nước Ép Cà Rốt Cam",
+      "name_en": "",
+      "price": 45000,
+      "description": "Cà rốt và cam ép tươi giàu beta-carotene",
+      "tags": [
+        "juice"
+      ]
+    },
+    {
+      "name": "Nước Dừa Tươi",
+      "name_en": "",
+      "price": 40000,
+      "description": "Dừa tươi nguyên trái giải khát tự nhiên",
+      "tags": [
+        "juice"
+      ]
+    },
+    {
+      "name": "Cà Phê Trắng",
+      "name_en": "",
+      "price": 45000,
+      "description": "Cà phê trắng kiểu Malaysia vị nhẹ thơm đặc trưng",
+      "tags": [
+        "coffee"
+      ]
+    },
+    {
+      "name": "Dalgona Coffee",
+      "name_en": "",
+      "price": 55000,
+      "description": "Cà phê đánh bông nổi tiếng mạng xã hội",
+      "tags": [
+        "coffee"
+      ]
+    },
+    {
+      "name": "Iced Matcha Latte",
+      "name_en": "",
+      "price": 55000,
+      "description": "Matcha lạnh với sữa tươi và đá viên mát lành",
+      "tags": [
+        "coffee"
+      ]
+    },
+    {
+      "name": "Iced Matcha Latte",
+      "name_en": "",
+      "price": 60000,
+      "description": "Matcha lạnh với sữa tươi và đá viên mát lành",
       "tags": [
         "coffee"
       ]
@@ -186,7 +798,7 @@
       "name": "Bánh Mì Thịt",
       "name_en": "",
       "price": 35000,
-      "description": "thịt nguội",
+      "description": "Bánh mì Việt truyền thống nhân thịt nguội",
       "tags": [
         "food"
       ]
@@ -195,7 +807,7 @@
       "name": "Bánh Croissant",
       "name_en": "",
       "price": 40000,
-      "description": "",
+      "description": "Bánh sừng bò bơ Pháp giòn xốp nhiều lớp",
       "tags": [
         "food"
       ]
@@ -204,7 +816,7 @@
       "name": "Bánh Tiramisu",
       "name_en": "",
       "price": 55000,
-      "description": "",
+      "description": "Bánh Ý kem phô mai thấm cà phê đắng nhẹ",
       "tags": [
         "food"
       ]
@@ -213,7 +825,7 @@
       "name": "Sandwich Gà",
       "name_en": "",
       "price": 45000,
-      "description": "",
+      "description": "Sandwich ức gà nướng rau tươi sốt mayonnaise",
       "tags": [
         "food"
       ]
@@ -222,7 +834,115 @@
       "name": "Khoai Tây Chiên",
       "name_en": "",
       "price": 30000,
-      "description": "",
+      "description": "Khoai tây chiên giòn rắc muối ăn nhẹ",
+      "tags": [
+        "food"
+      ]
+    },
+    {
+      "name": "Bánh Cheesecake",
+      "name_en": "",
+      "price": 60000,
+      "description": "Cheesecake New York đặc béo vị phô mai đậm",
+      "tags": [
+        "food"
+      ]
+    },
+    {
+      "name": "Bánh Brownie Chocolate",
+      "name_en": "",
+      "price": 50000,
+      "description": "Brownie chocolate đậm đà fudgy kiểu Mỹ",
+      "tags": [
+        "food"
+      ]
+    },
+    {
+      "name": "French Toast",
+      "name_en": "",
+      "price": 45000,
+      "description": "Bánh mì chiên trứng rưới mật ong ăn sáng ngon",
+      "tags": [
+        "food"
+      ]
+    },
+    {
+      "name": "Waffle",
+      "name_en": "",
+      "price": 55000,
+      "description": "Waffle giòn ngoài mềm trong phủ kem tươi",
+      "tags": [
+        "food"
+      ]
+    },
+    {
+      "name": "Bánh Mì Trứng",
+      "name_en": "",
+      "price": 30000,
+      "description": "Bánh mì kẹp trứng ốp la rau tươi ăn sáng",
+      "tags": [
+        "food"
+      ]
+    },
+    {
+      "name": "Granola Bowl",
+      "name_en": "",
+      "price": 55000,
+      "description": "Granola giòn sữa chua Hy Lạp hoa quả theo mùa",
+      "tags": [
+        "food"
+      ]
+    },
+    {
+      "name": "Bắp Rang Bơ",
+      "name_en": "",
+      "price": 25000,
+      "description": "Bắp rang bơ vàng giòn thơm ăn vặt",
+      "tags": [
+        "food"
+      ]
+    },
+    {
+      "name": "Bắp Rang Bơ",
+      "name_en": "",
+      "price": 35000,
+      "description": "Bắp rang bơ vàng giòn thơm ăn vặt",
+      "tags": [
+        "food"
+      ]
+    },
+    {
+      "name": "Mozzarella Sticks",
+      "name_en": "",
+      "price": 50000,
+      "description": "Que phô mai chiên giòn chấm sốt cà chua",
+      "tags": [
+        "food"
+      ]
+    },
+    {
+      "name": "Xúc Xích Chiên",
+      "name_en": "",
+      "price": 35000,
+      "description": "Xúc xích chiên giòn kèm tương ớt",
+      "tags": [
+        "food"
+      ]
+    },
+    {
+      "name": "Parfait Trái Cây",
+      "name_en": "",
+      "price": 50000,
+      "description": "Parfait layered sữa chua granola hoa quả tươi",
+      "tags": [
+        "food"
+      ]
+    },
+    {
+      "name": "Bánh Mì Bơ Tỏi",
+      "name_en": "",
+      "price": 25000,
+      "description": "Bánh mì nướng bơ tỏi thơm giòn",
       "tags": [
         "food"
       ]

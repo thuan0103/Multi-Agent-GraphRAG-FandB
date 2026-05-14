@@ -1,8 +1,8 @@
-﻿,A,B,C,D
+,A,B,C,D
 1,id,question,answer,category
 2,1,Quán mở cửa lúc mấy giờ?,Quán mở cửa từ 7:00 sáng đến 22:00 tối mỗi ngày kể cả cuối tuần và ngày lễ.,hours
 3,2,Quán đóng cửa lúc mấy giờ?,Quán đóng cửa lúc 22:00 tối. Last order lúc 21:30.,hours
-4,3,Quán có mở cửa ngày lễ không?,Có,quán mở cửa 365 ngày trong năm kể cả Tết và các ngày lễ.
+4,3,Quán có mở cửa ngày lễ không?,Có quán mở cửa 365 ngày trong năm kể cả Tết và các ngày lễ.,hours
 5,4,WiFi mật khẩu là gì?,Mật khẩu WiFi là: CaPhePhin2024. WiFi tên: CaPheNgon_5G,wifi
 6,5,Quán có WiFi không?,Có. Quán có WiFi miễn phí tốc độ cao. Tên mạng: CaPheNgon_5G - Mật khẩu: CaPhePhin2024,wifi
 7,6,Có chỗ đậu xe không?,Có bãi giữ xe máy miễn phí phía sau quán. Sức chứa khoảng 50 xe máy. Không có bãi đậu ô tô.,parking
@@ -11,7 +11,7 @@
 10,9,Phí giao hàng là bao nhiêu?,Phí giao hàng tùy theo khoảng cách và nền tảng (Grab/Shopee). Thường từ 15.000đ đến 35.000đ.,delivery
 11,10,Có phương thức thanh toán nào?,Chấp nhận tiền mặt và chuyển khoản ngân hàng. Quét QR MoMo và ZaloPay. Không nhận thẻ tín dụng.,payment
 12,11,Có nhận thẻ ngân hàng không?,Hiện tại quán chưa có máy POS. Chấp nhận chuyển khoản và QR Code (MoMo/ZaloPay).,payment
-13,12,Quán ở đâu?,Quán nằm ở 123 Nguyễn Huệ,Phường Bến Nghé
+13,12,Quán ở đâu?,Quán nằm ở 123 Nguyễn Huệ Phường Bến Nghé Quận 1 TP.HCM. Gần công viên 23/9.,address
 14,13,Có chỗ ngồi ngoài trời không?,Có khu vực ngoài trời thoáng mát ở tầng thượng với sức chứa 30 người. Có mái che khi trời mưa.,seating
 15,14,Sức chứa quán bao nhiêu người?,Tổng sức chứa khoảng 80 người: 50 chỗ trong nhà có máy lạnh và 30 chỗ ngoài trời.,seating
 16,15,Có phòng riêng cho nhóm không?,Có 1 phòng VIP sức chứa 10-15 người. Đặt trước qua số điện thoại: 0901234567.,seating
@@ -30,3 +30,73 @@
 29,28,Ly nước size nào lớn nhất?,Size lớn nhất là L (Large) tương đương 500ml. Các size: S=250ml M=350ml L=500ml.,sizing
 30,29,Có thể mua mang về không?,Có. Đồ mang về đựng trong ly nhựa có nắp. Phụ thu thêm 2.000đ cho ly mang về.,takeaway
 31,30,Cà phê pha bằng máy hay phin?,Quán dùng cả hai: Espresso pha máy La Marzocco cho Cappuccino/Latte. Cà phê Việt dùng phin truyền thống.,brewing
+32,31,Có chỗ sạc điện thoại không?,Có ổ cắm điện và cổng USB tại mỗi bàn ở khu vực trong nhà. Khu ngoài trời không có ổ cắm.,facilities
+33,32,Có máy tính/máy in cho khách dùng không?,Quán không cung cấp máy tính hay máy in. Có WiFi tốc độ cao để khách làm việc bằng thiết bị riêng.,facilities
+34,33,Phù hợp làm việc online không?,Rất phù hợp. Quán có WiFi nhanh ổn định ổ cắm điện tại bàn và không gian yên tĩnh.,facilities
+35,34,Có điều hòa không?,Khu vực trong nhà có điều hòa mát lạnh. Khu ngoài trời có quạt và mái che thoáng mát.,facilities
+36,35,Có nhà vệ sinh không?,Có nhà vệ sinh sạch sẽ cho khách ở tầng 1. Mở cửa cùng giờ quán.,facilities
+37,36,Quán có bán hạt cà phê rang về không?,Có bán cà phê rang xay về gói 200g và 500g. Giá từ 80.000đ. Hỏi nhân viên tại quầy.,retail
+38,37,Có quà lưu niệm không?,Có bán ly quán phin cà phê và túi vải in logo quán. Giá từ 50.000đ - 150.000đ.,retail
+39,38,Mình có thể đọc sách trong quán không?,Hoàn toàn được. Quán có tủ sách nhỏ cho khách mượn đọc tại chỗ.,policy
+40,39,Có phục vụ ăn sáng không?,Có. Thực đơn ăn sáng gồm bánh mì trứng sandwich và bánh croissant phục vụ từ 7:00 - 10:30.,menu
+41,40,Có menu tiếng Anh không?,Có menu song ngữ Việt - Anh. Nhân viên có thể giao tiếp cơ bản bằng tiếng Anh.,menu
+42,41,Đồ uống có vị ngọt mặc định không?,Đồ uống mặc định ít ngọt (70%). Khách có thể yêu cầu không đường ít đường hoặc nhiều đường.,customization
+43,42,Có thể order qua điện thoại không?,Hiện tại chưa có dịch vụ order qua điện thoại. Chỉ order trực tiếp tại quán hoặc qua app giao đồ ăn.,order
+44,43,Bao lâu thì có đồ uống?,Thời gian pha chế thường từ 3-7 phút tuỳ loại. Giờ cao điểm có thể chờ 10-12 phút.,order
+45,44,Có thể gọi thêm đồ sau khi order không?,Hoàn toàn được. Gọi nhân viên hoặc lên quầy để order thêm bất kỳ lúc nào.,order
+46,45,Quán có Facebook/Instagram không?,Có. Facebook: CaPheNgon.HCM - Instagram: @caphengon.hcm. Cập nhật menu và khuyến mãi thường xuyên.,social
+47,46,Có ứng dụng điện thoại không?,Chưa có app riêng. Có thể đặt hàng qua Grab Food ShopeeFood hoặc đến trực tiếp quán.,social
+48,47,Quán có điểm gửi đồ không?,Có ngăn tủ khóa miễn phí cho khách gửi ba lô và túi xách nhỏ. Không nhận gửi đồ có giá trị cao.,policy
+49,48,Có chính sách hoàn tiền không?,Nếu đồ uống có vấn đề về chất lượng quán sẽ làm lại miễn phí hoặc hoàn tiền. Liên hệ nhân viên ngay khi nhận đồ.,policy
+50,49,Có dịch vụ catering không?,Có. Quán phục vụ catering cho sự kiện công ty tiệc sinh nhật từ 20 người trở lên. Liên hệ trước 3 ngày.,events
+51,50,Cà phê Arabica và Robusta khác nhau thế nào?,Arabica vị chua nhẹ thơm tinh tế ít caffeine. Robusta đắng đậm nhiều caffeine giá rẻ hơn. Quán blend cả hai để cân bằng hương vị.,menu
+52,51,Cold Brew là gì?,Cold Brew là cà phê ủ lạnh 12-18 giờ không qua nhiệt. Vị thanh dịu ít đắng ít chua hơn cà phê pha nóng thông thường.,menu
+53,52,Espresso là gì?,Espresso là cà phê pha dưới áp suất cao ra khoảng 30ml rất đặc. Là nền tảng của Cappuccino Latte Americano.,menu
+54,53,Matcha có phải trà xanh thường không?,Không. Matcha là bột trà xanh Nhật Bản xay mịn cấp độ cao hơn. Quán dùng matcha ceremony grade có vị đắng ngọt tự nhiên.,menu
+55,54,Trà Oolong là gì?,Oolong là loại trà bán lên men giữa trà xanh và trà đen. Hương thơm hoa quả vị thanh dịu phổ biến ở Đài Loan.,menu
+56,55,Sinh tố có thêm đường không?,Sinh tố mặc định có ít đường. Khách có thể yêu cầu không đường để giữ vị trái cây tự nhiên.,customization
+57,56,Có loại sữa nào ngoài sữa bò không?,Có sữa hạnh nhân và sữa dừa thay thế. Phụ thu 10.000đ khi thay sữa bò.,customization
+58,57,Cà phê có phù hợp cho phụ nữ mang thai không?,Phụ nữ mang thai nên hạn chế caffeine. Quán có các loại trà hoa cúc trà gừng và nước ép không chứa caffeine phù hợp hơn.,diet
+59,58,Có loại đồ uống không có đường không?,Có nhiều lựa chọn không đường: nước ép nguyên chất trà không đường cà phê đen không đường Americano không đường.,diet
+60,59,Đồ ăn có chứa gluten không?,Các loại bánh mì croissant sandwich và bánh ngọt đều có gluten. Nước ép sinh tố và trà không có gluten.,diet
+61,60,Có options cho người ăn chay hoàn toàn (vegan) không?,Có: nước ép nguyên chất sinh tố với sữa dừa/hạnh nhân và trà không sữa. Bánh mì thịt và các bánh có trứng/bơ không phù hợp.,diet
+62,61,Cà phê muối là gì?,Cà phê muối là espresso phủ lớp kem béo có pha chút muối. Vị mặn ngọt đắng hòa quyện rất độc đáo đặc trưng Đà Nẵng.,menu
+63,62,Brown Sugar Latte có gì đặc biệt?,Brown Sugar Latte có lớp đường nâu rang thơm caramel hóa kết hợp espresso và sữa tươi. Đặc trưng từ Tiger Sugar Đài Loan.,menu
+64,63,Dalgona Coffee là gì?,Dalgona Coffee là cà phê instant đánh bông cùng đường và nước nóng tạo thành lớp foam đặc nổi trên sữa. Nổi tiếng từ 2020.,menu
+65,64,Flat White khác Latte ở điểm gì?,Flat White dùng double shot espresso với ít sữa hơn Latte. Vị cà phê đậm hơn lớp microfoam mỏng và mịn hơn.,menu
+66,65,Cappuccino khác Latte ở điểm gì?,Cappuccino có 1/3 espresso 1/3 sữa 1/3 foam khô. Latte có nhiều sữa hơn foam ít hơn vị nhẹ hơn Cappuccino.,menu
+67,66,Americano khác Cold Brew ở điểm gì?,Americano là espresso pha với nước nóng uống ngay. Cold Brew ủ lạnh 12 giờ vị thanh hơn ít đắng hơn.,menu
+68,67,Có chỗ ngồi riêng tư để nói chuyện không?,Có khu góc khuất yên tĩnh ở tầng 2 và phòng VIP riêng biệt cho các cuộc trò chuyện quan trọng.,seating
+69,68,Có máy in hóa đơn không?,Có. Hóa đơn in sẵn sau khi thanh toán. Nếu cần hóa đơn VAT vui lòng cung cấp mã số thuế trước khi thanh toán.,payment
+70,69,Có hóa đơn VAT không?,Có thể xuất hóa đơn VAT cho công ty. Vui lòng cung cấp thông tin công ty và mã số thuế trước khi order.,payment
+71,70,Điểm thành viên dùng được gì?,Điểm thành viên đổi được đồ uống miễn phí: 100 điểm = 1 ly cà phê size M. 200 điểm = 1 suất ăn. Điểm có hạn 1 năm.,loyalty
+72,71,Thẻ thành viên có nhiều hạng không?,Có 3 hạng: Silver (0-999đ) Gold (1tr-4.9tr) Diamond (5tr+). Hạng cao hơn được ưu đãi nhiều hơn.,loyalty
+73,72,Hạng Diamond được quyền lợi gì?,Diamond: 8% giảm toàn bộ hóa đơn gọi thêm size miễn phí đặt bàn ưu tiên và quà sinh nhật đặc biệt.,loyalty
+74,73,Điểm thành viên có hết hạn không?,Điểm có hiệu lực 12 tháng kể từ ngày tích. Điểm hết hạn sẽ bị trừ tự động. Mua hàng gia hạn thêm 12 tháng.,loyalty
+75,74,Quán có chương trình giới thiệu bạn bè không?,Có. Giới thiệu 1 bạn mới đăng ký thẻ và mua hàng được tặng 20 điểm. Không giới hạn số lần giới thiệu.,loyalty
+76,75,Có nhận đặt tiệc công ty không?,Có. Phục vụ tiệc company event từ 20 người. Có menu riêng và ưu đãi 10% cho nhóm lớn. Liên hệ: 0901234567.,events
+77,76,Có thể trang trí bàn sinh nhật không?,Có. Mang bánh sinh nhật và trang trí đơn giản được phép. Quán hỗ trợ nến và đèn LED miễn phí khi báo trước.,events
+78,77,Quán có phục vụ buổi sáng sớm không?,Quán mở từ 7:00 sáng. Phục vụ đầy đủ cà phê đồ ăn sáng và đồ uống từ lúc mở cửa.,hours
+79,78,Có thể gặp manager/chủ quán không?,Có thể yêu cầu gặp quản lý qua số 0901234567. Thường có mặt tại quán từ 9:00 - 17:00 các ngày trong tuần.,contact
+80,79,Quán có tên đầy đủ là gì?,Tên đầy đủ là Cà Phê Ngon. Thành lập 2019. Địa chỉ: 123 Nguyễn Huệ Q1 TP.HCM.,contact
+81,80,Khu ngoài trời có bị nóng không?,Khu ngoài trời có mái che và quạt mát. Buổi sáng và chiều tối rất dễ chịu. Buổi trưa hè có thể hơi nóng khuyên ngồi trong nhà.,seating
+82,81,Quán có ghế cho trẻ em không?,Có ghế cao (high chair) cho trẻ nhỏ. Phụ huynh vui lòng báo nhân viên khi cần.,facilities
+83,82,Có bán bánh theo ngày đặc biệt không?,Có bánh đặc biệt theo mùa và ngày lễ. Cập nhật trên Facebook và Instagram quán. Số lượng có hạn mỗi ngày.,retail
+84,83,Giờ cao điểm quán đông lúc nào?,Thường đông vào 7:30-9:00 sáng và 12:00-13:30 trưa và 17:00-19:00 chiều tối. Nên đến sớm hoặc tránh giờ cao điểm.,policy
+85,84,Quán có chính sách đổi trả không?,Nếu đồ uống không đúng order hoặc chất lượng kém quán sẽ làm lại miễn phí trong vòng 5 phút sau khi nhận đồ.,policy
+86,85,Có thể book cả tầng cho sự kiện không?,Có thể thuê tầng 2 hoặc khu ngoài trời cho sự kiện riêng tư từ 30 người. Liên hệ quản lý ít nhất 3 ngày trước.,events
+87,86,Có trà sữa trân châu không?,Có. Trà sữa Taro có trân châu đen. Các loại trà sữa khác có thể thêm trân châu với phụ thu 10.000đ.,menu
+88,87,Giá cà phê từ bao nhiêu?,Cà phê từ 25.000đ (Cà Phê Đen size S). Phổ biến nhất từ 35.000đ - 55.000đ. Đồ uống đặc biệt từ 55.000đ - 75.000đ.,menu
+89,88,Có loại bánh nào phù hợp cho người ăn kiêng không?,Có Granola Bowl với sữa chua ít béo và hoa quả tươi. Nước ép nguyên chất không đường cũng phù hợp cho người ăn kiêng.,diet
+90,89,Trà hoa cúc có tác dụng gì?,Trà hoa cúc có tác dụng thư giãn giảm stress hỗ trợ giấc ngủ. Không có caffeine phù hợp uống buổi tối.,menu
+91,90,Có thể uống cà phê pha sẵn mang về không?,Có bán cà phê pha sẵn đóng chai để mang về giữ được trong tủ lạnh 2 ngày. Hỏi nhân viên tại quầy.,retail
+92,91,Trà gừng có tác dụng gì?,Trà gừng mật ong giúp ấm bụng tăng sức đề kháng giảm đau họng. Tốt uống vào buổi sáng hoặc khi trời lạnh.,menu
+93,92,Quán có nước lọc miễn phí không?,Có nước lọc miễn phí tại quán. Khách uống tại chỗ được phục vụ bình nước lọc không giới hạn.,policy
+94,93,Đặt online có được ưu đãi gì không?,Đặt qua Grab Food và ShopeeFood thường có mã giảm giá riêng của app. Theo dõi app và trang mạng xã hội quán.,promotion
+95,94,Quán có chương trình giảm giá sinh viên không?,Có. Sinh viên xuất trình thẻ sinh viên được giảm 10% từ thứ 2 đến thứ 6. Không áp dụng cuối tuần và ngày lễ.,promotion
+96,95,Có giảm giá cho nhóm đông không?,Nhóm từ 10 người trở lên được giảm 5%. Nhóm từ 20 người trở lên được giảm 10%. Áp dụng cho order tại quán.,promotion
+97,96,Quán có WiFi 5GHz không?,Có. Quán có cả WiFi 2.4GHz (CaPheNgon) và 5GHz (CaPheNgon_5G). Mật khẩu cùng: CaPhePhin2024. 5GHz nhanh hơn.,wifi
+98,97,Mình ngồi bao lâu thì phải mua thêm không?,Không có giới hạn thời gian ngồi. Mua 1 ly là có thể ngồi cả ngày. Chúng tôi hoan nghênh khách ngồi làm việc.,policy
+99,98,Nhân viên có nói được tiếng Anh không?,Nhân viên có thể giao tiếp cơ bản bằng tiếng Anh. Menu có bản tiếng Anh. Nếu cần hỗ trợ thêm vui lòng gọi quản lý.,contact
+100,99,Có phải mặc đồng phục hay dress code gì không?,Không có dress code. Tất cả trang phục đều được chào đón. Quán thân thiện và thoải mái với mọi khách hàng.,policy
+101,100,Tôi có thể chụp ảnh trong quán không?,Hoàn toàn được. Quán có nhiều góc decor đẹp phù hợp chụp ảnh. Xin đừng dùng đèn flash mạnh khi có nhiều khách.,policy

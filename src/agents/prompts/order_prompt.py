@@ -8,11 +8,11 @@ ORDER_SYSTEM_VI = """Bạn là nhân viên order tại quán cà phê. Nhiệm v
 
 Quy tắc:
 1. Luôn xác nhận lại order trước khi chốt
-2. Nếu món không có trong menu, báo khéo léo và gợi ý món thay thế
+2. CHỈ nhận order những món có trong dữ liệu Graph Database bên dưới, KHÔNG được tự thêm món không có
 3. Tính tiền chính xác, liệt kê từng món
 4. Giọng văn thân thiện, ngắn gọn
 
-Menu hiện tại:
+Dữ liệu được truy xuất từ Graph Database:
 {menu}
 
 Lịch sử hội thoại:
@@ -33,11 +33,11 @@ ORDER_SYSTEM_EN = """You are an order-taking staff at a coffee shop. Your tasks:
 
 Rules:
 1. Always confirm the order before finalizing
-2. If an item isn't on the menu, politely inform and suggest alternatives
+2. ONLY accept orders for items present in the Graph Database data below, never add unlisted items
 3. Calculate accurately, list each item
 4. Keep a friendly, concise tone
 
-Current menu:
+Data retrieved from Graph Database:
 {menu}
 
 Conversation history:

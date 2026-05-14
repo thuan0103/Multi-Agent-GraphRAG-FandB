@@ -138,7 +138,46 @@ services:
       interval: 10s
       retries: 5
 
-  # ── LLM Serving (vLLM / SGLang mock-ready) — B2 ─────────────
+  # ── SGLang Generator (Qwen2.5-7B-AWQ) — B2.1 ───────────────────
+  # Yêu cầu: GPU RTX 3060+ với nvidia-container-toolkit đã cài.
+  # Mô hình tải lần đầu từ Hugging Face (~7 GB) vào model_cache volume.
+  # Để bỏ qua GPU và dùng mock LLM: đặt GENERATOR_URL=http://llm_serving:8000/mock/v1
+  sglang:
+    image: lmsysorg/sglang:v0.4.6-cu124
+    container_name: sglang
+    restart: unless-stopped
+    ports:
+      - "8081:8081"
+    environment:
+      HF_HOME: /root/.cache/huggingface
+    volumes:
+      - model_cache:/root/.cache/huggingface
+    command: >
+      python -m sglang.launch_server
+      --model-path ${GENERATOR_MODEL:-Qwen/Qwen2.5-7B-Instruct-AWQ}
+      --port 8081
+      --host 0.0.0.0
+      --mem-fraction-static 0.78
+      --context-length 4096
+      --quantization awq
+      --dtype half
+      --schedule-policy lpm
+      --chunked-prefill-size 2048
+      --max-running-requests 8
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8081/health', timeout=5)"]
+      interval: 30s
+      timeout: 15s
+      retries: 20
+
+  # ── LLM Serving proxy (RAG + cache + SSE) — B2 ───────────────
   llm_serving:
     build:
       context: ./services/llm_serving
@@ -150,12 +189,14 @@ services:
     environment:
       GRAPH_RAG_URL: http://graph_rag:8004
       REDIS_URL: redis://redis:6379
-      GENERATOR_URL: ${GENERATOR_URL:-http://localhost:8000/v1}
+      GENERATOR_URL: ${GENERATOR_URL:-http://sglang:8081/v1}
       SESSION_TTL: "3600"
     depends_on:
       graph_rag:
         condition: service_healthy
       redis:
+        condition: service_healthy
+      sglang:
         condition: service_healthy
 
 volumes:

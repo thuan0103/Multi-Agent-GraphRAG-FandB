@@ -8,7 +8,7 @@ from dotenv import load_dotenv
 from openai import AsyncOpenAI
 import httpx
 
-from .base import BaseAgent, AgentResponse
+from .base import BaseAgent, AgentResponse, _make_openai_client
 from .prompts.order_prompt import ORDER_SYSTEM_VI, ORDER_SYSTEM_EN
 
 logger = logging.getLogger(__name__)
@@ -16,7 +16,22 @@ logger = logging.getLogger(__name__)
 load_dotenv()
 
 GRAPH_RAG_URL = os.getenv("GRAPH_RAG_URL", "http://localhost:8004")
-MENU_TTL = 300  # refresh menu từ Neo4j mỗi 5 phút
+MENU_TTL = 300  # refresh cached full menu every 5 minutes (fallback only)
+
+_FULLTEXT_STOPWORDS = frozenset({
+    'tôi', 'muốn', 'cho', 'một', 'cái', 'ly', 'cốc', 'ơi', 'bạn',
+    'em', 'ạ', 'à', 'nhé', 'đi', 'thôi', 'mình', 'có', 'không', 'gì',
+    'là', 'và', 'với', 'thêm', 'bớt', 'xin', 'hỏi', 'về', 'thì', 'được',
+    'của', 'hay', 'hoặc', 'nào', 'đó', 'này', 'kia', 'đây', 'lấy', 'đặt',
+    'order', 'gọi', 'đơn', 'giúp', 'i', 'me', 'want', 'please', 'a', 'an', 'the',
+})
+
+
+def _clean_for_fulltext(text: str) -> str:
+    """Strip Lucene special chars and common stop words for Neo4j fulltext query."""
+    text = re.sub(r'[+\-&|!(){}[\]^"~*?:\\/]', ' ', text)
+    words = [w for w in text.split() if w.lower() not in _FULLTEXT_STOPWORDS and len(w) > 1]
+    return ' '.join(words)
 
 
 class OrderAgent(BaseAgent):
@@ -24,17 +39,15 @@ class OrderAgent(BaseAgent):
 
     def __init__(self, config: dict, menu_path: str = "data/menu.json"):
         super().__init__(config)
-        self.client = AsyncOpenAI(api_key=os.getenv("API_OPENAI"))
+        self.client, self.llm_model = _make_openai_client()
         self._menu_path = menu_path
-        # Bootstrap từ JSON nếu có — sẽ được refresh từ Neo4j ở request đầu tiên
+        # Bootstrap from JSON — fallback when Neo4j unavailable
         self._menu_items: list[dict] = self._bootstrap_from_json()
-        self._menu_text: str = self._format_items(self._menu_items)
-        self._menu_loaded_at: float = 0  # = 0 → force refresh ngay request đầu
+        self._menu_loaded_at: float = 0  # = 0 → force refresh on first fallback use
 
     # ── Bootstrap ─────────────────────────────────────────────────────
 
     def _bootstrap_from_json(self) -> list[dict]:
-        """Đọc JSON fallback khi khởi động, trước khi Neo4j sẵn sàng."""
         path = Path(self._menu_path)
         if not path.exists():
             return []
@@ -58,22 +71,19 @@ class OrderAgent(BaseAgent):
             logger.warning(f"[OrderAgent] bootstrap JSON failed: {e}")
             return []
 
-    # ── Fetch từ Neo4j ─────────────────────────────────────────────────
+    # ── Cached full-menu fallback (Neo4j via /menu/all) ───────────────
 
     async def _fetch_menu_from_graph_rag(self) -> list[dict]:
-        """Gọi graph_rag:/menu/all → trả toàn bộ MenuItem từ Neo4j."""
         async with httpx.AsyncClient(timeout=10.0) as client:
             resp = await client.get(f"{GRAPH_RAG_URL}/menu/all")
             resp.raise_for_status()
             data = resp.json()
         items = data.get("items", [])
-        # Normalize: đảm bảo price là int
         for item in items:
             item["price"] = int(item.get("price") or 0)
         return items
 
     async def _ensure_fresh_menu(self):
-        """Refresh menu từ Neo4j nếu đã quá TTL."""
         now = time.monotonic()
         if now - self._menu_loaded_at < MENU_TTL:
             return
@@ -81,11 +91,38 @@ class OrderAgent(BaseAgent):
             items = await self._fetch_menu_from_graph_rag()
             if items:
                 self._menu_items = items
-                self._menu_text = self._format_items(items)
                 self._menu_loaded_at = now
                 logger.info(f"[OrderAgent] Refreshed {len(items)} menu items from Neo4j")
         except Exception as e:
-            logger.warning(f"[OrderAgent] Cannot refresh menu from graph_rag: {e} — using cached")
+            logger.warning(f"[OrderAgent] Cannot refresh menu: {e} — using cached")
+
+    # ── Primary: entity-based fulltext search ─────────────────────────
+
+    async def _search_menu_for_context(self, query: str) -> tuple[list[dict], str]:
+        """
+        Try /menu/fulltext with cleaned query → return matched items.
+        Falls back to cached full menu if fulltext returns nothing.
+        """
+        clean_q = _clean_for_fulltext(query)
+        if clean_q:
+            try:
+                async with httpx.AsyncClient(timeout=8.0) as client:
+                    resp = await client.get(
+                        f"{GRAPH_RAG_URL}/menu/fulltext",
+                        params={"q": clean_q, "limit": 8},
+                    )
+                    resp.raise_for_status()
+                items = resp.json().get("items", [])
+                if items:
+                    for it in items:
+                        it["price"] = int(it.get("price") or 0)
+                    return items, "neo4j_fulltext"
+            except Exception as e:
+                logger.warning(f"[OrderAgent] fulltext search failed: {e}")
+
+        # Fallback: cached full menu
+        await self._ensure_fresh_menu()
+        return self._menu_items, "cached_full"
 
     # ── Format ─────────────────────────────────────────────────────────
 
@@ -129,19 +166,19 @@ class OrderAgent(BaseAgent):
         language: str,
         session_id: str,
     ) -> AgentResponse:
-        await self._ensure_fresh_menu()  # refresh từ Neo4j nếu stale
+        menu_items, rag_source = await self._search_menu_for_context(query)
 
         cart = self._extract_cart_from_history(history)
         history_context = self._build_history_context(history)
 
         system_prompt = (ORDER_SYSTEM_VI if language == "vi" else ORDER_SYSTEM_EN).format(
-            menu=self._menu_text,
+            menu=self._format_items(menu_items),
             history=history_context or "Chưa có / None",
             cart=self._format_cart(cart),
         )
 
         response = await self.client.chat.completions.create(
-            model="gpt-4o-mini",
+            model=self.llm_model,
             messages=[
                 {"role": "system", "content": system_prompt},
                 {"role": "user",   "content": query},
@@ -161,8 +198,8 @@ class OrderAgent(BaseAgent):
             latency_ms=0.0,
             metadata={
                 "cart":          updated_cart,
-                "menu_items":    len(self._menu_items),
-                "rag_source":    "neo4j" if self._menu_loaded_at > 0 else "json_bootstrap",
+                "menu_items":    len(menu_items),
+                "rag_source":    rag_source,
             },
             language=language,
         )

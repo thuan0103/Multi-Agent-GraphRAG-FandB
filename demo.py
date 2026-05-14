@@ -17,6 +17,8 @@ import logging
 import uuid
 from pathlib import Path
 
+import httpx
+
 import yaml
 from dotenv import load_dotenv
 
@@ -189,6 +191,34 @@ def startup() -> None:
 
 
 # ─── Core chat processing ─────────────────────────────────────────────
+def _paraphrase_cache_hit(template: str, context: str, language: str) -> str:
+    """
+    C2.2: Kết hợp cached template với context trích xuất.
+    Xử lý tại RAM — không gọi LLM — để đảm bảo latency ≤100ms.
+    Khi context chứa thông tin có nghĩa (thời gian, số lượng, dịp...) thì
+    lồng tự nhiên vào đầu phản hồi.
+    """
+    ctx = (context or "").strip()
+    if not ctx or ctx.lower() in ("", "none", "không có", "n/a"):
+        return template
+
+    if language == "vi":
+        prefixes = [
+            f"Dạ, về yêu cầu {ctx} — {template}",
+            f"Với {ctx}: {template}",
+            f"Lưu ý {ctx}, {template[0].lower() + template[1:]}",
+        ]
+    else:
+        prefixes = [
+            f"Regarding {ctx} — {template}",
+            f"For {ctx}: {template}",
+        ]
+
+    import hashlib
+    idx = int(hashlib.md5(ctx.encode()).hexdigest(), 16) % len(prefixes)
+    return prefixes[idx]
+
+
 INTENT_LABELS = {
     "order":      "🛒 Order",
     "consultant": "💡 Consultant",
@@ -264,9 +294,11 @@ async def process_message(message: str, session_id: str) -> dict:
     cache_result = semantic_cache.query(cache_key)
     if cache_result:
         entry, score = cache_result
-        logger.info(f"[Cache] HIT score={score:.3f} key={cache_key!r}")
+        language = "vi" if any(c in message for c in "àáâãèéêìíòóôõùúýăđơư") else "en"
+        reply = _paraphrase_cache_hit(entry.response_template, extracted.context, language)
+        logger.info(f"[Cache] HIT score={score:.3f} key={cache_key!r} ctx={extracted.context!r}")
         return {
-            "reply":             entry.response_template,
+            "reply":             reply,
             "intent":            intent,
             "total_latency":     router_latency + extr_ms,
             "router_latency":    router_latency,
@@ -329,6 +361,95 @@ async def process_message(message: str, session_id: str) -> dict:
     }
 
 
+# ─── SGLang / API backend path ───────────────────────────────────────
+async def _sglang_respond(message: str, h: list, session_id: str, api_url: str):
+    """
+    Gọi POST {api_url}/chat/stream, đọc SSE token-by-token.
+    Yield từng bước giống respond() để Gradio streaming hoạt động.
+    Events: {"type": "meta"|"token"|"done"|"error", ...}
+    """
+    url = api_url.rstrip("/") + "/chat/stream"
+    partial = ""
+    intent = "—"
+    total_latency = 0.0
+    agent_latency = 0.0
+
+    try:
+        async with httpx.AsyncClient(timeout=60.0) as client:
+            async with client.stream(
+                "POST", url,
+                json={"message": message, "session_id": session_id},
+                headers={"Accept": "text/event-stream"},
+            ) as resp:
+                if resp.status_code != 200:
+                    h[-1] = {"role": "assistant", "content": f"⚠️ API lỗi {resp.status_code}"}
+                    yield (h, "", *["❌"] * _N_METRICS, session_id, session_id[:8] + "...")
+                    return
+
+                async for line in resp.aiter_lines():
+                    if not line.startswith("data:"):
+                        continue
+                    raw = line[5:].strip()
+                    if not raw:
+                        continue
+                    try:
+                        event = json.loads(raw)
+                    except json.JSONDecodeError:
+                        continue
+
+                    etype = event.get("type")
+
+                    if etype == "meta":
+                        intent = event.get("intent", "—")
+                        intent_label = INTENT_LABELS.get(intent, intent)
+                        yield (h, "", intent_label, *["⏳"] * (_N_METRICS - 1),
+                               session_id, session_id[:8] + "...")
+
+                    elif etype == "token":
+                        partial += event.get("text", "")
+                        h[-1] = {"role": "assistant", "content": partial}
+                        yield (h, "", INTENT_LABELS.get(intent, intent),
+                               *["⏳"] * (_N_METRICS - 1),
+                               session_id, session_id[:8] + "...")
+
+                    elif etype == "done":
+                        total_latency = event.get("latency_ms", 0.0)
+                        agent_latency = event.get("agent_latency_ms", 0.0)
+
+                    elif etype == "error":
+                        err = event.get("detail", "unknown error")
+                        h[-1] = {"role": "assistant", "content": f"⚠️ {err}"}
+                        yield (h, "", *["❌"] * _N_METRICS, session_id, session_id[:8] + "...")
+                        return
+
+    except httpx.ConnectError:
+        h[-1] = {"role": "assistant",
+                  "content": f"⚠️ Không kết nối được tới {url}\n→ Hãy chạy: `python main.py`"}
+        yield (h, "", *["❌"] * _N_METRICS, session_id, session_id[:8] + "...")
+        return
+    except Exception as e:
+        h[-1] = {"role": "assistant", "content": f"⚠️ Lỗi: {e}"}
+        yield (h, "", *["❌"] * _N_METRICS, session_id, session_id[:8] + "...")
+        return
+
+    # Final metrics yield
+    h[-1] = {"role": "assistant", "content": partial.strip()}
+    intent_label = INTENT_LABELS.get(intent, intent)
+    yield (
+        h, "",
+        intent_label,
+        f"🖥️ SGLang",
+        f"{total_latency:.0f} ms",
+        "—",
+        f"{agent_latency:.0f} ms",
+        "SGLang API",
+        "❌ N/A (via API)",
+        "—",
+        session_id,
+        session_id[:8] + "...",
+    )
+
+
 # ─── Gradio UI ────────────────────────────────────────────────────────
 QUICK_PROMPTS = [
     ("🛒 Đặt cà phê",      "Cho anh 1 ly cà phê sữa đá"),
@@ -383,6 +504,25 @@ def create_ui() -> gr.Blocks:
                         interactive=False,
                         scale=4,
                         max_lines=1,
+                    )
+
+                with gr.Accordion("⚙️ Backend", open=False):
+                    backend_radio = gr.Radio(
+                        choices=["OpenAI (GPT-4o-mini)", "SGLang (local)"],
+                        value="OpenAI (GPT-4o-mini)",
+                        label="LLM Backend",
+                        info="SGLang yêu cầu python main.py đang chạy",
+                    )
+                    api_url_input = gr.Textbox(
+                        value="http://localhost:18000",
+                        label="API URL",
+                        visible=False,
+                        placeholder="http://localhost:18000",
+                    )
+                    backend_radio.change(
+                        fn=lambda b: gr.update(visible="SGLang" in b),
+                        inputs=backend_radio,
+                        outputs=api_url_input,
                     )
 
                 gr.Markdown("**Gợi ý nhanh:**")
@@ -444,7 +584,7 @@ Auto-summarize at 70% ctx
         ]
         # Total: 2 + 8 + 2 = 12 outputs
 
-        async def respond(message, history, session_id):
+        async def respond(message, history, session_id, backend, api_url):
             if not message or not message.strip():
                 yield (history or [], "", *["—"] * _N_METRICS,
                        session_id, session_id[:8] + "...")
@@ -459,10 +599,17 @@ Auto-summarize at 70% ctx
             yield (h, "", "⏳ Routing...", *["—"] * (_N_METRICS - 1),
                    session_id, session_id[:8] + "...")
 
+            # ── SGLang path: stream từ API ─────────────────────────
+            if "SGLang" in backend:
+                async for chunk in _sglang_respond(msg, h, session_id, api_url):
+                    yield chunk
+                return
+
+            # ── OpenAI path: gọi agent trực tiếp ──────────────────
             result = await process_message(msg, session_id)
             reply  = result["reply"]
 
-            # ── Streaming: yield từng từ ───────────────────────────
+            # Streaming: yield từng từ
             words   = reply.split(" ")
             partial = ""
             for i, word in enumerate(words):
@@ -472,7 +619,7 @@ Auto-summarize at 70% ctx
                        session_id, session_id[:8] + "...")
                 await asyncio.sleep(0.018)
 
-            # ── Final yield: tất cả metrics ───────────────────────
+            # Final yield: tất cả metrics
             h[-1] = {"role": "assistant", "content": reply}
 
             intent_label = INTENT_LABELS.get(result["intent"], result["intent"])
@@ -505,12 +652,12 @@ Auto-summarize at 70% ctx
 
         send_btn.click(
             fn=respond,
-            inputs=[msg_input, chatbot, session_id_state],
+            inputs=[msg_input, chatbot, session_id_state, backend_radio, api_url_input],
             outputs=RESPOND_OUTPUTS,
         )
         msg_input.submit(
             fn=respond,
-            inputs=[msg_input, chatbot, session_id_state],
+            inputs=[msg_input, chatbot, session_id_state, backend_radio, api_url_input],
             outputs=RESPOND_OUTPUTS,
         )
         clear_btn.click(

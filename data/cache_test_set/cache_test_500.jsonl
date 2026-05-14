@@ -1,0 +1,500 @@
+{"input": "anh muốn uống cold brew dịp kỷ niệm", "action_gt": "order cà phê sữa đá", "group_id": "g_order_cafe", "domain": "order"}
+{"input": "anh muốn tư vấn món uống vào ngày mai lúc 7h", "action_gt": "tư vấn món uống", "group_id": "g_tu_van", "domain": "faq"}
+{"input": "mình order cà phê sữa đá cuối tuần này", "action_gt": "order cà phê sữa đá", "group_id": "g_order_cafe", "domain": "order"}
+{"input": "mình muốn trả bằng thẻ giúp mình với", "action_gt": "hỏi thanh toán bằng thẻ", "group_id": "g_thanh_toan", "domain": "faq"}
+{"input": "chị order bạc xỉu lúc 12h trưa", "action_gt": "order cà phê sữa đá", "group_id": "g_order_cafe", "domain": "order"}
+{"input": "Quán nhận thẻ không giúp mình với", "action_gt": "hỏi thanh toán bằng thẻ", "group_id": "g_thanh_toan", "domain": "faq"}
+{"input": "Quán mở cửa mấy giờ hôm nay", "action_gt": "hỏi giờ mở cửa", "group_id": "g_hoi_gio", "domain": "faq"}
+{"input": "Quán có POS không nhé em", "action_gt": "hỏi thanh toán bằng thẻ", "group_id": "g_thanh_toan", "domain": "faq"}
+{"input": "Mình cần đặt bàn sinh nhật cuối tuần này", "action_gt": "đặt bàn tiệc sinh nhật", "group_id": "g_dat_ban_sinh_nhat", "domain": "order"}
+{"input": "mình hỏi quán đóng cửa lúc mấy giờ cuối tuần này", "action_gt": "hỏi giờ mở cửa", "group_id": "g_hoi_gio", "domain": "faq"}
+{"input": "Book bàn giúp em ngày 25 tháng 12", "action_gt": "đặt bàn", "group_id": "g_dat_ban", "domain": "order"}
+{"input": "mình hỏi mật khẩu wifi cuối tuần này", "action_gt": "hỏi wifi", "group_id": "g_hoi_wifi", "domain": "faq"}
+{"input": "Cho mình đặt bàn ngày 25 tháng 12", "action_gt": "đặt bàn", "group_id": "g_dat_ban", "domain": "order"}
+{"input": "chị không muốn order nữa lúc 12h trưa", "action_gt": "hủy order", "group_id": "g_huy_order", "domain": "order"}
+{"input": "Cho anh xin pass wifi giúp mình với", "action_gt": "hỏi wifi", "group_id": "g_hoi_wifi", "domain": "faq"}
+{"input": "Cho anh đặt bàn ngay bây giờ", "action_gt": "đặt bàn", "group_id": "g_dat_ban", "domain": "order"}
+{"input": "Show menu cho anh tối nay lúc 8 giờ", "action_gt": "xem menu", "group_id": "g_xem_menu", "domain": "faq"}
+{"input": "mình muốn xem thực đơn hôm nay", "action_gt": "xem menu", "group_id": "g_xem_menu", "domain": "faq"}
+{"input": "Cho tôi 1 ly cà phê sữa đá ngày 25 tháng 12", "action_gt": "order cà phê sữa đá", "group_id": "g_order_cafe", "domain": "order"}
+{"input": "Quán mở cửa mấy giờ tối nay lúc 8 giờ", "action_gt": "hỏi giờ mở cửa", "group_id": "g_hoi_gio", "domain": "faq"}
+{"input": "Quán hoạt động đến bao giờ", "action_gt": "hỏi giờ mở cửa", "group_id": "g_hoi_gio", "domain": "faq"}
+{"input": "Quán nhận thẻ không vào ngày mai lúc 7h", "action_gt": "hỏi thanh toán bằng thẻ", "group_id": "g_thanh_toan", "domain": "faq"}
+{"input": "Cho mình đặt bàn vào ngày mai lúc 7h", "action_gt": "đặt bàn", "group_id": "g_dat_ban", "domain": "order"}
+{"input": "Gợi ý món uống cho mình nhé em", "action_gt": "tư vấn món uống", "group_id": "g_tu_van", "domain": "faq"}
+{"input": "chị hỏi về khuyến mãi nhé em", "action_gt": "hỏi khuyến mãi", "group_id": "g_khuyen_mai", "domain": "faq"}
+{"input": "Gợi ý món uống cho anh ngày 25 tháng 12", "action_gt": "tư vấn món uống", "group_id": "g_tu_van", "domain": "faq"}
+{"input": "anh hỏi mật khẩu wifi lúc 12h trưa", "action_gt": "hỏi wifi", "group_id": "g_hoi_wifi", "domain": "faq"}
+{"input": "Book bàn giúp mình nhé em", "action_gt": "đặt bàn", "group_id": "g_dat_ban", "domain": "order"}
+{"input": "Cho em xem menu nhé em", "action_gt": "xem menu", "group_id": "g_xem_menu", "domain": "faq"}
+{"input": "Cho mình xin pass wifi vào ngày mai lúc 7h", "action_gt": "hỏi wifi", "group_id": "g_hoi_wifi", "domain": "faq"}
+{"input": "em hỏi quán đóng cửa lúc mấy giờ cho 6 người", "action_gt": "hỏi giờ mở cửa", "group_id": "g_hoi_gio", "domain": "faq"}
+{"input": "anh không muốn order nữa hôm nay", "action_gt": "hủy order", "group_id": "g_huy_order", "domain": "order"}
+{"input": "Gợi ý món uống cho tôi lúc 12h trưa", "action_gt": "tư vấn món uống", "group_id": "g_tu_van", "domain": "faq"}
+{"input": "tôi không biết chọn gì, tư vấn giúp nhé em", "action_gt": "tư vấn món uống", "group_id": "g_tu_van", "domain": "faq"}
+{"input": "Giờ mở cửa của quán vào ngày mai lúc 7h", "action_gt": "hỏi giờ mở cửa", "group_id": "g_hoi_gio", "domain": "faq"}
+{"input": "Coupon của quán vào ngày mai lúc 7h", "action_gt": "hỏi khuyến mãi", "group_id": "g_khuyen_mai", "domain": "faq"}
+{"input": "mình muốn tư vấn món uống dịp kỷ niệm", "action_gt": "tư vấn món uống", "group_id": "g_tu_van", "domain": "faq"}
+{"input": "Mình muốn đặt chỗ vào ngày mai lúc 7h", "action_gt": "đặt bàn", "group_id": "g_dat_ban", "domain": "order"}
+{"input": "em muốn trả bằng thẻ hôm nay", "action_gt": "hỏi thanh toán bằng thẻ", "group_id": "g_thanh_toan", "domain": "faq"}
+{"input": "Đặt chỗ tổ chức sinh nhật tối nay lúc 8 giờ", "action_gt": "đặt bàn tiệc sinh nhật", "group_id": "g_dat_ban_sinh_nhat", "domain": "order"}
+{"input": "Đặt chỗ tổ chức sinh nhật ngay bây giờ", "action_gt": "đặt bàn tiệc sinh nhật", "group_id": "g_dat_ban_sinh_nhat", "domain": "order"}
+{"input": "Cho anh đặt bàn tiệc sinh nhật hôm nay", "action_gt": "đặt bàn tiệc sinh nhật", "group_id": "g_dat_ban_sinh_nhat", "domain": "order"}
+{"input": "Giờ mở cửa của quán giúp mình với", "action_gt": "hỏi giờ mở cửa", "group_id": "g_hoi_gio", "domain": "faq"}
+{"input": "anh muốn book bàn tiệc sinh nhật lúc 12h trưa", "action_gt": "đặt bàn tiệc sinh nhật", "group_id": "g_dat_ban_sinh_nhat", "domain": "order"}
+{"input": "tôi muốn hủy đơn giúp mình với", "action_gt": "hủy order", "group_id": "g_huy_order", "domain": "order"}
+{"input": "Mình muốn đặt chỗ ngay bây giờ", "action_gt": "đặt bàn", "group_id": "g_dat_ban", "domain": "order"}
+{"input": "Cho anh 1 ly cà phê sữa đá cho 6 người", "action_gt": "order cà phê sữa đá", "group_id": "g_order_cafe", "domain": "order"}
+{"input": "tôi không biết chọn gì, tư vấn giúp vào ngày mai lúc 7h", "action_gt": "tư vấn món uống", "group_id": "g_tu_van", "domain": "faq"}
+{"input": "chị muốn hủy đơn ngày 25 tháng 12", "action_gt": "hủy order", "group_id": "g_huy_order", "domain": "order"}
+{"input": "em muốn trả bằng thẻ cho 6 người", "action_gt": "hỏi thanh toán bằng thẻ", "group_id": "g_thanh_toan", "domain": "faq"}
+{"input": "Quán nhận thẻ không", "action_gt": "hỏi thanh toán bằng thẻ", "group_id": "g_thanh_toan", "domain": "faq"}
+{"input": "mình muốn xem thực đơn dịp kỷ niệm", "action_gt": "xem menu", "group_id": "g_xem_menu", "domain": "faq"}
+{"input": "Thanh toán bằng thẻ được không", "action_gt": "hỏi thanh toán bằng thẻ", "group_id": "g_thanh_toan", "domain": "faq"}
+{"input": "Cho anh xin pass wifi cho buổi họp", "action_gt": "hỏi wifi", "group_id": "g_hoi_wifi", "domain": "faq"}
+{"input": "Wifi quán tốt không hôm nay", "action_gt": "hỏi wifi", "group_id": "g_hoi_wifi", "domain": "faq"}
+{"input": "Quán mở cửa mấy giờ lúc 12h trưa", "action_gt": "hỏi giờ mở cửa", "group_id": "g_hoi_gio", "domain": "faq"}
+{"input": "Chương trình giảm giá hôm nay", "action_gt": "hỏi khuyến mãi", "group_id": "g_khuyen_mai", "domain": "faq"}
+{"input": "Cancel order giúp mình ngay bây giờ", "action_gt": "hủy order", "group_id": "g_huy_order", "domain": "order"}
+{"input": "anh hỏi mật khẩu wifi nhé em", "action_gt": "hỏi wifi", "group_id": "g_hoi_wifi", "domain": "faq"}
+{"input": "Cho mình xem menu cho 4 người", "action_gt": "xem menu", "group_id": "g_xem_menu", "domain": "faq"}
+{"input": "anh muốn xem thực đơn cho 4 người", "action_gt": "xem menu", "group_id": "g_xem_menu", "domain": "faq"}
+{"input": "Show menu cho mình dịp kỷ niệm", "action_gt": "xem menu", "group_id": "g_xem_menu", "domain": "faq"}
+{"input": "Mình muốn đặt chỗ cho buổi họp", "action_gt": "đặt bàn", "group_id": "g_dat_ban", "domain": "order"}
+{"input": "chị muốn hủy đơn lúc 12h trưa", "action_gt": "hủy order", "group_id": "g_huy_order", "domain": "order"}
+{"input": "Quán có POS không cho 6 người", "action_gt": "hỏi thanh toán bằng thẻ", "group_id": "g_thanh_toan", "domain": "faq"}
+{"input": "Quán nhận thẻ không ngày 25 tháng 12", "action_gt": "hỏi thanh toán bằng thẻ", "group_id": "g_thanh_toan", "domain": "faq"}
+{"input": "Cho mình 1 ly cà phê sữa đá dịp kỷ niệm", "action_gt": "order cà phê sữa đá", "group_id": "g_order_cafe", "domain": "order"}
+{"input": "mình muốn hủy đơn cho buổi họp", "action_gt": "hủy order", "group_id": "g_huy_order", "domain": "order"}
+{"input": "tôi muốn tư vấn món uống tối nay lúc 8 giờ", "action_gt": "tư vấn món uống", "group_id": "g_tu_van", "domain": "faq"}
+{"input": "em muốn book bàn tiệc sinh nhật giúp mình với", "action_gt": "đặt bàn tiệc sinh nhật", "group_id": "g_dat_ban_sinh_nhat", "domain": "order"}
+{"input": "Gọi americano cho tôi giúp mình với", "action_gt": "order cà phê sữa đá", "group_id": "g_order_cafe", "domain": "order"}
+{"input": "Quán có POS không cho 4 người", "action_gt": "hỏi thanh toán bằng thẻ", "group_id": "g_thanh_toan", "domain": "faq"}
+{"input": "em order bạc xỉu cho buổi họp", "action_gt": "order cà phê sữa đá", "group_id": "g_order_cafe", "domain": "order"}
+{"input": "Gợi ý món uống cho tôi cuối tuần này", "action_gt": "tư vấn món uống", "group_id": "g_tu_van", "domain": "faq"}
+{"input": "Quán mở cửa mấy giờ nhé em", "action_gt": "hỏi giờ mở cửa", "group_id": "g_hoi_gio", "domain": "faq"}
+{"input": "Quán có những món gì vào ngày mai lúc 7h", "action_gt": "xem menu", "group_id": "g_xem_menu", "domain": "faq"}
+{"input": "Mình muốn đặt chỗ ngày 25 tháng 12", "action_gt": "đặt bàn", "group_id": "g_dat_ban", "domain": "order"}
+{"input": "Show menu cho mình nhé em", "action_gt": "xem menu", "group_id": "g_xem_menu", "domain": "faq"}
+{"input": "Cho tôi đặt bàn dịp kỷ niệm", "action_gt": "đặt bàn", "group_id": "g_dat_ban", "domain": "order"}
+{"input": "Quán có POS không ngay bây giờ", "action_gt": "hỏi thanh toán bằng thẻ", "group_id": "g_thanh_toan", "domain": "faq"}
+{"input": "chị muốn trả bằng thẻ vào ngày mai lúc 7h", "action_gt": "hỏi thanh toán bằng thẻ", "group_id": "g_thanh_toan", "domain": "faq"}
+{"input": "Menu quán có gì cho buổi họp", "action_gt": "xem menu", "group_id": "g_xem_menu", "domain": "faq"}
+{"input": "Cho em đặt bàn tiệc sinh nhật lúc 12h trưa", "action_gt": "đặt bàn tiệc sinh nhật", "group_id": "g_dat_ban_sinh_nhat", "domain": "order"}
+{"input": "Đặt chỗ tổ chức sinh nhật ngày 25 tháng 12", "action_gt": "đặt bàn tiệc sinh nhật", "group_id": "g_dat_ban_sinh_nhat", "domain": "order"}
+{"input": "mình hỏi về khuyến mãi ngày 25 tháng 12", "action_gt": "hỏi khuyến mãi", "group_id": "g_khuyen_mai", "domain": "faq"}
+{"input": "Quán hoạt động đến bao giờ vào ngày mai lúc 7h", "action_gt": "hỏi giờ mở cửa", "group_id": "g_hoi_gio", "domain": "faq"}
+{"input": "Cho mình đặt bàn dịp kỷ niệm", "action_gt": "đặt bàn", "group_id": "g_dat_ban", "domain": "order"}
+{"input": "tôi muốn trả bằng thẻ", "action_gt": "hỏi thanh toán bằng thẻ", "group_id": "g_thanh_toan", "domain": "faq"}
+{"input": "mình không muốn order nữa", "action_gt": "hủy order", "group_id": "g_huy_order", "domain": "order"}
+{"input": "Quán có những món gì cho 6 người", "action_gt": "xem menu", "group_id": "g_xem_menu", "domain": "faq"}
+{"input": "Quán có wifi không hôm nay", "action_gt": "hỏi wifi", "group_id": "g_hoi_wifi", "domain": "faq"}
+{"input": "chị hỏi quán đóng cửa lúc mấy giờ dịp kỷ niệm", "action_gt": "hỏi giờ mở cửa", "group_id": "g_hoi_gio", "domain": "faq"}
+{"input": "Quán có wifi không cho 4 người", "action_gt": "hỏi wifi", "group_id": "g_hoi_wifi", "domain": "faq"}
+{"input": "Nên uống gì dịp kỷ niệm", "action_gt": "tư vấn món uống", "group_id": "g_tu_van", "domain": "faq"}
+{"input": "chị không muốn order nữa hôm nay", "action_gt": "hủy order", "group_id": "g_huy_order", "domain": "order"}
+{"input": "Bỏ đơn vừa đặt cho 6 người", "action_gt": "hủy order", "group_id": "g_huy_order", "domain": "order"}
+{"input": "tôi muốn hủy đơn", "action_gt": "hủy order", "group_id": "g_huy_order", "domain": "order"}
+{"input": "Quán hoạt động đến bao giờ cho 6 người", "action_gt": "hỏi giờ mở cửa", "group_id": "g_hoi_gio", "domain": "faq"}
+{"input": "Cho chị 1 ly americano dịp kỷ niệm", "action_gt": "order cà phê sữa đá", "group_id": "g_order_cafe", "domain": "order"}
+{"input": "Cho chị đặt bàn tiệc sinh nhật ngay bây giờ", "action_gt": "đặt bàn tiệc sinh nhật", "group_id": "g_dat_ban_sinh_nhat", "domain": "order"}
+{"input": "Show menu cho em nhé em", "action_gt": "xem menu", "group_id": "g_xem_menu", "domain": "faq"}
+{"input": "Cho em 1 ly cold brew nhé em", "action_gt": "order cà phê sữa đá", "group_id": "g_order_cafe", "domain": "order"}
+{"input": "mình hỏi mật khẩu wifi giúp mình với", "action_gt": "hỏi wifi", "group_id": "g_hoi_wifi", "domain": "faq"}
+{"input": "em muốn đặt bàn hôm nay", "action_gt": "đặt bàn", "group_id": "g_dat_ban", "domain": "order"}
+{"input": "Cancel order giúp anh dịp kỷ niệm", "action_gt": "hủy order", "group_id": "g_huy_order", "domain": "order"}
+{"input": "mình muốn book bàn tiệc sinh nhật nhé em", "action_gt": "đặt bàn tiệc sinh nhật", "group_id": "g_dat_ban_sinh_nhat", "domain": "order"}
+{"input": "mình hỏi mật khẩu wifi hôm nay", "action_gt": "hỏi wifi", "group_id": "g_hoi_wifi", "domain": "faq"}
+{"input": "mình order americano", "action_gt": "order cà phê sữa đá", "group_id": "g_order_cafe", "domain": "order"}
+{"input": "Cancel order giúp em ngay bây giờ", "action_gt": "hủy order", "group_id": "g_huy_order", "domain": "order"}
+{"input": "anh muốn hủy đơn cho 6 người", "action_gt": "hủy order", "group_id": "g_huy_order", "domain": "order"}
+{"input": "Quán mở cửa mấy giờ ngày 25 tháng 12", "action_gt": "hỏi giờ mở cửa", "group_id": "g_hoi_gio", "domain": "faq"}
+{"input": "Chương trình giảm giá hôm nay vào ngày mai lúc 7h", "action_gt": "hỏi khuyến mãi", "group_id": "g_khuyen_mai", "domain": "faq"}
+{"input": "mình muốn book bàn tiệc sinh nhật", "action_gt": "đặt bàn tiệc sinh nhật", "group_id": "g_dat_ban_sinh_nhat", "domain": "order"}
+{"input": "Thanh toán bằng thẻ được không cho 4 người", "action_gt": "hỏi thanh toán bằng thẻ", "group_id": "g_thanh_toan", "domain": "faq"}
+{"input": "Bỏ đơn vừa đặt giúp mình với", "action_gt": "hủy order", "group_id": "g_huy_order", "domain": "order"}
+{"input": "Cancel order giúp anh giúp mình với", "action_gt": "hủy order", "group_id": "g_huy_order", "domain": "order"}
+{"input": "Menu quán có gì giúp mình với", "action_gt": "xem menu", "group_id": "g_xem_menu", "domain": "faq"}
+{"input": "Mình cần đặt bàn sinh nhật hôm nay", "action_gt": "đặt bàn tiệc sinh nhật", "group_id": "g_dat_ban_sinh_nhat", "domain": "order"}
+{"input": "Mình muốn đặt chỗ cho 6 người", "action_gt": "đặt bàn", "group_id": "g_dat_ban", "domain": "order"}
+{"input": "anh hỏi mật khẩu wifi hôm nay", "action_gt": "hỏi wifi", "group_id": "g_hoi_wifi", "domain": "faq"}
+{"input": "tôi muốn uống americano ngày 25 tháng 12", "action_gt": "order cà phê sữa đá", "group_id": "g_order_cafe", "domain": "order"}
+{"input": "em muốn xem thực đơn ngày 25 tháng 12", "action_gt": "xem menu", "group_id": "g_xem_menu", "domain": "faq"}
+{"input": "Cho anh xin pass wifi hôm nay", "action_gt": "hỏi wifi", "group_id": "g_hoi_wifi", "domain": "faq"}
+{"input": "Quán có những món gì", "action_gt": "xem menu", "group_id": "g_xem_menu", "domain": "faq"}
+{"input": "Nên uống gì cho 6 người", "action_gt": "tư vấn món uống", "group_id": "g_tu_van", "domain": "faq"}
+{"input": "Gợi ý món uống cho chị dịp kỷ niệm", "action_gt": "tư vấn món uống", "group_id": "g_tu_van", "domain": "faq"}
+{"input": "Nên uống gì lúc 12h trưa", "action_gt": "tư vấn món uống", "group_id": "g_tu_van", "domain": "faq"}
+{"input": "Cho chị xem menu nhé em", "action_gt": "xem menu", "group_id": "g_xem_menu", "domain": "faq"}
+{"input": "Show menu cho chị cho 4 người", "action_gt": "xem menu", "group_id": "g_xem_menu", "domain": "faq"}
+{"input": "chị hỏi về khuyến mãi hôm nay", "action_gt": "hỏi khuyến mãi", "group_id": "g_khuyen_mai", "domain": "faq"}
+{"input": "anh muốn trả bằng thẻ ngay bây giờ", "action_gt": "hỏi thanh toán bằng thẻ", "group_id": "g_thanh_toan", "domain": "faq"}
+{"input": "chị muốn trả bằng thẻ cho buổi họp", "action_gt": "hỏi thanh toán bằng thẻ", "group_id": "g_thanh_toan", "domain": "faq"}
+{"input": "em muốn trả bằng thẻ nhé em", "action_gt": "hỏi thanh toán bằng thẻ", "group_id": "g_thanh_toan", "domain": "faq"}
+{"input": "tôi hỏi về khuyến mãi nhé em", "action_gt": "hỏi khuyến mãi", "group_id": "g_khuyen_mai", "domain": "faq"}
+{"input": "em hỏi quán đóng cửa lúc mấy giờ dịp kỷ niệm", "action_gt": "hỏi giờ mở cửa", "group_id": "g_hoi_gio", "domain": "faq"}
+{"input": "em hỏi quán đóng cửa lúc mấy giờ ngày 25 tháng 12", "action_gt": "hỏi giờ mở cửa", "group_id": "g_hoi_gio", "domain": "faq"}
+{"input": "Book bàn giúp chị", "action_gt": "đặt bàn", "group_id": "g_dat_ban", "domain": "order"}
+{"input": "Quán có những món gì nhé em", "action_gt": "xem menu", "group_id": "g_xem_menu", "domain": "faq"}
+{"input": "Quán có POS không ngày 25 tháng 12", "action_gt": "hỏi thanh toán bằng thẻ", "group_id": "g_thanh_toan", "domain": "faq"}
+{"input": "Đặt chỗ tổ chức sinh nhật dịp kỷ niệm", "action_gt": "đặt bàn tiệc sinh nhật", "group_id": "g_dat_ban_sinh_nhat", "domain": "order"}
+{"input": "Quán mở cửa mấy giờ cho 6 người", "action_gt": "hỏi giờ mở cửa", "group_id": "g_hoi_gio", "domain": "faq"}
+{"input": "anh muốn uống cold brew vào ngày mai lúc 7h", "action_gt": "order cà phê sữa đá", "group_id": "g_order_cafe", "domain": "order"}
+{"input": "Mình muốn đặt chỗ tối nay lúc 8 giờ", "action_gt": "đặt bàn", "group_id": "g_dat_ban", "domain": "order"}
+{"input": "mình muốn uống bạc xỉu vào ngày mai lúc 7h", "action_gt": "order cà phê sữa đá", "group_id": "g_order_cafe", "domain": "order"}
+{"input": "tôi muốn xem thực đơn nhé em", "action_gt": "xem menu", "group_id": "g_xem_menu", "domain": "faq"}
+{"input": "Bỏ đơn vừa đặt cho buổi họp", "action_gt": "hủy order", "group_id": "g_huy_order", "domain": "order"}
+{"input": "Show menu cho chị cho 6 người", "action_gt": "xem menu", "group_id": "g_xem_menu", "domain": "faq"}
+{"input": "Cho chị 1 ly bạc xỉu", "action_gt": "order cà phê sữa đá", "group_id": "g_order_cafe", "domain": "order"}
+{"input": "em muốn trả bằng thẻ tối nay lúc 8 giờ", "action_gt": "hỏi thanh toán bằng thẻ", "group_id": "g_thanh_toan", "domain": "faq"}
+{"input": "em muốn uống bạc xỉu cuối tuần này", "action_gt": "order cà phê sữa đá", "group_id": "g_order_cafe", "domain": "order"}
+{"input": "Cho anh đặt bàn tiệc sinh nhật", "action_gt": "đặt bàn tiệc sinh nhật", "group_id": "g_dat_ban_sinh_nhat", "domain": "order"}
+{"input": "tôi muốn xem thực đơn vào ngày mai lúc 7h", "action_gt": "xem menu", "group_id": "g_xem_menu", "domain": "faq"}
+{"input": "Book bàn giúp em dịp kỷ niệm", "action_gt": "đặt bàn", "group_id": "g_dat_ban", "domain": "order"}
+{"input": "em muốn tư vấn món uống cho buổi họp", "action_gt": "tư vấn món uống", "group_id": "g_tu_van", "domain": "faq"}
+{"input": "Quán có wifi không cuối tuần này", "action_gt": "hỏi wifi", "group_id": "g_hoi_wifi", "domain": "faq"}
+{"input": "Coupon của quán cho 6 người", "action_gt": "hỏi khuyến mãi", "group_id": "g_khuyen_mai", "domain": "faq"}
+{"input": "tôi muốn trả bằng thẻ ngày 25 tháng 12", "action_gt": "hỏi thanh toán bằng thẻ", "group_id": "g_thanh_toan", "domain": "faq"}
+{"input": "chị hỏi mật khẩu wifi", "action_gt": "hỏi wifi", "group_id": "g_hoi_wifi", "domain": "faq"}
+{"input": "Quán có wifi không ngay bây giờ", "action_gt": "hỏi wifi", "group_id": "g_hoi_wifi", "domain": "faq"}
+{"input": "chị hỏi quán đóng cửa lúc mấy giờ vào ngày mai lúc 7h", "action_gt": "hỏi giờ mở cửa", "group_id": "g_hoi_gio", "domain": "faq"}
+{"input": "anh hỏi về khuyến mãi cho 6 người", "action_gt": "hỏi khuyến mãi", "group_id": "g_khuyen_mai", "domain": "faq"}
+{"input": "Cancel order giúp mình nhé em", "action_gt": "hủy order", "group_id": "g_huy_order", "domain": "order"}
+{"input": "Quán nhận thẻ không tối nay lúc 8 giờ", "action_gt": "hỏi thanh toán bằng thẻ", "group_id": "g_thanh_toan", "domain": "faq"}
+{"input": "Mình muốn đặt chỗ nhé em", "action_gt": "đặt bàn", "group_id": "g_dat_ban", "domain": "order"}
+{"input": "mình không biết chọn gì, tư vấn giúp lúc 12h trưa", "action_gt": "tư vấn món uống", "group_id": "g_tu_van", "domain": "faq"}
+{"input": "Gợi ý món uống cho anh dịp kỷ niệm", "action_gt": "tư vấn món uống", "group_id": "g_tu_van", "domain": "faq"}
+{"input": "mình hỏi quán đóng cửa lúc mấy giờ tối nay lúc 8 giờ", "action_gt": "hỏi giờ mở cửa", "group_id": "g_hoi_gio", "domain": "faq"}
+{"input": "Quán có POS không cuối tuần này", "action_gt": "hỏi thanh toán bằng thẻ", "group_id": "g_thanh_toan", "domain": "faq"}
+{"input": "anh muốn book bàn tiệc sinh nhật vào ngày mai lúc 7h", "action_gt": "đặt bàn tiệc sinh nhật", "group_id": "g_dat_ban_sinh_nhat", "domain": "order"}
+{"input": "Cancel order giúp mình giúp mình với", "action_gt": "hủy order", "group_id": "g_huy_order", "domain": "order"}
+{"input": "anh hỏi mật khẩu wifi tối nay lúc 8 giờ", "action_gt": "hỏi wifi", "group_id": "g_hoi_wifi", "domain": "faq"}
+{"input": "Cancel order giúp mình cho 6 người", "action_gt": "hủy order", "group_id": "g_huy_order", "domain": "order"}
+{"input": "Quán hoạt động đến bao giờ cuối tuần này", "action_gt": "hỏi giờ mở cửa", "group_id": "g_hoi_gio", "domain": "faq"}
+{"input": "chị muốn xem thực đơn ngày 25 tháng 12", "action_gt": "xem menu", "group_id": "g_xem_menu", "domain": "faq"}
+{"input": "Cho chị xin pass wifi nhé em", "action_gt": "hỏi wifi", "group_id": "g_hoi_wifi", "domain": "faq"}
+{"input": "mình muốn đặt bàn ngay bây giờ", "action_gt": "đặt bàn", "group_id": "g_dat_ban", "domain": "order"}
+{"input": "Quán hoạt động đến bao giờ ngày 25 tháng 12", "action_gt": "hỏi giờ mở cửa", "group_id": "g_hoi_gio", "domain": "faq"}
+{"input": "chị hỏi quán đóng cửa lúc mấy giờ nhé em", "action_gt": "hỏi giờ mở cửa", "group_id": "g_hoi_gio", "domain": "faq"}
+{"input": "Đặt chỗ tổ chức sinh nhật lúc 12h trưa", "action_gt": "đặt bàn tiệc sinh nhật", "group_id": "g_dat_ban_sinh_nhat", "domain": "order"}
+{"input": "Nên uống gì tối nay lúc 8 giờ", "action_gt": "tư vấn món uống", "group_id": "g_tu_van", "domain": "faq"}
+{"input": "Mình cần đặt bàn sinh nhật cho buổi họp", "action_gt": "đặt bàn tiệc sinh nhật", "group_id": "g_dat_ban_sinh_nhat", "domain": "order"}
+{"input": "Cancel order giúp chị cho 4 người", "action_gt": "hủy order", "group_id": "g_huy_order", "domain": "order"}
+{"input": "Gợi ý món uống cho anh giúp mình với", "action_gt": "tư vấn món uống", "group_id": "g_tu_van", "domain": "faq"}
+{"input": "Book bàn giúp chị giúp mình với", "action_gt": "đặt bàn", "group_id": "g_dat_ban", "domain": "order"}
+{"input": "Cho mình xem menu ngày 25 tháng 12", "action_gt": "xem menu", "group_id": "g_xem_menu", "domain": "faq"}
+{"input": "Cho em đặt bàn tiệc sinh nhật tối nay lúc 8 giờ", "action_gt": "đặt bàn tiệc sinh nhật", "group_id": "g_dat_ban_sinh_nhat", "domain": "order"}
+{"input": "Hủy order hôm nay", "action_gt": "hủy order", "group_id": "g_huy_order", "domain": "order"}
+{"input": "Coupon của quán", "action_gt": "hỏi khuyến mãi", "group_id": "g_khuyen_mai", "domain": "faq"}
+{"input": "anh muốn tư vấn món uống ngày 25 tháng 12", "action_gt": "tư vấn món uống", "group_id": "g_tu_van", "domain": "faq"}
+{"input": "Quán nhận thẻ không nhé em", "action_gt": "hỏi thanh toán bằng thẻ", "group_id": "g_thanh_toan", "domain": "faq"}
+{"input": "Thanh toán bằng thẻ được không ngay bây giờ", "action_gt": "hỏi thanh toán bằng thẻ", "group_id": "g_thanh_toan", "domain": "faq"}
+{"input": "tôi muốn tư vấn món uống lúc 12h trưa", "action_gt": "tư vấn món uống", "group_id": "g_tu_van", "domain": "faq"}
+{"input": "Quán nhận thẻ không lúc 12h trưa", "action_gt": "hỏi thanh toán bằng thẻ", "group_id": "g_thanh_toan", "domain": "faq"}
+{"input": "chị không biết chọn gì, tư vấn giúp cuối tuần này", "action_gt": "tư vấn món uống", "group_id": "g_tu_van", "domain": "faq"}
+{"input": "Chương trình giảm giá hôm nay tối nay lúc 8 giờ", "action_gt": "hỏi khuyến mãi", "group_id": "g_khuyen_mai", "domain": "faq"}
+{"input": "Cho anh xin pass wifi cuối tuần này", "action_gt": "hỏi wifi", "group_id": "g_hoi_wifi", "domain": "faq"}
+{"input": "Gọi cà phê sữa đá cho chị vào ngày mai lúc 7h", "action_gt": "order cà phê sữa đá", "group_id": "g_order_cafe", "domain": "order"}
+{"input": "tôi muốn tư vấn món uống hôm nay", "action_gt": "tư vấn món uống", "group_id": "g_tu_van", "domain": "faq"}
+{"input": "mình order cold brew cho buổi họp", "action_gt": "order cà phê sữa đá", "group_id": "g_order_cafe", "domain": "order"}
+{"input": "Cho anh 1 ly cà phê sữa đá cho buổi họp", "action_gt": "order cà phê sữa đá", "group_id": "g_order_cafe", "domain": "order"}
+{"input": "Coupon của quán giúp mình với", "action_gt": "hỏi khuyến mãi", "group_id": "g_khuyen_mai", "domain": "faq"}
+{"input": "chị hỏi mật khẩu wifi giúp mình với", "action_gt": "hỏi wifi", "group_id": "g_hoi_wifi", "domain": "faq"}
+{"input": "Giờ mở cửa của quán cho 4 người", "action_gt": "hỏi giờ mở cửa", "group_id": "g_hoi_gio", "domain": "faq"}
+{"input": "chị hỏi mật khẩu wifi hôm nay", "action_gt": "hỏi wifi", "group_id": "g_hoi_wifi", "domain": "faq"}
+{"input": "Hủy order ngày 25 tháng 12", "action_gt": "hủy order", "group_id": "g_huy_order", "domain": "order"}
+{"input": "Chương trình giảm giá hôm nay cho 4 người", "action_gt": "hỏi khuyến mãi", "group_id": "g_khuyen_mai", "domain": "faq"}
+{"input": "Quán có ưu đãi gì không hôm nay", "action_gt": "hỏi khuyến mãi", "group_id": "g_khuyen_mai", "domain": "faq"}
+{"input": "chị muốn book bàn tiệc sinh nhật cho 4 người", "action_gt": "đặt bàn tiệc sinh nhật", "group_id": "g_dat_ban_sinh_nhat", "domain": "order"}
+{"input": "Wifi quán tốt không ngay bây giờ", "action_gt": "hỏi wifi", "group_id": "g_hoi_wifi", "domain": "faq"}
+{"input": "anh không biết chọn gì, tư vấn giúp cuối tuần này", "action_gt": "tư vấn món uống", "group_id": "g_tu_van", "domain": "faq"}
+{"input": "Chương trình giảm giá hôm nay ngay bây giờ", "action_gt": "hỏi khuyến mãi", "group_id": "g_khuyen_mai", "domain": "faq"}
+{"input": "em hỏi mật khẩu wifi dịp kỷ niệm", "action_gt": "hỏi wifi", "group_id": "g_hoi_wifi", "domain": "faq"}
+{"input": "Mình cần đặt bàn sinh nhật lúc 12h trưa", "action_gt": "đặt bàn tiệc sinh nhật", "group_id": "g_dat_ban_sinh_nhat", "domain": "order"}
+{"input": "em muốn xem thực đơn tối nay lúc 8 giờ", "action_gt": "xem menu", "group_id": "g_xem_menu", "domain": "faq"}
+{"input": "Cho tôi đặt bàn ngày 25 tháng 12", "action_gt": "đặt bàn", "group_id": "g_dat_ban", "domain": "order"}
+{"input": "Menu quán có gì cho 4 người", "action_gt": "xem menu", "group_id": "g_xem_menu", "domain": "faq"}
+{"input": "Quán hoạt động đến bao giờ hôm nay", "action_gt": "hỏi giờ mở cửa", "group_id": "g_hoi_gio", "domain": "faq"}
+{"input": "Cho chị đặt bàn dịp kỷ niệm", "action_gt": "đặt bàn", "group_id": "g_dat_ban", "domain": "order"}
+{"input": "Bỏ đơn vừa đặt ngay bây giờ", "action_gt": "hủy order", "group_id": "g_huy_order", "domain": "order"}
+{"input": "tôi hỏi về khuyến mãi cuối tuần này", "action_gt": "hỏi khuyến mãi", "group_id": "g_khuyen_mai", "domain": "faq"}
+{"input": "Cancel order giúp chị cuối tuần này", "action_gt": "hủy order", "group_id": "g_huy_order", "domain": "order"}
+{"input": "tôi muốn book bàn tiệc sinh nhật cho 4 người", "action_gt": "đặt bàn tiệc sinh nhật", "group_id": "g_dat_ban_sinh_nhat", "domain": "order"}
+{"input": "Book bàn giúp anh tối nay lúc 8 giờ", "action_gt": "đặt bàn", "group_id": "g_dat_ban", "domain": "order"}
+{"input": "chị muốn uống cà phê sữa đá", "action_gt": "order cà phê sữa đá", "group_id": "g_order_cafe", "domain": "order"}
+{"input": "mình không muốn order nữa nhé em", "action_gt": "hủy order", "group_id": "g_huy_order", "domain": "order"}
+{"input": "Cancel order giúp chị dịp kỷ niệm", "action_gt": "hủy order", "group_id": "g_huy_order", "domain": "order"}
+{"input": "Giờ mở cửa của quán dịp kỷ niệm", "action_gt": "hỏi giờ mở cửa", "group_id": "g_hoi_gio", "domain": "faq"}
+{"input": "anh không biết chọn gì, tư vấn giúp dịp kỷ niệm", "action_gt": "tư vấn món uống", "group_id": "g_tu_van", "domain": "faq"}
+{"input": "Bỏ đơn vừa đặt ngày 25 tháng 12", "action_gt": "hủy order", "group_id": "g_huy_order", "domain": "order"}
+{"input": "tôi không muốn order nữa cho buổi họp", "action_gt": "hủy order", "group_id": "g_huy_order", "domain": "order"}
+{"input": "Đặt bàn cho anh vào ngày mai lúc 7h nhé", "action_gt": "đặt bàn", "group_id": "g_dat_ban", "domain": "order"}
+{"input": "Coupon của quán cuối tuần này", "action_gt": "hỏi khuyến mãi", "group_id": "g_khuyen_mai", "domain": "faq"}
+{"input": "Gợi ý món uống cho anh vào ngày mai lúc 7h", "action_gt": "tư vấn món uống", "group_id": "g_tu_van", "domain": "faq"}
+{"input": "anh muốn hủy đơn hôm nay", "action_gt": "hủy order", "group_id": "g_huy_order", "domain": "order"}
+{"input": "anh không biết chọn gì, tư vấn giúp cho 6 người", "action_gt": "tư vấn món uống", "group_id": "g_tu_van", "domain": "faq"}
+{"input": "Gợi ý món uống cho em cho 4 người", "action_gt": "tư vấn món uống", "group_id": "g_tu_van", "domain": "faq"}
+{"input": "Gọi cold brew cho tôi tối nay lúc 8 giờ", "action_gt": "order cà phê sữa đá", "group_id": "g_order_cafe", "domain": "order"}
+{"input": "chị muốn trả bằng thẻ", "action_gt": "hỏi thanh toán bằng thẻ", "group_id": "g_thanh_toan", "domain": "faq"}
+{"input": "Cho mình đặt bàn", "action_gt": "đặt bàn", "group_id": "g_dat_ban", "domain": "order"}
+{"input": "Đặt chỗ tổ chức sinh nhật cuối tuần này", "action_gt": "đặt bàn tiệc sinh nhật", "group_id": "g_dat_ban_sinh_nhat", "domain": "order"}
+{"input": "Quán có ưu đãi gì không ngày 25 tháng 12", "action_gt": "hỏi khuyến mãi", "group_id": "g_khuyen_mai", "domain": "faq"}
+{"input": "chị hỏi mật khẩu wifi vào ngày mai lúc 7h", "action_gt": "hỏi wifi", "group_id": "g_hoi_wifi", "domain": "faq"}
+{"input": "chị muốn uống bạc xỉu cho 4 người", "action_gt": "order cà phê sữa đá", "group_id": "g_order_cafe", "domain": "order"}
+{"input": "chị muốn hủy đơn dịp kỷ niệm", "action_gt": "hủy order", "group_id": "g_huy_order", "domain": "order"}
+{"input": "Quán có những món gì ngày 25 tháng 12", "action_gt": "xem menu", "group_id": "g_xem_menu", "domain": "faq"}
+{"input": "Mình cần đặt bàn sinh nhật ngay bây giờ", "action_gt": "đặt bàn tiệc sinh nhật", "group_id": "g_dat_ban_sinh_nhat", "domain": "order"}
+{"input": "chị muốn xem thực đơn ngay bây giờ", "action_gt": "xem menu", "group_id": "g_xem_menu", "domain": "faq"}
+{"input": "em order americano", "action_gt": "order cà phê sữa đá", "group_id": "g_order_cafe", "domain": "order"}
+{"input": "em hỏi quán đóng cửa lúc mấy giờ vào ngày mai lúc 7h", "action_gt": "hỏi giờ mở cửa", "group_id": "g_hoi_gio", "domain": "faq"}
+{"input": "Cho mình 1 ly cà phê sữa đá", "action_gt": "order cà phê sữa đá", "group_id": "g_order_cafe", "domain": "order"}
+{"input": "Quán có POS không lúc 12h trưa", "action_gt": "hỏi thanh toán bằng thẻ", "group_id": "g_thanh_toan", "domain": "faq"}
+{"input": "Gọi cold brew cho em vào ngày mai lúc 7h", "action_gt": "order cà phê sữa đá", "group_id": "g_order_cafe", "domain": "order"}
+{"input": "Cho em đặt bàn tiệc sinh nhật cho buổi họp", "action_gt": "đặt bàn tiệc sinh nhật", "group_id": "g_dat_ban_sinh_nhat", "domain": "order"}
+{"input": "em hỏi quán đóng cửa lúc mấy giờ tối nay lúc 8 giờ", "action_gt": "hỏi giờ mở cửa", "group_id": "g_hoi_gio", "domain": "faq"}
+{"input": "Book bàn giúp chị lúc 12h trưa", "action_gt": "đặt bàn", "group_id": "g_dat_ban", "domain": "order"}
+{"input": "em hỏi về khuyến mãi tối nay lúc 8 giờ", "action_gt": "hỏi khuyến mãi", "group_id": "g_khuyen_mai", "domain": "faq"}
+{"input": "Cho tôi đặt bàn tiệc sinh nhật nhé em", "action_gt": "đặt bàn tiệc sinh nhật", "group_id": "g_dat_ban_sinh_nhat", "domain": "order"}
+{"input": "Quán có wifi không vào ngày mai lúc 7h", "action_gt": "hỏi wifi", "group_id": "g_hoi_wifi", "domain": "faq"}
+{"input": "Coupon của quán cho 4 người", "action_gt": "hỏi khuyến mãi", "group_id": "g_khuyen_mai", "domain": "faq"}
+{"input": "tôi không muốn order nữa ngay bây giờ", "action_gt": "hủy order", "group_id": "g_huy_order", "domain": "order"}
+{"input": "Giờ mở cửa của quán cho 6 người", "action_gt": "hỏi giờ mở cửa", "group_id": "g_hoi_gio", "domain": "faq"}
+{"input": "Cancel order giúp em tối nay lúc 8 giờ", "action_gt": "hủy order", "group_id": "g_huy_order", "domain": "order"}
+{"input": "em hỏi quán đóng cửa lúc mấy giờ nhé em", "action_gt": "hỏi giờ mở cửa", "group_id": "g_hoi_gio", "domain": "faq"}
+{"input": "anh hỏi về khuyến mãi dịp kỷ niệm", "action_gt": "hỏi khuyến mãi", "group_id": "g_khuyen_mai", "domain": "faq"}
+{"input": "tôi muốn xem thực đơn cho buổi họp", "action_gt": "xem menu", "group_id": "g_xem_menu", "domain": "faq"}
+{"input": "anh hỏi quán đóng cửa lúc mấy giờ giúp mình với", "action_gt": "hỏi giờ mở cửa", "group_id": "g_hoi_gio", "domain": "faq"}
+{"input": "Đặt chỗ tổ chức sinh nhật", "action_gt": "đặt bàn tiệc sinh nhật", "group_id": "g_dat_ban_sinh_nhat", "domain": "order"}
+{"input": "Quán có wifi không tối nay lúc 8 giờ", "action_gt": "hỏi wifi", "group_id": "g_hoi_wifi", "domain": "faq"}
+{"input": "Đặt bàn cho em hôm nay nhé", "action_gt": "đặt bàn", "group_id": "g_dat_ban", "domain": "order"}
+{"input": "chị không muốn order nữa cuối tuần này", "action_gt": "hủy order", "group_id": "g_huy_order", "domain": "order"}
+{"input": "Thanh toán bằng thẻ được không cho 6 người", "action_gt": "hỏi thanh toán bằng thẻ", "group_id": "g_thanh_toan", "domain": "faq"}
+{"input": "Menu quán có gì cuối tuần này", "action_gt": "xem menu", "group_id": "g_xem_menu", "domain": "faq"}
+{"input": "Coupon của quán hôm nay", "action_gt": "hỏi khuyến mãi", "group_id": "g_khuyen_mai", "domain": "faq"}
+{"input": "tôi không muốn order nữa vào ngày mai lúc 7h", "action_gt": "hủy order", "group_id": "g_huy_order", "domain": "order"}
+{"input": "Coupon của quán dịp kỷ niệm", "action_gt": "hỏi khuyến mãi", "group_id": "g_khuyen_mai", "domain": "faq"}
+{"input": "Book bàn giúp tôi cho 4 người", "action_gt": "đặt bàn", "group_id": "g_dat_ban", "domain": "order"}
+{"input": "Gợi ý món uống cho em vào ngày mai lúc 7h", "action_gt": "tư vấn món uống", "group_id": "g_tu_van", "domain": "faq"}
+{"input": "Giờ mở cửa của quán cuối tuần này", "action_gt": "hỏi giờ mở cửa", "group_id": "g_hoi_gio", "domain": "faq"}
+{"input": "mình muốn đặt bàn vào ngày mai lúc 7h", "action_gt": "đặt bàn", "group_id": "g_dat_ban", "domain": "order"}
+{"input": "Đặt chỗ tổ chức sinh nhật nhé em", "action_gt": "đặt bàn tiệc sinh nhật", "group_id": "g_dat_ban_sinh_nhat", "domain": "order"}
+{"input": "Chương trình giảm giá hôm nay hôm nay", "action_gt": "hỏi khuyến mãi", "group_id": "g_khuyen_mai", "domain": "faq"}
+{"input": "Thanh toán bằng thẻ được không vào ngày mai lúc 7h", "action_gt": "hỏi thanh toán bằng thẻ", "group_id": "g_thanh_toan", "domain": "faq"}
+{"input": "Thanh toán bằng thẻ được không lúc 12h trưa", "action_gt": "hỏi thanh toán bằng thẻ", "group_id": "g_thanh_toan", "domain": "faq"}
+{"input": "Quán mở cửa mấy giờ cuối tuần này", "action_gt": "hỏi giờ mở cửa", "group_id": "g_hoi_gio", "domain": "faq"}
+{"input": "Cho em xem menu", "action_gt": "xem menu", "group_id": "g_xem_menu", "domain": "faq"}
+{"input": "Cho anh 1 ly americano cho buổi họp", "action_gt": "order cà phê sữa đá", "group_id": "g_order_cafe", "domain": "order"}
+{"input": "em hỏi mật khẩu wifi ngày 25 tháng 12", "action_gt": "hỏi wifi", "group_id": "g_hoi_wifi", "domain": "faq"}
+{"input": "chị muốn hủy đơn ngay bây giờ", "action_gt": "hủy order", "group_id": "g_huy_order", "domain": "order"}
+{"input": "Hủy order", "action_gt": "hủy order", "group_id": "g_huy_order", "domain": "order"}
+{"input": "Cho anh xem menu lúc 12h trưa", "action_gt": "xem menu", "group_id": "g_xem_menu", "domain": "faq"}
+{"input": "Cho chị đặt bàn tiệc sinh nhật lúc 12h trưa", "action_gt": "đặt bàn tiệc sinh nhật", "group_id": "g_dat_ban_sinh_nhat", "domain": "order"}
+{"input": "Coupon của quán ngay bây giờ", "action_gt": "hỏi khuyến mãi", "group_id": "g_khuyen_mai", "domain": "faq"}
+{"input": "Thanh toán bằng thẻ được không hôm nay", "action_gt": "hỏi thanh toán bằng thẻ", "group_id": "g_thanh_toan", "domain": "faq"}
+{"input": "Show menu cho anh ngày 25 tháng 12", "action_gt": "xem menu", "group_id": "g_xem_menu", "domain": "faq"}
+{"input": "Cho em 1 ly bạc xỉu dịp kỷ niệm", "action_gt": "order cà phê sữa đá", "group_id": "g_order_cafe", "domain": "order"}
+{"input": "Bỏ đơn vừa đặt hôm nay", "action_gt": "hủy order", "group_id": "g_huy_order", "domain": "order"}
+{"input": "Giờ mở cửa của quán nhé em", "action_gt": "hỏi giờ mở cửa", "group_id": "g_hoi_gio", "domain": "faq"}
+{"input": "Show menu cho tôi giúp mình với", "action_gt": "xem menu", "group_id": "g_xem_menu", "domain": "faq"}
+{"input": "Quán nhận thẻ không dịp kỷ niệm", "action_gt": "hỏi thanh toán bằng thẻ", "group_id": "g_thanh_toan", "domain": "faq"}
+{"input": "Thanh toán bằng thẻ được không dịp kỷ niệm", "action_gt": "hỏi thanh toán bằng thẻ", "group_id": "g_thanh_toan", "domain": "faq"}
+{"input": "Đặt chỗ tổ chức sinh nhật hôm nay", "action_gt": "đặt bàn tiệc sinh nhật", "group_id": "g_dat_ban_sinh_nhat", "domain": "order"}
+{"input": "Quán có wifi không nhé em", "action_gt": "hỏi wifi", "group_id": "g_hoi_wifi", "domain": "faq"}
+{"input": "Quán có ưu đãi gì không cho 4 người", "action_gt": "hỏi khuyến mãi", "group_id": "g_khuyen_mai", "domain": "faq"}
+{"input": "tôi order cà phê sữa đá cho 6 người", "action_gt": "order cà phê sữa đá", "group_id": "g_order_cafe", "domain": "order"}
+{"input": "Quán có POS không vào ngày mai lúc 7h", "action_gt": "hỏi thanh toán bằng thẻ", "group_id": "g_thanh_toan", "domain": "faq"}
+{"input": "Coupon của quán tối nay lúc 8 giờ", "action_gt": "hỏi khuyến mãi", "group_id": "g_khuyen_mai", "domain": "faq"}
+{"input": "Coupon của quán ngày 25 tháng 12", "action_gt": "hỏi khuyến mãi", "group_id": "g_khuyen_mai", "domain": "faq"}
+{"input": "Cho em đặt bàn nhé em", "action_gt": "đặt bàn", "group_id": "g_dat_ban", "domain": "order"}
+{"input": "mình muốn tư vấn món uống nhé em", "action_gt": "tư vấn món uống", "group_id": "g_tu_van", "domain": "faq"}
+{"input": "Show menu cho chị ngay bây giờ", "action_gt": "xem menu", "group_id": "g_xem_menu", "domain": "faq"}
+{"input": "em muốn uống cold brew", "action_gt": "order cà phê sữa đá", "group_id": "g_order_cafe", "domain": "order"}
+{"input": "mình hỏi quán đóng cửa lúc mấy giờ dịp kỷ niệm", "action_gt": "hỏi giờ mở cửa", "group_id": "g_hoi_gio", "domain": "faq"}
+{"input": "chị không biết chọn gì, tư vấn giúp hôm nay", "action_gt": "tư vấn món uống", "group_id": "g_tu_van", "domain": "faq"}
+{"input": "em hỏi quán đóng cửa lúc mấy giờ cuối tuần này", "action_gt": "hỏi giờ mở cửa", "group_id": "g_hoi_gio", "domain": "faq"}
+{"input": "Đặt bàn cho em vào ngày mai lúc 7h nhé", "action_gt": "đặt bàn", "group_id": "g_dat_ban", "domain": "order"}
+{"input": "anh hỏi về khuyến mãi cho 4 người", "action_gt": "hỏi khuyến mãi", "group_id": "g_khuyen_mai", "domain": "faq"}
+{"input": "Gợi ý món uống cho em ngày 25 tháng 12", "action_gt": "tư vấn món uống", "group_id": "g_tu_van", "domain": "faq"}
+{"input": "Quán có những món gì cuối tuần này", "action_gt": "xem menu", "group_id": "g_xem_menu", "domain": "faq"}
+{"input": "Quán có ưu đãi gì không nhé em", "action_gt": "hỏi khuyến mãi", "group_id": "g_khuyen_mai", "domain": "faq"}
+{"input": "Cho tôi đặt bàn lúc 12h trưa", "action_gt": "đặt bàn", "group_id": "g_dat_ban", "domain": "order"}
+{"input": "anh muốn hủy đơn nhé em", "action_gt": "hủy order", "group_id": "g_huy_order", "domain": "order"}
+{"input": "em hỏi mật khẩu wifi cho buổi họp", "action_gt": "hỏi wifi", "group_id": "g_hoi_wifi", "domain": "faq"}
+{"input": "Quán có ưu đãi gì không vào ngày mai lúc 7h", "action_gt": "hỏi khuyến mãi", "group_id": "g_khuyen_mai", "domain": "faq"}
+{"input": "tôi hỏi mật khẩu wifi cho 6 người", "action_gt": "hỏi wifi", "group_id": "g_hoi_wifi", "domain": "faq"}
+{"input": "Mình muốn đặt chỗ dịp kỷ niệm", "action_gt": "đặt bàn", "group_id": "g_dat_ban", "domain": "order"}
+{"input": "Cho mình xem menu", "action_gt": "xem menu", "group_id": "g_xem_menu", "domain": "faq"}
+{"input": "Gợi ý món uống cho tôi hôm nay", "action_gt": "tư vấn món uống", "group_id": "g_tu_van", "domain": "faq"}
+{"input": "Coupon của quán nhé em", "action_gt": "hỏi khuyến mãi", "group_id": "g_khuyen_mai", "domain": "faq"}
+{"input": "Quán có ưu đãi gì không cho 6 người", "action_gt": "hỏi khuyến mãi", "group_id": "g_khuyen_mai", "domain": "faq"}
+{"input": "Quán mở cửa mấy giờ cho 4 người", "action_gt": "hỏi giờ mở cửa", "group_id": "g_hoi_gio", "domain": "faq"}
+{"input": "tôi muốn trả bằng thẻ tối nay lúc 8 giờ", "action_gt": "hỏi thanh toán bằng thẻ", "group_id": "g_thanh_toan", "domain": "faq"}
+{"input": "Quán hoạt động đến bao giờ lúc 12h trưa", "action_gt": "hỏi giờ mở cửa", "group_id": "g_hoi_gio", "domain": "faq"}
+{"input": "mình không muốn order nữa giúp mình với", "action_gt": "hủy order", "group_id": "g_huy_order", "domain": "order"}
+{"input": "em muốn trả bằng thẻ ngay bây giờ", "action_gt": "hỏi thanh toán bằng thẻ", "group_id": "g_thanh_toan", "domain": "faq"}
+{"input": "Quán có POS không hôm nay", "action_gt": "hỏi thanh toán bằng thẻ", "group_id": "g_thanh_toan", "domain": "faq"}
+{"input": "Book bàn giúp anh hôm nay", "action_gt": "đặt bàn", "group_id": "g_dat_ban", "domain": "order"}
+{"input": "Quán có wifi không", "action_gt": "hỏi wifi", "group_id": "g_hoi_wifi", "domain": "faq"}
+{"input": "chị muốn đặt bàn cho buổi họp", "action_gt": "đặt bàn", "group_id": "g_dat_ban", "domain": "order"}
+{"input": "Wifi quán tốt không lúc 12h trưa", "action_gt": "hỏi wifi", "group_id": "g_hoi_wifi", "domain": "faq"}
+{"input": "chị muốn tư vấn món uống dịp kỷ niệm", "action_gt": "tư vấn món uống", "group_id": "g_tu_van", "domain": "faq"}
+{"input": "Quán hoạt động đến bao giờ cho 4 người", "action_gt": "hỏi giờ mở cửa", "group_id": "g_hoi_gio", "domain": "faq"}
+{"input": "Quán có ưu đãi gì không tối nay lúc 8 giờ", "action_gt": "hỏi khuyến mãi", "group_id": "g_khuyen_mai", "domain": "faq"}
+{"input": "em hỏi về khuyến mãi cho 6 người", "action_gt": "hỏi khuyến mãi", "group_id": "g_khuyen_mai", "domain": "faq"}
+{"input": "tôi muốn xem thực đơn ngày 25 tháng 12", "action_gt": "xem menu", "group_id": "g_xem_menu", "domain": "faq"}
+{"input": "Wifi quán tốt không giúp mình với", "action_gt": "hỏi wifi", "group_id": "g_hoi_wifi", "domain": "faq"}
+{"input": "Quán hoạt động đến bao giờ giúp mình với", "action_gt": "hỏi giờ mở cửa", "group_id": "g_hoi_gio", "domain": "faq"}
+{"input": "Cho chị xin pass wifi ngày 25 tháng 12", "action_gt": "hỏi wifi", "group_id": "g_hoi_wifi", "domain": "faq"}
+{"input": "Quán có POS không giúp mình với", "action_gt": "hỏi thanh toán bằng thẻ", "group_id": "g_thanh_toan", "domain": "faq"}
+{"input": "Gợi ý món uống cho chị lúc 12h trưa", "action_gt": "tư vấn món uống", "group_id": "g_tu_van", "domain": "faq"}
+{"input": "Quán có những món gì tối nay lúc 8 giờ", "action_gt": "xem menu", "group_id": "g_xem_menu", "domain": "faq"}
+{"input": "mình hỏi về khuyến mãi cho buổi họp", "action_gt": "hỏi khuyến mãi", "group_id": "g_khuyen_mai", "domain": "faq"}
+{"input": "chị hỏi quán đóng cửa lúc mấy giờ hôm nay", "action_gt": "hỏi giờ mở cửa", "group_id": "g_hoi_gio", "domain": "faq"}
+{"input": "Book bàn giúp chị cuối tuần này", "action_gt": "đặt bàn", "group_id": "g_dat_ban", "domain": "order"}
+{"input": "Menu quán có gì dịp kỷ niệm", "action_gt": "xem menu", "group_id": "g_xem_menu", "domain": "faq"}
+{"input": "Thanh toán bằng thẻ được không nhé em", "action_gt": "hỏi thanh toán bằng thẻ", "group_id": "g_thanh_toan", "domain": "faq"}
+{"input": "Hủy order cho 4 người", "action_gt": "hủy order", "group_id": "g_huy_order", "domain": "order"}
+{"input": "Coupon của quán cho buổi họp", "action_gt": "hỏi khuyến mãi", "group_id": "g_khuyen_mai", "domain": "faq"}
+{"input": "Bỏ đơn vừa đặt lúc 12h trưa", "action_gt": "hủy order", "group_id": "g_huy_order", "domain": "order"}
+{"input": "Gọi americano cho mình vào ngày mai lúc 7h", "action_gt": "order cà phê sữa đá", "group_id": "g_order_cafe", "domain": "order"}
+{"input": "Chương trình giảm giá hôm nay cuối tuần này", "action_gt": "hỏi khuyến mãi", "group_id": "g_khuyen_mai", "domain": "faq"}
+{"input": "chị muốn đặt bàn cho 6 người", "action_gt": "đặt bàn", "group_id": "g_dat_ban", "domain": "order"}
+{"input": "Gợi ý món uống cho anh lúc 12h trưa", "action_gt": "tư vấn món uống", "group_id": "g_tu_van", "domain": "faq"}
+{"input": "em muốn xem thực đơn cho buổi họp", "action_gt": "xem menu", "group_id": "g_xem_menu", "domain": "faq"}
+{"input": "chị hỏi mật khẩu wifi cho 6 người", "action_gt": "hỏi wifi", "group_id": "g_hoi_wifi", "domain": "faq"}
+{"input": "Giờ mở cửa của quán cho buổi họp", "action_gt": "hỏi giờ mở cửa", "group_id": "g_hoi_gio", "domain": "faq"}
+{"input": "Gợi ý món uống cho em ngay bây giờ", "action_gt": "tư vấn món uống", "group_id": "g_tu_van", "domain": "faq"}
+{"input": "chị order americano cho 4 người", "action_gt": "order cà phê sữa đá", "group_id": "g_order_cafe", "domain": "order"}
+{"input": "anh muốn uống cà phê sữa đá giúp mình với", "action_gt": "order cà phê sữa đá", "group_id": "g_order_cafe", "domain": "order"}
+{"input": "Quán nhận thẻ không cuối tuần này", "action_gt": "hỏi thanh toán bằng thẻ", "group_id": "g_thanh_toan", "domain": "faq"}
+{"input": "Cho chị xem menu cho 6 người", "action_gt": "xem menu", "group_id": "g_xem_menu", "domain": "faq"}
+{"input": "anh muốn tư vấn món uống cho 6 người", "action_gt": "tư vấn món uống", "group_id": "g_tu_van", "domain": "faq"}
+{"input": "Cho anh 1 ly americano ngay bây giờ", "action_gt": "order cà phê sữa đá", "group_id": "g_order_cafe", "domain": "order"}
+{"input": "Cho chị đặt bàn tiệc sinh nhật nhé em", "action_gt": "đặt bàn tiệc sinh nhật", "group_id": "g_dat_ban_sinh_nhat", "domain": "order"}
+{"input": "em hỏi mật khẩu wifi lúc 12h trưa", "action_gt": "hỏi wifi", "group_id": "g_hoi_wifi", "domain": "faq"}
+{"input": "chị muốn trả bằng thẻ giúp mình với", "action_gt": "hỏi thanh toán bằng thẻ", "group_id": "g_thanh_toan", "domain": "faq"}
+{"input": "tôi hỏi mật khẩu wifi tối nay lúc 8 giờ", "action_gt": "hỏi wifi", "group_id": "g_hoi_wifi", "domain": "faq"}
+{"input": "Quán có POS không dịp kỷ niệm", "action_gt": "hỏi thanh toán bằng thẻ", "group_id": "g_thanh_toan", "domain": "faq"}
+{"input": "mình hỏi về khuyến mãi lúc 12h trưa", "action_gt": "hỏi khuyến mãi", "group_id": "g_khuyen_mai", "domain": "faq"}
+{"input": "Mình cần đặt bàn sinh nhật giúp mình với", "action_gt": "đặt bàn tiệc sinh nhật", "group_id": "g_dat_ban_sinh_nhat", "domain": "order"}
+{"input": "Gọi americano cho tôi ngày 25 tháng 12", "action_gt": "order cà phê sữa đá", "group_id": "g_order_cafe", "domain": "order"}
+{"input": "Gợi ý món uống cho mình dịp kỷ niệm", "action_gt": "tư vấn món uống", "group_id": "g_tu_van", "domain": "faq"}
+{"input": "Chương trình giảm giá hôm nay giúp mình với", "action_gt": "hỏi khuyến mãi", "group_id": "g_khuyen_mai", "domain": "faq"}
+{"input": "Hủy order cho 6 người", "action_gt": "hủy order", "group_id": "g_huy_order", "domain": "order"}
+{"input": "Chương trình giảm giá hôm nay ngày 25 tháng 12", "action_gt": "hỏi khuyến mãi", "group_id": "g_khuyen_mai", "domain": "faq"}
+{"input": "Cho mình xem menu tối nay lúc 8 giờ", "action_gt": "xem menu", "group_id": "g_xem_menu", "domain": "faq"}
+{"input": "Wifi quán tốt không", "action_gt": "hỏi wifi", "group_id": "g_hoi_wifi", "domain": "faq"}
+{"input": "Cho em đặt bàn cho 6 người", "action_gt": "đặt bàn", "group_id": "g_dat_ban", "domain": "order"}
+{"input": "Cho chị đặt bàn", "action_gt": "đặt bàn", "group_id": "g_dat_ban", "domain": "order"}
+{"input": "chị hỏi về khuyến mãi dịp kỷ niệm", "action_gt": "hỏi khuyến mãi", "group_id": "g_khuyen_mai", "domain": "faq"}
+{"input": "Gọi cold brew cho mình cho 6 người", "action_gt": "order cà phê sữa đá", "group_id": "g_order_cafe", "domain": "order"}
+{"input": "Quán mở cửa mấy giờ vào ngày mai lúc 7h", "action_gt": "hỏi giờ mở cửa", "group_id": "g_hoi_gio", "domain": "faq"}
+{"input": "Chương trình giảm giá hôm nay lúc 12h trưa", "action_gt": "hỏi khuyến mãi", "group_id": "g_khuyen_mai", "domain": "faq"}
+{"input": "Thanh toán bằng thẻ được không cho buổi họp", "action_gt": "hỏi thanh toán bằng thẻ", "group_id": "g_thanh_toan", "domain": "faq"}
+{"input": "Cho em xin pass wifi", "action_gt": "hỏi wifi", "group_id": "g_hoi_wifi", "domain": "faq"}
+{"input": "Bỏ đơn vừa đặt cuối tuần này", "action_gt": "hủy order", "group_id": "g_huy_order", "domain": "order"}
+{"input": "Cancel order giúp anh", "action_gt": "hủy order", "group_id": "g_huy_order", "domain": "order"}
+{"input": "Gọi cold brew cho em hôm nay", "action_gt": "order cà phê sữa đá", "group_id": "g_order_cafe", "domain": "order"}
+{"input": "Cho tôi đặt bàn tiệc sinh nhật ngay bây giờ", "action_gt": "đặt bàn tiệc sinh nhật", "group_id": "g_dat_ban_sinh_nhat", "domain": "order"}
+{"input": "chị muốn đặt bàn dịp kỷ niệm", "action_gt": "đặt bàn", "group_id": "g_dat_ban", "domain": "order"}
+{"input": "anh không biết chọn gì, tư vấn giúp hôm nay", "action_gt": "tư vấn món uống", "group_id": "g_tu_van", "domain": "faq"}
+{"input": "Đặt bàn cho chị ngày 25 tháng 12 nhé", "action_gt": "đặt bàn", "group_id": "g_dat_ban", "domain": "order"}
+{"input": "Quán có wifi không lúc 12h trưa", "action_gt": "hỏi wifi", "group_id": "g_hoi_wifi", "domain": "faq"}
+{"input": "chị muốn book bàn tiệc sinh nhật cuối tuần này", "action_gt": "đặt bàn tiệc sinh nhật", "group_id": "g_dat_ban_sinh_nhat", "domain": "order"}
+{"input": "Cho mình đặt bàn tiệc sinh nhật vào ngày mai lúc 7h", "action_gt": "đặt bàn tiệc sinh nhật", "group_id": "g_dat_ban_sinh_nhat", "domain": "order"}
+{"input": "Gọi cà phê sữa đá cho mình ngay bây giờ", "action_gt": "order cà phê sữa đá", "group_id": "g_order_cafe", "domain": "order"}
+{"input": "em muốn uống cà phê sữa đá hôm nay", "action_gt": "order cà phê sữa đá", "group_id": "g_order_cafe", "domain": "order"}
+{"input": "em hỏi quán đóng cửa lúc mấy giờ hôm nay", "action_gt": "hỏi giờ mở cửa", "group_id": "g_hoi_gio", "domain": "faq"}
+{"input": "Đặt bàn cho tôi ngày 25 tháng 12 nhé", "action_gt": "đặt bàn", "group_id": "g_dat_ban", "domain": "order"}
+{"input": "anh muốn book bàn tiệc sinh nhật tối nay lúc 8 giờ", "action_gt": "đặt bàn tiệc sinh nhật", "group_id": "g_dat_ban_sinh_nhat", "domain": "order"}
+{"input": "tôi order bạc xỉu nhé em", "action_gt": "order cà phê sữa đá", "group_id": "g_order_cafe", "domain": "order"}
+{"input": "tôi hỏi về khuyến mãi ngày 25 tháng 12", "action_gt": "hỏi khuyến mãi", "group_id": "g_khuyen_mai", "domain": "faq"}
+{"input": "chị hỏi quán đóng cửa lúc mấy giờ tối nay lúc 8 giờ", "action_gt": "hỏi giờ mở cửa", "group_id": "g_hoi_gio", "domain": "faq"}
+{"input": "chị muốn trả bằng thẻ cuối tuần này", "action_gt": "hỏi thanh toán bằng thẻ", "group_id": "g_thanh_toan", "domain": "faq"}
+{"input": "Quán có ưu đãi gì không giúp mình với", "action_gt": "hỏi khuyến mãi", "group_id": "g_khuyen_mai", "domain": "faq"}
+{"input": "Quán hoạt động đến bao giờ nhé em", "action_gt": "hỏi giờ mở cửa", "group_id": "g_hoi_gio", "domain": "faq"}
+{"input": "Quán hoạt động đến bao giờ ngay bây giờ", "action_gt": "hỏi giờ mở cửa", "group_id": "g_hoi_gio", "domain": "faq"}
+{"input": "Nên uống gì vào ngày mai lúc 7h", "action_gt": "tư vấn món uống", "group_id": "g_tu_van", "domain": "faq"}
+{"input": "Giờ mở cửa của quán ngày 25 tháng 12", "action_gt": "hỏi giờ mở cửa", "group_id": "g_hoi_gio", "domain": "faq"}
+{"input": "Quán nhận thẻ không cho 6 người", "action_gt": "hỏi thanh toán bằng thẻ", "group_id": "g_thanh_toan", "domain": "faq"}
+{"input": "Cho mình xin pass wifi dịp kỷ niệm", "action_gt": "hỏi wifi", "group_id": "g_hoi_wifi", "domain": "faq"}
+{"input": "Hủy order dịp kỷ niệm", "action_gt": "hủy order", "group_id": "g_huy_order", "domain": "order"}
+{"input": "Cho chị 1 ly americano cho 4 người", "action_gt": "order cà phê sữa đá", "group_id": "g_order_cafe", "domain": "order"}
+{"input": "em không biết chọn gì, tư vấn giúp ngày 25 tháng 12", "action_gt": "tư vấn món uống", "group_id": "g_tu_van", "domain": "faq"}
+{"input": "Cho em xin pass wifi cuối tuần này", "action_gt": "hỏi wifi", "group_id": "g_hoi_wifi", "domain": "faq"}
+{"input": "Cho chị xem menu hôm nay", "action_gt": "xem menu", "group_id": "g_xem_menu", "domain": "faq"}
+{"input": "Nên uống gì nhé em", "action_gt": "tư vấn món uống", "group_id": "g_tu_van", "domain": "faq"}
+{"input": "chị hỏi quán đóng cửa lúc mấy giờ cho 6 người", "action_gt": "hỏi giờ mở cửa", "group_id": "g_hoi_gio", "domain": "faq"}
+{"input": "chị muốn trả bằng thẻ lúc 12h trưa", "action_gt": "hỏi thanh toán bằng thẻ", "group_id": "g_thanh_toan", "domain": "faq"}
+{"input": "Đặt bàn cho tôi giúp mình với nhé", "action_gt": "đặt bàn", "group_id": "g_dat_ban", "domain": "order"}
+{"input": "Cho chị đặt bàn giúp mình với", "action_gt": "đặt bàn", "group_id": "g_dat_ban", "domain": "order"}
+{"input": "Cho anh đặt bàn tiệc sinh nhật cho 4 người", "action_gt": "đặt bàn tiệc sinh nhật", "group_id": "g_dat_ban_sinh_nhat", "domain": "order"}
+{"input": "tôi không biết chọn gì, tư vấn giúp cho buổi họp", "action_gt": "tư vấn món uống", "group_id": "g_tu_van", "domain": "faq"}
+{"input": "Quán có wifi không dịp kỷ niệm", "action_gt": "hỏi wifi", "group_id": "g_hoi_wifi", "domain": "faq"}
+{"input": "Cancel order giúp tôi vào ngày mai lúc 7h", "action_gt": "hủy order", "group_id": "g_huy_order", "domain": "order"}
+{"input": "Show menu cho anh hôm nay", "action_gt": "xem menu", "group_id": "g_xem_menu", "domain": "faq"}
+{"input": "Quán có ưu đãi gì không lúc 12h trưa", "action_gt": "hỏi khuyến mãi", "group_id": "g_khuyen_mai", "domain": "faq"}
+{"input": "Nên uống gì cuối tuần này", "action_gt": "tư vấn món uống", "group_id": "g_tu_van", "domain": "faq"}
+{"input": "anh muốn book bàn tiệc sinh nhật giúp mình với", "action_gt": "đặt bàn tiệc sinh nhật", "group_id": "g_dat_ban_sinh_nhat", "domain": "order"}
+{"input": "Cho em xem menu dịp kỷ niệm", "action_gt": "xem menu", "group_id": "g_xem_menu", "domain": "faq"}
+{"input": "Cho tôi xem menu giúp mình với", "action_gt": "xem menu", "group_id": "g_xem_menu", "domain": "faq"}
+{"input": "tôi muốn trả bằng thẻ lúc 12h trưa", "action_gt": "hỏi thanh toán bằng thẻ", "group_id": "g_thanh_toan", "domain": "faq"}
+{"input": "em muốn book bàn tiệc sinh nhật dịp kỷ niệm", "action_gt": "đặt bàn tiệc sinh nhật", "group_id": "g_dat_ban_sinh_nhat", "domain": "order"}
+{"input": "Cho em xem menu cho 6 người", "action_gt": "xem menu", "group_id": "g_xem_menu", "domain": "faq"}
+{"input": "em muốn xem thực đơn dịp kỷ niệm", "action_gt": "xem menu", "group_id": "g_xem_menu", "domain": "faq"}
+{"input": "Mình cần đặt bàn sinh nhật dịp kỷ niệm", "action_gt": "đặt bàn tiệc sinh nhật", "group_id": "g_dat_ban_sinh_nhat", "domain": "order"}
+{"input": "tôi hỏi quán đóng cửa lúc mấy giờ nhé em", "action_gt": "hỏi giờ mở cửa", "group_id": "g_hoi_gio", "domain": "faq"}
+{"input": "Wifi quán tốt không cho 6 người", "action_gt": "hỏi wifi", "group_id": "g_hoi_wifi", "domain": "faq"}
+{"input": "em hỏi về khuyến mãi cuối tuần này", "action_gt": "hỏi khuyến mãi", "group_id": "g_khuyen_mai", "domain": "faq"}
+{"input": "Quán mở cửa mấy giờ", "action_gt": "hỏi giờ mở cửa", "group_id": "g_hoi_gio", "domain": "faq"}
+{"input": "em muốn trả bằng thẻ lúc 12h trưa", "action_gt": "hỏi thanh toán bằng thẻ", "group_id": "g_thanh_toan", "domain": "faq"}
+{"input": "Đặt bàn cho em cuối tuần này nhé", "action_gt": "đặt bàn", "group_id": "g_dat_ban", "domain": "order"}
+{"input": "Book bàn giúp em ngay bây giờ", "action_gt": "đặt bàn", "group_id": "g_dat_ban", "domain": "order"}
+{"input": "Cho mình đặt bàn tiệc sinh nhật", "action_gt": "đặt bàn tiệc sinh nhật", "group_id": "g_dat_ban_sinh_nhat", "domain": "order"}
+{"input": "em muốn uống bạc xỉu hôm nay", "action_gt": "order cà phê sữa đá", "group_id": "g_order_cafe", "domain": "order"}
+{"input": "Hủy order giúp mình với", "action_gt": "hủy order", "group_id": "g_huy_order", "domain": "order"}
+{"input": "Mình cần đặt bàn sinh nhật", "action_gt": "đặt bàn tiệc sinh nhật", "group_id": "g_dat_ban_sinh_nhat", "domain": "order"}
+{"input": "Quán mở cửa mấy giờ ngay bây giờ", "action_gt": "hỏi giờ mở cửa", "group_id": "g_hoi_gio", "domain": "faq"}
+{"input": "Gợi ý món uống cho mình", "action_gt": "tư vấn món uống", "group_id": "g_tu_van", "domain": "faq"}
+{"input": "tôi muốn book bàn tiệc sinh nhật hôm nay", "action_gt": "đặt bàn tiệc sinh nhật", "group_id": "g_dat_ban_sinh_nhat", "domain": "order"}
+{"input": "Cho chị đặt bàn tiệc sinh nhật", "action_gt": "đặt bàn tiệc sinh nhật", "group_id": "g_dat_ban_sinh_nhat", "domain": "order"}
+{"input": "Nên uống gì ngay bây giờ", "action_gt": "tư vấn món uống", "group_id": "g_tu_van", "domain": "faq"}
+{"input": "Cho tôi xin pass wifi nhé em", "action_gt": "hỏi wifi", "group_id": "g_hoi_wifi", "domain": "faq"}
+{"input": "tôi muốn trả bằng thẻ giúp mình với", "action_gt": "hỏi thanh toán bằng thẻ", "group_id": "g_thanh_toan", "domain": "faq"}
+{"input": "Cho chị 1 ly americano hôm nay", "action_gt": "order cà phê sữa đá", "group_id": "g_order_cafe", "domain": "order"}
+{"input": "tôi muốn đặt bàn ngày 25 tháng 12", "action_gt": "đặt bàn", "group_id": "g_dat_ban", "domain": "order"}
+{"input": "Bỏ đơn vừa đặt tối nay lúc 8 giờ", "action_gt": "hủy order", "group_id": "g_huy_order", "domain": "order"}
+{"input": "Chương trình giảm giá hôm nay dịp kỷ niệm", "action_gt": "hỏi khuyến mãi", "group_id": "g_khuyen_mai", "domain": "faq"}
+{"input": "anh hỏi mật khẩu wifi cho 6 người", "action_gt": "hỏi wifi", "group_id": "g_hoi_wifi", "domain": "faq"}
+{"input": "Cho anh xem menu cuối tuần này", "action_gt": "xem menu", "group_id": "g_xem_menu", "domain": "faq"}
+{"input": "Quán hoạt động đến bao giờ cho buổi họp", "action_gt": "hỏi giờ mở cửa", "group_id": "g_hoi_gio", "domain": "faq"}
+{"input": "Gợi ý món uống cho em cho 6 người", "action_gt": "tư vấn món uống", "group_id": "g_tu_van", "domain": "faq"}
+{"input": "Cancel order giúp anh ngay bây giờ", "action_gt": "hủy order", "group_id": "g_huy_order", "domain": "order"}
+{"input": "anh hỏi quán đóng cửa lúc mấy giờ tối nay lúc 8 giờ", "action_gt": "hỏi giờ mở cửa", "group_id": "g_hoi_gio", "domain": "faq"}
+{"input": "Nên uống gì cho buổi họp", "action_gt": "tư vấn món uống", "group_id": "g_tu_van", "domain": "faq"}
+{"input": "mình muốn uống cà phê sữa đá dịp kỷ niệm", "action_gt": "order cà phê sữa đá", "group_id": "g_order_cafe", "domain": "order"}
+{"input": "chị muốn trả bằng thẻ cho 6 người", "action_gt": "hỏi thanh toán bằng thẻ", "group_id": "g_thanh_toan", "domain": "faq"}
+{"input": "tôi không biết chọn gì, tư vấn giúp cho 6 người", "action_gt": "tư vấn món uống", "group_id": "g_tu_van", "domain": "faq"}
+{"input": "Đặt chỗ tổ chức sinh nhật giúp mình với", "action_gt": "đặt bàn tiệc sinh nhật", "group_id": "g_dat_ban_sinh_nhat", "domain": "order"}
+{"input": "tôi muốn book bàn tiệc sinh nhật giúp mình với", "action_gt": "đặt bàn tiệc sinh nhật", "group_id": "g_dat_ban_sinh_nhat", "domain": "order"}
+{"input": "Book bàn giúp mình cho 6 người", "action_gt": "đặt bàn", "group_id": "g_dat_ban", "domain": "order"}
+{"input": "Mình cần đặt bàn sinh nhật cho 6 người", "action_gt": "đặt bàn tiệc sinh nhật", "group_id": "g_dat_ban_sinh_nhat", "domain": "order"}
+{"input": "Quán có ưu đãi gì không ngay bây giờ", "action_gt": "hỏi khuyến mãi", "group_id": "g_khuyen_mai", "domain": "faq"}
+{"input": "chị không biết chọn gì, tư vấn giúp cho buổi họp", "action_gt": "tư vấn món uống", "group_id": "g_tu_van", "domain": "faq"}
+{"input": "Thanh toán bằng thẻ được không giúp mình với", "action_gt": "hỏi thanh toán bằng thẻ", "group_id": "g_thanh_toan", "domain": "faq"}
+{"input": "Wifi quán tốt không vào ngày mai lúc 7h", "action_gt": "hỏi wifi", "group_id": "g_hoi_wifi", "domain": "faq"}
+{"input": "Gọi bạc xỉu cho mình cuối tuần này", "action_gt": "order cà phê sữa đá", "group_id": "g_order_cafe", "domain": "order"}
+{"input": "Quán có wifi không cho 6 người", "action_gt": "hỏi wifi", "group_id": "g_hoi_wifi", "domain": "faq"}
+{"input": "Cho tôi xin pass wifi vào ngày mai lúc 7h", "action_gt": "hỏi wifi", "group_id": "g_hoi_wifi", "domain": "faq"}
+{"input": "mình muốn xem thực đơn cho 4 người", "action_gt": "xem menu", "group_id": "g_xem_menu", "domain": "faq"}
+{"input": "Cho mình đặt bàn tiệc sinh nhật cho 4 người", "action_gt": "đặt bàn tiệc sinh nhật", "group_id": "g_dat_ban_sinh_nhat", "domain": "order"}
+{"input": "chị hỏi về khuyến mãi ngay bây giờ", "action_gt": "hỏi khuyến mãi", "group_id": "g_khuyen_mai", "domain": "faq"}
+{"input": "tôi hỏi quán đóng cửa lúc mấy giờ tối nay lúc 8 giờ", "action_gt": "hỏi giờ mở cửa", "group_id": "g_hoi_gio", "domain": "faq"}
+{"input": "anh hỏi về khuyến mãi hôm nay", "action_gt": "hỏi khuyến mãi", "group_id": "g_khuyen_mai", "domain": "faq"}
+{"input": "Wifi quán tốt không nhé em", "action_gt": "hỏi wifi", "group_id": "g_hoi_wifi", "domain": "faq"}
+{"input": "Cho anh đặt bàn tiệc sinh nhật giúp mình với", "action_gt": "đặt bàn tiệc sinh nhật", "group_id": "g_dat_ban_sinh_nhat", "domain": "order"}
+{"input": "anh muốn đặt bàn", "action_gt": "đặt bàn", "group_id": "g_dat_ban", "domain": "order"}
+{"input": "Quán mở cửa mấy giờ giúp mình với", "action_gt": "hỏi giờ mở cửa", "group_id": "g_hoi_gio", "domain": "faq"}
+{"input": "Quán có ưu đãi gì không", "action_gt": "hỏi khuyến mãi", "group_id": "g_khuyen_mai", "domain": "faq"}
+{"input": "Cho anh đặt bàn tiệc sinh nhật cho 6 người", "action_gt": "đặt bàn tiệc sinh nhật", "group_id": "g_dat_ban_sinh_nhat", "domain": "order"}
+{"input": "Wifi quán tốt không cuối tuần này", "action_gt": "hỏi wifi", "group_id": "g_hoi_wifi", "domain": "faq"}

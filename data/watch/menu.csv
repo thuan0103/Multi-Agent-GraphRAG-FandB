@@ -1,27 +1,107 @@
-﻿,A,B,C,D,E,F,G
+,A,B,C,D,E,F,G
 1,id,name,category,price,size,ingredients,description
-2,1,Cà Phê Đen,coffee,25000,S,"""cà phê robusta","đường"""
-3,2,Cà Phê Đen,coffee,30000,M,"""cà phê robusta","đường"""
-4,3,Cà Phê Sữa,coffee,30000,S,"""cà phê robusta","sữa đặc"""
-5,4,Cà Phê Sữa,coffee,35000,M,"""cà phê robusta","sữa đặc"""
-6,5,Bạc Xỉu,coffee,35000,M,"""cà phê arabica",sữa tươi
-7,6,Cappuccino,coffee,45000,M,"""espresso",sữa tươi
-8,7,Latte,coffee,50000,M,"""espresso","sữa tươi"""
-9,8,Americano,coffee,40000,M,"""espresso","nước"""
-10,9,Cold Brew,coffee,55000,L,"""cà phê arabica","nước lạnh"""
-11,10,Cà Phê Muối,coffee,45000,M,"""espresso",kem muối
-12,11,Trà Đào,tea,35000,M,"""trà xanh",đào
-13,12,Trà Vải,tea,35000,M,"""trà xanh",vải
-14,13,Trà Tắc,tea,30000,M,"""trà đen",tắc
-15,14,Hồng Trà Sữa,tea,45000,M,"""hồng trà",sữa tươi
-16,15,Matcha Latte,tea,55000,M,"""matcha Nhật",sữa tươi
-17,16,Sinh Tố Xoài,smoothie,55000,L,"""xoài",sữa tươi
-18,17,Sinh Tố Bơ,smoothie,60000,L,"""bơ",sữa đặc
-19,18,Nước Ép Cam,juice,45000,M,"""cam tươi""","""Cam vắt tươi nguyên chất không đường"""
-20,19,Nước Ép Dưa Hấu,juice,40000,L,"""dưa hấu""","""Dưa hấu ép tươi mát giải nhiệt"""
-21,20,Bánh Mì Thịt,food,35000,1,"""bánh mì",thịt nguội
-22,21,Bánh Croissant,food,40000,1,"""bột mì",bơ
-23,22,Bánh Tiramisu,food,55000,1,"""mascarpone",cà phê
-24,23,Sandwich Gà,food,45000,1,"""bánh mì sandwich",ức gà
-25,24,Khoai Tây Chiên,food,30000,1,"""khoai tây","muối"""
-26,25,Cà Phê Trứng,coffee,50000,M,"""espresso",trứng gà
+2,1,Cà Phê Đen,coffee,25000,S,cà phê robusta đường,Cà phê đen truyền thống pha phin
+3,2,Cà Phê Đen,coffee,30000,M,cà phê robusta đường,Cà phê đen truyền thống pha phin
+4,3,Cà Phê Đen,coffee,35000,L,cà phê robusta đường,Cà phê đen truyền thống pha phin
+5,4,Cà Phê Sữa,coffee,30000,S,cà phê robusta sữa đặc,Cà phê phin pha với sữa đặc ngọt béo
+6,5,Cà Phê Sữa,coffee,35000,M,cà phê robusta sữa đặc,Cà phê phin pha với sữa đặc ngọt béo
+7,6,Cà Phê Sữa,coffee,40000,L,cà phê robusta sữa đặc,Cà phê phin pha với sữa đặc ngọt béo
+8,7,Bạc Xỉu,coffee,30000,S,cà phê arabica sữa tươi,Ít cà phê nhiều sữa vị nhẹ ngọt
+9,8,Bạc Xỉu,coffee,35000,M,cà phê arabica sữa tươi,Ít cà phê nhiều sữa vị nhẹ ngọt
+10,9,Bạc Xỉu,coffee,40000,L,cà phê arabica sữa tươi,Ít cà phê nhiều sữa vị nhẹ ngọt
+11,10,Cappuccino,coffee,40000,S,espresso sữa tươi foam,Espresso với foam sữa mịn đặc trưng Ý
+12,11,Cappuccino,coffee,45000,M,espresso sữa tươi foam,Espresso với foam sữa mịn đặc trưng Ý
+13,12,Cappuccino,coffee,50000,L,espresso sữa tươi foam,Espresso với foam sữa mịn đặc trưng Ý
+14,13,Latte,coffee,45000,S,espresso sữa tươi,Espresso pha sữa tươi mềm mịn vị nhẹ
+15,14,Latte,coffee,50000,M,espresso sữa tươi,Espresso pha sữa tươi mềm mịn vị nhẹ
+16,15,Latte,coffee,55000,L,espresso sữa tươi,Espresso pha sữa tươi mềm mịn vị nhẹ
+17,16,Americano,coffee,35000,S,espresso nước,Espresso pha loãng với nước nóng vị đậm
+18,17,Americano,coffee,40000,M,espresso nước,Espresso pha loãng với nước nóng vị đậm
+19,18,Americano,coffee,45000,L,espresso nước,Espresso pha loãng với nước nóng vị đậm
+20,19,Cold Brew,coffee,50000,M,cà phê arabica nước lạnh,Ủ lạnh 12 giờ vị thanh nhẹ ít đắng
+21,20,Cold Brew,coffee,55000,L,cà phê arabica nước lạnh,Ủ lạnh 12 giờ vị thanh nhẹ ít đắng
+22,21,Cà Phê Muối,coffee,40000,S,espresso kem muối,Kem muối béo phủ trên espresso đậm đà
+23,22,Cà Phê Muối,coffee,45000,M,espresso kem muối,Kem muối béo phủ trên espresso đậm đà
+24,23,Cà Phê Muối,coffee,50000,L,espresso kem muối,Kem muối béo phủ trên espresso đậm đà
+25,24,Cà Phê Trứng,coffee,45000,S,espresso trứng gà đường,Espresso với kem trứng đánh bông thơm béo
+26,25,Cà Phê Trứng,coffee,50000,M,espresso trứng gà đường,Espresso với kem trứng đánh bông thơm béo
+27,26,Espresso,coffee,30000,S,cà phê arabica robusta,Shot espresso chuẩn nồng độ cao
+28,27,Macchiato,coffee,40000,S,espresso sữa tươi,Espresso với lớp sữa tươi nhẹ bên trên
+29,28,Macchiato,coffee,45000,M,espresso sữa tươi,Espresso với lớp sữa tươi nhẹ bên trên
+30,29,Flat White,coffee,50000,M,espresso sữa tươi,Double shot espresso với sữa microfoam mịn
+31,30,Iced Latte,coffee,50000,M,espresso sữa tươi đá,Latte phục vụ lạnh với đá viên
+32,31,Iced Latte,coffee,55000,L,espresso sữa tươi đá,Latte phục vụ lạnh với đá viên
+33,32,Iced Cappuccino,coffee,50000,M,espresso sữa tươi foam đá,Cappuccino lạnh sảng khoái mùa hè
+34,33,Mocha,coffee,55000,M,espresso sữa tươi chocolate,Espresso kết hợp chocolate và sữa tươi
+35,34,Mocha,coffee,60000,L,espresso sữa tươi chocolate,Espresso kết hợp chocolate và sữa tươi
+36,35,Caramel Macchiato,coffee,55000,M,espresso sữa tươi caramel vanilla,Vị caramel ngọt béo hòa quyện espresso
+37,36,Brown Sugar Latte,coffee,55000,M,espresso sữa tươi đường nâu quế,Đường nâu rang thơm với espresso và sữa tươi
+38,37,Coconut Latte,coffee,55000,M,espresso sữa dừa dừa tươi,Latte vị dừa thơm mát nhiệt đới
+39,38,Iced Americano,coffee,40000,M,espresso nước đá,Americano lạnh giải nhiệt nhanh
+40,39,Iced Americano,coffee,45000,L,espresso nước đá,Americano lạnh giải nhiệt nhanh
+41,40,Trà Đào,tea,30000,S,trà xanh đào syrup,Trà xanh thơm với đào ngọt mát
+42,41,Trà Đào,tea,35000,M,trà xanh đào syrup,Trà xanh thơm với đào ngọt mát
+43,42,Trà Đào,tea,40000,L,trà xanh đào syrup,Trà xanh thơm với đào ngọt mát
+44,43,Trà Vải,tea,30000,S,trà xanh vải syrup,Trà xanh kết hợp vị vải thơm ngọt
+45,44,Trà Vải,tea,35000,M,trà xanh vải syrup,Trà xanh kết hợp vị vải thơm ngọt
+46,45,Trà Tắc,tea,25000,S,trà đen tắc đường,Trà đen với tắc tươi chua ngọt dễ uống
+47,46,Trà Tắc,tea,30000,M,trà đen tắc đường,Trà đen với tắc tươi chua ngọt dễ uống
+48,47,Hồng Trà Sữa,tea,40000,S,hồng trà sữa tươi đường,Hồng trà đậm kết hợp sữa tươi béo ngậy
+49,48,Hồng Trà Sữa,tea,45000,M,hồng trà sữa tươi đường,Hồng trà đậm kết hợp sữa tươi béo ngậy
+50,49,Hồng Trà Sữa,tea,50000,L,hồng trà sữa tươi đường,Hồng trà đậm kết hợp sữa tươi béo ngậy
+51,50,Matcha Latte,coffee,50000,S,matcha Nhật sữa tươi,Matcha Nhật Bản cấp độ ceremony với sữa tươi
+52,51,Matcha Latte,coffee,55000,M,matcha Nhật sữa tươi,Matcha Nhật Bản cấp độ ceremony với sữa tươi
+53,52,Matcha Latte,coffee,60000,L,matcha Nhật sữa tươi,Matcha Nhật Bản cấp độ ceremony với sữa tươi
+54,53,Oolong Sữa,tea,45000,M,oolong đài loan sữa tươi,Trà oolong cao cấp pha sữa tươi béo thơm
+55,54,Oolong Sữa,tea,50000,L,oolong đài loan sữa tươi,Trà oolong cao cấp pha sữa tươi béo thơm
+56,55,Trà Hoa Cúc,tea,30000,M,hoa cúc mật ong chanh,Trà hoa cúc dịu nhẹ thư giãn tinh thần
+57,56,Trà Lài,tea,30000,M,trà lài hoa lài,Trà lài hương thơm thanh tao dịu nhẹ
+58,57,Trà Gừng Mật Ong,tea,35000,M,gừng tươi mật ong chanh,Ấm bụng tăng sức đề kháng vị cay dịu
+59,58,Thai Milk Tea,tea,45000,M,trà thái sữa đặc sữa tươi,Trà sữa Thái béo ngậy màu cam đặc trưng
+60,59,Thai Milk Tea,tea,50000,L,trà thái sữa đặc sữa tươi,Trà sữa Thái béo ngậy màu cam đặc trưng
+61,60,Taro Milk Tea,tea,50000,M,khoai môn sữa tươi trân châu,Trà sữa khoai môn tím thơm béo có trân châu
+62,61,Taro Milk Tea,tea,55000,L,khoai môn sữa tươi trân châu,Trà sữa khoai môn tím thơm béo có trân châu
+63,62,Trà Lạnh Chanh,tea,30000,M,trà xanh chanh tươi đường,Trà xanh lạnh với chanh tươi sảng khoái
+64,63,Trà Lạnh Chanh,tea,35000,L,trà xanh chanh tươi đường,Trà xanh lạnh với chanh tươi sảng khoái
+65,64,Matcha Cold Brew,coffee,60000,M,matcha Nhật nước lạnh sữa tươi,Matcha ủ lạnh kết hợp sữa tươi vị đắng nhẹ thanh
+66,65,Sinh Tố Xoài,smoothie,50000,M,xoài chín sữa tươi đường,Xoài chín thơm xay mịn bổ dưỡng
+67,66,Sinh Tố Xoài,smoothie,55000,L,xoài chín sữa tươi đường,Xoài chín thơm xay mịn bổ dưỡng
+68,67,Sinh Tố Bơ,smoothie,55000,M,bơ sữa đặc đường,Bơ Đắk Lắk xay mịn béo ngậy giàu dinh dưỡng
+69,68,Sinh Tố Bơ,smoothie,60000,L,bơ sữa đặc đường,Bơ Đắk Lắk xay mịn béo ngậy giàu dinh dưỡng
+70,69,Sinh Tố Dâu,smoothie,55000,M,dâu tây sữa tươi đường,Dâu tây tươi xay sệt vị chua ngọt hấp dẫn
+71,70,Sinh Tố Dâu,smoothie,60000,L,dâu tây sữa tươi đường,Dâu tây tươi xay sệt vị chua ngọt hấp dẫn
+72,71,Sinh Tố Dưa Lưới,smoothie,55000,M,dưa lưới sữa tươi,Dưa lưới ngọt mát xay mịn giải nhiệt
+73,72,Sinh Tố Mixed Berry,smoothie,60000,M,dâu tây việt quất mâm xôi sữa tươi,Hỗn hợp berry tươi giàu antioxidant
+74,73,Sinh Tố Sầu Riêng,smoothie,75000,M,sầu riêng Musang King sữa đặc,Sầu riêng cao cấp xay mịn béo thơm nức
+75,74,Nước Ép Cam,juice,40000,S,cam tươi,Cam vắt tươi nguyên chất không đường
+76,75,Nước Ép Cam,juice,45000,M,cam tươi,Cam vắt tươi nguyên chất không đường
+77,76,Nước Ép Dưa Hấu,juice,35000,M,dưa hấu tươi,Dưa hấu ép tươi mát giải nhiệt mùa hè
+78,77,Nước Ép Dưa Hấu,juice,40000,L,dưa hấu tươi,Dưa hấu ép tươi mát giải nhiệt mùa hè
+79,78,Nước Ép Táo,juice,45000,M,táo xanh táo đỏ,Táo ép tươi nguyên chất giàu vitamin
+80,79,Nước Ép Táo,juice,50000,L,táo xanh táo đỏ,Táo ép tươi nguyên chất giàu vitamin
+81,80,Nước Ép Dứa,juice,40000,M,dứa tươi gừng,Dứa ép tươi kết hợp gừng tăng sức đề kháng
+82,81,Nước Ép Mix Cam Dứa,juice,50000,M,cam tươi dứa tươi,Hỗn hợp cam và dứa cân bằng vị chua ngọt
+83,82,Nước Ép Mix Cam Dứa,juice,55000,L,cam tươi dứa tươi,Hỗn hợp cam và dứa cân bằng vị chua ngọt
+84,83,Nước Ép Cà Rốt Cam,juice,45000,M,cà rốt cam gừng,Cà rốt và cam ép tươi giàu beta-carotene
+85,84,Nước Dừa Tươi,juice,40000,1,dừa tươi,Dừa tươi nguyên trái giải khát tự nhiên
+86,85,Bánh Mì Thịt,food,35000,1,bánh mì thịt nguội pa-tê,Bánh mì Việt truyền thống nhân thịt nguội
+87,86,Bánh Croissant,food,40000,1,bột mì bơ Pháp,Bánh sừng bò bơ Pháp giòn xốp nhiều lớp
+88,87,Bánh Tiramisu,food,55000,1,mascarpone cà phê espresso,Bánh Ý kem phô mai thấm cà phê đắng nhẹ
+89,88,Sandwich Gà,food,45000,1,bánh mì sandwich ức gà rau,Sandwich ức gà nướng rau tươi sốt mayonnaise
+90,89,Khoai Tây Chiên,food,30000,1,khoai tây muối,Khoai tây chiên giòn rắc muối ăn nhẹ
+91,90,Bánh Cheesecake,food,60000,1,cream cheese đường trứng bánh quy,Cheesecake New York đặc béo vị phô mai đậm
+92,91,Bánh Brownie Chocolate,food,50000,1,chocolate đen bơ trứng đường,Brownie chocolate đậm đà fudgy kiểu Mỹ
+93,92,French Toast,food,45000,1,bánh mì trứng sữa bơ mật ong,Bánh mì chiên trứng rưới mật ong ăn sáng ngon
+94,93,Waffle,food,55000,1,bột mì trứng bơ whipped cream,Waffle giòn ngoài mềm trong phủ kem tươi
+95,94,Bánh Mì Trứng,food,30000,1,bánh mì trứng ốp la rau,Bánh mì kẹp trứng ốp la rau tươi ăn sáng
+96,95,Granola Bowl,food,55000,1,granola sữa chua hoa quả tươi,Granola giòn sữa chua Hy Lạp hoa quả theo mùa
+97,96,Bắp Rang Bơ,food,25000,S,bắp ngô bơ muối,Bắp rang bơ vàng giòn thơm ăn vặt
+98,97,Bắp Rang Bơ,food,35000,L,bắp ngô bơ muối,Bắp rang bơ vàng giòn thơm ăn vặt
+99,98,Mozzarella Sticks,food,50000,1,phô mai mozzarella bột chiên,Que phô mai chiên giòn chấm sốt cà chua
+100,99,Xúc Xích Chiên,food,35000,1,xúc xích heo bột chiên,Xúc xích chiên giòn kèm tương ớt
+101,100,Parfait Trái Cây,food,50000,1,sữa chua granola dâu tây xoài,Parfait layered sữa chua granola hoa quả tươi
+102,101,Bánh Mì Bơ Tỏi,food,25000,1,bánh mì bơ tỏi rau mùi,Bánh mì nướng bơ tỏi thơm giòn
+103,102,Cà Phê Trắng,coffee,45000,M,cà phê arabica sữa evaporated,Cà phê trắng kiểu Malaysia vị nhẹ thơm đặc trưng
+104,103,Dalgona Coffee,coffee,55000,M,cà phê instant đường sữa tươi đá,Cà phê đánh bông nổi tiếng mạng xã hội
+105,104,Iced Matcha Latte,coffee,55000,M,matcha Nhật sữa tươi đá,Matcha lạnh với sữa tươi và đá viên mát lành
+106,105,Iced Matcha Latte,coffee,60000,L,matcha Nhật sữa tươi đá,Matcha lạnh với sữa tươi và đá viên mát lành

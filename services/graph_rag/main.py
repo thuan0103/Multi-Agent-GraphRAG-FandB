@@ -50,6 +50,10 @@ class SearchResponse(BaseModel):
     from_cache: bool = False
 
 
+class ExpandRequest(BaseModel):
+    chunk_ids: List[str]
+
+
 @app.get("/menu/all")
 async def get_all_menu():
     """Return every MenuItem from Neo4j — used by OrderAgent for full menu context."""
@@ -62,6 +66,50 @@ async def get_all_menu():
     """
     async with driver.session() as session:
         result = await session.run(query)
+        items = [dict(r) async for r in result]
+    return {"items": items, "count": len(items)}
+
+
+@app.post("/expand")
+async def expand_chunks(req: ExpandRequest):
+    """Return NEXT/PREV neighbors and MENTIONS entities for given Chunk IDs."""
+    cypher = """
+    MATCH (c:Chunk)
+    WHERE c.id IN $ids
+    OPTIONAL MATCH (c)-[:NEXT|PREV]-(n:Chunk)
+    OPTIONAL MATCH (c)-[:MENTIONS]->(e)
+    WITH
+        collect(DISTINCT CASE WHEN n IS NOT NULL
+            THEN {id: n.id, text: n.text,
+                  question: coalesce(n.question, ''), doc_type: coalesce(n.doc_type, 'faq')}
+            END) AS neighbors,
+        collect(DISTINCT e.name) AS entity_names
+    RETURN neighbors, entity_names
+    """
+    async with driver.session() as session:
+        result = await session.run(cypher, ids=req.chunk_ids)
+        record = await result.single()
+    if not record:
+        return {"neighbors": [], "entities": []}
+    neighbors = [n for n in (record["neighbors"] or []) if n]
+    entities = [e for e in (record["entity_names"] or []) if e]
+    return {"neighbors": neighbors, "entities": entities}
+
+
+@app.get("/menu/fulltext")
+async def fulltext_menu_search(q: str, limit: int = 5):
+    """Fulltext search on MenuItem by name/description/ingredients."""
+    cypher = """
+    CALL db.index.fulltext.queryNodes('menu_fulltext', $q)
+    YIELD node, score
+    RETURN node.id AS id, node.name AS name, node.price AS price,
+           node.size AS size, node.category AS category,
+           node.ingredients AS ingredients, node.description AS description,
+           score
+    ORDER BY score DESC LIMIT $limit
+    """
+    async with driver.session() as session:
+        result = await session.run(cypher, q=q, limit=limit)
         items = [dict(r) async for r in result]
     return {"items": items, "count": len(items)}
 

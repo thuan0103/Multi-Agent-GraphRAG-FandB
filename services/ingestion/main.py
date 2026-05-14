@@ -72,6 +72,15 @@ async def lifespan(app: FastAPI):
             logger.info(f"Auto-ingesting {fpath}")
             await auto_ingest(fpath)
 
+    # Auto-ingest docs (PDF / DOCX / TXT) from /data/docs/
+    docs_dir = os.path.join(DATA_DIR, "docs")
+    if os.path.isdir(docs_dir):
+        for fname in sorted(os.listdir(docs_dir)):
+            if Path(fname).suffix.lower() in (".pdf", ".docx", ".txt"):
+                fpath = os.path.join(docs_dir, fname)
+                logger.info(f"Auto-ingesting doc: {fpath}")
+                await auto_ingest(fpath)
+
     # Start watch mode
     os.makedirs(WATCH_DIR, exist_ok=True)
     asyncio.create_task(start_watcher(WATCH_DIR, auto_ingest))

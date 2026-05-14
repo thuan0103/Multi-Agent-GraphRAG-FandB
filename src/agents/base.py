@@ -5,10 +5,26 @@ Abstract base class cho tất cả agents.
 """
 
 import logging
+import os
 import time
 from abc import ABC, abstractmethod
 from dataclasses import dataclass
 from typing import Optional
+
+from openai import AsyncOpenAI
+
+
+def _make_openai_client() -> tuple[AsyncOpenAI, str]:
+    """
+    Return (client, model_name).
+    - Nếu LLM_BASE_URL được set → dùng local vLLM/SGLang (OpenAI-compatible)
+    - Ngược lại → dùng OpenAI API (gpt-4o-mini)
+    """
+    base_url = os.getenv("LLM_BASE_URL", "").strip()
+    model = os.getenv("LLM_MODEL", "gpt-4o-mini")
+    if base_url:
+        return AsyncOpenAI(api_key="local", base_url=base_url), model
+    return AsyncOpenAI(api_key=os.getenv("API_OPENAI")), "gpt-4o-mini"
 
 logger = logging.getLogger(__name__)
 

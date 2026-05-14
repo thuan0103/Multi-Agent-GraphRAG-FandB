@@ -1,11 +1,12 @@
 # src/agents/consultant_agent.py
 """
 Consultant Agent: tư vấn món uống.
-Pipeline ưu tiên: graph_rag:8004 (Neo4j + bge-m3 + reranker)
+Pipeline ưu tiên: fulltext entity search → vector search (graph_rag:8004)
 Fallback: in-memory keyword search từ data/menu.json
 """
 
 import os
+import re
 import json
 import logging
 from pathlib import Path
@@ -13,7 +14,7 @@ from pathlib import Path
 import httpx
 from openai import AsyncOpenAI
 from dotenv import load_dotenv
-from .base import BaseAgent, AgentResponse
+from .base import BaseAgent, AgentResponse, _make_openai_client
 from .prompts.consultant_prompt import CONSULTANT_SYSTEM_VI, CONSULTANT_SYSTEM_EN
 
 logger = logging.getLogger(__name__)
@@ -21,6 +22,22 @@ logger = logging.getLogger(__name__)
 load_dotenv()
 
 GRAPH_RAG_URL = os.getenv("GRAPH_RAG_URL", "http://localhost:8004")
+
+_FULLTEXT_STOPWORDS = frozenset({
+    'tôi', 'muốn', 'cho', 'một', 'cái', 'ly', 'cốc', 'ơi', 'bạn',
+    'em', 'ạ', 'à', 'nhé', 'đi', 'thôi', 'mình', 'có', 'không', 'gì',
+    'là', 'và', 'với', 'thêm', 'bớt', 'xin', 'hỏi', 'về', 'thì', 'được',
+    'của', 'hay', 'hoặc', 'nào', 'đó', 'này', 'kia', 'đây', 'lấy', 'đặt',
+    'order', 'gọi', 'đơn', 'giúp', 'i', 'me', 'want', 'please', 'a', 'an', 'the',
+    'gợi', 'ý', 'tư', 'vấn', 'món', 'nên', 'uống', 'ăn', 'recommend',
+})
+
+
+def _clean_for_fulltext(text: str) -> str:
+    """Strip Lucene special chars and common stop words for Neo4j fulltext query."""
+    text = re.sub(r'[+\-&|!(){}[\]^"~*?:\\/]', ' ', text)
+    words = [w for w in text.split() if w.lower() not in _FULLTEXT_STOPWORDS and len(w) > 1]
+    return ' '.join(words)
 
 
 class ConsultantAgent(BaseAgent):
@@ -59,14 +76,36 @@ class ConsultantAgent(BaseAgent):
              "tags": ["cold", "creamy", "healthy", "fruity"]},
         ]
 
-    # ── RAG: gọi graph_rag:8004 ──────────────────────────────────────
+    # ── Primary: fulltext entity search ──────────────────────────────
+
+    async def _search_menu_fulltext(self, query: str) -> list[dict]:
+        """Call /menu/fulltext with cleaned query terms."""
+        clean_q = _clean_for_fulltext(query)
+        if not clean_q:
+            return []
+        async with httpx.AsyncClient(timeout=8.0) as client:
+            resp = await client.get(
+                f"{GRAPH_RAG_URL}/menu/fulltext",
+                params={"q": clean_q, "limit": 5},
+            )
+            resp.raise_for_status()
+        items = resp.json().get("items", [])
+        return [{
+            "name":        it.get("name", ""),
+            "name_en":     "",
+            "price":       int(it.get("price") or 0),
+            "category":    it.get("category", ""),
+            "description": it.get("description", ""),
+            "ingredients": it.get("ingredients", ""),
+            "tags":        [it.get("category", "")],
+            "score":       it.get("score", 0.0),
+            "source":      "neo4j_fulltext",
+        } for it in items]
+
+    # ── Secondary: vector search via /search ──────────────────────────
 
     async def _search_graph_rag(self, query: str) -> tuple[list[dict], bool]:
-        """
-        Gọi graph_rag:8004/search, lọc lấy MenuItem nodes.
-        Trả về (docs, from_cache).
-        Raise exception nếu service không available.
-        """
+        """Call graph_rag:8004/search, filter MenuItem nodes."""
         async with httpx.AsyncClient(timeout=8.0) as client:
             resp = await client.post(
                 f"{GRAPH_RAG_URL}/search",
@@ -88,9 +127,34 @@ class ConsultantAgent(BaseAgent):
                     "ingredients": r.get("ingredients", ""),
                     "tags":        [r.get("category", "")],
                     "score":       r.get("rerank_score", 0.0),
-                    "source":      "neo4j",
+                    "source":      "neo4j_vector",
                 })
         return docs, data.get("from_cache", False)
+
+    async def _search_menu_for_context(self, query: str) -> tuple[list[dict], str]:
+        """
+        fulltext search → vector search → in-memory fallback.
+        Returns (docs, source_label).
+        """
+        # 1. Fulltext entity search
+        try:
+            docs = await self._search_menu_fulltext(query)
+            if docs:
+                return docs, "neo4j_fulltext"
+        except Exception as e:
+            logger.warning(f"[ConsultantAgent] fulltext search failed: {e}")
+
+        # 2. Vector search
+        try:
+            docs, _ = await self._search_graph_rag(query)
+            if docs:
+                return docs, "neo4j_vector"
+        except Exception as e:
+            logger.warning(f"[ConsultantAgent] vector search failed: {e}")
+
+        # 3. In-memory fallback
+        docs = self._retrieve_relevant_local(query)
+        return docs, "fallback"
 
     # ── Fallback: in-memory keyword search ───────────────────────────
 
@@ -133,20 +197,7 @@ class ConsultantAgent(BaseAgent):
         language: str,
         session_id: str,
     ) -> AgentResponse:
-        # Ưu tiên graph_rag thật, fallback về in-memory
-        from_graph_rag = False
-        from_cache     = False
-        try:
-            docs, from_cache = await self._search_graph_rag(query)
-            if docs:
-                from_graph_rag = True
-                logger.info(f"[ConsultantAgent] graph_rag returned {len(docs)} items "
-                            f"(cache={from_cache})")
-            else:
-                raise ValueError("no MenuItem results from graph_rag")
-        except Exception as e:
-            logger.warning(f"[ConsultantAgent] graph_rag unavailable: {e} → fallback")
-            docs = self._retrieve_relevant_local(query)
+        docs, rag_source = await self._search_menu_for_context(query)
 
         menu_context    = self._format_menu_context(docs)
         history_context = self._build_history_context(history)
@@ -157,7 +208,7 @@ class ConsultantAgent(BaseAgent):
         )
 
         response = await self.client.chat.completions.create(
-            model="gpt-4o-mini",
+            model=self.llm_model,
             messages=[
                 {"role": "system", "content": system_prompt},
                 {"role": "user",   "content": query},
@@ -175,8 +226,7 @@ class ConsultantAgent(BaseAgent):
             latency_ms=0.0,
             metadata={
                 "retrieved_items": [d["name"] for d in docs],
-                "rag_source":      "neo4j" if from_graph_rag else "fallback",
-                "from_cache":      from_cache,
+                "rag_source":      rag_source,
                 "rag_docs_count":  len(docs),
             },
             language=language,
