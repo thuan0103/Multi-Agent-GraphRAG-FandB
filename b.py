@@ -27,7 +27,7 @@ class RouterModel:
             cfg = yaml.safe_load(f)
         self.cfg = cfg["router"]
 
-        self.model_id = "models/Qwen2.5-1.5B-Instruct" # self.cfg["model_id"]
+        self.model_id = "models/llama3-1b"
         self.max_new_tokens = self.cfg["max_new_tokens"]
         self.temperature = self.cfg["temperature"]
         self.device = "cuda" if torch.cuda.is_available() else "cpu"
@@ -39,36 +39,20 @@ class RouterModel:
     def load(self) -> None:
         logger.info(f"Loading router model: {self.model_id} on {self.device}")
         start = time.perf_counter()
-
-        base_model_id = self.model_id
-
-        adapter_path = Path("models/router-sft/checkpoint-1500").resolve().as_posix()
-
-        # 1. base model
-        base_model = AutoModelForCausalLM.from_pretrained(
-            base_model_id,
-            torch_dtype=torch.float16 if torch.cuda.is_available() else torch.float32,
-            device_map="auto",
-            trust_remote_code=True,
-        )
-
-        # 2. LoRA adapter (FIX WINDOWS PATH ISSUE)
-        self.model = PeftModel.from_pretrained(
-            base_model,
-            adapter_path,
-            local_files_only=True
-        )
-
-        # 3. tokenizer
         self.tokenizer = AutoTokenizer.from_pretrained(
-            base_model_id,
-            trust_remote_code=True,
+            self.model_id,
+            trust_remote_code=True
+        )
+
+        self.model = AutoModelForCausalLM.from_pretrained(
+           self.model_id,
+            torch_dtype=torch.float16, 
+            device_map="auto"
         )
 
         self.model.eval()
-
-        logger.info(f"Loaded in {(time.perf_counter()-start)*1000:.0f}ms")
-
+        elapsed = (time.perf_counter() - start) * 1000
+        logger.info(f"Model loaded in {elapsed:.0f}ms")
         self._warmup()
 
     def _warmup(self) -> None:
@@ -79,36 +63,53 @@ class RouterModel:
         logger.info("Warmup complete")
 
     def _raw_generate(self, text: str) -> str:
-        from src.router.prompts import ROUTER_SYSTEM_PROMPT, FEW_SHOT_EXAMPLES
+        from src.router.prompts import LLAMA3_CHAT_TEMPLATE
 
-        messages = [{"role": "system", "content": ROUTER_SYSTEM_PROMPT}]
-        messages.extend(FEW_SHOT_EXAMPLES)
+        self.tokenizer.chat_template = LLAMA3_CHAT_TEMPLATE
+
+        messages = [
+            {"role": "system", "content": """
+                Bạn là trợ lý phân tích ý định người dùng.
+                Từ câu hỏi người dùng háy phán tích xem nó là order, consultant, faq, ignore.
+                Yêu cầu đâu ra bắt buộc phải là json kiểu {"action": intent}
+                Ví dụ: 
+                - User: "Cho tôi 1 ly cà phê sữa đá" → {"action": "order"}
+                - User: "Có gì ngon không?" → {"action": "consultant"}
+                - User: "Wifi tên gì?" → {"action": "faq"}
+                - User: "Ừm..." → {"action": "ignore"}
+            """}
+        ]
+
         messages.append({"role": "user", "content": text})
 
-        prompt = self.tokenizer.apply_chat_template(
+        enc = self.tokenizer.apply_chat_template(
             messages,
-            tokenize=False,
-            add_generation_prompt=True,
-        )
-
-        inputs = self.tokenizer(
-            prompt,
             return_tensors="pt",
-            truncation=True
+            add_generation_prompt=True
         )
 
-        inputs = {k: v.to(self.device) for k, v in inputs.items()}
+        input_ids = enc["input_ids"].to(self.model.device)
+        attention_mask = enc.get("attention_mask")
+
+        if attention_mask is not None:
+            attention_mask = attention_mask.to(self.model.device)
+        else:
+            attention_mask = torch.ones_like(input_ids)
 
         with torch.no_grad():
-            output_ids = self.model.generate(
-                **inputs,
-                max_new_tokens=self.max_new_tokens,
+            outputs = self.model.generate(
+                input_ids=input_ids,
+                attention_mask=attention_mask,
+                max_new_tokens=200,
                 do_sample=False,
                 pad_token_id=self.tokenizer.eos_token_id,
+                repetition_penalty=1.1,
             )
 
-        new_tokens = output_ids[0][inputs["input_ids"].shape[-1]:]
-        return self.tokenizer.decode(new_tokens, skip_special_tokens=True).strip()
+        new_tokens = outputs[0][input_ids.shape[-1]:]
+        result = self.tokenizer.decode(new_tokens, skip_special_tokens=True)
+
+        return result.strip()
 
     def generate(self, text: str) -> tuple[str, float]:
         if self.model is None:

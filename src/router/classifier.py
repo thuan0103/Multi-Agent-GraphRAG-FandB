@@ -4,7 +4,7 @@ import re
 from typing import Optional
 import sys
 sys.path.append('.')
-from model import RouterModel
+from .model import RouterModel
 
 logger = logging.getLogger(__name__)
 
@@ -106,5 +106,5 @@ class IntentClassifier:
 if __name__ == "__main__":
     intent = IntentClassifier()
     intent.load()
-    clas = intent.classify("cho tôi xem menu")
+    clas = intent.classify("Cho tôi 1 ly cà phê sữa đá, thêm đường nhé.")
     # print(clas)

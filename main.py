@@ -1,11 +1,7 @@
-# main.py
-"""
-FastAPI entrypoint — gắn kết Router + Agents + Session + Queue.
-"""
-
 import asyncio
 import logging
 import uuid
+import uvicorn
 from contextlib import asynccontextmanager
 
 import yaml
@@ -24,15 +20,9 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-# ──────────────────────────────────────────
-# Load config
-# ──────────────────────────────────────────
 with open('config.yaml', 'r', encoding='utf-8') as f:
     CONFIG = yaml.safe_load(f)
 
-# ──────────────────────────────────────────
-# Components (khởi tạo ở module level, load ở lifespan)
-# ──────────────────────────────────────────
 router_classifier = IntentClassifier()
 
 summarizer = ConversationSummarizer()
@@ -52,16 +42,10 @@ request_queue = RequestQueue(
     request_timeout=CONFIG["queue"]["request_timeout_seconds"],
 )
 
-agents = {}     # populated lúc startup
-
-
-# ──────────────────────────────────────────
-# App lifespan
-# ──────────────────────────────────────────
+agents = {}    
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    # Startup
     logger.info("Starting up...")
 
     router_classifier.load()
@@ -75,7 +59,6 @@ async def lifespan(app: FastAPI):
 
     yield
 
-    # Shutdown
     await cleanup.stop()
     logger.info("Shutdown complete")
 
@@ -93,14 +76,9 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-
-# ──────────────────────────────────────────
-# Schemas
-# ──────────────────────────────────────────
-
 class ChatRequest(BaseModel):
     message: str
-    session_id: str = None      # None = tạo session mới
+    session_id: str = None     
 
 
 class ChatResponse(BaseModel):
@@ -111,22 +89,16 @@ class ChatResponse(BaseModel):
     agent_latency_ms: float
 
 
-# ──────────────────────────────────────────
-# Core chat handler
-# ──────────────────────────────────────────
-
 @retry_with_backoff(max_attempts=3, base_delay=1.0)
 async def _call_agent(agent, query, history, session_id):
     return await agent.handle(query, history, session_id)
 
 
 async def _process_chat(message: str, session_id: str) -> ChatResponse:
-    # 1. Router classify
     router_result = router_classifier.classify(message)
     intent = router_result["action"]
     router_latency = router_result["latency_ms"]
 
-    # 2. Ignore intent — trả về sớm, không gọi LLM
     if intent == "ignore":
         return ChatResponse(
             reply="Xin chào! Tôi có thể giúp gì cho bạn? 😊" if True else "Hello! How can I help you?",
@@ -136,10 +108,8 @@ async def _process_chat(message: str, session_id: str) -> ChatResponse:
             agent_latency_ms=0.0,
         )
 
-    # 3. Lấy history
     history = await session_store.get_history(session_id)
 
-    # 4. Route đến đúng agent, qua RequestQueue
     agent = agents.get(intent)
     if not agent:
         raise HTTPException(status_code=500, detail=f"No agent for intent: {intent}")
@@ -148,7 +118,6 @@ async def _process_chat(message: str, session_id: str) -> ChatResponse:
         _call_agent, agent, message, history, session_id
     )
 
-    # 5. Lưu turn vào session
     await session_store.add_turn(session_id, "user", message)
     await session_store.add_turn(
         session_id, "assistant", agent_response.text,
@@ -163,10 +132,6 @@ async def _process_chat(message: str, session_id: str) -> ChatResponse:
         agent_latency_ms=agent_response.latency_ms,
     )
 
-
-# ──────────────────────────────────────────
-# Endpoints
-# ──────────────────────────────────────────
 
 @app.post("/chat", response_model=ChatResponse)
 async def chat(req: ChatRequest):
@@ -197,3 +162,6 @@ async def health():
 async def delete_session(session_id: str):
     await session_store.delete(session_id)
     return {"deleted": session_id}
+
+if __name__ == "__main__":
+    uvicorn.run("main:app", host="0.0.0.0", port=18000, reload=True)
