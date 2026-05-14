@@ -30,12 +30,23 @@ async def check_router_model(timeout: float = 2.0) -> Dict[str, Any]:
     """Kiểm tra Router model đang load và có thể inference."""
     t0 = time.perf_counter()
     try:
-        from src.router.classifier import RouterClassifier
-        classifier = RouterClassifier.get_instance()
-        # Quick classify test
+        from src.router.model import RouterModel
+        model = RouterModel()          # trả về singleton (không load lại)
+        loaded = model.is_loaded()
+        latency_ms = (time.perf_counter() - t0) * 1000
+
+        if not loaded:
+            return {
+                "status": "unhealthy",
+                "latency_ms": round(latency_ms, 1),
+                "model_loaded": False,
+                "error": "Model not loaded yet",
+            }
+
+        # Chạy 1 inference nhẹ để kiểm tra latency thực tế
         result = await asyncio.wait_for(
             asyncio.get_event_loop().run_in_executor(
-                None, classifier.classify, "test ping"
+                None, model.generate, "test ping"
             ),
             timeout=timeout,
         )
@@ -44,7 +55,15 @@ async def check_router_model(timeout: float = 2.0) -> Dict[str, Any]:
             "status": "healthy",
             "latency_ms": round(latency_ms, 1),
             "model_loaded": True,
-            "test_intent": result.get("intent", "?"),
+            "inference_ok": True,
+        }
+    except asyncio.TimeoutError:
+        latency_ms = (time.perf_counter() - t0) * 1000
+        return {
+            "status": "degraded",
+            "latency_ms": round(latency_ms, 1),
+            "model_loaded": True,
+            "error": f"Inference timed out (>{timeout}s)",
         }
     except Exception as e:
         latency_ms = (time.perf_counter() - t0) * 1000
@@ -96,22 +115,47 @@ async def check_graph_db(
     neo4j_url: str = "bolt://localhost:7687",
     timeout: float = 3.0,
 ) -> Dict[str, Any]:
-    """Kiểm tra Neo4j connection."""
+    """Kiểm tra Neo4j connection bằng neo4j driver trực tiếp."""
+    import os
     t0 = time.perf_counter()
     try:
-        from src.graph.client import get_neo4j_client
-        client = get_neo4j_client()
-        # Simple query
-        result = await asyncio.wait_for(
-            asyncio.get_event_loop().run_in_executor(
-                None, client.ping
-            ),
+        from neo4j import GraphDatabase, exceptions as neo4j_exc
+
+        user = os.environ.get("NEO4J_USER", "neo4j")
+        password = os.environ.get("NEO4J_PASSWORD", "secret")
+
+        def _ping():
+            driver = GraphDatabase.driver(neo4j_url, auth=(user, password))
+            try:
+                driver.verify_connectivity()
+                return True
+            finally:
+                driver.close()
+
+        await asyncio.wait_for(
+            asyncio.get_event_loop().run_in_executor(None, _ping),
             timeout=timeout,
         )
         latency_ms = (time.perf_counter() - t0) * 1000
         return {
-            "status": "healthy" if result else "degraded",
+            "status": "healthy",
             "latency_ms": round(latency_ms, 1),
+            "url": neo4j_url,
+        }
+    except ImportError:
+        latency_ms = (time.perf_counter() - t0) * 1000
+        return {
+            "status": "degraded",
+            "latency_ms": round(latency_ms, 1),
+            "error": "neo4j package not installed (pip install neo4j)",
+        }
+    except asyncio.TimeoutError:
+        latency_ms = (time.perf_counter() - t0) * 1000
+        return {
+            "status": "unhealthy",
+            "latency_ms": round(latency_ms, 1),
+            "url": neo4j_url,
+            "error": f"Connection timed out (>{timeout}s)",
         }
     except Exception as e:
         latency_ms = (time.perf_counter() - t0) * 1000
@@ -119,6 +163,7 @@ async def check_graph_db(
         return {
             "status": "unhealthy",
             "latency_ms": round(latency_ms, 1),
+            "url": neo4j_url,
             "error": str(e),
         }
 

@@ -50,6 +50,22 @@ class SearchResponse(BaseModel):
     from_cache: bool = False
 
 
+@app.get("/menu/all")
+async def get_all_menu():
+    """Return every MenuItem from Neo4j — used by OrderAgent for full menu context."""
+    query = """
+    MATCH (m:MenuItem)
+    RETURN m.id AS id, m.name AS name, m.price AS price,
+           m.size AS size, m.category AS category,
+           m.ingredients AS ingredients, m.description AS description
+    ORDER BY m.category, m.name
+    """
+    async with driver.session() as session:
+        result = await session.run(query)
+        items = [dict(r) async for r in result]
+    return {"items": items, "count": len(items)}
+
+
 @app.post("/search", response_model=SearchResponse)
 async def search(req: SearchRequest):
     # ── Semantic cache check ──────────────────────────────────

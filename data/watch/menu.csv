@@ -1,0 +1,27 @@
+﻿,A,B,C,D,E,F,G
+1,id,name,category,price,size,ingredients,description
+2,1,Cà Phê Đen,coffee,25000,S,"""cà phê robusta","đường"""
+3,2,Cà Phê Đen,coffee,30000,M,"""cà phê robusta","đường"""
+4,3,Cà Phê Sữa,coffee,30000,S,"""cà phê robusta","sữa đặc"""
+5,4,Cà Phê Sữa,coffee,35000,M,"""cà phê robusta","sữa đặc"""
+6,5,Bạc Xỉu,coffee,35000,M,"""cà phê arabica",sữa tươi
+7,6,Cappuccino,coffee,45000,M,"""espresso",sữa tươi
+8,7,Latte,coffee,50000,M,"""espresso","sữa tươi"""
+9,8,Americano,coffee,40000,M,"""espresso","nước"""
+10,9,Cold Brew,coffee,55000,L,"""cà phê arabica","nước lạnh"""
+11,10,Cà Phê Muối,coffee,45000,M,"""espresso",kem muối
+12,11,Trà Đào,tea,35000,M,"""trà xanh",đào
+13,12,Trà Vải,tea,35000,M,"""trà xanh",vải
+14,13,Trà Tắc,tea,30000,M,"""trà đen",tắc
+15,14,Hồng Trà Sữa,tea,45000,M,"""hồng trà",sữa tươi
+16,15,Matcha Latte,tea,55000,M,"""matcha Nhật",sữa tươi
+17,16,Sinh Tố Xoài,smoothie,55000,L,"""xoài",sữa tươi
+18,17,Sinh Tố Bơ,smoothie,60000,L,"""bơ",sữa đặc
+19,18,Nước Ép Cam,juice,45000,M,"""cam tươi""","""Cam vắt tươi nguyên chất không đường"""
+20,19,Nước Ép Dưa Hấu,juice,40000,L,"""dưa hấu""","""Dưa hấu ép tươi mát giải nhiệt"""
+21,20,Bánh Mì Thịt,food,35000,1,"""bánh mì",thịt nguội
+22,21,Bánh Croissant,food,40000,1,"""bột mì",bơ
+23,22,Bánh Tiramisu,food,55000,1,"""mascarpone",cà phê
+24,23,Sandwich Gà,food,45000,1,"""bánh mì sandwich",ức gà
+25,24,Khoai Tây Chiên,food,30000,1,"""khoai tây","muối"""
+26,25,Cà Phê Trứng,coffee,50000,M,"""espresso",trứng gà

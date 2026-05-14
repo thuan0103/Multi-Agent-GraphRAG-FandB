@@ -27,10 +27,13 @@ MERGE (a)-[:NEXT]->(b)
 MERGE (b)-[:PREV]->(a)
 """
 
+DELETE_FAQ = "MATCH (c:Chunk) WHERE c.doc_type = 'faq' DETACH DELETE c"
+
 
 async def ingest_faq_csv(path: str, driver):
     rows = []
     with open(path, encoding="utf-8") as f:
+        next(f)          # bỏ dòng chữ cái cột (A,B,C,D) từ Excel export
         reader = csv.DictReader(f)
         for row in reader:
             rows.append(row)
@@ -40,6 +43,10 @@ async def ingest_faq_csv(path: str, driver):
 
     ids = []
     async with driver.session() as session:
+        # Xóa toàn bộ FAQ chunks cũ trước khi insert mới (full replace)
+        await session.run(DELETE_FAQ)
+        logger.info("Cleared existing FAQ Chunks")
+
         for i, (row, emb) in enumerate(zip(rows, embeddings)):
             cid = row.get("id") or str(uuid.uuid4())
             ids.append(cid)

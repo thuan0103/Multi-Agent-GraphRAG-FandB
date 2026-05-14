@@ -27,20 +27,44 @@ MERGE (m)-[:BELONGS_TO]->(cat)
 """
 
 
+DELETE_MENU = "MATCH (m:MenuItem) DETACH DELETE m"
+DELETE_CATEGORY = "MATCH (c:Category) WHERE NOT (c)<-[:BELONGS_TO]-() DELETE c"
+
+
 async def ingest_menu_csv(path: str, driver):
     rows = []
     with open(path, encoding="utf-8") as f:
+        next(f)          # bỏ dòng chữ cái cột (A,B,C,D,E,F,G) từ Excel export
         reader = csv.DictReader(f)
         for row in reader:
             rows.append(row)
 
+    def _fix_row(row: dict) -> dict:
+        """Fix CSV parsing artifact: ingredients like '["a","b"]' get split on inner comma."""
+        ingr = row.get("ingredients", "")
+        desc = row.get("description", "")
+        if ingr.startswith('"') and not ingr.endswith('"'):
+            row["ingredients"] = (ingr[1:] + ", " + desc.rstrip('"')).strip(", ")
+            row["description"] = ""
+        else:
+            row["ingredients"] = ingr.strip('"').strip()
+            row["description"] = desc.strip('"').strip()
+        return row
+
+    rows = [_fix_row(r) for r in rows]
+
     texts = [
-        f"{r.get('name','')} {r.get('description','')} {r.get('ingredients','')}"
+        f"{r.get('name','')} {r.get('description','')} {r.get('ingredients','')}".strip()
         for r in rows
     ]
     embeddings = await embed_texts(texts)
 
     async with driver.session() as session:
+        # Xóa toàn bộ data cũ trước khi insert mới (full replace)
+        await session.run(DELETE_MENU)
+        await session.run(DELETE_CATEGORY)
+        logger.info("Cleared existing MenuItems and orphaned Categories")
+
         for row, emb in zip(rows, embeddings):
             await session.run(
                 UPSERT_MENU,

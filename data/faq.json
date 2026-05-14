@@ -1,0 +1,242 @@
+[
+  {
+    "id": "1",
+    "question": "Quán mở cửa lúc mấy giờ?",
+    "answer": "Quán mở cửa từ 7:00 sáng đến 22:00 tối mỗi ngày kể cả cuối tuần và ngày lễ.",
+    "tags": [
+      "hours"
+    ]
+  },
+  {
+    "id": "2",
+    "question": "Quán đóng cửa lúc mấy giờ?",
+    "answer": "Quán đóng cửa lúc 22:00 tối. Last order lúc 21:30.",
+    "tags": [
+      "hours"
+    ]
+  },
+  {
+    "id": "3",
+    "question": "Quán có mở cửa ngày lễ không?",
+    "answer": "Có",
+    "tags": [
+      "quán mở cửa 365 ngày trong năm kể cả Tết và các ngày lễ."
+    ]
+  },
+  {
+    "id": "4",
+    "question": "WiFi mật khẩu là gì?",
+    "answer": "Mật khẩu WiFi là: CaPhePhin2024. WiFi tên: CaPheNgon_5G",
+    "tags": [
+      "wifi"
+    ]
+  },
+  {
+    "id": "5",
+    "question": "Quán có WiFi không?",
+    "answer": "Có. Quán có WiFi miễn phí tốc độ cao. Tên mạng: CaPheNgon_5G - Mật khẩu: CaPhePhin2024",
+    "tags": [
+      "wifi"
+    ]
+  },
+  {
+    "id": "6",
+    "question": "Có chỗ đậu xe không?",
+    "answer": "Có bãi giữ xe máy miễn phí phía sau quán. Sức chứa khoảng 50 xe máy. Không có bãi đậu ô tô.",
+    "tags": [
+      "parking"
+    ]
+  },
+  {
+    "id": "7",
+    "question": "Có nhận đặt bàn không?",
+    "answer": "Quán không nhận đặt bàn trước. Phục vụ theo thứ tự đến trước.",
+    "tags": [
+      "reservation"
+    ]
+  },
+  {
+    "id": "8",
+    "question": "Có giao hàng không?",
+    "answer": "Có. Quán hỗ trợ giao hàng qua Grab Food và ShopeeFood trong bán kính 5km.",
+    "tags": [
+      "delivery"
+    ]
+  },
+  {
+    "id": "9",
+    "question": "Phí giao hàng là bao nhiêu?",
+    "answer": "Phí giao hàng tùy theo khoảng cách và nền tảng (Grab/Shopee). Thường từ 15.000đ đến 35.000đ.",
+    "tags": [
+      "delivery"
+    ]
+  },
+  {
+    "id": "10",
+    "question": "Có phương thức thanh toán nào?",
+    "answer": "Chấp nhận tiền mặt và chuyển khoản ngân hàng. Quét QR MoMo và ZaloPay. Không nhận thẻ tín dụng.",
+    "tags": [
+      "payment"
+    ]
+  },
+  {
+    "id": "11",
+    "question": "Có nhận thẻ ngân hàng không?",
+    "answer": "Hiện tại quán chưa có máy POS. Chấp nhận chuyển khoản và QR Code (MoMo/ZaloPay).",
+    "tags": [
+      "payment"
+    ]
+  },
+  {
+    "id": "12",
+    "question": "Quán ở đâu?",
+    "answer": "Quán nằm ở 123 Nguyễn Huệ",
+    "tags": [
+      "Phường Bến Nghé"
+    ]
+  },
+  {
+    "id": "13",
+    "question": "Có chỗ ngồi ngoài trời không?",
+    "answer": "Có khu vực ngoài trời thoáng mát ở tầng thượng với sức chứa 30 người. Có mái che khi trời mưa.",
+    "tags": [
+      "seating"
+    ]
+  },
+  {
+    "id": "14",
+    "question": "Sức chứa quán bao nhiêu người?",
+    "answer": "Tổng sức chứa khoảng 80 người: 50 chỗ trong nhà có máy lạnh và 30 chỗ ngoài trời.",
+    "tags": [
+      "seating"
+    ]
+  },
+  {
+    "id": "15",
+    "question": "Có phòng riêng cho nhóm không?",
+    "answer": "Có 1 phòng VIP sức chứa 10-15 người. Đặt trước qua số điện thoại: 0901234567.",
+    "tags": [
+      "seating"
+    ]
+  },
+  {
+    "id": "16",
+    "question": "Số điện thoại quán là gì?",
+    "answer": "Hotline: 0901234567. Zalo: 0901234567. Thời gian hỗ trợ 7:00 - 21:00.",
+    "tags": [
+      "contact"
+    ]
+  },
+  {
+    "id": "17",
+    "question": "Có chương trình thành viên không?",
+    "answer": "Có thẻ thành viên. Tích điểm mỗi hóa đơn: 10.000đ = 1 điểm. 100 điểm đổi được 1 ly cà phê.",
+    "tags": [
+      "loyalty"
+    ]
+  },
+  {
+    "id": "18",
+    "question": "Làm thẻ thành viên ở đâu?",
+    "answer": "Đăng ký tại quán hoặc qua app. Phí làm thẻ miễn phí. Mang CCCD đến quầy thu ngân.",
+    "tags": [
+      "loyalty"
+    ]
+  },
+  {
+    "id": "19",
+    "question": "Đồ uống có thể điều chỉnh đường không?",
+    "answer": "Có thể điều chỉnh lượng đường: ít đường (50%) hoặc không đường (0%). Yêu cầu khi order.",
+    "tags": [
+      "customization"
+    ]
+  },
+  {
+    "id": "20",
+    "question": "Có thể thay đổi loại sữa không?",
+    "answer": "Có thể đổi sang sữa tươi không đường hoặc sữa hạnh nhân (phụ thu 10.000đ/ly).",
+    "tags": [
+      "customization"
+    ]
+  },
+  {
+    "id": "21",
+    "question": "Có đồ uống cho người ăn chay không?",
+    "answer": "Có. Các loại trà và nước ép đều phù hợp. Matcha Latte có thể dùng sữa hạnh nhân thay thế.",
+    "tags": [
+      "diet"
+    ]
+  },
+  {
+    "id": "22",
+    "question": "Đồ uống có chứa caffeine không?",
+    "answer": "Các loại cà phê có caffeine. Trà xanh và hồng trà có caffeine nhẹ. Nước ép và sinh tố không có caffeine.",
+    "tags": [
+      "diet"
+    ]
+  },
+  {
+    "id": "23",
+    "question": "Có combo không?",
+    "answer": "Có combo Cà Phê + Bánh Mì giá 55.000đ (tiết kiệm 5.000đ). Combo áp dụng từ 7:00-10:00 sáng.",
+    "tags": [
+      "promotion"
+    ]
+  },
+  {
+    "id": "24",
+    "question": "Happy Hour là khi nào?",
+    "answer": "Happy Hour từ 14:00-16:00 mỗi ngày. Giảm 15% tất cả đồ uống trong khung giờ này.",
+    "tags": [
+      "promotion"
+    ]
+  },
+  {
+    "id": "25",
+    "question": "Có tổ chức sinh nhật tại quán không?",
+    "answer": "Có hỗ trợ tiệc sinh nhật. Liên hệ trước 1 ngày qua hotline 0901234567 để đặt chỗ và trang trí.",
+    "tags": [
+      "events"
+    ]
+  },
+  {
+    "id": "26",
+    "question": "Có cho mang thú cưng vào không?",
+    "answer": "Khu vực ngoài trời chào đón thú cưng. Khu trong nhà không cho phép thú cưng vì lý do vệ sinh.",
+    "tags": [
+      "policy"
+    ]
+  },
+  {
+    "id": "27",
+    "question": "Có thuốc lá trong quán không?",
+    "answer": "Quán là khu vực không hút thuốc. Không được hút thuốc trong quán và khu vực ngoài trời.",
+    "tags": [
+      "policy"
+    ]
+  },
+  {
+    "id": "28",
+    "question": "Ly nước size nào lớn nhất?",
+    "answer": "Size lớn nhất là L (Large) tương đương 500ml. Các size: S=250ml M=350ml L=500ml.",
+    "tags": [
+      "sizing"
+    ]
+  },
+  {
+    "id": "29",
+    "question": "Có thể mua mang về không?",
+    "answer": "Có. Đồ mang về đựng trong ly nhựa có nắp. Phụ thu thêm 2.000đ cho ly mang về.",
+    "tags": [
+      "takeaway"
+    ]
+  },
+  {
+    "id": "30",
+    "question": "Cà phê pha bằng máy hay phin?",
+    "answer": "Quán dùng cả hai: Espresso pha máy La Marzocco cho Cappuccino/Latte. Cà phê Việt dùng phin truyền thống.",
+    "tags": [
+      "brewing"
+    ]
+  }
+]

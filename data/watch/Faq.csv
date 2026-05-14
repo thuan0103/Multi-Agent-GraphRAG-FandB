@@ -1,0 +1,32 @@
+﻿,A,B,C,D
+1,id,question,answer,category
+2,1,Quán mở cửa lúc mấy giờ?,Quán mở cửa từ 7:00 sáng đến 22:00 tối mỗi ngày kể cả cuối tuần và ngày lễ.,hours
+3,2,Quán đóng cửa lúc mấy giờ?,Quán đóng cửa lúc 22:00 tối. Last order lúc 21:30.,hours
+4,3,Quán có mở cửa ngày lễ không?,Có,quán mở cửa 365 ngày trong năm kể cả Tết và các ngày lễ.
+5,4,WiFi mật khẩu là gì?,Mật khẩu WiFi là: CaPhePhin2024. WiFi tên: CaPheNgon_5G,wifi
+6,5,Quán có WiFi không?,Có. Quán có WiFi miễn phí tốc độ cao. Tên mạng: CaPheNgon_5G - Mật khẩu: CaPhePhin2024,wifi
+7,6,Có chỗ đậu xe không?,Có bãi giữ xe máy miễn phí phía sau quán. Sức chứa khoảng 50 xe máy. Không có bãi đậu ô tô.,parking
+8,7,Có nhận đặt bàn không?,Quán không nhận đặt bàn trước. Phục vụ theo thứ tự đến trước.,reservation
+9,8,Có giao hàng không?,Có. Quán hỗ trợ giao hàng qua Grab Food và ShopeeFood trong bán kính 5km.,delivery
+10,9,Phí giao hàng là bao nhiêu?,Phí giao hàng tùy theo khoảng cách và nền tảng (Grab/Shopee). Thường từ 15.000đ đến 35.000đ.,delivery
+11,10,Có phương thức thanh toán nào?,Chấp nhận tiền mặt và chuyển khoản ngân hàng. Quét QR MoMo và ZaloPay. Không nhận thẻ tín dụng.,payment
+12,11,Có nhận thẻ ngân hàng không?,Hiện tại quán chưa có máy POS. Chấp nhận chuyển khoản và QR Code (MoMo/ZaloPay).,payment
+13,12,Quán ở đâu?,Quán nằm ở 123 Nguyễn Huệ,Phường Bến Nghé
+14,13,Có chỗ ngồi ngoài trời không?,Có khu vực ngoài trời thoáng mát ở tầng thượng với sức chứa 30 người. Có mái che khi trời mưa.,seating
+15,14,Sức chứa quán bao nhiêu người?,Tổng sức chứa khoảng 80 người: 50 chỗ trong nhà có máy lạnh và 30 chỗ ngoài trời.,seating
+16,15,Có phòng riêng cho nhóm không?,Có 1 phòng VIP sức chứa 10-15 người. Đặt trước qua số điện thoại: 0901234567.,seating
+17,16,Số điện thoại quán là gì?,Hotline: 0901234567. Zalo: 0901234567. Thời gian hỗ trợ 7:00 - 21:00.,contact
+18,17,Có chương trình thành viên không?,Có thẻ thành viên. Tích điểm mỗi hóa đơn: 10.000đ = 1 điểm. 100 điểm đổi được 1 ly cà phê.,loyalty
+19,18,Làm thẻ thành viên ở đâu?,Đăng ký tại quán hoặc qua app. Phí làm thẻ miễn phí. Mang CCCD đến quầy thu ngân.,loyalty
+20,19,Đồ uống có thể điều chỉnh đường không?,Có thể điều chỉnh lượng đường: ít đường (50%) hoặc không đường (0%). Yêu cầu khi order.,customization
+21,20,Có thể thay đổi loại sữa không?,Có thể đổi sang sữa tươi không đường hoặc sữa hạnh nhân (phụ thu 10.000đ/ly).,customization
+22,21,Có đồ uống cho người ăn chay không?,Có. Các loại trà và nước ép đều phù hợp. Matcha Latte có thể dùng sữa hạnh nhân thay thế.,diet
+23,22,Đồ uống có chứa caffeine không?,Các loại cà phê có caffeine. Trà xanh và hồng trà có caffeine nhẹ. Nước ép và sinh tố không có caffeine.,diet
+24,23,Có combo không?,Có combo Cà Phê + Bánh Mì giá 55.000đ (tiết kiệm 5.000đ). Combo áp dụng từ 7:00-10:00 sáng.,promotion
+25,24,Happy Hour là khi nào?,Happy Hour từ 14:00-16:00 mỗi ngày. Giảm 15% tất cả đồ uống trong khung giờ này.,promotion
+26,25,Có tổ chức sinh nhật tại quán không?,Có hỗ trợ tiệc sinh nhật. Liên hệ trước 1 ngày qua hotline 0901234567 để đặt chỗ và trang trí.,events
+27,26,Có cho mang thú cưng vào không?,Khu vực ngoài trời chào đón thú cưng. Khu trong nhà không cho phép thú cưng vì lý do vệ sinh.,policy
+28,27,Có thuốc lá trong quán không?,Quán là khu vực không hút thuốc. Không được hút thuốc trong quán và khu vực ngoài trời.,policy
+29,28,Ly nước size nào lớn nhất?,Size lớn nhất là L (Large) tương đương 500ml. Các size: S=250ml M=350ml L=500ml.,sizing
+30,29,Có thể mua mang về không?,Có. Đồ mang về đựng trong ly nhựa có nắp. Phụ thu thêm 2.000đ cho ly mang về.,takeaway
+31,30,Cà phê pha bằng máy hay phin?,Quán dùng cả hai: Espresso pha máy La Marzocco cho Cappuccino/Latte. Cà phê Việt dùng phin truyền thống.,brewing

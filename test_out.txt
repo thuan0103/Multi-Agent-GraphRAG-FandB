@@ -1,0 +1,36 @@
+﻿All menu items:
+  [coffee] 'Cà Phê Đen' | desc='đường"' | ingr='"cà phê robusta'
+  [coffee] 'Cà Phê Đen' | desc='đường"' | ingr='"cà phê robusta'
+  [coffee] 'Cà Phê Sữa' | desc='sữa đặc"' | ingr='"cà phê robusta'
+  [coffee] 'Cà Phê Sữa' | desc='sữa đặc"' | ingr='"cà phê robusta'
+  [coffee] 'Bạc Xỉu' | desc='sữa tươi' | ingr='"cà phê arabica'
+  [coffee] 'Cappuccino' | desc='sữa tươi' | ingr='"espresso'
+  [coffee] 'Latte' | desc='sữa tươi"' | ingr='"espresso'
+  [coffee] 'Americano' | desc='nước"' | ingr='"espresso'
+  [coffee] 'Cold Brew' | desc='nước lạnh"' | ingr='"cà phê arabica'
+  [coffee] 'Cà Phê Muối' | desc='kem muối' | ingr='"espresso'
+  [coffee] 'Cà Phê Trứng' | desc='trứng gà' | ingr='"espresso'
+  [food] 'Bánh Mì Thịt' | desc='thịt nguội' | ingr='"bánh mì'
+  [food] 'Bánh Croissant' | desc='bơ' | ingr='"bột mì'
+  [food] 'Bánh Tiramisu' | desc='cà phê' | ingr='"mascarpone'
+  [food] 'Sandwich Gà' | desc='ức gà' | ingr='"bánh mì sandwich'
+  [food] 'Khoai Tây Chiên' | desc='muối"' | ingr='"khoai tây'
+  [juice] 'Nước Ép Cam' | desc='"Cam vắt tươi nguyên chất không đường"' | ingr='"cam tươi"'
+  [juice] 'Nước Ép Dưa Hấu' | desc='"Dưa hấu ép tươi mát giải nhiệt"' | ingr='"dưa hấu"'
+  [smoothie] 'Sinh Tố Xoài' | desc='sữa tươi' | ingr='"xoài'
+  [smoothie] 'Sinh Tố Bơ' | desc='sữa đặc' | ingr='"bơ'
+  [tea] 'Trà Đào' | desc='đào' | ingr='"trà xanh'
+  [tea] 'Trà Vải' | desc='vải' | ingr='"trà xanh'
+  [tea] 'Trà Tắc' | desc='tắc' | ingr='"trà đen'
+  [tea] 'Hồng Trà Sữa' | desc='sữa tươi' | ingr='"hồng trà'
+  [tea] 'Matcha Latte' | desc='sữa tươi' | ingr='"matcha Nhật'
+
+Query: tra nao mat mat uong mua he
+  score=0.004323  Trà Tắc | Trà Tắc tắc "trà đen
+  score=0.004169  Trà Đào | Trà Đào đào "trà xanh
+  score=0.004088  Trà Vải | Trà Vải vải "trà xanh
+  score=0.001648  Hồng Trà Sữa | Hồng Trà Sữa sữa tươi "hồng trà
+  score=0.001505  Nước Ép Dưa Hấu | Nước Ép Dưa Hấu "Dưa hấu ép tươi mát giải nhiệt" "dưa hấu"
+  score=0.000660  Khoai Tây Chiên | Khoai Tây Chiên muối" "khoai tây
+  score=0.000478  Matcha Latte | Matcha Latte sữa tươi "matcha Nhật
+  score=0.000291  Bánh Mì Thịt | Bánh Mì Thịt thịt nguội "bánh mì

@@ -19,7 +19,11 @@ Lịch sử hội thoại:
 {history}
 
 Giỏ hàng hiện tại:
-{cart}"""
+{cart}
+
+SAU KHI viết xong câu trả lời cho khách, hãy thêm đúng dòng này ở cuối (hệ thống đọc, khách không thấy):
+[CART_JSON]{{"items":[{{"name":"tên món","price":giá_số,"quantity":số_lượng}}]}}[/CART_JSON]
+Liệt kê TOÀN BỘ các món trong giỏ hàng sau khi xử lý. Giỏ trống dùng: [CART_JSON]{{"items":[]}}[/CART_JSON]"""
 
 ORDER_SYSTEM_EN = """You are an order-taking staff at a coffee shop. Your tasks:
 - Confirm items the customer wants to order
@@ -40,4 +44,8 @@ Conversation history:
 {history}
 
 Current cart:
-{cart}"""
+{cart}
+
+After writing your reply to the customer, append this exact line (system reads it, customer doesn't see it):
+[CART_JSON]{{"items":[{{"name":"item name","price":price_number,"quantity":quantity}}]}}[/CART_JSON]
+List ALL items in the cart after processing. Empty cart: [CART_JSON]{{"items":[]}}[/CART_JSON]"""

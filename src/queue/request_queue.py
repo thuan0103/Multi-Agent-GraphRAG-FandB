@@ -56,6 +56,7 @@ class RequestQueue:
         """
         request_id = str(uuid.uuid4())[:8]
         enqueued_at = time.time()
+        acquired = False
 
         logger.debug(f"Request {request_id} queued (active={self._active_count}/{self.max_concurrent})")
 
@@ -66,6 +67,7 @@ class RequestQueue:
                     self.semaphore.acquire(),
                     timeout=self.request_timeout,
                 )
+                acquired = True
             except asyncio.TimeoutError:
                 self._total_timeouts += 1
                 wait_time = time.time() - enqueued_at
@@ -99,12 +101,10 @@ class RequestQueue:
                 raise
 
         finally:
-            # Đảm bảo luôn release semaphore dù có lỗi
-            try:
+            # Chỉ release nếu semaphore đã được acquire thành công
+            if acquired:
                 self.semaphore.release()
                 self._active_count = max(0, self._active_count - 1)
-            except Exception:
-                pass
 
     async def stats(self) -> dict:
         return {
