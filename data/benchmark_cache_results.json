@@ -1,0 +1,55 @@
+{
+  "hit_rate": 0.07346938775510205,
+  "hits": 36,
+  "total": 490,
+  "warmup_groups": 10,
+  "latency": {
+    "avg_ms": 16.52275897972036,
+    "p50_ms": 15.604800002620323,
+    "p90_ms": 21.015099999203812
+  },
+  "upper_bound_hit_rate": 1.0,
+  "extractor_mode": "rule-based fallback",
+  "per_group": {
+    "g_order_cafe": {
+      "hits": 0,
+      "total": 43
+    },
+    "g_tu_van": {
+      "hits": 6,
+      "total": 49
+    },
+    "g_thanh_toan": {
+      "hits": 12,
+      "total": 51
+    },
+    "g_hoi_gio": {
+      "hits": 1,
+      "total": 53
+    },
+    "g_dat_ban_sinh_nhat": {
+      "hits": 1,
+      "total": 48
+    },
+    "g_dat_ban": {
+      "hits": 4,
+      "total": 47
+    },
+    "g_hoi_wifi": {
+      "hits": 0,
+      "total": 50
+    },
+    "g_huy_order": {
+      "hits": 4,
+      "total": 49
+    },
+    "g_xem_menu": {
+      "hits": 1,
+      "total": 49
+    },
+    "g_khuyen_mai": {
+      "hits": 7,
+      "total": 51
+    }
+  }
+}

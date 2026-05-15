@@ -1,3 +1,28 @@
+from transformers import AutoModelForCausalLM, AutoTokenizer
+import torch
+
+# model = AutoModelForCausalLM.from_pretrained("models/router-merged", dtype=torch.bfloat16)
+# base  = AutoModelForCausalLM.from_pretrained("models/Qwen2.5-1.5B", dtype=torch.bfloat16)
+
+# layer = "model.layers.0.self_attn.q_proj.weight"
+# same = torch.allclose(
+#     model.state_dict()[layer],
+#     base.state_dict()[layer]
+# )
+# print("Merge thất bại (weights giống base):", same)
+
+# tok = AutoTokenizer.from_pretrained("models/router-merged")
+
+# print("\n=== Chat template ===")
+# print(tok.chat_template)
+
+# print("\n=== Tokenization 4 intents ===")
+# for intent in ["order", "consultant", "faq", "ignore"]:
+#     ids = tok.encode(f'{{"action": "{intent}"}}', add_special_tokens=False)
+#     print(f"{intent:12s}: {ids} ({len(ids)} tokens)")
+
+import time
+
 ROUTER_SYSTEM_PROMPT = """You are an intent classifier for a coffee shop chatbot.
 Classify the user message into exactly one of these intents:
 
@@ -34,15 +59,9 @@ User: "Ừm..." → {"action": "ignore"}
 User: "ok" → {"action": "ignore"}
 User: "hello" → {"action": "ignore"}"""
 
-FEW_SHOT_EXAMPLES = [
-    {"role": "user", "content": "Cho anh 1 ly bạc xỉu"},
-    {"role": "assistant", "content": '{"action": "order"}'},
-    {"role": "user", "content": "Gợi ý cho tôi món gì mát mát"},
-    {"role": "assistant", "content": '{"action": "consultant"}'},
-    {"role": "user", "content": "Mấy giờ quán đóng cửa?"},
-    {"role": "assistant", "content": '{"action": "faq"}'},
-    {"role": "user", "content": "oke"},
-    {"role": "assistant", "content": '{"action": "ignore"}'},
-]
-
-LLAMA3_CHAT_TEMPLATE = "{% for message in messages %}{% if message['role'] == 'system' %}<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\n{{ message['content'] }}<|eot_id|>{% elif message['role'] == 'user' %}<|start_header_id|>user<|end_header_id|>\n\n{{ message['content'] }}<|eot_id|>{% elif message['role'] == 'assistant' %}<|start_header_id|>assistant<|end_header_id|>\n\n{{ message['content'] }}<|eot_id|>{% endif %}{% endfor %}{% if add_generation_prompt %}<|start_header_id|>assistant<|end_header_id|>\n\n{% endif %}"
+tok = AutoTokenizer.from_pretrained("models/router-merged")
+import time
+start = time.perf_counter()
+ids = tok.encode(ROUTER_SYSTEM_PROMPT, return_tensors="pt")
+print(f"Prompt tokens: {ids.shape[1]}")
+print(f"Tokenize time: {(time.perf_counter()-start)*1000:.1f}ms")

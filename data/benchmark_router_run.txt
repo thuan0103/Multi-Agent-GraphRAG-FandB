@@ -1,0 +1,297 @@
+﻿C:\users\thuan\miniconda3\envs\parta\python.exe : `torch_dtype` is deprecated! Use `dtype` instead!
+At line:3 char:1
++ C:\users\thuan\miniconda3\envs\parta\python.exe scripts/benchmark_rou ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (`torch_dtype` i...dtype` instead!:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+True
+NVIDIA GeForce RTX 2050
+============================================================
+  ROUTER BENCHMARK — MAS-LLM-2026-FINAL
+============================================================
+
+► Loading router model...
+
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]
+Loading weights:   0%|          | 1/338 [00:13<1:14:15, 13.22s/it]
+Loading weights:  47%|████▋     | 159/338 [00:13<00:11, 15.87it/s]
+Loading weights:  54%|█████▎    | 181/338 [00:14<00:09, 16.88it/s]
+Loading weights:  57%|█████▋    | 192/338 [00:15<00:08, 16.53it/s]
+Loading weights:  59%|█████▉    | 199/338 [00:16<00:08, 16.46it/s]
+Loading weights:  61%|██████    | 207/338 [00:16<00:08, 15.50it/s]
+Loading weights:  62%|██████▏   | 211/338 [00:16<00:07, 16.29it/s]
+Loading weights:  65%|██████▍   | 219/338 [00:17<00:07, 16.40it/s]
+Loading weights:  66%|██████▌   | 222/338 [00:17<00:07, 14.95it/s]
+Loading weights:  68%|██████▊   | 231/338 [00:18<00:06, 15.72it/s]
+Loading weights:  69%|██████▉   | 234/338 [00:18<00:07, 14.77it/s]
+Loading weights:  72%|███████▏  | 243/338 [00:19<00:06, 15.66it/s]
+Loading weights:  72%|███████▏  | 245/338 [00:19<00:06, 14.91it/s]
+Loading weights:  75%|███████▌  | 255/338 [00:19<00:05, 16.01it/s]
+Loading weights:  76%|███████▌  | 257/338 [00:20<00:05, 15.04it/s]
+Loading weights:  79%|███████▉  | 267/338 [00:20<00:03, 18.63it/s]
+Loading weights:  80%|███████▉  | 269/338 [00:20<00:04, 15.90it/s]
+Loading weights:  83%|████████▎ | 279/338 [00:21<00:03, 16.84it/s]
+Loading weights:  83%|████████▎ | 281/338 [00:21<00:03, 14.50it/s]
+Loading weights:  86%|████████▌ | 291/338 [00:21<00:02, 18.19it/s]
+Loading weights:  87%|████████▋ | 293/338 [00:22<00:02, 17.32it/s]
+Loading weights:  90%|████████▉ | 303/338 [00:22<00:02, 15.27it/s]
+Loading weights:  93%|█████████▎| 315/338 [00:23<00:01, 18.39it/s]
+Loading weights:  94%|█████████▍| 317/338 [00:23<00:01, 14.74it/s]
+Loading weights:  97%|█████████▋| 327/338 [00:24<00:00, 17.52it/s]
+Loading weights:  97%|█████████▋| 329/338 [00:24<00:00, 17.63it/s]
+Loading weights: 100%|██████████| 338/338 [00:24<00:00, 13.99it/s]
+Latency: 437.9ms ✗ Exceeded target
+Latency: 340.4ms ✗ Exceeded target
+Latency: 332.9ms ✗ Exceeded target
+Latency: 333.7ms ✗ Exceeded target
+Latency: 346.0ms ✗ Exceeded target
+Latency: 351.0ms ✗ Exceeded target
+Latency: 341.9ms ✗ Exceeded target
+Latency: 338.3ms ✗ Exceeded target
+Latency: 347.9ms ✗ Exceeded target
+Latency: 342.7ms ✗ Exceeded target
+Latency: 349.2ms ✗ Exceeded target
+Latency: 336.3ms ✗ Exceeded target
+Latency: 362.2ms ✗ Exceeded target
+Latency: 368.5ms ✗ Exceeded target
+Latency: 361.2ms ✗ Exceeded target
+Latency: 343.7ms ✗ Exceeded target
+Latency: 348.6ms ✗ Exceeded target
+Latency: 338.6ms ✗ Exceeded target
+Latency: 340.4ms ✗ Exceeded target
+Latency: 348.4ms ✗ Exceeded target
+Latency: 361.2ms ✗ Exceeded target
+Latency: 358.8ms ✗ Exceeded target
+Latency: 336.6ms ✗ Exceeded target
+Latency: 353.9ms ✗ Exceeded target
+Latency: 340.9ms ✗ Exceeded target
+Latency: 337.3ms ✗ Exceeded target
+Latency: 345.2ms ✗ Exceeded target
+Latency: 343.8ms ✗ Exceeded target
+Latency: 345.7ms ✗ Exceeded target
+Latency: 349.7ms ✗ Exceeded target
+Latency: 361.9ms ✗ Exceeded target
+Latency: 343.2ms ✗ Exceeded target
+Latency: 345.2ms ✗ Exceeded target
+Latency: 336.3ms ✗ Exceeded target
+Latency: 337.9ms ✗ Exceeded target
+Latency: 355.8ms ✗ Exceeded target
+Latency: 351.3ms ✗ Exceeded target
+Latency: 334.0ms ✗ Exceeded target
+Latency: 381.9ms ✗ Exceeded target
+Latency: 341.6ms ✗ Exceeded target
+Latency: 348.1ms ✗ Exceeded target
+Latency: 400.6ms ✗ Exceeded target
+Latency: 347.9ms ✗ Exceeded target
+Latency: 411.1ms ✗ Exceeded target
+Latency: 341.0ms ✗ Exceeded target
+Latency: 363.7ms ✗ Exceeded target
+Latency: 353.5ms ✗ Exceeded target
+Latency: 343.9ms ✗ Exceeded target
+Latency: 338.7ms ✗ Exceeded target
+Latency: 365.1ms ✗ Exceeded target
+Latency: 344.3ms ✗ Exceeded target
+Latency: 339.6ms ✗ Exceeded target
+Latency: 361.8ms ✗ Exceeded target
+Latency: 345.8ms ✗ Exceeded target
+Latency: 347.2ms ✗ Exceeded target
+Latency: 348.8ms ✗ Exceeded target
+Latency: 346.9ms ✗ Exceeded target
+Latency: 335.1ms ✗ Exceeded target
+Latency: 354.8ms ✗ Exceeded target
+Latency: 348.6ms ✗ Exceeded target
+Latency: 395.8ms ✗ Exceeded target
+Latency: 374.8ms ✗ Exceeded target
+Latency: 354.2ms ✗ Exceeded target
+Latency: 337.7ms ✗ Exceeded target
+Latency: 334.2ms ✗ Exceeded target
+Latency: 334.9ms ✗ Exceeded target
+Latency: 382.4ms ✗ Exceeded target
+Latency: 341.9ms ✗ Exceeded target
+Latency: 343.4ms ✗ Exceeded target
+Latency: 355.0ms ✗ Exceeded target
+Latency: 338.8ms ✗ Exceeded target
+Latency: 349.5ms ✗ Exceeded target
+Latency: 339.9ms ✗ Exceeded target
+Latency: 347.4ms ✗ Exceeded target
+Latency: 401.7ms ✗ Exceeded target
+Latency: 417.7ms ✗ Exceeded target
+Latency: 354.4ms ✗ Exceeded target
+Latency: 357.6ms ✗ Exceeded target
+Latency: 351.3ms ✗ Exceeded target
+Latency: 347.9ms ✗ Exceeded target
+Latency: 337.6ms ✗ Exceeded target
+Latency: 336.2ms ✗ Exceeded target
+Latency: 348.0ms ✗ Exceeded target
+Latency: 340.9ms ✗ Exceeded target
+Latency: 341.3ms ✗ Exceeded target
+Latency: 363.6ms ✗ Exceeded target
+Latency: 342.6ms ✗ Exceeded target
+Latency: 371.1ms ✗ Exceeded target
+Latency: 339.2ms ✗ Exceeded target
+Latency: 386.3ms ✗ Exceeded target
+Latency: 714.8ms ✗ Exceeded target
+Latency: 659.0ms ✗ Exceeded target
+Latency: 424.6ms ✗ Exceeded target
+Latency: 355.1ms ✗ Exceeded target
+Latency: 374.8ms ✗ Exceeded target
+Latency: 674.2ms ✗ Exceeded target
+Latency: 497.3ms ✗ Exceeded target
+Latency: 754.5ms ✗ Exceeded target
+Latency: 435.2ms ✗ Exceeded target
+Latency: 540.7ms ✗ Exceeded target
+Latency: 349.5ms ✗ Exceeded target
+Latency: 624.7ms ✗ Exceeded target
+Latency: 720.8ms ✗ Exceeded target
+Latency: 361.2ms ✗ Exceeded target
+Latency: 399.7ms ✗ Exceeded target
+Latency: 569.8ms ✗ Exceeded target
+✓ Model loaded
+
+► Running 100 test samples...
+{"action": "order"}
+{"action": "order"}
+{"action": "order"}
+{"action": "order"}
+{"action": "order"}
+{"action": "order"}
+{"action": "order"}
+{"action": "order"}
+{"action": "order"}
+{"action": "order"}
+{"action": "order"}
+{"action": "order"}
+{"action": "order"}
+{"action": "order"}
+{"action": "order"}
+{"action": "order"}
+{"action": "order"}
+{"action": "order"}
+{"action": "order"}
+{"action": "order"}
+{"action": "order"}
+{"action": "order"}
+{"action": "order"}
+{"action": "order"}
+{"action": "order"}
+{"action": "consultant"}
+{"action": "consultant"}
+{"action": "consultant"}
+{"action": "consultant"}
+{"action": "consultant"}
+{"action": "consultant"}
+{"action": "consultant"}
+{"action": "consultant"}
+{"action": "consultant"}
+{"action": "consultant"}
+{"action": "consultant"}
+{"action": "consultant"}
+{"action": "consultant"}
+{"action": "consultant"}
+{"action": "consultant"}
+{"action": "consultant"}
+{"action": "consultant"}
+{"action": "consultant"}
+{"action": "consultant"}
+{"action": "consultant"}
+{"action": "consultant"}
+{"action": "consultant"}
+{"action": "consultant"}
+{"action": "consultant"}
+{"action": "consultant"}
+{"action": "faq"}
+{"action": "faq"}
+{"action": "faq"}
+{"action": "faq"}
+{"action": "faq"}
+{"action": "faq"}
+{"action": "faq"}
+{"action": "faq"}
+{"action": "faq"}
+{"action": "consultant"}
+{"action": "faq"}
+{"action": "faq"}
+{"action": "faq"}
+{"action": "faq"}
+{"action": "faq"}
+{"action": "faq"}
+{"action": "consultant"}
+{"action": "faq"}
+{"action": "faq"}
+{"action": "faq"}
+{"action": "faq"}
+{"action": "order"}
+{"action": "faq"}
+{"action": "faq"}
+{"action": "faq"}
+{"action": "ignore"}
+{"action": "ignore"}
+{"action": "ignore"}
+{"action": "ignore"}
+{"action": "ignore"}
+{"action": "ignore"}
+{"action": "ignore"}
+{"action": "ignore"}
+{"action": "ignore"}
+{"action": "ignore"}
+{"action": "ignore"}
+{"action": "ignore"}
+{"action": "ignore"}
+{"action": "ignore"}
+{"action": "ignore"}
+{"action": "ignore"}
+{"action": "ignore"}
+{"action": "ignore"}
+{"action": "ignore"}
+{"action": "ignore"}
+{"action": "ignore"}
+{"action": "ignore"}
+{"action": "ignore"}
+{"action": "ignore"}
+{"action": "ignore"}
+
+────────────────────────────────────────────────────────────
+  Overall Accuracy: 97.0%  (97/100)
+  Status: ✅ XUẤT SẮC  (target ≥ 92%)
+────────────────────────────────────────────────────────────
+
+  Per-class F1 Score:
+    order         P=0.96  R=1.00  F1=0.98  (TP=25)
+    consultant    P=0.93  R=1.00  F1=0.96  (TP=25)
+    faq           P=1.00  R=0.88  F1=0.94  (TP=22)
+    ignore        P=1.00  R=1.00  F1=1.00  (TP=25)
+
+  Confusion Matrix (row=expected, col=predicted):
+                order       consultant  faq         ignore      
+    order                 25           0           0           0
+    consultant             0          25           0           0
+    faq                    1           2          22           0
+    ignore                 0           0           0          25
+
+  Latency (ms):
+    avg=371.6  p50=348.1  p90=417.7  p99=754.5
+    Status: ❌ CHẬM  (target p90 ≤ 200ms)
+
+  Misclassified (3 cases):
+    [faq → consultant] "Có chương trình thành viên không?"
+    [faq → consultant] "Có phòng riêng không?"
+    [faq → order] "Ly size L bao nhiêu ml?"
+
+► Hard samples (6 cases):
+{"action": "consultant"}
+    [✓] "Có gì vừa ngon vừa rẻ không?" → consultant (expected consultant)
+{"action": "consultant"}
+    [✓] "Cho mình ly gì đó không caffeine" → consultant (expected consultant)
+{"action": "consultant"}
+    [✓] "Mình muốn gọi cái gì đó phù hợp thời tiết này" → consultant (expected consultant)
+{"action": "consultant"}
+    [✓] "Quán có gì ăn sáng không?" → consultant (expected consultant)
+{"action": "order"}
+    [✓] "Tính tiền hết bao nhiêu?" → order (expected order)
+{"action": "order"}
+    [✓] "Mình đặt 1 ly cà phê nhé?" → order (expected order)
+  Hard accuracy: 100.0%  (target ≥ 75%)
+
+✓ Results saved → data\benchmark_results.json
+============================================================

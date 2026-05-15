@@ -1,0 +1,54 @@
+{
+  "accuracy": 0.97,
+  "correct": 97,
+  "total": 100,
+  "latency": {
+    "avg_ms": 371.56109999999984,
+    "p50_ms": 348.12,
+    "p90_ms": 417.67,
+    "p99_ms": 754.47
+  },
+  "hard_accuracy": 1.0,
+  "per_class": {
+    "order": {
+      "tp": 25,
+      "fp": 1,
+      "fn": 0
+    },
+    "consultant": {
+      "tp": 25,
+      "fp": 2,
+      "fn": 0
+    },
+    "faq": {
+      "tp": 22,
+      "fp": 0,
+      "fn": 3
+    },
+    "ignore": {
+      "tp": 25,
+      "fp": 0,
+      "fn": 0
+    }
+  },
+  "errors": [
+    {
+      "text": "Có chương trình thành viên không?",
+      "expected": "faq",
+      "predicted": "consultant",
+      "latency_ms": 348.64
+    },
+    {
+      "text": "Có phòng riêng không?",
+      "expected": "faq",
+      "predicted": "consultant",
+      "latency_ms": 382.38
+    },
+    {
+      "text": "Ly size L bao nhiêu ml?",
+      "expected": "faq",
+      "predicted": "order",
+      "latency_ms": 349.48
+    }
+  ]
+}

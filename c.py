@@ -41,8 +41,7 @@ class RouterModel:
 
         self.model = AutoModelForCausalLM.from_pretrained(
             self.model_id,
-            #torch_dtype=torch.float16 if torch.cuda.is_available() else torch.float32,
-            torch_dtype=torch.bfloat16,
+            torch_dtype=torch.float16 if torch.cuda.is_available() else torch.float32,
             device_map="auto",
             trust_remote_code=True,
         )
@@ -63,24 +62,13 @@ class RouterModel:
             self._raw_generate(text)
         logger.info("Warmup complete")
 
-    def _clone_past_kv(self, past_key_values):
-        from transformers.cache_utils import DynamicCache
-        new_cache = DynamicCache()
-        for layer_idx, layer in enumerate(past_key_values):
-            k, v = layer[0].clone(), layer[1].clone()
-            new_cache.update(k, v, layer_idx)
-        return new_cache
-    
-    def _expand_past_kv(self, past_key_values, batch_size: int):
-        from transformers.cache_utils import DynamicCache
-        new_cache = DynamicCache()
-        for layer_idx, layer in enumerate(past_key_values):
-            k = layer[0].expand(batch_size, -1, -1, -1).contiguous()
-            v = layer[1].expand(batch_size, -1, -1, -1).contiguous()
-            new_cache.update(k, v, layer_idx)
-        return new_cache
-
     def _raw_generate(self, text: str) -> str:
+        """
+        KV-cache log-prob scoring:
+        - Prompt chạy 1 lần → cache KV
+        - 4 intents dùng lại KV → tổng ~5 forward pass thay vì 4×full
+        - Bỏ few-shot (model đã fine-tune, không cần)
+        """
         import sys
         sys.path.append(".")
         from src.router.prompts import ROUTER_SYSTEM_PROMPT
@@ -95,58 +83,41 @@ class RouterModel:
         )
         prompt_ids = self.tokenizer.encode(prompt, return_tensors="pt").to(self.device)
 
-        response_ids_list = [
-            self.tokenizer.encode(
-                f'{{"action": "{intent}"}}',
-                add_special_tokens=False,
-                return_tensors="pt"
-            ).to(self.device)
-            for intent in INTENTS
-        ]
-
-        # Pad tất cả về cùng độ dài max
-        max_len = max(r.shape[1] for r in response_ids_list)
-        pad_id  = self.tokenizer.eos_token_id
-
-        padded_ids  = []
-        pad_masks   = []
-        for r_ids in response_ids_list:
-            n       = r_ids.shape[1]
-            pad_len = max_len - n
-            if pad_len > 0:
-                padding = torch.full((1, pad_len), pad_id, dtype=torch.long, device=self.device)
-                padded  = torch.cat([r_ids, padding], dim=1)
-            else:
-                padded  = r_ids
-            padded_ids.append(padded)
-            pad_masks.append(n)  # số token thật (không tính pad)
-
-        batch_ids = torch.cat(padded_ids, dim=0)  # [4, max_len]
+        best_intent = None
+        best_score  = float("-inf")
 
         with torch.no_grad():
-            prompt_out          = self.model(input_ids=prompt_ids, use_cache=True)
-            prompt_logits_last  = prompt_out.logits[:, -1:, :]
-            past_kv_batched     = self._expand_past_kv(prompt_out.past_key_values, batch_size=4)
-            prompt_logits_batch = prompt_logits_last.expand(4, -1, -1)
+            # 1 forward pass cho toàn bộ prompt → cache KV
+            prompt_out  = self.model(input_ids=prompt_ids, use_cache=True)
+            past_kv     = prompt_out.past_key_values
+            prev_logits = prompt_out.logits[:, -1:, :]   # logits tại vị trí cuối prompt
 
-            out = self.model(
-                input_ids=batch_ids,
-                past_key_values=past_kv_batched,
-                use_cache=False,
-            )
-            # out.logits: [4, max_len, vocab]
-            all_logits = torch.cat([prompt_logits_batch, out.logits[:, :-1, :]], dim=1)
-            log_probs  = torch.nn.functional.log_softmax(all_logits, dim=-1)
+            for intent in INTENTS:
+                response     = f'{{"action": "{intent}"}}'
+                response_ids = self.tokenizer.encode(
+                    response, add_special_tokens=False, return_tensors="pt"
+                ).to(self.device)
+                n_tokens     = response_ids.shape[1]
 
-            best_intent = None
-            best_score  = float("-inf")
+                score        = 0.0
+                cur_past     = past_kv
+                cur_logits   = prev_logits
 
-            for i, (intent, n_real) in enumerate(zip(INTENTS, pad_masks)):
-                r_ids    = padded_ids[i][0, :n_real]
-                token_lp = log_probs[i, torch.arange(n_real), r_ids]
-                score    = token_lp.mean().item()
-                if score > best_score:
-                    best_score  = score
+                for i, token_id in enumerate(response_ids[0]):
+                    lp     = torch.nn.functional.log_softmax(cur_logits[:, -1, :], dim=-1)
+                    score += lp[0, token_id].item()
+
+                    if i < n_tokens - 1:   # không cần forward pass sau token cuối
+                        out        = self.model(
+                            input_ids=response_ids[:, i : i + 1],
+                            past_key_values=cur_past,
+                            use_cache=True,
+                        )
+                        cur_logits = out.logits
+                        cur_past   = out.past_key_values
+
+                if score / n_tokens > best_score:
+                    best_score  = score / n_tokens
                     best_intent = intent
 
         return f'{{"action": "{best_intent}"}}'

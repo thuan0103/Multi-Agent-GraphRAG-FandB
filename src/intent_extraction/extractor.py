@@ -66,25 +66,43 @@ def _parse_json_output(text: str) -> Optional[dict]:
     return None
 
 
+def _detect_lang(text: str) -> str:
+    """Nhận diện ngôn ngữ nhanh bằng Unicode range."""
+    if re.search(r"[가-힣]", text):
+        return "ko"
+    if re.search(
+        r"[àáảãạăắặẳẵâấầẩẫậèéẻẽẹêếềểễệìíỉĩịòóỏõọôốồổỗộơớờởỡợùúủũụưứừửữựỳýỷỹỵđ]",
+        text, re.IGNORECASE,
+    ):
+        return "vi"
+    return "en"
+
+
 def _rule_based_fallback(text: str) -> dict:
     """
-    Rule-based fallback khi model fail.
-    Cố gắng tách action và context bằng regex.
+    Rule-based fallback khi model fail — hỗ trợ vi / en / ko.
     """
     text = text.strip()
+    lang = _detect_lang(text)
 
-    # Subject patterns
+    if lang == "ko":
+        return _fallback_ko(text)
+    if lang == "en":
+        return _fallback_en(text)
+    return _fallback_vi(text)
+
+
+def _fallback_vi(text: str) -> dict:
     subject = "khách"
-    for pat, sub in [
-        (r"^(anh|em|chị|tôi|mình|bạn)\b", None),
-        (r"^cho\s+(anh|em|chị|tôi|mình)\b", None),
+    for pat in [
+        r"^(anh|em|chị|tôi|mình|bạn)\b",
+        r"^cho\s+(anh|em|chị|tôi|mình)\b",
     ]:
         m = re.search(pat, text, re.IGNORECASE)
         if m:
-            subject = m.group(1) if m.lastindex else m.group(0)
+            subject = m.group(1)
             break
 
-    # Context patterns (time, number of people, occasion)
     ctx_patterns = [
         r"(vào\s+(?:ngày mai|hôm nay|tối nay|sáng mai|chiều nay)[^,\.]*)",
         r"(lúc\s+\d+[gh]\d*(?:\s+\w+)?)",
@@ -93,23 +111,82 @@ def _rule_based_fallback(text: str) -> dict:
         r"(ngày\s+\d+[^,\.]*)",
     ]
     contexts = []
-    clean_text = text
+    clean = text
     for pat in ctx_patterns:
-        m = re.search(pat, clean_text, re.IGNORECASE)
+        m = re.search(pat, clean, re.IGNORECASE)
         if m:
             contexts.append(m.group(1).strip())
-            clean_text = clean_text.replace(m.group(1), "")
+            clean = clean.replace(m.group(1), "")
 
-    context = ", ".join(contexts)
-
-    # Action: phần còn lại sau khi bỏ subject/context/filler words
-    action = re.sub(
-        r"^(cho\s+)?(anh|em|chị|tôi|mình|bạn|khách)\s*", "", clean_text,
-        flags=re.IGNORECASE
-    ).strip()
+    action = re.sub(r"^(cho\s+)?(anh|em|chị|tôi|mình|bạn|khách)\s*", "", clean, flags=re.IGNORECASE).strip()
     action = re.sub(r"\s+(nhé|em|nhé em|ạ|à)\.?\s*$", "", action, flags=re.IGNORECASE).strip()
+    return {"subject": subject, "action": action or text, "context": ", ".join(contexts)}
 
-    return {"subject": subject, "action": action or text, "context": context}
+
+def _fallback_en(text: str) -> dict:
+    subject = "customer"
+    for pat, sub in [
+        (r"\b(I|we|my\s+\w+)\b", None),
+        (r"^can\s+i\b", "I"),
+        (r"^i(?:'d|'m)?\b", "I"),
+    ]:
+        m = re.search(pat, text, re.IGNORECASE)
+        if m:
+            subject = sub or m.group(1)
+            break
+
+    ctx_patterns = [
+        r"(for\s+\d+\s+people)",
+        r"(at\s+\d+\s*(?:am|pm))",
+        r"(this\s+(?:weekend|morning|afternoon|evening))",
+        r"(tomorrow\s+\w+)",
+        r"(on\s+\w+\s+\d+(?:st|nd|rd|th)?)",
+        r"(for\s+(?:a|an|our)\s+\w+(?:\s+\w+)?)",
+        r"(right\s+now|today|tonight)",
+    ]
+    contexts = []
+    clean = text
+    for pat in ctx_patterns:
+        m = re.search(pat, clean, re.IGNORECASE)
+        if m:
+            contexts.append(m.group(1).strip())
+            clean = clean.replace(m.group(1), "")
+
+    action = re.sub(r"^(can\s+i|i(?:'d|'m)?|could\s+i|please)\s*", "", clean, flags=re.IGNORECASE).strip()
+    action = re.sub(r"\s+please\.?\s*$", "", action, flags=re.IGNORECASE).strip()
+    return {"subject": subject, "action": action or text, "context": ", ".join(contexts)}
+
+
+def _fallback_ko(text: str) -> dict:
+    subject = "손님"
+    for pat, sub in [
+        (r"^(저희|저|제\s+\w+)\b", None),
+    ]:
+        m = re.search(pat, text)
+        if m:
+            subject = sub or m.group(1)
+            break
+
+    ctx_patterns = [
+        r"(\d+명이서)",
+        r"(내일\s+\w+에?)",
+        r"(이번\s+\w+에?)",
+        r"(오늘\s+\w+에?)",
+        r"(\d+월\s+\d+일에?)",
+        r"(지금\s+바로|오늘|점심에|저녁에|아침에)",
+    ]
+    contexts = []
+    clean = text
+    for pat in ctx_patterns:
+        m = re.search(pat, clean)
+        if m:
+            contexts.append(m.group(1).strip())
+            clean = clean.replace(m.group(1), "")
+
+    action = re.sub(r"^(저희|저|제\s+\w+)\s*", "", clean).strip()
+    # Bỏ đuôi lịch sự
+    action = re.sub(r"\s*(?:주세요|부탁드려요|드려요|할게요|싶어요|되나요|있나요|인가요)\.?\s*$", "", action).strip()
+    return {"subject": subject, "action": action or text, "context": ", ".join(contexts)}
 
 
 # ---------------------------------------------------------------------------

@@ -15,3 +15,4 @@ pip install RapidFuzz
 pip install PyPDF2
 pip install python-docx
 pip install sse-starlette
+pip install llama-cpp-python

@@ -46,7 +46,7 @@ class ConsultantAgent(BaseAgent):
 
     def __init__(self, config: dict, menu_path: str = "data/menu.json"):
         super().__init__(config)
-        self.client = AsyncOpenAI(api_key=os.getenv("API_OPENAI"))
+        self.client, self.llm_model = _make_openai_client()
         self.menu_docs = self._load_menu_docs(menu_path)   # dùng khi fallback
 
     def _load_menu_docs(self, path: str) -> list[dict]:

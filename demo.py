@@ -1,16 +1,3 @@
-#!/usr/bin/env python3
-"""
-demo.py — Gradio web UI cho MAS-LLM Coffee Shop demo.
-
-Chạy:
-    python demo.py
-
-Yêu cầu:
-    pip install gradio
-    .env phải có API_OPENAI=sk-...
-    models/llama3-1b/ phải tồn tại (router base model)
-"""
-
 import asyncio
 import json
 import logging
@@ -31,7 +18,6 @@ from src.queue import RequestQueue, retry_with_backoff
 from src.cache import SemanticCache, EmbeddingProvider
 from src.intent_extraction import IntentExtractor
 
-# ─── Logging ─────────────────────────────────────────────────────────
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s | %(levelname)s | %(name)s | %(message)s",
@@ -40,11 +26,9 @@ logger = logging.getLogger(__name__)
 
 load_dotenv()
 
-# ─── Load config ─────────────────────────────────────────────────────
 with open("config.yaml", "r", encoding="utf-8") as f:
     CONFIG = yaml.safe_load(f)
 
-# ─── Components (singleton) ───────────────────────────────────────────
 router_classifier = IntentClassifier()
 summarizer        = ConversationSummarizer()
 session_store     = SessionStore(
@@ -58,35 +42,26 @@ request_queue = RequestQueue(
     request_timeout=CONFIG["queue"]["request_timeout_seconds"],
 )
 
-# ─── Semantic Cache + Intent Extractor (C2.1 / C2.2) ─────────────────
-_emb_provider  = EmbeddingProvider()          # paraphrase-multilingual-MiniLM-L12-v2
+_emb_provider  = EmbeddingProvider()        
 semantic_cache = SemanticCache(embedding_provider=_emb_provider, threshold=0.92)
 intent_extractor = IntentExtractor()
 
 agents: dict = {}
 
-
-# ─── CSV → JSON sync (chạy mỗi khi startup) ─────────────────────────
 _FOOD_CATS = {"food"}
 
 def _sync_data_from_csv() -> None:
-    """
-    Đọc data/watch/menu.csv và data/watch/Faq.csv,
-    ghi đè data/menu.json và data/faq.json để agents luôn dùng dữ liệu mới nhất.
-    """
     try:
         import pandas as pd
     except ImportError:
-        print("⚠️  pandas không có — bỏ qua CSV sync, dùng JSON cũ")
+        print("pandas không có — bỏ qua CSV sync, dùng JSON cũ")
         return
 
-    # ── menu.csv ─────────────────────────────────────────────────────
     menu_csv = Path("data/watch/menu.csv")
     if menu_csv.exists():
         try:
-            df = pd.read_csv(menu_csv, skiprows=1)    # bỏ dòng chữ cái cột
+            df = pd.read_csv(menu_csv, skiprows=1)  
             df.columns = df.columns.str.strip()
-            # bỏ cột index của Excel (cột đầu là số thứ tự hàng)
             first_col = df.columns[0]
             if first_col.isdigit() or first_col == "1":
                 df = df.drop(columns=[first_col])
@@ -99,12 +74,11 @@ def _sync_data_from_csv() -> None:
                     name = str(row["name"]).strip()
                     price = int(float(str(row["price"]).replace(",", "")))
 
-                    # Dùng description thật nếu có, không thì bỏ trống
                     raw_desc = str(row.get("description", "") or "").strip().strip('"')
                     desc = raw_desc if len(raw_desc) > 8 else ""
 
                     key = (name.lower(), price)
-                    if key in seen:   # bỏ duplicate cùng tên + giá
+                    if key in seen:  
                         continue
                     seen.add(key)
 
@@ -127,7 +101,6 @@ def _sync_data_from_csv() -> None:
         except Exception as e:
             print(f"⚠️  Lỗi đọc menu.csv: {e}")
 
-    # ── Faq.csv ──────────────────────────────────────────────────────
     faq_csv = next(
         (p for p in Path("data/watch").glob("*.csv")
          if p.stem.lower() == "faq"),
@@ -162,7 +135,6 @@ def _sync_data_from_csv() -> None:
             print(f"⚠️  Lỗi đọc Faq.csv: {e}")
 
 
-# ─── Startup ────────────────────────────────────────────────────────
 def startup() -> None:
     banner = """
 ╔══════════════════════════════════════════════════╗
@@ -187,17 +159,9 @@ def startup() -> None:
     print("✓ FAQ Agent ready")
     print("✓ Semantic Cache ready")
     print("✓ Intent Extractor ready")
-    print("\n🚀 Hệ thống sẵn sàng! Gradio UI đang khởi động...\n")
+    print("\n Hệ thống sẵn sàng! Gradio UI đang khởi động...\n")
 
-
-# ─── Core chat processing ─────────────────────────────────────────────
 def _paraphrase_cache_hit(template: str, context: str, language: str) -> str:
-    """
-    C2.2: Kết hợp cached template với context trích xuất.
-    Xử lý tại RAM — không gọi LLM — để đảm bảo latency ≤100ms.
-    Khi context chứa thông tin có nghĩa (thời gian, số lượng, dịp...) thì
-    lồng tự nhiên vào đầu phản hồi.
-    """
     ctx = (context or "").strip()
     if not ctx or ctx.lower() in ("", "none", "không có", "n/a"):
         return template
@@ -264,7 +228,6 @@ async def process_message(message: str, session_id: str) -> dict:
     5. Cache miss → gọi agent qua queue → lưu cache
     6. Lưu session
     """
-    # ── 1. Router ──────────────────────────────────────────────────
     router_result  = router_classifier.classify(message)
     intent         = router_result["action"]
     router_latency = router_result["latency_ms"]
@@ -285,12 +248,10 @@ async def process_message(message: str, session_id: str) -> dict:
             "retrieved_context": "—",
         }
 
-    # ── 2. Intent extraction → cache key ───────────────────────────
     extracted  = intent_extractor.extract(message)
-    cache_key  = extracted.action          # ví dụ "hỏi giờ đóng cửa"
+    cache_key  = extracted.action   
     extr_ms    = extracted.latency_ms
 
-    # ── 3. Semantic Cache check ─────────────────────────────────────
     cache_result = semantic_cache.query(cache_key)
     if cache_result:
         entry, score = cache_result
@@ -310,7 +271,6 @@ async def process_message(message: str, session_id: str) -> dict:
             "retrieved_context": f"key: \"{entry.key_text}\"",
         }
 
-    # ── 4. Cache miss → gọi Agent ──────────────────────────────────
     history = await session_store.get_history(session_id)
     agent   = agents.get(intent)
     if not agent:
@@ -331,7 +291,6 @@ async def process_message(message: str, session_id: str) -> dict:
         _call_agent, agent, message, history, session_id
     )
 
-    # ── 5. Lưu vào cache ───────────────────────────────────────────
     semantic_cache.put(
         key_text=cache_key,
         response_template=agent_response.text,
@@ -340,7 +299,6 @@ async def process_message(message: str, session_id: str) -> dict:
     )
     logger.info(f"[Cache] PUT key={cache_key!r} domain={intent}")
 
-    # ── 6. Lưu session ─────────────────────────────────────────────
     await session_store.add_turn(session_id, "user", message)
     await session_store.add_turn(
         session_id, "assistant", agent_response.text,
@@ -360,8 +318,6 @@ async def process_message(message: str, session_id: str) -> dict:
         "retrieved_context": _format_retrieved(intent, agent_response.metadata),
     }
 
-
-# ─── SGLang / API backend path ───────────────────────────────────────
 async def _sglang_respond(message: str, h: list, session_id: str, api_url: str):
     """
     Gọi POST {api_url}/chat/stream, đọc SSE token-by-token.
@@ -432,7 +388,6 @@ async def _sglang_respond(message: str, h: list, session_id: str, api_url: str):
         yield (h, "", *["❌"] * _N_METRICS, session_id, session_id[:8] + "...")
         return
 
-    # Final metrics yield
     h[-1] = {"role": "assistant", "content": partial.strip()}
     intent_label = INTENT_LABELS.get(intent, intent)
     yield (
@@ -449,8 +404,6 @@ async def _sglang_respond(message: str, h: list, session_id: str, api_url: str):
         session_id[:8] + "...",
     )
 
-
-# ─── Gradio UI ────────────────────────────────────────────────────────
 QUICK_PROMPTS = [
     ("🛒 Đặt cà phê",      "Cho anh 1 ly cà phê sữa đá"),
     ("💡 Tư vấn mùa hè",   "Có gì mát mát uống mùa hè nhỉ?"),
@@ -462,7 +415,6 @@ QUICK_PROMPTS = [
     ("🛒 Tính tiền",       "Tính tiền đi em"),
 ]
 
-# Số lượng metrics: intent, agent, total_lat, router_lat, agent_lat, parse, cache, context = 8
 _N_METRICS = 8
 
 
@@ -477,8 +429,6 @@ def create_ui() -> gr.Blocks:
         session_id_state = gr.State(value=str(uuid.uuid4()))
 
         with gr.Row(equal_height=True):
-
-            # ── Left: Chat panel ─────────────────────────────────────
             with gr.Column(scale=3):
                 chatbot = gr.Chatbot(
                     elem_id="chatbot",
@@ -537,7 +487,6 @@ def create_ui() -> gr.Blocks:
                             fn=lambda p=prompt: p, outputs=msg_input
                         )
 
-            # ── Right: Metrics panel ──────────────────────────────────
             with gr.Column(scale=1, min_width=260):
                 gr.Markdown("### 📊 Metrics")
 
@@ -570,7 +519,6 @@ Window: 5 turns · TTL: 30 min
 Auto-summarize at 70% ctx
                 """)
 
-        # ── Handlers ─────────────────────────────────────────────────
         ALL_METRIC_OUTPUTS = [
             intent_box, agent_box,
             total_lat_box, router_lat_box, agent_lat_box,
@@ -582,7 +530,6 @@ Auto-summarize at 70% ctx
             *ALL_METRIC_OUTPUTS,
             session_id_state, session_display,
         ]
-        # Total: 2 + 8 + 2 = 12 outputs
 
         async def respond(message, history, session_id, backend, api_url):
             if not message or not message.strip():
@@ -595,21 +542,17 @@ Auto-summarize at 70% ctx
             h.append({"role": "user",      "content": msg})
             h.append({"role": "assistant", "content": "⏳ đang xử lý..."})
 
-            # Hiện tin nhắn user ngay lập tức
             yield (h, "", "⏳ Routing...", *["—"] * (_N_METRICS - 1),
                    session_id, session_id[:8] + "...")
 
-            # ── SGLang path: stream từ API ─────────────────────────
             if "SGLang" in backend:
                 async for chunk in _sglang_respond(msg, h, session_id, api_url):
                     yield chunk
                 return
 
-            # ── OpenAI path: gọi agent trực tiếp ──────────────────
             result = await process_message(msg, session_id)
             reply  = result["reply"]
 
-            # Streaming: yield từng từ
             words   = reply.split(" ")
             partial = ""
             for i, word in enumerate(words):
@@ -619,7 +562,6 @@ Auto-summarize at 70% ctx
                        session_id, session_id[:8] + "...")
                 await asyncio.sleep(0.018)
 
-            # Final yield: tất cả metrics
             h[-1] = {"role": "assistant", "content": reply}
 
             intent_label = INTENT_LABELS.get(result["intent"], result["intent"])
@@ -674,11 +616,10 @@ Auto-summarize at 70% ctx
     return app
 
 
-# ─── Entry point ──────────────────────────────────────────────────────
 if __name__ == "__main__":
     startup()
     ui = create_ui()
-    ui.queue()   # bắt buộc để streaming hoạt động
+    ui.queue()  
     ui.launch(
         server_name="0.0.0.0",
         server_port=7860,

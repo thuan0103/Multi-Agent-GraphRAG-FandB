@@ -7,6 +7,9 @@ Output:
   - Latency p50/p90/p99 (ms)
   - Kết quả lưu vào data/benchmark_results.json
 """
+import torch
+print(torch.cuda.is_available())
+print(torch.cuda.get_device_name(0) if torch.cuda.is_available() else "CPU only")
 
 import sys, os, time, json
 from pathlib import Path

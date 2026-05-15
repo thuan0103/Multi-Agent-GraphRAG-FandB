@@ -1,300 +1,300 @@
-{"input": "tôi muốn đặt cold brew nhé em", "subject": "tôi", "action": "đặt cold brew", "context": "nhé em"}
-{"input": "mình muốn đặt nước ép cam", "subject": "mình", "action": "đặt nước ép cam", "context": ""}
-{"input": "gia đình tôi muốn đặt bạc xỉu nhé em", "subject": "gia đình tôi", "action": "đặt bạc xỉu", "context": "nhé em"}
-{"input": "Tính tiền giúp anh dịp kỷ niệm", "subject": "anh", "action": "tính tiền", "context": "dịp kỷ niệm"}
-{"input": "Thêm cà phê sữa đá vào đơn vào ngày mai lúc 7h", "subject": "khách", "action": "thêm cà phê sữa đá", "context": "vào ngày mai lúc 7h"}
-{"input": "bạn hỏi về khuyến mãi dịp kỷ niệm", "subject": "bạn", "action": "hỏi khuyến mãi", "context": "dịp kỷ niệm"}
-{"input": "mình order trà sữa hôm nay", "subject": "mình", "action": "order trà sữa", "context": "hôm nay"}
-{"input": "mình muốn đặt matcha latte tối nay lúc 8 giờ", "subject": "mình", "action": "đặt matcha latte", "context": "tối nay lúc 8 giờ"}
-{"input": "Thêm trà sữa vào đơn ngày 20 tháng 12", "subject": "khách", "action": "thêm trà sữa", "context": "ngày 20 tháng 12"}
-{"input": "mình muốn tư vấn món ăn phù hợp cho 10 người", "subject": "mình", "action": "tư vấn món ăn", "context": "cho 10 người"}
-{"input": "Cho em 1 ly cappuccino không đường nhé em", "subject": "em", "action": "gọi cappuccino không đường", "context": "nhé em"}
-{"input": "tôi muốn gọi thêm bạc xỉu vào ngày mai lúc 7h", "subject": "tôi", "action": "gọi thêm bạc xỉu", "context": "vào ngày mai lúc 7h"}
-{"input": "Cho chị ấy 1 ly cà phê sữa đá không đường lúc 12h trưa", "subject": "chị ấy", "action": "gọi cà phê sữa đá không đường", "context": "lúc 12h trưa"}
-{"input": "Cho chị đặt bàn tiệc công ty cho buổi họp sáng mai", "subject": "chị", "action": "đặt bàn tiệc công ty", "context": "cho buổi họp sáng mai"}
-{"input": "anh ấy hỏi có wifi không nhé em", "subject": "anh ấy", "action": "hỏi wifi", "context": "nhé em"}
-{"input": "Tính tiền giúp nhóm tụi anh cho 10 người", "subject": "nhóm tụi anh", "action": "tính tiền", "context": "cho 10 người"}
-{"input": "gia đình tôi hỏi về khuyến mãi giúp mình với", "subject": "gia đình tôi", "action": "hỏi khuyến mãi", "context": "giúp mình với"}
-{"input": "mình muốn tư vấn món ăn phù hợp cuối tuần này", "subject": "mình", "action": "tư vấn món ăn", "context": "cuối tuần này"}
-{"input": "anh hỏi có wifi không tối nay lúc 8 giờ", "subject": "anh", "action": "hỏi wifi", "context": "tối nay lúc 8 giờ"}
-{"input": "Cho mình đặt bàn tiệc công ty vào ngày mai lúc 7h", "subject": "mình", "action": "đặt bàn tiệc công ty", "context": "vào ngày mai lúc 7h"}
-{"input": "nhóm tụi anh muốn gọi thêm bánh croissant nhé em", "subject": "nhóm tụi anh", "action": "gọi thêm bánh croissant", "context": "nhé em"}
-{"input": "Cho gia đình tôi đặt bàn nhé em", "subject": "gia đình tôi", "action": "đặt bàn", "context": "nhé em"}
-{"input": "anh ấy hỏi về khuyến mãi", "subject": "anh ấy", "action": "hỏi khuyến mãi", "context": ""}
-{"input": "tôi muốn gọi thêm nước ép cam lúc 12h trưa", "subject": "tôi", "action": "gọi thêm nước ép cam", "context": "lúc 12h trưa"}
-{"input": "em muốn gọi thêm americano ngày 20 tháng 12", "subject": "em", "action": "gọi thêm americano", "context": "ngày 20 tháng 12"}
-{"input": "Thêm bánh mì sandwich vào đơn vào ngày mai lúc 7h", "subject": "khách", "action": "thêm bánh mì sandwich", "context": "vào ngày mai lúc 7h"}
-{"input": "nhóm tụi anh đặt chỗ ngồi view đẹp", "subject": "nhóm tụi anh", "action": "đặt chỗ ngồi view đẹp", "context": ""}
-{"input": "Thêm cappuccino vào đơn cho 10 người", "subject": "khách", "action": "thêm cappuccino", "context": "cho 10 người"}
-{"input": "chị ấy muốn gọi thêm cappuccino ngày 20 tháng 12", "subject": "chị ấy", "action": "gọi thêm cappuccino", "context": "ngày 20 tháng 12"}
-{"input": "Cho anh xem menu cho 10 người", "subject": "anh", "action": "xem menu", "context": "cho 10 người"}
-{"input": "Cho mình hỏi giờ mở cửa nhé em", "subject": "mình", "action": "hỏi giờ mở cửa", "context": "nhé em"}
-{"input": "Cho em hỏi giờ mở cửa tối nay lúc 8 giờ", "subject": "em", "action": "hỏi giờ mở cửa", "context": "tối nay lúc 8 giờ"}
-{"input": "chị ấy muốn đặt bánh croissant", "subject": "chị ấy", "action": "đặt bánh croissant", "context": ""}
-{"input": "anh order trà sữa lúc 12h trưa", "subject": "anh", "action": "order trà sữa", "context": "lúc 12h trưa"}
-{"input": "Tính tiền giúp chị ấy", "subject": "chị ấy", "action": "tính tiền", "context": ""}
-{"input": "Cho tôi đặt bàn tiệc sinh nhật cuối tuần này", "subject": "tôi", "action": "đặt bàn tiệc sinh nhật", "context": "cuối tuần này"}
-{"input": "gia đình tôi hỏi về khuyến mãi ngày 20 tháng 12", "subject": "gia đình tôi", "action": "hỏi khuyến mãi", "context": "ngày 20 tháng 12"}
-{"input": "bạn order cappuccino ngày 20 tháng 12", "subject": "bạn", "action": "order cappuccino", "context": "ngày 20 tháng 12"}
-{"input": "Cho nhóm tụi anh đặt bàn cho buổi họp sáng mai", "subject": "nhóm tụi anh", "action": "đặt bàn", "context": "cho buổi họp sáng mai"}
-{"input": "Cho chị xem menu", "subject": "chị", "action": "xem menu", "context": ""}
-{"input": "tôi muốn tư vấn món uống", "subject": "tôi", "action": "tư vấn món uống", "context": ""}
-{"input": "Cho gia đình tôi hỏi giờ mở cửa dịp kỷ niệm", "subject": "gia đình tôi", "action": "hỏi giờ mở cửa", "context": "dịp kỷ niệm"}
-{"input": "nhóm tụi anh muốn đặt americano lúc 3 giờ chiều nay", "subject": "nhóm tụi anh", "action": "đặt americano", "context": "lúc 3 giờ chiều nay"}
-{"input": "Cho gia đình tôi xem menu ngày 20 tháng 12", "subject": "gia đình tôi", "action": "xem menu", "context": "ngày 20 tháng 12"}
-{"input": "chị order americano hôm nay", "subject": "chị", "action": "order americano", "context": "hôm nay"}
-{"input": "chị muốn tư vấn món ăn phù hợp dịp kỷ niệm", "subject": "chị", "action": "tư vấn món ăn", "context": "dịp kỷ niệm"}
-{"input": "Thanh toán bằng thẻ được không nhé em", "subject": "khách", "action": "hỏi thanh toán bằng thẻ", "context": "nhé em"}
-{"input": "anh muốn gọi thêm americano cho 10 người", "subject": "anh", "action": "gọi thêm americano", "context": "cho 10 người"}
-{"input": "anh đặt chỗ ngồi view đẹp lúc 3 giờ chiều nay", "subject": "anh", "action": "đặt chỗ ngồi view đẹp", "context": "lúc 3 giờ chiều nay"}
-{"input": "anh ấy muốn đặt bạc xỉu", "subject": "anh ấy", "action": "đặt bạc xỉu", "context": ""}
-{"input": "tôi muốn đổi món cho buổi họp sáng mai", "subject": "tôi", "action": "đổi món", "context": "cho buổi họp sáng mai"}
-{"input": "tôi hỏi về khuyến mãi hôm nay", "subject": "tôi", "action": "hỏi khuyến mãi", "context": "hôm nay"}
-{"input": "Cho nhóm tụi anh 1 ly bánh croissant không đường lúc 12h trưa", "subject": "nhóm tụi anh", "action": "gọi bánh croissant không đường", "context": "lúc 12h trưa"}
-{"input": "Cho bạn 1 ly cappuccino không đường", "subject": "bạn", "action": "gọi cappuccino không đường", "context": ""}
-{"input": "gia đình tôi muốn đổi món dịp kỷ niệm", "subject": "gia đình tôi", "action": "đổi món", "context": "dịp kỷ niệm"}
-{"input": "anh hỏi về khuyến mãi cho 4 người", "subject": "anh", "action": "hỏi khuyến mãi", "context": "cho 4 người"}
-{"input": "anh ấy đặt chỗ ngồi view đẹp nhé em", "subject": "anh ấy", "action": "đặt chỗ ngồi view đẹp", "context": "nhé em"}
-{"input": "Thêm cold brew vào đơn cho 4 người", "subject": "khách", "action": "thêm cold brew", "context": "cho 4 người"}
-{"input": "gia đình tôi muốn tư vấn món uống vào ngày mai lúc 7h", "subject": "gia đình tôi", "action": "tư vấn món uống", "context": "vào ngày mai lúc 7h"}
-{"input": "bạn muốn tư vấn món uống cho buổi họp sáng mai", "subject": "bạn", "action": "tư vấn món uống", "context": "cho buổi họp sáng mai"}
-{"input": "tôi muốn đặt bánh mì sandwich cho 4 người", "subject": "tôi", "action": "đặt bánh mì sandwich", "context": "cho 4 người"}
-{"input": "Cho anh ấy xem menu lúc 3 giờ chiều nay", "subject": "anh ấy", "action": "xem menu", "context": "lúc 3 giờ chiều nay"}
-{"input": "mình muốn tư vấn món uống nhé em", "subject": "mình", "action": "tư vấn món uống", "context": "nhé em"}
-{"input": "chị muốn gọi thêm bạc xỉu dịp kỷ niệm", "subject": "chị", "action": "gọi thêm bạc xỉu", "context": "dịp kỷ niệm"}
-{"input": "chị đặt chỗ ngồi view đẹp lúc 12h trưa", "subject": "chị", "action": "đặt chỗ ngồi view đẹp", "context": "lúc 12h trưa"}
-{"input": "tôi muốn đặt bánh mì sandwich nhé em", "subject": "tôi", "action": "đặt bánh mì sandwich", "context": "nhé em"}
-{"input": "anh ấy muốn gọi thêm matcha latte cho buổi họp sáng mai", "subject": "anh ấy", "action": "gọi thêm matcha latte", "context": "cho buổi họp sáng mai"}
-{"input": "Cho gia đình tôi 1 ly americano không đường ngày 20 tháng 12", "subject": "gia đình tôi", "action": "gọi americano không đường", "context": "ngày 20 tháng 12"}
-{"input": "chị ấy hỏi về khuyến mãi lúc 12h trưa", "subject": "chị ấy", "action": "hỏi khuyến mãi", "context": "lúc 12h trưa"}
-{"input": "Cho nhóm tụi anh 1 ly nước ép cam không đường hôm nay", "subject": "nhóm tụi anh", "action": "gọi nước ép cam không đường", "context": "hôm nay"}
-{"input": "Cho chị 1 ly cà phê sữa đá không đường nhé em", "subject": "chị", "action": "gọi cà phê sữa đá không đường", "context": "nhé em"}
-{"input": "Thêm bạc xỉu vào đơn lúc 12h trưa", "subject": "khách", "action": "thêm bạc xỉu", "context": "lúc 12h trưa"}
-{"input": "Cho anh 1 ly bánh mì sandwich không đường hôm nay", "subject": "anh", "action": "gọi bánh mì sandwich không đường", "context": "hôm nay"}
-{"input": "mình order cà phê sữa đá", "subject": "mình", "action": "order cà phê sữa đá", "context": ""}
-{"input": "Cho chị 1 ly bạc xỉu không đường vào ngày mai lúc 7h", "subject": "chị", "action": "gọi bạc xỉu không đường", "context": "vào ngày mai lúc 7h"}
-{"input": "Thanh toán bằng thẻ được không tối nay lúc 8 giờ", "subject": "khách", "action": "hỏi thanh toán bằng thẻ", "context": "tối nay lúc 8 giờ"}
-{"input": "chị ấy muốn tư vấn món ăn phù hợp tối nay lúc 8 giờ", "subject": "chị ấy", "action": "tư vấn món ăn", "context": "tối nay lúc 8 giờ"}
-{"input": "Cho em đặt bàn tiệc công ty cuối tuần này", "subject": "em", "action": "đặt bàn tiệc công ty", "context": "cuối tuần này"}
-{"input": "em muốn tư vấn món uống lúc 12h trưa", "subject": "em", "action": "tư vấn món uống", "context": "lúc 12h trưa"}
-{"input": "anh ấy muốn gọi thêm bánh mì sandwich lúc 3 giờ chiều nay", "subject": "anh ấy", "action": "gọi thêm bánh mì sandwich", "context": "lúc 3 giờ chiều nay"}
-{"input": "em muốn đặt cà phê sữa đá", "subject": "em", "action": "đặt cà phê sữa đá", "context": ""}
-{"input": "chị ấy order cà phê sữa đá", "subject": "chị ấy", "action": "order cà phê sữa đá", "context": ""}
-{"input": "chị ấy muốn gọi thêm trà sữa cho 10 người", "subject": "chị ấy", "action": "gọi thêm trà sữa", "context": "cho 10 người"}
-{"input": "nhóm tụi anh order cappuccino cho 4 người", "subject": "nhóm tụi anh", "action": "order cappuccino", "context": "cho 4 người"}
-{"input": "Cho bạn xem menu", "subject": "bạn", "action": "xem menu", "context": ""}
-{"input": "nhóm tụi anh muốn tư vấn món ăn phù hợp cho buổi họp sáng mai", "subject": "nhóm tụi anh", "action": "tư vấn món ăn", "context": "cho buổi họp sáng mai"}
-{"input": "anh muốn đổi món", "subject": "anh", "action": "đổi món", "context": ""}
-{"input": "em order matcha latte tối nay lúc 8 giờ", "subject": "em", "action": "order matcha latte", "context": "tối nay lúc 8 giờ"}
-{"input": "Tính tiền giúp anh ấy cho 10 người", "subject": "anh ấy", "action": "tính tiền", "context": "cho 10 người"}
-{"input": "bạn muốn đặt nước ép cam lúc 12h trưa", "subject": "bạn", "action": "đặt nước ép cam", "context": "lúc 12h trưa"}
-{"input": "anh muốn gọi thêm cold brew nhé em", "subject": "anh", "action": "gọi thêm cold brew", "context": "nhé em"}
-{"input": "tôi đặt chỗ ngồi view đẹp cho 10 người", "subject": "tôi", "action": "đặt chỗ ngồi view đẹp", "context": "cho 10 người"}
-{"input": "anh muốn đổi món ngày 20 tháng 12", "subject": "anh", "action": "đổi món", "context": "ngày 20 tháng 12"}
-{"input": "anh ấy hỏi về khuyến mãi cho 4 người", "subject": "anh ấy", "action": "hỏi khuyến mãi", "context": "cho 4 người"}
-{"input": "Thêm cà phê sữa đá vào đơn giúp mình với", "subject": "khách", "action": "thêm cà phê sữa đá", "context": "giúp mình với"}
-{"input": "chị ấy đặt chỗ ngồi view đẹp hôm nay", "subject": "chị ấy", "action": "đặt chỗ ngồi view đẹp", "context": "hôm nay"}
-{"input": "bạn muốn gọi thêm bánh croissant lúc 3 giờ chiều nay", "subject": "bạn", "action": "gọi thêm bánh croissant", "context": "lúc 3 giờ chiều nay"}
-{"input": "nhóm tụi anh muốn tư vấn món ăn phù hợp ngày 20 tháng 12", "subject": "nhóm tụi anh", "action": "tư vấn món ăn", "context": "ngày 20 tháng 12"}
-{"input": "mình muốn đổi món cho 4 người", "subject": "mình", "action": "đổi món", "context": "cho 4 người"}
-{"input": "Cho mình 1 ly nước ép cam không đường hôm nay", "subject": "mình", "action": "gọi nước ép cam không đường", "context": "hôm nay"}
-{"input": "chị ấy muốn đặt bạc xỉu ngày 20 tháng 12", "subject": "chị ấy", "action": "đặt bạc xỉu", "context": "ngày 20 tháng 12"}
-{"input": "Cho em xem menu ngày 20 tháng 12", "subject": "em", "action": "xem menu", "context": "ngày 20 tháng 12"}
-{"input": "mình hỏi về khuyến mãi ngay bây giờ", "subject": "mình", "action": "hỏi khuyến mãi", "context": "ngay bây giờ"}
-{"input": "Thêm bạc xỉu vào đơn hôm nay", "subject": "khách", "action": "thêm bạc xỉu", "context": "hôm nay"}
-{"input": "Cho anh đặt bàn tiệc công ty hôm nay", "subject": "anh", "action": "đặt bàn tiệc công ty", "context": "hôm nay"}
-{"input": "bạn order nước ép cam ngày 20 tháng 12", "subject": "bạn", "action": "order nước ép cam", "context": "ngày 20 tháng 12"}
-{"input": "Tính tiền giúp bạn giúp mình với", "subject": "bạn", "action": "tính tiền", "context": "giúp mình với"}
-{"input": "Cho anh ấy 1 ly bánh mì sandwich không đường nhé em", "subject": "anh ấy", "action": "gọi bánh mì sandwich không đường", "context": "nhé em"}
-{"input": "anh ấy muốn đặt cappuccino cho 4 người", "subject": "anh ấy", "action": "đặt cappuccino", "context": "cho 4 người"}
-{"input": "gia đình tôi muốn đặt cold brew cuối tuần này", "subject": "gia đình tôi", "action": "đặt cold brew", "context": "cuối tuần này"}
-{"input": "bạn muốn đổi món lúc 12h trưa", "subject": "bạn", "action": "đổi món", "context": "lúc 12h trưa"}
-{"input": "chị muốn gọi thêm nước ép cam cuối tuần này", "subject": "chị", "action": "gọi thêm nước ép cam", "context": "cuối tuần này"}
-{"input": "Cho nhóm tụi anh 1 ly matcha latte không đường ngay bây giờ", "subject": "nhóm tụi anh", "action": "gọi matcha latte không đường", "context": "ngay bây giờ"}
-{"input": "mình muốn gọi thêm cold brew nhé em", "subject": "mình", "action": "gọi thêm cold brew", "context": "nhé em"}
-{"input": "tôi muốn đặt bánh mì sandwich cho buổi họp sáng mai", "subject": "tôi", "action": "đặt bánh mì sandwich", "context": "cho buổi họp sáng mai"}
-{"input": "Cho gia đình tôi đặt bàn tiệc sinh nhật cho buổi họp sáng mai", "subject": "gia đình tôi", "action": "đặt bàn tiệc sinh nhật", "context": "cho buổi họp sáng mai"}
-{"input": "gia đình tôi hỏi về khuyến mãi lúc 3 giờ chiều nay", "subject": "gia đình tôi", "action": "hỏi khuyến mãi", "context": "lúc 3 giờ chiều nay"}
-{"input": "Cho bạn đặt bàn tiệc sinh nhật dịp kỷ niệm", "subject": "bạn", "action": "đặt bàn tiệc sinh nhật", "context": "dịp kỷ niệm"}
-{"input": "chị muốn tư vấn món uống ngày 20 tháng 12", "subject": "chị", "action": "tư vấn món uống", "context": "ngày 20 tháng 12"}
-{"input": "Thanh toán bằng thẻ được không giúp mình với", "subject": "khách", "action": "hỏi thanh toán bằng thẻ", "context": "giúp mình với"}
-{"input": "chị muốn tư vấn món ăn phù hợp ngày 20 tháng 12", "subject": "chị", "action": "tư vấn món ăn", "context": "ngày 20 tháng 12"}
-{"input": "mình muốn đặt cappuccino cuối tuần này", "subject": "mình", "action": "đặt cappuccino", "context": "cuối tuần này"}
-{"input": "tôi muốn đặt americano tối nay lúc 8 giờ", "subject": "tôi", "action": "đặt americano", "context": "tối nay lúc 8 giờ"}
-{"input": "Tính tiền giúp chị ấy cuối tuần này", "subject": "chị ấy", "action": "tính tiền", "context": "cuối tuần này"}
-{"input": "nhóm tụi anh muốn đặt trà sữa giúp mình với", "subject": "nhóm tụi anh", "action": "đặt trà sữa", "context": "giúp mình với"}
-{"input": "chị ấy order cappuccino giúp mình với", "subject": "chị ấy", "action": "order cappuccino", "context": "giúp mình với"}
-{"input": "chị ấy muốn đặt cappuccino hôm nay", "subject": "chị ấy", "action": "đặt cappuccino", "context": "hôm nay"}
-{"input": "gia đình tôi muốn tư vấn món ăn phù hợp tối nay lúc 8 giờ", "subject": "gia đình tôi", "action": "tư vấn món ăn", "context": "tối nay lúc 8 giờ"}
-{"input": "Cho chị ấy xem menu cho buổi họp sáng mai", "subject": "chị ấy", "action": "xem menu", "context": "cho buổi họp sáng mai"}
+{"input": "아이스 아메리카노 주문하고 싶어요 지금 바로", "subject": "저", "action": "아이스 아메리카노 주문", "context": "지금 바로"}
+{"input": "계산서 부탁드려요 10명이서", "subject": "저", "action": "계산 요청", "context": "10명이서"}
+{"input": "아이스 아메리카노 한 잔 주세요", "subject": "저", "action": "아이스 아메리카노 주문", "context": ""}
+{"input": "my friend would like to order cold brew tonight at 8pm", "subject": "my friend", "action": "order cold brew", "context": "tonight at 8pm"}
+{"input": "Could I have iced coffee tonight at 8pm", "subject": "I", "action": "order iced coffee", "context": "tonight at 8pm"}
+{"input": "Tính tiền giúp gia đình tôi dịp kỷ niệm", "subject": "gia đình tôi", "action": "tính tiền", "context": "dịp kỷ niệm"}
+{"input": "Cho bạn 1 ly matcha latte không đường", "subject": "bạn", "action": "gọi matcha latte không đường", "context": ""}
+{"input": "바닐라 라테 주문하고 싶어요 12월 20일에", "subject": "저", "action": "바닐라 라테 주문", "context": "12월 20일에"}
+{"input": "Cho anh ấy đặt bàn ngày 20 tháng 12", "subject": "anh ấy", "action": "đặt bàn", "context": "ngày 20 tháng 12"}
+{"input": "오렌지 주스 추가해 주세요 기념일에", "subject": "저", "action": "오렌지 주스 추가", "context": "기념일에"}
+{"input": "my friend would like to order matcha latte at noon", "subject": "my friend", "action": "order matcha latte", "context": "at noon"}
+{"input": "I'd like to order orange juice", "subject": "I", "action": "order orange juice", "context": ""}
+{"input": "주문 변경하고 싶어요 내일 아침 회의 때", "subject": "저", "action": "주문 변경", "context": "내일 아침 회의 때"}
+{"input": "Cho anh đặt bàn tiệc sinh nhật ngày 20 tháng 12", "subject": "anh", "action": "đặt bàn tiệc sinh nhật", "context": "ngày 20 tháng 12"}
+{"input": "카푸치노 추가해 주세요 부탁드려요", "subject": "저", "action": "카푸치노 추가", "context": "부탁드려요"}
+{"input": "음료 추천해 주세요 10명이서", "subject": "저", "action": "음료 추천 요청", "context": "10명이서"}
+{"input": "I want to order iced coffee for 10 people", "subject": "I", "action": "order iced coffee", "context": "for 10 people"}
+{"input": "Can I book a table please", "subject": "I", "action": "book a table", "context": "please"}
+{"input": "Could I have milk tea for 10 people", "subject": "I", "action": "order milk tea", "context": "for 10 people"}
+{"input": "카푸치노 추가해 주세요 10명이서", "subject": "저", "action": "카푸치노 추가", "context": "10명이서"}
+{"input": "Can I cancel my order for our anniversary", "subject": "I", "action": "cancel order", "context": "for our anniversary"}
+{"input": "Cho anh đặt bàn tiệc sinh nhật tối nay lúc 8 giờ", "subject": "anh", "action": "đặt bàn tiệc sinh nhật", "context": "tối nay lúc 8 giờ"}
+{"input": "Quán có nhận thẻ không tối nay lúc 8 giờ", "subject": "khách", "action": "hỏi nhận thẻ", "context": "tối nay lúc 8 giờ"}
+{"input": "I want to order croissant this weekend", "subject": "I", "action": "order croissant", "context": "this weekend"}
+{"input": "mình đặt chỗ ngồi view đẹp cho 10 người", "subject": "mình", "action": "đặt chỗ ngồi view đẹp", "context": "cho 10 người"}
+{"input": "my friend would like to order iced coffee tonight at 8pm", "subject": "my friend", "action": "order iced coffee", "context": "tonight at 8pm"}
+{"input": "tôi muốn đặt bánh croissant tối nay lúc 8 giờ", "subject": "tôi", "action": "đặt bánh croissant", "context": "tối nay lúc 8 giờ"}
+{"input": "Could I have iced latte for 10 people", "subject": "I", "action": "order iced latte", "context": "for 10 people"}
+{"input": "Can I get cappuccino without sugar right now", "subject": "I", "action": "order cappuccino without sugar", "context": "right now"}
+{"input": "샌드위치 주세요 지금 바로", "subject": "저", "action": "샌드위치 주문", "context": "지금 바로"}
 {"input": "em đặt chỗ ngồi view đẹp hôm nay", "subject": "em", "action": "đặt chỗ ngồi view đẹp", "context": "hôm nay"}
-{"input": "Cho chị 1 ly cappuccino không đường cho 4 người", "subject": "chị", "action": "gọi cappuccino không đường", "context": "cho 4 người"}
-{"input": "Thanh toán bằng thẻ được không ngày 20 tháng 12", "subject": "khách", "action": "hỏi thanh toán bằng thẻ", "context": "ngày 20 tháng 12"}
-{"input": "anh muốn gọi thêm cold brew cho 10 người", "subject": "anh", "action": "gọi thêm cold brew", "context": "cho 10 người"}
-{"input": "Cho tôi xem menu cho 4 người", "subject": "tôi", "action": "xem menu", "context": "cho 4 người"}
-{"input": "bạn order bạc xỉu cuối tuần này", "subject": "bạn", "action": "order bạc xỉu", "context": "cuối tuần này"}
-{"input": "Cho bạn 1 ly bánh mì sandwich không đường lúc 3 giờ chiều nay", "subject": "bạn", "action": "gọi bánh mì sandwich không đường", "context": "lúc 3 giờ chiều nay"}
-{"input": "bạn muốn đặt cappuccino dịp kỷ niệm", "subject": "bạn", "action": "đặt cappuccino", "context": "dịp kỷ niệm"}
-{"input": "Cho nhóm tụi anh xem menu nhé em", "subject": "nhóm tụi anh", "action": "xem menu", "context": "nhé em"}
-{"input": "Cho bạn đặt bàn lúc 3 giờ chiều nay", "subject": "bạn", "action": "đặt bàn", "context": "lúc 3 giờ chiều nay"}
-{"input": "Cho chị ấy 1 ly cà phê sữa đá không đường dịp kỷ niệm", "subject": "chị ấy", "action": "gọi cà phê sữa đá không đường", "context": "dịp kỷ niệm"}
-{"input": "tôi muốn tư vấn món ăn phù hợp hôm nay", "subject": "tôi", "action": "tư vấn món ăn", "context": "hôm nay"}
-{"input": "chị muốn tư vấn món ăn phù hợp", "subject": "chị", "action": "tư vấn món ăn", "context": ""}
-{"input": "gia đình tôi muốn tư vấn món uống dịp kỷ niệm", "subject": "gia đình tôi", "action": "tư vấn món uống", "context": "dịp kỷ niệm"}
-{"input": "Cho mình đặt bàn tiệc sinh nhật cho 4 người", "subject": "mình", "action": "đặt bàn tiệc sinh nhật", "context": "cho 4 người"}
-{"input": "Cho anh đặt bàn cho 10 người", "subject": "anh", "action": "đặt bàn", "context": "cho 10 người"}
-{"input": "anh ấy order cappuccino cuối tuần này", "subject": "anh ấy", "action": "order cappuccino", "context": "cuối tuần này"}
+{"input": "Cho gia đình tôi đặt bàn tiệc sinh nhật lúc 3 giờ chiều nay", "subject": "gia đình tôi", "action": "đặt bàn tiệc sinh nhật", "context": "lúc 3 giờ chiều nay"}
+{"input": "카푸치노 추가해 주세요 기념일에", "subject": "저", "action": "카푸치노 추가", "context": "기념일에"}
+{"input": "nhóm tụi anh muốn đặt americano tối nay lúc 8 giờ", "subject": "nhóm tụi anh", "action": "đặt americano", "context": "tối nay lúc 8 giờ"}
+{"input": "Can I get cappuccino without sugar today", "subject": "I", "action": "order cappuccino without sugar", "context": "today"}
+{"input": "anh ấy muốn đặt americano cho 4 người", "subject": "anh ấy", "action": "đặt americano", "context": "cho 4 người"}
+{"input": "gia đình tôi đặt chỗ ngồi view đẹp ngay bây giờ", "subject": "gia đình tôi", "action": "đặt chỗ ngồi view đẹp", "context": "ngay bây giờ"}
+{"input": "Cho mình hỏi giờ mở cửa cuối tuần này", "subject": "mình", "action": "hỏi giờ mở cửa", "context": "cuối tuần này"}
+{"input": "I'd like to order croissant right now", "subject": "I", "action": "order croissant", "context": "right now"}
+{"input": "카푸치노 주문하고 싶어요 오늘 저녁 8시에", "subject": "저", "action": "카푸치노 주문", "context": "오늘 저녁 8시에"}
+{"input": "Can I get iced coffee without sugar please", "subject": "I", "action": "order iced coffee without sugar", "context": "please"}
+{"input": "카페라테 주문하고 싶어요 내일 아침 회의 때", "subject": "저", "action": "카페라테 주문", "context": "내일 아침 회의 때"}
+{"input": "I'd like to order cold brew right now", "subject": "I", "action": "order cold brew", "context": "right now"}
+{"input": "아이스 아메리카노 주세요 부탁드려요", "subject": "저", "action": "아이스 아메리카노 주문", "context": "부탁드려요"}
+{"input": "my family would like to order iced coffee for tomorrow morning at 7am", "subject": "my family", "action": "order iced coffee", "context": "for tomorrow morning at 7am"}
+{"input": "Can I cancel my order for 10 people", "subject": "I", "action": "cancel order", "context": "for 10 people"}
+{"input": "Cho chị xem menu", "subject": "chị", "action": "xem menu", "context": ""}
+{"input": "nhóm tụi anh muốn tư vấn món ăn phù hợp lúc 3 giờ chiều nay", "subject": "nhóm tụi anh", "action": "tư vấn món ăn", "context": "lúc 3 giờ chiều nay"}
+{"input": "제 친구 녹차라테 주문하려고 하는데요 점심에", "subject": "제 친구", "action": "녹차라테 주문", "context": "점심에"}
+{"input": "예약 취소하고 싶어요 부탁드려요", "subject": "저", "action": "예약 취소", "context": "부탁드려요"}
+{"input": "my friend would like to order cold brew for a birthday party", "subject": "my friend", "action": "order cold brew", "context": "for a birthday party"}
+{"input": "Cho chị hỏi giờ mở cửa cho 4 người", "subject": "chị", "action": "hỏi giờ mở cửa", "context": "cho 4 người"}
+{"input": "크루아상 추가해 주세요 생일 파티로", "subject": "저", "action": "크루아상 추가", "context": "생일 파티로"}
 {"input": "chị ấy hỏi có wifi không vào ngày mai lúc 7h", "subject": "chị ấy", "action": "hỏi wifi", "context": "vào ngày mai lúc 7h"}
-{"input": "Cho chị đặt bàn tiệc sinh nhật cho buổi họp sáng mai", "subject": "chị", "action": "đặt bàn tiệc sinh nhật", "context": "cho buổi họp sáng mai"}
-{"input": "chị ấy hỏi có wifi không", "subject": "chị ấy", "action": "hỏi wifi", "context": ""}
-{"input": "mình muốn đặt nước ép cam giúp mình với", "subject": "mình", "action": "đặt nước ép cam", "context": "giúp mình với"}
-{"input": "anh muốn tư vấn món ăn phù hợp giúp mình với", "subject": "anh", "action": "tư vấn món ăn", "context": "giúp mình với"}
-{"input": "gia đình tôi hỏi có wifi không ngày 20 tháng 12", "subject": "gia đình tôi", "action": "hỏi wifi", "context": "ngày 20 tháng 12"}
-{"input": "nhóm tụi anh muốn đặt bánh croissant hôm nay", "subject": "nhóm tụi anh", "action": "đặt bánh croissant", "context": "hôm nay"}
-{"input": "gia đình tôi muốn đổi món ngày 20 tháng 12", "subject": "gia đình tôi", "action": "đổi món", "context": "ngày 20 tháng 12"}
-{"input": "Thanh toán bằng thẻ được không cho buổi họp sáng mai", "subject": "khách", "action": "hỏi thanh toán bằng thẻ", "context": "cho buổi họp sáng mai"}
-{"input": "tôi đặt chỗ ngồi view đẹp lúc 3 giờ chiều nay", "subject": "tôi", "action": "đặt chỗ ngồi view đẹp", "context": "lúc 3 giờ chiều nay"}
-{"input": "mình muốn đổi món hôm nay", "subject": "mình", "action": "đổi món", "context": "hôm nay"}
-{"input": "tôi hỏi về khuyến mãi nhé em", "subject": "tôi", "action": "hỏi khuyến mãi", "context": "nhé em"}
-{"input": "Cho em hỏi giờ mở cửa giúp mình với", "subject": "em", "action": "hỏi giờ mở cửa", "context": "giúp mình với"}
-{"input": "em đặt chỗ ngồi view đẹp ngày 20 tháng 12", "subject": "em", "action": "đặt chỗ ngồi view đẹp", "context": "ngày 20 tháng 12"}
-{"input": "em muốn tư vấn món uống vào ngày mai lúc 7h", "subject": "em", "action": "tư vấn món uống", "context": "vào ngày mai lúc 7h"}
-{"input": "chị ấy muốn tư vấn món uống nhé em", "subject": "chị ấy", "action": "tư vấn món uống", "context": "nhé em"}
-{"input": "anh muốn gọi thêm bánh mì sandwich ngay bây giờ", "subject": "anh", "action": "gọi thêm bánh mì sandwich", "context": "ngay bây giờ"}
-{"input": "chị ấy hỏi có wifi không tối nay lúc 8 giờ", "subject": "chị ấy", "action": "hỏi wifi", "context": "tối nay lúc 8 giờ"}
-{"input": "chị ấy muốn gọi thêm bạc xỉu lúc 3 giờ chiều nay", "subject": "chị ấy", "action": "gọi thêm bạc xỉu", "context": "lúc 3 giờ chiều nay"}
-{"input": "bạn order bánh mì sandwich hôm nay", "subject": "bạn", "action": "order bánh mì sandwich", "context": "hôm nay"}
-{"input": "gia đình tôi muốn đổi món ngay bây giờ", "subject": "gia đình tôi", "action": "đổi món", "context": "ngay bây giờ"}
-{"input": "Cho bạn đặt bàn tiệc công ty hôm nay", "subject": "bạn", "action": "đặt bàn tiệc công ty", "context": "hôm nay"}
-{"input": "anh ấy hỏi có wifi không cho 4 người", "subject": "anh ấy", "action": "hỏi wifi", "context": "cho 4 người"}
-{"input": "anh muốn tư vấn món uống cuối tuần này", "subject": "anh", "action": "tư vấn món uống", "context": "cuối tuần này"}
-{"input": "chị ấy muốn đặt trà sữa lúc 3 giờ chiều nay", "subject": "chị ấy", "action": "đặt trà sữa", "context": "lúc 3 giờ chiều nay"}
-{"input": "gia đình tôi order bạc xỉu giúp mình với", "subject": "gia đình tôi", "action": "order bạc xỉu", "context": "giúp mình với"}
-{"input": "Cho anh 1 ly matcha latte không đường tối nay lúc 8 giờ", "subject": "anh", "action": "gọi matcha latte không đường", "context": "tối nay lúc 8 giờ"}
-{"input": "Cho anh ấy đặt bàn tiệc công ty hôm nay", "subject": "anh ấy", "action": "đặt bàn tiệc công ty", "context": "hôm nay"}
-{"input": "em order bạc xỉu giúp mình với", "subject": "em", "action": "order bạc xỉu", "context": "giúp mình với"}
-{"input": "mình muốn gọi thêm bạc xỉu cho 10 người", "subject": "mình", "action": "gọi thêm bạc xỉu", "context": "cho 10 người"}
-{"input": "gia đình tôi muốn đặt trà sữa giúp mình với", "subject": "gia đình tôi", "action": "đặt trà sữa", "context": "giúp mình với"}
-{"input": "em muốn đổi món lúc 3 giờ chiều nay", "subject": "em", "action": "đổi món", "context": "lúc 3 giờ chiều nay"}
-{"input": "chị ấy muốn tư vấn món ăn phù hợp hôm nay", "subject": "chị ấy", "action": "tư vấn món ăn", "context": "hôm nay"}
-{"input": "Thêm bạc xỉu vào đơn nhé em", "subject": "khách", "action": "thêm bạc xỉu", "context": "nhé em"}
-{"input": "chị order cold brew ngay bây giờ", "subject": "chị", "action": "order cold brew", "context": "ngay bây giờ"}
-{"input": "bạn order bánh croissant nhé em", "subject": "bạn", "action": "order bánh croissant", "context": "nhé em"}
-{"input": "bạn đặt chỗ ngồi view đẹp tối nay lúc 8 giờ", "subject": "bạn", "action": "đặt chỗ ngồi view đẹp", "context": "tối nay lúc 8 giờ"}
-{"input": "bạn muốn gọi thêm trà sữa ngay bây giờ", "subject": "bạn", "action": "gọi thêm trà sữa", "context": "ngay bây giờ"}
-{"input": "Cho tôi 1 ly bánh mì sandwich không đường ngay bây giờ", "subject": "tôi", "action": "gọi bánh mì sandwich không đường", "context": "ngay bây giờ"}
-{"input": "chị muốn đổi món cho 10 người", "subject": "chị", "action": "đổi món", "context": "cho 10 người"}
-{"input": "em hỏi có wifi không cuối tuần này", "subject": "em", "action": "hỏi wifi", "context": "cuối tuần này"}
-{"input": "Cho em 1 ly bánh croissant không đường cuối tuần này", "subject": "em", "action": "gọi bánh croissant không đường", "context": "cuối tuần này"}
-{"input": "Cho anh đặt bàn cuối tuần này", "subject": "anh", "action": "đặt bàn", "context": "cuối tuần này"}
-{"input": "Hủy order lúc 3 giờ chiều nay", "subject": "khách", "action": "hủy order", "context": "lúc 3 giờ chiều nay"}
-{"input": "Cho anh hỏi giờ mở cửa nhé em", "subject": "anh", "action": "hỏi giờ mở cửa", "context": "nhé em"}
-{"input": "chị ấy hỏi có wifi không nhé em", "subject": "chị ấy", "action": "hỏi wifi", "context": "nhé em"}
-{"input": "Cho mình đặt bàn tiệc sinh nhật giúp mình với", "subject": "mình", "action": "đặt bàn tiệc sinh nhật", "context": "giúp mình với"}
-{"input": "mình muốn gọi thêm bánh mì sandwich giúp mình với", "subject": "mình", "action": "gọi thêm bánh mì sandwich", "context": "giúp mình với"}
-{"input": "chị muốn đặt bánh croissant", "subject": "chị", "action": "đặt bánh croissant", "context": ""}
-{"input": "chị ấy order americano cho 10 người", "subject": "chị ấy", "action": "order americano", "context": "cho 10 người"}
-{"input": "anh muốn đặt bánh mì sandwich ngày 20 tháng 12", "subject": "anh", "action": "đặt bánh mì sandwich", "context": "ngày 20 tháng 12"}
-{"input": "Cho gia đình tôi đặt bàn tiệc sinh nhật cho 4 người", "subject": "gia đình tôi", "action": "đặt bàn tiệc sinh nhật", "context": "cho 4 người"}
-{"input": "anh order trà sữa ngày 20 tháng 12", "subject": "anh", "action": "order trà sữa", "context": "ngày 20 tháng 12"}
-{"input": "Tính tiền giúp em lúc 3 giờ chiều nay", "subject": "em", "action": "tính tiền", "context": "lúc 3 giờ chiều nay"}
-{"input": "anh muốn tư vấn món ăn phù hợp cho buổi họp sáng mai", "subject": "anh", "action": "tư vấn món ăn", "context": "cho buổi họp sáng mai"}
-{"input": "mình hỏi có wifi không vào ngày mai lúc 7h", "subject": "mình", "action": "hỏi wifi", "context": "vào ngày mai lúc 7h"}
-{"input": "nhóm tụi anh muốn gọi thêm bạc xỉu cho buổi họp sáng mai", "subject": "nhóm tụi anh", "action": "gọi thêm bạc xỉu", "context": "cho buổi họp sáng mai"}
-{"input": "gia đình tôi muốn đặt trà sữa lúc 12h trưa", "subject": "gia đình tôi", "action": "đặt trà sữa", "context": "lúc 12h trưa"}
-{"input": "chị muốn gọi thêm cappuccino nhé em", "subject": "chị", "action": "gọi thêm cappuccino", "context": "nhé em"}
-{"input": "chị muốn gọi thêm trà sữa cho buổi họp sáng mai", "subject": "chị", "action": "gọi thêm trà sữa", "context": "cho buổi họp sáng mai"}
-{"input": "anh hỏi về khuyến mãi dịp kỷ niệm", "subject": "anh", "action": "hỏi khuyến mãi", "context": "dịp kỷ niệm"}
-{"input": "chị order nước ép cam cuối tuần này", "subject": "chị", "action": "order nước ép cam", "context": "cuối tuần này"}
-{"input": "Tính tiền giúp chị ấy lúc 3 giờ chiều nay", "subject": "chị ấy", "action": "tính tiền", "context": "lúc 3 giờ chiều nay"}
-{"input": "mình muốn đổi món cuối tuần này", "subject": "mình", "action": "đổi món", "context": "cuối tuần này"}
-{"input": "gia đình tôi hỏi về khuyến mãi hôm nay", "subject": "gia đình tôi", "action": "hỏi khuyến mãi", "context": "hôm nay"}
-{"input": "mình order trà sữa dịp kỷ niệm", "subject": "mình", "action": "order trà sữa", "context": "dịp kỷ niệm"}
-{"input": "anh ấy hỏi về khuyến mãi tối nay lúc 8 giờ", "subject": "anh ấy", "action": "hỏi khuyến mãi", "context": "tối nay lúc 8 giờ"}
-{"input": "Cho mình đặt bàn tiệc sinh nhật lúc 3 giờ chiều nay", "subject": "mình", "action": "đặt bàn tiệc sinh nhật", "context": "lúc 3 giờ chiều nay"}
-{"input": "Hủy order ngày 20 tháng 12", "subject": "khách", "action": "hủy order", "context": "ngày 20 tháng 12"}
-{"input": "nhóm tụi anh muốn gọi thêm cà phê sữa đá dịp kỷ niệm", "subject": "nhóm tụi anh", "action": "gọi thêm cà phê sữa đá", "context": "dịp kỷ niệm"}
-{"input": "anh muốn đặt bánh croissant ngày 20 tháng 12", "subject": "anh", "action": "đặt bánh croissant", "context": "ngày 20 tháng 12"}
-{"input": "nhóm tụi anh muốn đặt cappuccino cho 4 người", "subject": "nhóm tụi anh", "action": "đặt cappuccino", "context": "cho 4 người"}
-{"input": "bạn order cappuccino hôm nay", "subject": "bạn", "action": "order cappuccino", "context": "hôm nay"}
-{"input": "em muốn đặt bánh croissant lúc 3 giờ chiều nay", "subject": "em", "action": "đặt bánh croissant", "context": "lúc 3 giờ chiều nay"}
-{"input": "chị đặt chỗ ngồi view đẹp cho buổi họp sáng mai", "subject": "chị", "action": "đặt chỗ ngồi view đẹp", "context": "cho buổi họp sáng mai"}
-{"input": "Cho anh hỏi giờ mở cửa ngày 20 tháng 12", "subject": "anh", "action": "hỏi giờ mở cửa", "context": "ngày 20 tháng 12"}
-{"input": "bạn đặt chỗ ngồi view đẹp dịp kỷ niệm", "subject": "bạn", "action": "đặt chỗ ngồi view đẹp", "context": "dịp kỷ niệm"}
-{"input": "Cho gia đình tôi xem menu dịp kỷ niệm", "subject": "gia đình tôi", "action": "xem menu", "context": "dịp kỷ niệm"}
-{"input": "bạn muốn đổi món nhé em", "subject": "bạn", "action": "đổi món", "context": "nhé em"}
-{"input": "anh ấy muốn gọi thêm cold brew tối nay lúc 8 giờ", "subject": "anh ấy", "action": "gọi thêm cold brew", "context": "tối nay lúc 8 giờ"}
-{"input": "Cho anh hỏi giờ mở cửa ngay bây giờ", "subject": "anh", "action": "hỏi giờ mở cửa", "context": "ngay bây giờ"}
-{"input": "em muốn gọi thêm bánh mì sandwich cuối tuần này", "subject": "em", "action": "gọi thêm bánh mì sandwich", "context": "cuối tuần này"}
-{"input": "Thanh toán bằng thẻ được không cho 10 người", "subject": "khách", "action": "hỏi thanh toán bằng thẻ", "context": "cho 10 người"}
-{"input": "Cho mình đặt bàn", "subject": "mình", "action": "đặt bàn", "context": ""}
-{"input": "Tính tiền giúp chị lúc 12h trưa", "subject": "chị", "action": "tính tiền", "context": "lúc 12h trưa"}
-{"input": "anh muốn tư vấn món uống giúp mình với", "subject": "anh", "action": "tư vấn món uống", "context": "giúp mình với"}
-{"input": "Cho mình 1 ly matcha latte không đường tối nay lúc 8 giờ", "subject": "mình", "action": "gọi matcha latte không đường", "context": "tối nay lúc 8 giờ"}
-{"input": "chị ấy muốn gọi thêm matcha latte lúc 3 giờ chiều nay", "subject": "chị ấy", "action": "gọi thêm matcha latte", "context": "lúc 3 giờ chiều nay"}
-{"input": "anh ấy muốn gọi thêm nước ép cam hôm nay", "subject": "anh ấy", "action": "gọi thêm nước ép cam", "context": "hôm nay"}
-{"input": "Cho em đặt bàn tiệc sinh nhật lúc 3 giờ chiều nay", "subject": "em", "action": "đặt bàn tiệc sinh nhật", "context": "lúc 3 giờ chiều nay"}
-{"input": "chị order trà sữa cho 4 người", "subject": "chị", "action": "order trà sữa", "context": "cho 4 người"}
-{"input": "Cho chị ấy đặt bàn tiệc công ty cho 10 người", "subject": "chị ấy", "action": "đặt bàn tiệc công ty", "context": "cho 10 người"}
-{"input": "nhóm tụi anh muốn đặt matcha latte giúp mình với", "subject": "nhóm tụi anh", "action": "đặt matcha latte", "context": "giúp mình với"}
-{"input": "gia đình tôi muốn gọi thêm bánh mì sandwich cho 10 người", "subject": "gia đình tôi", "action": "gọi thêm bánh mì sandwich", "context": "cho 10 người"}
-{"input": "bạn hỏi về khuyến mãi tối nay lúc 8 giờ", "subject": "bạn", "action": "hỏi khuyến mãi", "context": "tối nay lúc 8 giờ"}
-{"input": "Thêm bạc xỉu vào đơn dịp kỷ niệm", "subject": "khách", "action": "thêm bạc xỉu", "context": "dịp kỷ niệm"}
-{"input": "mình hỏi có wifi không giúp mình với", "subject": "mình", "action": "hỏi wifi", "context": "giúp mình với"}
-{"input": "Cho gia đình tôi hỏi giờ mở cửa", "subject": "gia đình tôi", "action": "hỏi giờ mở cửa", "context": ""}
-{"input": "chị ấy order bánh mì sandwich lúc 12h trưa", "subject": "chị ấy", "action": "order bánh mì sandwich", "context": "lúc 12h trưa"}
-{"input": "tôi muốn đặt trà sữa vào ngày mai lúc 7h", "subject": "tôi", "action": "đặt trà sữa", "context": "vào ngày mai lúc 7h"}
-{"input": "chị ấy muốn tư vấn món uống cho 4 người", "subject": "chị ấy", "action": "tư vấn món uống", "context": "cho 4 người"}
-{"input": "nhóm tụi anh muốn đặt bánh mì sandwich cho buổi họp sáng mai", "subject": "nhóm tụi anh", "action": "đặt bánh mì sandwich", "context": "cho buổi họp sáng mai"}
-{"input": "Cho chị ấy 1 ly bánh croissant không đường ngay bây giờ", "subject": "chị ấy", "action": "gọi bánh croissant không đường", "context": "ngay bây giờ"}
-{"input": "Tính tiền giúp chị ngay bây giờ", "subject": "chị", "action": "tính tiền", "context": "ngay bây giờ"}
-{"input": "Cho chị 1 ly trà sữa không đường giúp mình với", "subject": "chị", "action": "gọi trà sữa không đường", "context": "giúp mình với"}
-{"input": "Quán có nhận thẻ không giúp mình với", "subject": "khách", "action": "hỏi nhận thẻ", "context": "giúp mình với"}
-{"input": "em muốn tư vấn món uống lúc 3 giờ chiều nay", "subject": "em", "action": "tư vấn món uống", "context": "lúc 3 giờ chiều nay"}
-{"input": "tôi muốn gọi thêm bạc xỉu dịp kỷ niệm", "subject": "tôi", "action": "gọi thêm bạc xỉu", "context": "dịp kỷ niệm"}
-{"input": "chị muốn đặt bánh mì sandwich", "subject": "chị", "action": "đặt bánh mì sandwich", "context": ""}
-{"input": "mình muốn gọi thêm cappuccino cho buổi họp sáng mai", "subject": "mình", "action": "gọi thêm cappuccino", "context": "cho buổi họp sáng mai"}
-{"input": "Tính tiền giúp mình cho 10 người", "subject": "mình", "action": "tính tiền", "context": "cho 10 người"}
-{"input": "bạn muốn gọi thêm americano ngày 20 tháng 12", "subject": "bạn", "action": "gọi thêm americano", "context": "ngày 20 tháng 12"}
-{"input": "tôi muốn gọi thêm bạc xỉu tối nay lúc 8 giờ", "subject": "tôi", "action": "gọi thêm bạc xỉu", "context": "tối nay lúc 8 giờ"}
-{"input": "nhóm tụi anh muốn đặt trà sữa ngày 20 tháng 12", "subject": "nhóm tụi anh", "action": "đặt trà sữa", "context": "ngày 20 tháng 12"}
-{"input": "anh hỏi về khuyến mãi ngay bây giờ", "subject": "anh", "action": "hỏi khuyến mãi", "context": "ngay bây giờ"}
-{"input": "nhóm tụi anh muốn tư vấn món ăn phù hợp hôm nay", "subject": "nhóm tụi anh", "action": "tư vấn món ăn", "context": "hôm nay"}
-{"input": "chị ấy order bánh croissant dịp kỷ niệm", "subject": "chị ấy", "action": "order bánh croissant", "context": "dịp kỷ niệm"}
-{"input": "bạn hỏi về khuyến mãi giúp mình với", "subject": "bạn", "action": "hỏi khuyến mãi", "context": "giúp mình với"}
-{"input": "chị muốn đổi món giúp mình với", "subject": "chị", "action": "đổi món", "context": "giúp mình với"}
-{"input": "Cho bạn đặt bàn tiệc công ty giúp mình với", "subject": "bạn", "action": "đặt bàn tiệc công ty", "context": "giúp mình với"}
-{"input": "anh order bánh mì sandwich vào ngày mai lúc 7h", "subject": "anh", "action": "order bánh mì sandwich", "context": "vào ngày mai lúc 7h"}
-{"input": "Cho mình 1 ly cà phê sữa đá không đường cuối tuần này", "subject": "mình", "action": "gọi cà phê sữa đá không đường", "context": "cuối tuần này"}
-{"input": "anh ấy order bánh mì sandwich lúc 12h trưa", "subject": "anh ấy", "action": "order bánh mì sandwich", "context": "lúc 12h trưa"}
-{"input": "Cho tôi 1 ly americano không đường giúp mình với", "subject": "tôi", "action": "gọi americano không đường", "context": "giúp mình với"}
-{"input": "mình đặt chỗ ngồi view đẹp vào ngày mai lúc 7h", "subject": "mình", "action": "đặt chỗ ngồi view đẹp", "context": "vào ngày mai lúc 7h"}
-{"input": "Cho nhóm tụi anh 1 ly americano không đường cuối tuần này", "subject": "nhóm tụi anh", "action": "gọi americano không đường", "context": "cuối tuần này"}
-{"input": "Cho mình 1 ly americano không đường ngày 20 tháng 12", "subject": "mình", "action": "gọi americano không đường", "context": "ngày 20 tháng 12"}
-{"input": "Cho tôi 1 ly cà phê sữa đá không đường lúc 3 giờ chiều nay", "subject": "tôi", "action": "gọi cà phê sữa đá không đường", "context": "lúc 3 giờ chiều nay"}
-{"input": "mình hỏi có wifi không hôm nay", "subject": "mình", "action": "hỏi wifi", "context": "hôm nay"}
-{"input": "chị muốn đặt bánh croissant giúp mình với", "subject": "chị", "action": "đặt bánh croissant", "context": "giúp mình với"}
-{"input": "Cho bạn đặt bàn cho 10 người", "subject": "bạn", "action": "đặt bàn", "context": "cho 10 người"}
-{"input": "Cho bạn 1 ly cold brew không đường", "subject": "bạn", "action": "gọi cold brew không đường", "context": ""}
+{"input": "gia đình tôi order bánh croissant ngày 20 tháng 12", "subject": "gia đình tôi", "action": "order bánh croissant", "context": "ngày 20 tháng 12"}
+{"input": "Could I have iced coffee today", "subject": "I", "action": "order iced coffee", "context": "today"}
+{"input": "I'd like to order matcha latte for 4 people", "subject": "I", "action": "order matcha latte", "context": "for 4 people"}
+{"input": "Cho tôi hỏi giờ mở cửa hôm nay", "subject": "tôi", "action": "hỏi giờ mở cửa", "context": "hôm nay"}
+{"input": "Please add matcha latte to my order for our anniversary", "subject": "I", "action": "add matcha latte", "context": "for our anniversary"}
+{"input": "Could I have cappuccino at noon", "subject": "I", "action": "order cappuccino", "context": "at noon"}
+{"input": "크루아상 주문하고 싶어요 지금 바로", "subject": "저", "action": "크루아상 주문", "context": "지금 바로"}
+{"input": "Could I have cold brew for our anniversary", "subject": "I", "action": "order cold brew", "context": "for our anniversary"}
+{"input": "카페라테 한 잔 주세요 기념일에", "subject": "저", "action": "카페라테 주문", "context": "기념일에"}
+{"input": "저희 콜드브루 주문하려고 하는데요 오늘 저녁 8시에", "subject": "저희", "action": "콜드브루 주문", "context": "오늘 저녁 8시에"}
+{"input": "I'd like to add orange juice for a morning meeting tomorrow", "subject": "I", "action": "add orange juice", "context": "for a morning meeting tomorrow"}
+{"input": "chị ấy đặt chỗ ngồi view đẹp tối nay lúc 8 giờ", "subject": "chị ấy", "action": "đặt chỗ ngồi view đẹp", "context": "tối nay lúc 8 giờ"}
+{"input": "chị ấy muốn đổi món tối nay lúc 8 giờ", "subject": "chị ấy", "action": "đổi món", "context": "tối nay lúc 8 giờ"}
+{"input": "콜드브루 주세요 오늘", "subject": "저", "action": "콜드브루 주문", "context": "오늘"}
+{"input": "우리 가족 카푸치노 주문하려고 하는데요 점심에", "subject": "우리 가족", "action": "카푸치노 주문", "context": "점심에"}
+{"input": "우리 가족 녹차라테 주문하려고 하는데요 부탁드려요", "subject": "우리 가족", "action": "녹차라테 주문", "context": "부탁드려요"}
+{"input": "I would like to order iced coffee at noon", "subject": "I", "action": "order iced coffee", "context": "at noon"}
+{"input": "Thanh toán bằng thẻ được không giúp mình với", "subject": "khách", "action": "hỏi thanh toán bằng thẻ", "context": "giúp mình với"}
+{"input": "카페라테 한 잔 주세요 점심에", "subject": "저", "action": "카페라테 주문", "context": "점심에"}
+{"input": "my group would like to order milk tea for a morning meeting tomorrow", "subject": "my group", "action": "order milk tea", "context": "for a morning meeting tomorrow"}
+{"input": "Can you recommend a drink for a morning meeting tomorrow", "subject": "I", "action": "ask for drink recommendation", "context": "for a morning meeting tomorrow"}
+{"input": "tôi muốn đổi món hôm nay", "subject": "tôi", "action": "đổi món", "context": "hôm nay"}
+{"input": "생일 파티 예약하고 싶어요 오늘 오후에", "subject": "저", "action": "생일 파티 예약", "context": "오늘 오후에"}
+{"input": "my group would like to order orange juice this weekend", "subject": "my group", "action": "order orange juice", "context": "this weekend"}
+{"input": "my group would like to order croissant for a birthday party", "subject": "my group", "action": "order croissant", "context": "for a birthday party"}
+{"input": "바닐라 라테 한 잔 주세요 지금 바로", "subject": "저", "action": "바닐라 라테 주문", "context": "지금 바로"}
+{"input": "mình muốn tư vấn món ăn phù hợp cho buổi họp sáng mai", "subject": "mình", "action": "tư vấn món ăn", "context": "cho buổi họp sáng mai"}
+{"input": "chị ấy muốn đổi món dịp kỷ niệm", "subject": "chị ấy", "action": "đổi món", "context": "dịp kỷ niệm"}
+{"input": "tôi muốn gọi thêm bạc xỉu vào ngày mai lúc 7h", "subject": "tôi", "action": "gọi thêm bạc xỉu", "context": "vào ngày mai lúc 7h"}
+{"input": "anh ấy muốn tư vấn món ăn phù hợp giúp mình với", "subject": "anh ấy", "action": "tư vấn món ăn", "context": "giúp mình với"}
+{"input": "녹차라테 주세요 내일 아침 회의 때", "subject": "저", "action": "녹차라테 주문", "context": "내일 아침 회의 때"}
+{"input": "I'd like to order iced coffee today", "subject": "I", "action": "order iced coffee", "context": "today"}
+{"input": "아이스 아메리카노 추가해 주세요", "subject": "저", "action": "아이스 아메리카노 추가", "context": ""}
+{"input": "tôi đặt chỗ ngồi view đẹp giúp mình với", "subject": "tôi", "action": "đặt chỗ ngồi view đẹp", "context": "giúp mình với"}
+{"input": "I'd like to add matcha latte on December 20th", "subject": "I", "action": "add matcha latte", "context": "on December 20th"}
+{"input": "Cho nhóm tụi anh đặt bàn tiệc sinh nhật cuối tuần này", "subject": "nhóm tụi anh", "action": "đặt bàn tiệc sinh nhật", "context": "cuối tuần này"}
+{"input": "Can I reserve a table tonight at 8pm", "subject": "I", "action": "reserve a table", "context": "tonight at 8pm"}
+{"input": "바닐라 라테 추가해 주세요 오늘", "subject": "저", "action": "바닐라 라테 추가", "context": "오늘"}
+{"input": "자리 예약 부탁드려요", "subject": "저", "action": "자리 예약", "context": ""}
+{"input": "I'd like to order sandwich tonight at 8pm", "subject": "I", "action": "order sandwich", "context": "tonight at 8pm"}
+{"input": "저 콜드브루 주문하려고 하는데요 지금 바로", "subject": "저", "action": "콜드브루 주문", "context": "지금 바로"}
+{"input": "Do you have WiFi tonight at 8pm", "subject": "customer", "action": "ask WiFi", "context": "tonight at 8pm"}
+{"input": "저 카푸치노 주문하려고 하는데요 오늘", "subject": "저", "action": "카푸치노 주문", "context": "오늘"}
+{"input": "I'd like to add cappuccino for a birthday party", "subject": "I", "action": "add cappuccino", "context": "for a birthday party"}
+{"input": "my friend would like to order milk tea for our anniversary", "subject": "my friend", "action": "order milk tea", "context": "for our anniversary"}
+{"input": "Tính tiền giúp gia đình tôi lúc 3 giờ chiều nay", "subject": "gia đình tôi", "action": "tính tiền", "context": "lúc 3 giờ chiều nay"}
+{"input": "우리 가족 콜드브루 주문하려고 하는데요 10명이서", "subject": "우리 가족", "action": "콜드브루 주문", "context": "10명이서"}
+{"input": "my family would like to order milk tea for 4 people", "subject": "my family", "action": "order milk tea", "context": "for 4 people"}
+{"input": "아이스 아메리카노 주문하고 싶어요", "subject": "저", "action": "아이스 아메리카노 주문", "context": ""}
+{"input": "I would like to order croissant for a birthday party", "subject": "I", "action": "order croissant", "context": "for a birthday party"}
+{"input": "Can I get croissant without sugar right now", "subject": "I", "action": "order croissant without sugar", "context": "right now"}
+{"input": "mình muốn tư vấn món ăn phù hợp dịp kỷ niệm", "subject": "mình", "action": "tư vấn món ăn", "context": "dịp kỷ niệm"}
+{"input": "mình muốn đổi món lúc 12h trưa", "subject": "mình", "action": "đổi món", "context": "lúc 12h trưa"}
+{"input": "Cho anh ấy đặt bàn ngay bây giờ", "subject": "anh ấy", "action": "đặt bàn", "context": "ngay bây giờ"}
+{"input": "카푸치노 한 잔 주세요 점심에", "subject": "저", "action": "카푸치노 주문", "context": "점심에"}
+{"input": "샌드위치 추가해 주세요 이번 주말에", "subject": "저", "action": "샌드위치 추가", "context": "이번 주말에"}
+{"input": "gia đình tôi đặt chỗ ngồi view đẹp ngày 20 tháng 12", "subject": "gia đình tôi", "action": "đặt chỗ ngồi view đẹp", "context": "ngày 20 tháng 12"}
+{"input": "my friend would like to order orange juice right now", "subject": "my friend", "action": "order orange juice", "context": "right now"}
+{"input": "주문 변경하고 싶어요", "subject": "저", "action": "주문 변경", "context": ""}
+{"input": "우리 가족 오렌지 주스 주문하려고 하는데요 오늘 오후에", "subject": "우리 가족", "action": "오렌지 주스 주문", "context": "오늘 오후에"}
+{"input": "우리 가족 콜드브루 주문하려고 하는데요 기념일에", "subject": "우리 가족", "action": "콜드브루 주문", "context": "기념일에"}
+{"input": "tôi hỏi về khuyến mãi ngày 20 tháng 12", "subject": "tôi", "action": "hỏi khuyến mãi", "context": "ngày 20 tháng 12"}
+{"input": "바닐라 라테 추가해 주세요 내일 아침 7시에", "subject": "저", "action": "바닐라 라테 추가", "context": "내일 아침 7시에"}
+{"input": "Cho tôi 1 ly nước ép cam không đường ngay bây giờ", "subject": "tôi", "action": "gọi nước ép cam không đường", "context": "ngay bây giờ"}
+{"input": "저희 팀 아이스 아메리카노 주문하려고 하는데요 오늘 오후에", "subject": "저희 팀", "action": "아이스 아메리카노 주문", "context": "오늘 오후에"}
+{"input": "Cho em xem menu cho 10 người", "subject": "em", "action": "xem menu", "context": "cho 10 người"}
+{"input": "Cho chị ấy đặt bàn giúp mình với", "subject": "chị ấy", "action": "đặt bàn", "context": "giúp mình với"}
+{"input": "Cho anh ấy 1 ly bánh mì sandwich không đường vào ngày mai lúc 7h", "subject": "anh ấy", "action": "gọi bánh mì sandwich không đường", "context": "vào ngày mai lúc 7h"}
+{"input": "em order cappuccino dịp kỷ niệm", "subject": "em", "action": "order cappuccino", "context": "dịp kỷ niệm"}
+{"input": "카페라테 설탕 없이 주세요 오늘 오후에", "subject": "저", "action": "카페라테 설탕 없이 주문", "context": "오늘 오후에"}
+{"input": "Cho chị hỏi giờ mở cửa tối nay lúc 8 giờ", "subject": "chị", "action": "hỏi giờ mở cửa", "context": "tối nay lúc 8 giờ"}
+{"input": "Please add iced latte to my order for our anniversary", "subject": "I", "action": "add iced latte", "context": "for our anniversary"}
+{"input": "Can you recommend a drink for tomorrow morning at 7am", "subject": "I", "action": "ask for drink recommendation", "context": "for tomorrow morning at 7am"}
+{"input": "생일 파티 예약하고 싶어요 12월 20일에", "subject": "저", "action": "생일 파티 예약", "context": "12월 20일에"}
+{"input": "em hỏi có wifi không tối nay lúc 8 giờ", "subject": "em", "action": "hỏi wifi", "context": "tối nay lúc 8 giờ"}
+{"input": "와이파이 있나요 점심에", "subject": "손님", "action": "와이파이 문의", "context": "점심에"}
+{"input": "할인 행사 있나요 점심에", "subject": "손님", "action": "할인 행사 문의", "context": "점심에"}
+{"input": "tôi đặt chỗ ngồi view đẹp ngay bây giờ", "subject": "tôi", "action": "đặt chỗ ngồi view đẹp", "context": "ngay bây giờ"}
+{"input": "How much is the total right now", "subject": "I", "action": "ask total price", "context": "right now"}
+{"input": "영업 시간이 어떻게 되나요 12월 20일에", "subject": "손님", "action": "영업 시간 문의", "context": "12월 20일에"}
+{"input": "오렌지 주스 추가해 주세요 12월 20일에", "subject": "저", "action": "오렌지 주스 추가", "context": "12월 20일에"}
+{"input": "생일 파티 예약하고 싶어요 내일 아침 회의 때", "subject": "저", "action": "생일 파티 예약", "context": "내일 아침 회의 때"}
+{"input": "I'd like to order croissant on December 20th", "subject": "I", "action": "order croissant", "context": "on December 20th"}
+{"input": "How much is the total for 4 people", "subject": "I", "action": "ask total price", "context": "for 4 people"}
+{"input": "우리 가족 바닐라 라테 주문하려고 하는데요 오늘 오후에", "subject": "우리 가족", "action": "바닐라 라테 주문", "context": "오늘 오후에"}
+{"input": "녹차라테 주문하고 싶어요 10명이서", "subject": "저", "action": "녹차라테 주문", "context": "10명이서"}
+{"input": "Thanh toán bằng thẻ được không", "subject": "khách", "action": "hỏi thanh toán bằng thẻ", "context": ""}
+{"input": "바닐라 라테 주문하고 싶어요 기념일에", "subject": "저", "action": "바닐라 라테 주문", "context": "기념일에"}
+{"input": "we would like to order iced coffee today", "subject": "we", "action": "order iced coffee", "context": "today"}
+{"input": "I'd like to order cold brew this weekend", "subject": "I", "action": "order cold brew", "context": "this weekend"}
+{"input": "카푸치노 설탕 없이 주세요 부탁드려요", "subject": "저", "action": "카푸치노 설탕 없이 주문", "context": "부탁드려요"}
+{"input": "바닐라 라테 한 잔 주세요 오늘", "subject": "저", "action": "바닐라 라테 주문", "context": "오늘"}
+{"input": "밀크티 설탕 없이 주세요 12월 20일에", "subject": "저", "action": "밀크티 설탕 없이 주문", "context": "12월 20일에"}
+{"input": "Cho chị ấy đặt bàn tiệc công ty hôm nay", "subject": "chị ấy", "action": "đặt bàn tiệc công ty", "context": "hôm nay"}
+{"input": "mình đặt chỗ ngồi view đẹp ngay bây giờ", "subject": "mình", "action": "đặt chỗ ngồi view đẹp", "context": "ngay bây giờ"}
+{"input": "Cho chị ấy đặt bàn tiệc công ty cho 4 người", "subject": "chị ấy", "action": "đặt bàn tiệc công ty", "context": "cho 4 người"}
+{"input": "I'd like to order milk tea tonight at 8pm", "subject": "I", "action": "order milk tea", "context": "tonight at 8pm"}
+{"input": "bạn muốn đổi món vào ngày mai lúc 7h", "subject": "bạn", "action": "đổi món", "context": "vào ngày mai lúc 7h"}
+{"input": "할인 행사 있나요 오늘 오후에", "subject": "손님", "action": "할인 행사 문의", "context": "오늘 오후에"}
+{"input": "밀크티 주문하고 싶어요 10명이서", "subject": "저", "action": "밀크티 주문", "context": "10명이서"}
+{"input": "저희 크루아상 주문하려고 하는데요 12월 20일에", "subject": "저희", "action": "크루아상 주문", "context": "12월 20일에"}
+{"input": "바닐라 라테 주세요 10명이서", "subject": "저", "action": "바닐라 라테 주문", "context": "10명이서"}
+{"input": "Cho nhóm tụi anh hỏi giờ mở cửa giúp mình với", "subject": "nhóm tụi anh", "action": "hỏi giờ mở cửa", "context": "giúp mình với"}
+{"input": "chị đặt chỗ ngồi view đẹp tối nay lúc 8 giờ", "subject": "chị", "action": "đặt chỗ ngồi view đẹp", "context": "tối nay lúc 8 giờ"}
+{"input": "주문 취소할게요 오늘", "subject": "저", "action": "주문 취소", "context": "오늘"}
+{"input": "em hỏi về khuyến mãi ngay bây giờ", "subject": "em", "action": "hỏi khuyến mãi", "context": "ngay bây giờ"}
+{"input": "Can I book a table for 4 people", "subject": "I", "action": "book a table", "context": "for 4 people"}
+{"input": "I'd like to add croissant please", "subject": "I", "action": "add croissant", "context": "please"}
+{"input": "I want to order milk tea for 10 people", "subject": "I", "action": "order milk tea", "context": "for 10 people"}
+{"input": "Please add iced latte to my order right now", "subject": "I", "action": "add iced latte", "context": "right now"}
+{"input": "chị ấy muốn tư vấn món uống lúc 3 giờ chiều nay", "subject": "chị ấy", "action": "tư vấn món uống", "context": "lúc 3 giờ chiều nay"}
+{"input": "my group would like to order croissant for our anniversary", "subject": "my group", "action": "order croissant", "context": "for our anniversary"}
+{"input": "Please add milk tea to my order for our anniversary", "subject": "I", "action": "add milk tea", "context": "for our anniversary"}
+{"input": "테이블 예약하고 싶어요 오늘", "subject": "저", "action": "테이블 예약", "context": "오늘"}
+{"input": "Please add cold brew to my order on December 20th", "subject": "I", "action": "add cold brew", "context": "on December 20th"}
+{"input": "저희 팀 아이스 아메리카노 주문하려고 하는데요 지금 바로", "subject": "저희 팀", "action": "아이스 아메리카노 주문", "context": "지금 바로"}
+{"input": "저희 팀 아이스 아메리카노 주문하려고 하는데요 이번 주말에", "subject": "저희 팀", "action": "아이스 아메리카노 주문", "context": "이번 주말에"}
+{"input": "I would like to order americano for a birthday party", "subject": "I", "action": "order americano", "context": "for a birthday party"}
+{"input": "Can I get milk tea without sugar this weekend", "subject": "I", "action": "order milk tea without sugar", "context": "this weekend"}
+{"input": "샌드위치 주문하고 싶어요 오늘 저녁 8시에", "subject": "저", "action": "샌드위치 주문", "context": "오늘 저녁 8시에"}
+{"input": "I'd like to add orange juice this weekend", "subject": "I", "action": "add orange juice", "context": "this weekend"}
+{"input": "anh muốn tư vấn món ăn phù hợp cho 4 người", "subject": "anh", "action": "tư vấn món ăn", "context": "cho 4 người"}
+{"input": "Can I get iced latte without sugar today", "subject": "I", "action": "order iced latte without sugar", "context": "today"}
+{"input": "I'd like to add cold brew at noon", "subject": "I", "action": "add cold brew", "context": "at noon"}
+{"input": "nhóm tụi anh muốn đặt trà sữa cuối tuần này", "subject": "nhóm tụi anh", "action": "đặt trà sữa", "context": "cuối tuần này"}
+{"input": "자리 예약 부탁드려요 4명이서", "subject": "저", "action": "자리 예약", "context": "4명이서"}
+{"input": "my family would like to order matcha latte this weekend", "subject": "my family", "action": "order matcha latte", "context": "this weekend"}
+{"input": "저희 녹차라테 주문하려고 하는데요 오늘 오후에", "subject": "저희", "action": "녹차라테 주문", "context": "오늘 오후에"}
+{"input": "Cho mình đặt bàn nhé em", "subject": "mình", "action": "đặt bàn", "context": "nhé em"}
+{"input": "카드 결제 되나요 12월 20일에", "subject": "손님", "action": "카드 결제 문의", "context": "12월 20일에"}
+{"input": "와이파이 있나요 기념일에", "subject": "손님", "action": "와이파이 문의", "context": "기념일에"}
+{"input": "mình hỏi về khuyến mãi tối nay lúc 8 giờ", "subject": "mình", "action": "hỏi khuyến mãi", "context": "tối nay lúc 8 giờ"}
+{"input": "크루아상 주세요 10명이서", "subject": "저", "action": "크루아상 주문", "context": "10명이서"}
+{"input": "오렌지 주스 주세요 점심에", "subject": "저", "action": "오렌지 주스 주문", "context": "점심에"}
+{"input": "Cho nhóm tụi anh đặt bàn tiệc sinh nhật tối nay lúc 8 giờ", "subject": "nhóm tụi anh", "action": "đặt bàn tiệc sinh nhật", "context": "tối nay lúc 8 giờ"}
 {"input": "Cho bạn hỏi giờ mở cửa hôm nay", "subject": "bạn", "action": "hỏi giờ mở cửa", "context": "hôm nay"}
-{"input": "chị ấy muốn đổi món cho 4 người", "subject": "chị ấy", "action": "đổi món", "context": "cho 4 người"}
-{"input": "chị ấy order bánh croissant cho buổi họp sáng mai", "subject": "chị ấy", "action": "order bánh croissant", "context": "cho buổi họp sáng mai"}
-{"input": "Thêm cold brew vào đơn hôm nay", "subject": "khách", "action": "thêm cold brew", "context": "hôm nay"}
-{"input": "bạn đặt chỗ ngồi view đẹp cho 4 người", "subject": "bạn", "action": "đặt chỗ ngồi view đẹp", "context": "cho 4 người"}
-{"input": "Cho em đặt bàn nhé em", "subject": "em", "action": "đặt bàn", "context": "nhé em"}
-{"input": "tôi muốn đặt nước ép cam ngày 20 tháng 12", "subject": "tôi", "action": "đặt nước ép cam", "context": "ngày 20 tháng 12"}
-{"input": "Cho anh ấy đặt bàn tiệc công ty", "subject": "anh ấy", "action": "đặt bàn tiệc công ty", "context": ""}
-{"input": "anh hỏi về khuyến mãi", "subject": "anh", "action": "hỏi khuyến mãi", "context": ""}
-{"input": "anh ấy muốn đặt nước ép cam lúc 3 giờ chiều nay", "subject": "anh ấy", "action": "đặt nước ép cam", "context": "lúc 3 giờ chiều nay"}
-{"input": "mình muốn tư vấn món uống ngày 20 tháng 12", "subject": "mình", "action": "tư vấn món uống", "context": "ngày 20 tháng 12"}
-{"input": "Cho mình hỏi giờ mở cửa tối nay lúc 8 giờ", "subject": "mình", "action": "hỏi giờ mở cửa", "context": "tối nay lúc 8 giờ"}
-{"input": "Cho nhóm tụi anh đặt bàn tiệc công ty cho buổi họp sáng mai", "subject": "nhóm tụi anh", "action": "đặt bàn tiệc công ty", "context": "cho buổi họp sáng mai"}
-{"input": "chị muốn gọi thêm bạc xỉu lúc 12h trưa", "subject": "chị", "action": "gọi thêm bạc xỉu", "context": "lúc 12h trưa"}
-{"input": "Cho gia đình tôi đặt bàn tiệc công ty giúp mình với", "subject": "gia đình tôi", "action": "đặt bàn tiệc công ty", "context": "giúp mình với"}
-{"input": "tôi muốn đặt bánh croissant nhé em", "subject": "tôi", "action": "đặt bánh croissant", "context": "nhé em"}
-{"input": "tôi order bánh croissant ngay bây giờ", "subject": "tôi", "action": "order bánh croissant", "context": "ngay bây giờ"}
-{"input": "Cho chị ấy đặt bàn tiệc công ty cuối tuần này", "subject": "chị ấy", "action": "đặt bàn tiệc công ty", "context": "cuối tuần này"}
-{"input": "Cho anh đặt bàn hôm nay", "subject": "anh", "action": "đặt bàn", "context": "hôm nay"}
-{"input": "Cho anh đặt bàn tiệc sinh nhật lúc 12h trưa", "subject": "anh", "action": "đặt bàn tiệc sinh nhật", "context": "lúc 12h trưa"}
-{"input": "gia đình tôi hỏi có wifi không dịp kỷ niệm", "subject": "gia đình tôi", "action": "hỏi wifi", "context": "dịp kỷ niệm"}
-{"input": "em order trà sữa cho buổi họp sáng mai", "subject": "em", "action": "order trà sữa", "context": "cho buổi họp sáng mai"}
+{"input": "샌드위치 한 잔 주세요 오늘", "subject": "저", "action": "샌드위치 주문", "context": "오늘"}
+{"input": "chị muốn gọi thêm trà sữa tối nay lúc 8 giờ", "subject": "chị", "action": "gọi thêm trà sữa", "context": "tối nay lúc 8 giờ"}
+{"input": "Cho em hỏi giờ mở cửa dịp kỷ niệm", "subject": "em", "action": "hỏi giờ mở cửa", "context": "dịp kỷ niệm"}
+{"input": "chị ấy order cà phê sữa đá lúc 3 giờ chiều nay", "subject": "chị ấy", "action": "order cà phê sữa đá", "context": "lúc 3 giờ chiều nay"}
+{"input": "anh muốn đổi món dịp kỷ niệm", "subject": "anh", "action": "đổi món", "context": "dịp kỷ niệm"}
+{"input": "my group would like to order iced coffee for 10 people", "subject": "my group", "action": "order iced coffee", "context": "for 10 people"}
+{"input": "my group would like to order orange juice for a birthday party", "subject": "my group", "action": "order orange juice", "context": "for a birthday party"}
+{"input": "Please add cold brew to my order today", "subject": "I", "action": "add cold brew", "context": "today"}
+{"input": "Can I reserve a table for 10 people", "subject": "I", "action": "reserve a table", "context": "for 10 people"}
+{"input": "Do you have any promotions today", "subject": "customer", "action": "ask promotions", "context": "today"}
+{"input": "Tính tiền giúp anh ấy vào ngày mai lúc 7h", "subject": "anh ấy", "action": "tính tiền", "context": "vào ngày mai lúc 7h"}
+{"input": "제 친구 아이스 아메리카노 주문하려고 하는데요 내일 아침 7시에", "subject": "제 친구", "action": "아이스 아메리카노 주문", "context": "내일 아침 7시에"}
+{"input": "카푸치노 한 잔 주세요 부탁드려요", "subject": "저", "action": "카푸치노 주문", "context": "부탁드려요"}
+{"input": "I'd like to add orange juice for a birthday party", "subject": "I", "action": "add orange juice", "context": "for a birthday party"}
+{"input": "우리 가족 녹차라테 주문하려고 하는데요 12월 20일에", "subject": "우리 가족", "action": "녹차라테 주문", "context": "12월 20일에"}
+{"input": "tôi muốn gọi thêm bạc xỉu nhé em", "subject": "tôi", "action": "gọi thêm bạc xỉu", "context": "nhé em"}
+{"input": "와이파이 있나요 오늘", "subject": "손님", "action": "와이파이 문의", "context": "오늘"}
+{"input": "저희 팀 바닐라 라테 주문하려고 하는데요 내일 아침 7시에", "subject": "저희 팀", "action": "바닐라 라테 주문", "context": "내일 아침 7시에"}
+{"input": "chị ấy muốn đặt cà phê sữa đá tối nay lúc 8 giờ", "subject": "chị ấy", "action": "đặt cà phê sữa đá", "context": "tối nay lúc 8 giờ"}
+{"input": "제 친구 카푸치노 주문하려고 하는데요 내일 아침 7시에", "subject": "제 친구", "action": "카푸치노 주문", "context": "내일 아침 7시에"}
+{"input": "we would like to order sandwich for our anniversary", "subject": "we", "action": "order sandwich", "context": "for our anniversary"}
+{"input": "Cho gia đình tôi đặt bàn tiệc sinh nhật ngay bây giờ", "subject": "gia đình tôi", "action": "đặt bàn tiệc sinh nhật", "context": "ngay bây giờ"}
+{"input": "Cho chị hỏi giờ mở cửa dịp kỷ niệm", "subject": "chị", "action": "hỏi giờ mở cửa", "context": "dịp kỷ niệm"}
+{"input": "What are your opening hours at noon", "subject": "customer", "action": "ask opening hours", "context": "at noon"}
+{"input": "Cho gia đình tôi đặt bàn hôm nay", "subject": "gia đình tôi", "action": "đặt bàn", "context": "hôm nay"}
+{"input": "I'd like to order milk tea today", "subject": "I", "action": "order milk tea", "context": "today"}
+{"input": "바닐라 라테 주세요 오늘", "subject": "저", "action": "바닐라 라테 주문", "context": "오늘"}
+{"input": "Could I have americano for 10 people", "subject": "I", "action": "order americano", "context": "for 10 people"}
+{"input": "Cho nhóm tụi anh đặt bàn tiệc sinh nhật ngày 20 tháng 12", "subject": "nhóm tụi anh", "action": "đặt bàn tiệc sinh nhật", "context": "ngày 20 tháng 12"}
+{"input": "저희 팀 샌드위치 주문하려고 하는데요 오늘", "subject": "저희 팀", "action": "샌드위치 주문", "context": "오늘"}
+{"input": "anh order cappuccino lúc 12h trưa", "subject": "anh", "action": "order cappuccino", "context": "lúc 12h trưa"}
+{"input": "Cho bạn 1 ly cold brew không đường", "subject": "bạn", "action": "gọi cold brew không đường", "context": ""}
+{"input": "I want to order milk tea for a birthday party", "subject": "I", "action": "order milk tea", "context": "for a birthday party"}
+{"input": "Cho anh 1 ly bạc xỉu không đường vào ngày mai lúc 7h", "subject": "anh", "action": "gọi bạc xỉu không đường", "context": "vào ngày mai lúc 7h"}
+{"input": "bạn muốn gọi thêm cappuccino ngày 20 tháng 12", "subject": "bạn", "action": "gọi thêm cappuccino", "context": "ngày 20 tháng 12"}
+{"input": "my friend would like to order croissant this afternoon", "subject": "my friend", "action": "order croissant", "context": "this afternoon"}
+{"input": "em hỏi về khuyến mãi", "subject": "em", "action": "hỏi khuyến mãi", "context": ""}
+{"input": "샌드위치 설탕 없이 주세요 10명이서", "subject": "저", "action": "샌드위치 설탕 없이 주문", "context": "10명이서"}
+{"input": "Do you have WiFi for a morning meeting tomorrow", "subject": "customer", "action": "ask WiFi", "context": "for a morning meeting tomorrow"}
+{"input": "카페라테 추가해 주세요 오늘 오후에", "subject": "저", "action": "카페라테 추가", "context": "오늘 오후에"}
+{"input": "Please add cold brew to my order for a morning meeting tomorrow", "subject": "I", "action": "add cold brew", "context": "for a morning meeting tomorrow"}
+{"input": "Can I get cappuccino without sugar", "subject": "I", "action": "order cappuccino without sugar", "context": ""}
+{"input": "콜드브루 주문하고 싶어요 기념일에", "subject": "저", "action": "콜드브루 주문", "context": "기념일에"}
+{"input": "Tính tiền giúp anh ấy cho 10 người", "subject": "anh ấy", "action": "tính tiền", "context": "cho 10 người"}
+{"input": "we would like to order matcha latte", "subject": "we", "action": "order matcha latte", "context": ""}
+{"input": "Quán có nhận thẻ không vào ngày mai lúc 7h", "subject": "khách", "action": "hỏi nhận thẻ", "context": "vào ngày mai lúc 7h"}
+{"input": "Cho anh đặt bàn tiệc công ty hôm nay", "subject": "anh", "action": "đặt bàn tiệc công ty", "context": "hôm nay"}
+{"input": "샌드위치 설탕 없이 주세요 내일 아침 회의 때", "subject": "저", "action": "샌드위치 설탕 없이 주문", "context": "내일 아침 회의 때"}
+{"input": "Thêm nước ép cam vào đơn hôm nay", "subject": "khách", "action": "thêm nước ép cam", "context": "hôm nay"}
+{"input": "저희 녹차라테 주문하려고 하는데요 기념일에", "subject": "저희", "action": "녹차라테 주문", "context": "기념일에"}
+{"input": "콜드브루 주문하고 싶어요", "subject": "저", "action": "콜드브루 주문", "context": ""}
+{"input": "Please add cappuccino to my order right now", "subject": "I", "action": "add cappuccino", "context": "right now"}
+{"input": "카푸치노 설탕 없이 주세요 이번 주말에", "subject": "저", "action": "카푸치노 설탕 없이 주문", "context": "이번 주말에"}
+{"input": "my group would like to order americano at noon", "subject": "my group", "action": "order americano", "context": "at noon"}
+{"input": "I'd like to add orange juice for 4 people", "subject": "I", "action": "add orange juice", "context": "for 4 people"}
+{"input": "em order cà phê sữa đá cho 4 người", "subject": "em", "action": "order cà phê sữa đá", "context": "cho 4 người"}
+{"input": "Cho chị ấy đặt bàn cho 4 người", "subject": "chị ấy", "action": "đặt bàn", "context": "cho 4 người"}
+{"input": "Please add matcha latte to my order tonight at 8pm", "subject": "I", "action": "add matcha latte", "context": "tonight at 8pm"}
+{"input": "Can I get iced coffee without sugar this afternoon", "subject": "I", "action": "order iced coffee without sugar", "context": "this afternoon"}
+{"input": "저희 카페라테 주문하려고 하는데요 점심에", "subject": "저희", "action": "카페라테 주문", "context": "점심에"}
+{"input": "바닐라 라테 한 잔 주세요 내일 아침 7시에", "subject": "저", "action": "바닐라 라테 주문", "context": "내일 아침 7시에"}
+{"input": "Can I get matcha latte without sugar for 4 people", "subject": "I", "action": "order matcha latte without sugar", "context": "for 4 people"}
+{"input": "Cho anh ấy xem menu ngay bây giờ", "subject": "anh ấy", "action": "xem menu", "context": "ngay bây giờ"}
+{"input": "녹차라테 설탕 없이 주세요 오늘 오후에", "subject": "저", "action": "녹차라테 설탕 없이 주문", "context": "오늘 오후에"}
+{"input": "Could I have milk tea this afternoon", "subject": "I", "action": "order milk tea", "context": "this afternoon"}
+{"input": "Can I get matcha latte without sugar this afternoon", "subject": "I", "action": "order matcha latte without sugar", "context": "this afternoon"}
+{"input": "How much is the total tonight at 8pm", "subject": "I", "action": "ask total price", "context": "tonight at 8pm"}
+{"input": "단체 예약 가능한가요", "subject": "손님", "action": "단체 예약 문의", "context": ""}
+{"input": "저희 팀 카푸치노 주문하려고 하는데요 기념일에", "subject": "저희 팀", "action": "카푸치노 주문", "context": "기념일에"}
+{"input": "Cho em đặt bàn tiệc sinh nhật lúc 12h trưa", "subject": "em", "action": "đặt bàn tiệc sinh nhật", "context": "lúc 12h trưa"}
+{"input": "Quán có nhận thẻ không", "subject": "khách", "action": "hỏi nhận thẻ", "context": ""}
+{"input": "Cho bạn xem menu ngay bây giờ", "subject": "bạn", "action": "xem menu", "context": "ngay bây giờ"}
+{"input": "녹차라테 주문하고 싶어요 12월 20일에", "subject": "저", "action": "녹차라테 주문", "context": "12월 20일에"}
+{"input": "주문 변경하고 싶어요 오늘", "subject": "저", "action": "주문 변경", "context": "오늘"}
+{"input": "Could I have orange juice right now", "subject": "I", "action": "order orange juice", "context": "right now"}
+{"input": "my family would like to order iced coffee for a morning meeting tomorrow", "subject": "my family", "action": "order iced coffee", "context": "for a morning meeting tomorrow"}
+{"input": "I want to cancel my reservation this afternoon", "subject": "I", "action": "cancel reservation", "context": "this afternoon"}
+{"input": "gia đình tôi hỏi về khuyến mãi cuối tuần này", "subject": "gia đình tôi", "action": "hỏi khuyến mãi", "context": "cuối tuần này"}
+{"input": "저희 크루아상 주문하려고 하는데요 오늘 오후에", "subject": "저희", "action": "크루아상 주문", "context": "오늘 오후에"}
+{"input": "제 친구 바닐라 라테 주문하려고 하는데요 내일 아침 7시에", "subject": "제 친구", "action": "바닐라 라테 주문", "context": "내일 아침 7시에"}
+{"input": "Quán có nhận thẻ không ngay bây giờ", "subject": "khách", "action": "hỏi nhận thẻ", "context": "ngay bây giờ"}
+{"input": "저 오렌지 주스 주문하려고 하는데요 내일 아침 회의 때", "subject": "저", "action": "오렌지 주스 주문", "context": "내일 아침 회의 때"}
+{"input": "Do you have any promotions for our anniversary", "subject": "customer", "action": "ask promotions", "context": "for our anniversary"}
+{"input": "Can I get matcha latte without sugar for 10 people", "subject": "I", "action": "order matcha latte without sugar", "context": "for 10 people"}
+{"input": "녹차라테 추가해 주세요 기념일에", "subject": "저", "action": "녹차라테 추가", "context": "기념일에"}
+{"input": "anh ấy đặt chỗ ngồi view đẹp giúp mình với", "subject": "anh ấy", "action": "đặt chỗ ngồi view đẹp", "context": "giúp mình với"}
+{"input": "Could I have sandwich please", "subject": "I", "action": "order sandwich", "context": "please"}
+{"input": "콜드브루 한 잔 주세요 생일 파티로", "subject": "저", "action": "콜드브루 주문", "context": "생일 파티로"}
+{"input": "Please add americano to my order at noon", "subject": "I", "action": "add americano", "context": "at noon"}
+{"input": "샌드위치 추가해 주세요 기념일에", "subject": "저", "action": "샌드위치 추가", "context": "기념일에"}
+{"input": "gia đình tôi muốn tư vấn món uống", "subject": "gia đình tôi", "action": "tư vấn món uống", "context": ""}
+{"input": "Could I have matcha latte right now", "subject": "I", "action": "order matcha latte", "context": "right now"}
+{"input": "chị muốn đổi món lúc 12h trưa", "subject": "chị", "action": "đổi món", "context": "lúc 12h trưa"}
+{"input": "바닐라 라테 설탕 없이 주세요 12월 20일에", "subject": "저", "action": "바닐라 라테 설탕 없이 주문", "context": "12월 20일에"}
+{"input": "오렌지 주스 한 잔 주세요 점심에", "subject": "저", "action": "오렌지 주스 주문", "context": "점심에"}
+{"input": "밀크티 설탕 없이 주세요 오늘 저녁 8시에", "subject": "저", "action": "밀크티 설탕 없이 주문", "context": "오늘 저녁 8시에"}
+{"input": "nhóm tụi anh hỏi về khuyến mãi hôm nay", "subject": "nhóm tụi anh", "action": "hỏi khuyến mãi", "context": "hôm nay"}
+{"input": "녹차라테 설탕 없이 주세요 이번 주말에", "subject": "저", "action": "녹차라테 설탕 없이 주문", "context": "이번 주말에"}
+{"input": "gia đình tôi muốn gọi thêm trà sữa hôm nay", "subject": "gia đình tôi", "action": "gọi thêm trà sữa", "context": "hôm nay"}
+{"input": "Cho bạn xem menu cho 10 người", "subject": "bạn", "action": "xem menu", "context": "cho 10 người"}
+{"input": "I'd like to order milk tea for our anniversary", "subject": "I", "action": "order milk tea", "context": "for our anniversary"}
+{"input": "chị hỏi về khuyến mãi cho 4 người", "subject": "chị", "action": "hỏi khuyến mãi", "context": "cho 4 người"}
+{"input": "Cho gia đình tôi đặt bàn lúc 12h trưa", "subject": "gia đình tôi", "action": "đặt bàn", "context": "lúc 12h trưa"}
+{"input": "Could I have iced latte for a birthday party", "subject": "I", "action": "order iced latte", "context": "for a birthday party"}
+{"input": "we would like to order sandwich for 4 people", "subject": "we", "action": "order sandwich", "context": "for 4 people"}
+{"input": "I want to cancel my reservation at noon", "subject": "I", "action": "cancel reservation", "context": "at noon"}
+{"input": "카푸치노 설탕 없이 주세요 내일 아침 7시에", "subject": "저", "action": "카푸치노 설탕 없이 주문", "context": "내일 아침 7시에"}
+{"input": "Please add croissant to my order tonight at 8pm", "subject": "I", "action": "add croissant", "context": "tonight at 8pm"}
+{"input": "Can I see the menu this afternoon", "subject": "I", "action": "view menu", "context": "this afternoon"}
+{"input": "Could I have milk tea for a morning meeting tomorrow", "subject": "I", "action": "order milk tea", "context": "for a morning meeting tomorrow"}

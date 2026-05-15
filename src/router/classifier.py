@@ -2,8 +2,6 @@ import json
 import logging
 import re
 from typing import Optional
-import sys
-sys.path.append('.')
 from .model import RouterModel
 
 logger = logging.getLogger(__name__)
