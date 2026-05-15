@@ -265,7 +265,7 @@ PHAN_A/
 ## Môi Trường
 
 - OS: Windows 11
-- Python: 3.11 (conda env `name_env`)
+- Python: 3.10 (conda env `name_env`)
 - GPU: NVIDIA RTX 2050 (4GB VRAM)
 - CUDA: tự động detect qua `device_map="auto"`
 - Docker: Docker Desktop for Windows
