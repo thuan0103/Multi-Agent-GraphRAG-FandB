@@ -1,6 +1,5 @@
 import asyncio
 import logging
-import os
 from pathlib import Path
 from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
@@ -11,26 +10,30 @@ SUPPORTED = {".csv", ".pdf", ".docx", ".txt"}
 
 
 class IngestHandler(FileSystemEventHandler):
-    def __init__(self, ingest_fn):
-        self.ingest_fn = ingest_fn
-        self.queue: asyncio.Queue = asyncio.Queue()
+    def __init__(self, queue: asyncio.Queue, loop: asyncio.AbstractEventLoop):
+        self.queue = queue
+        self.loop = loop
+
+    def _enqueue(self, path: str):
+        if Path(path).suffix.lower() in SUPPORTED:
+            logger.info(f"[WatchMode] Detected: {path}")
+            # thread-safe: watchdog chạy trong background thread riêng
+            self.loop.call_soon_threadsafe(self.queue.put_nowait, path)
 
     def on_created(self, event):
         if not event.is_directory:
-            path = event.src_path
-            if Path(path).suffix.lower() in SUPPORTED:
-                logger.info(f"[WatchMode] Detected new file: {path}")
-                self.queue.put_nowait(path)
+            self._enqueue(event.src_path)
 
     def on_moved(self, event):
         if not event.is_directory:
-            path = event.dest_path
-            if Path(path).suffix.lower() in SUPPORTED:
-                self.queue.put_nowait(path)
+            self._enqueue(event.dest_path)
 
 
 async def start_watcher(watch_dir: str, ingest_fn):
-    handler = IngestHandler(ingest_fn)
+    loop = asyncio.get_event_loop()
+    queue: asyncio.Queue = asyncio.Queue()
+    handler = IngestHandler(queue, loop)
+
     observer = Observer()
     observer.schedule(handler, watch_dir, recursive=False)
     observer.start()
@@ -38,7 +41,7 @@ async def start_watcher(watch_dir: str, ingest_fn):
 
     try:
         while True:
-            path = await handler.queue.get()
+            path = await queue.get()
             try:
                 await ingest_fn(path)
             except Exception as e:
