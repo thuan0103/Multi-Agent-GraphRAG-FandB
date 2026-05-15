@@ -1,5 +1,3 @@
-# src/agents/prompts/faq_prompt.py
-
 FAQ_SYSTEM_VI = """Bạn là nhân viên hỗ trợ thông tin tại quán cà phê.
 Trả lời các câu hỏi chung về quán dựa trên thông tin được cung cấp.
 

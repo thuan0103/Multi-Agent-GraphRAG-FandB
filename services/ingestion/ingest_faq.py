@@ -1,9 +1,3 @@
-"""
-B1.3 — Ingest FAQ CSV
-Folder: services/ingestion/ingest_faq.py
-
-Expected CSV columns: question, answer  (+ optional: id, category)
-"""
 import csv
 import uuid
 import logging
@@ -33,7 +27,7 @@ DELETE_FAQ = "MATCH (c:Chunk) WHERE c.doc_type = 'faq' DETACH DELETE c"
 async def ingest_faq_csv(path: str, driver):
     rows = []
     with open(path, encoding="utf-8") as f:
-        next(f)          # bỏ dòng chữ cái cột (A,B,C,D) từ Excel export
+        next(f)         
         reader = csv.DictReader(f)
         for row in reader:
             rows.append(row)
@@ -43,7 +37,6 @@ async def ingest_faq_csv(path: str, driver):
 
     ids = []
     async with driver.session() as session:
-        # Xóa toàn bộ FAQ chunks cũ trước khi insert mới (full replace)
         await session.run(DELETE_FAQ)
         logger.info("Cleared existing FAQ Chunks")
 
@@ -58,7 +51,7 @@ async def ingest_faq_csv(path: str, driver):
                 source="faq.csv",
                 embedding=emb,
             )
-        # Link consecutive chunks
+
         for i in range(len(ids) - 1):
             await session.run(LINK_NEXT, id_a=ids[i], id_b=ids[i + 1])
 

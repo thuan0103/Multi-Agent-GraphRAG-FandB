@@ -46,11 +46,11 @@ User Message
 │  IntentClassifier (src/router/classifier.py)            │
 │                                                         │
 │  RouterModel.generate(text)                             │
-│  ┌─────────────────────────────────────────────────┐   │
-│  │  For intent in [order, consultant, faq, ignore] │   │
-│  │    score = Σ log P(intent_token_i | prompt)     │   │
-│  │  return argmax(score)                           │   │
-│  └─────────────────────────────────────────────────┘   │
+│  ┌─────────────────────────────────────────────────┐    │
+│  │  For intent in [order, consultant, faq, ignore] │    │
+│  │    score = Σ log P(intent_token_i | prompt)     │    │
+│  │  return argmax(score)                           │    │
+│  └─────────────────────────────────────────────────┘    │
 │                                                         │
 │  Parse: JSON strict → regex extract → keyword match     │
 └─────────────────────────────────────────────────────────┘

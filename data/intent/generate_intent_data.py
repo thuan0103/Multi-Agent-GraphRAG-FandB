@@ -1,15 +1,6 @@
-"""
-Sinh dữ liệu training cho C2.1 Intent Extraction — 3 ngôn ngữ: vi / en / ko
-Mỗi ngôn ngữ ~1000 samples → tổng 3000 → split 80/10/10
-"""
-
 import json
 import random
 from pathlib import Path
-
-# ─────────────────────────────────────────────────────────────────────────────
-# VIETNAMESE
-# ─────────────────────────────────────────────────────────────────────────────
 
 SEEDS_VI = [
     ("Cho {sub} đặt bàn {ctx}", "{sub}", "đặt bàn", "{ctx}"),
@@ -53,10 +44,6 @@ CONTEXTS_VI = [
     "ngay bây giờ", "lúc 12h trưa",
 ]
 
-# ─────────────────────────────────────────────────────────────────────────────
-# ENGLISH
-# ─────────────────────────────────────────────────────────────────────────────
-
 SEEDS_EN = [
     ("I'd like to order {item} {ctx}", "I", "order {item}", "{ctx}"),
     ("Can I book a table {ctx}", "I", "book a table", "{ctx}"),
@@ -94,10 +81,6 @@ CONTEXTS_EN = [
     "on December 20th", "for our anniversary", "today",
     "right now", "at noon", "for a birthday party",
 ]
-
-# ─────────────────────────────────────────────────────────────────────────────
-# KOREAN
-# ─────────────────────────────────────────────────────────────────────────────
 
 SEEDS_KO = [
     ("{item} 주문하고 싶어요 {ctx}", "저", "{item} 주문", "{ctx}"),
@@ -137,10 +120,6 @@ CONTEXTS_KO = [
     "지금 바로", "점심에", "생일 파티로",
 ]
 
-# ─────────────────────────────────────────────────────────────────────────────
-# Generator
-# ─────────────────────────────────────────────────────────────────────────────
-
 def _gen_samples(seeds, subjects, items, contexts, n: int, rng: random.Random) -> list:
     samples = []
     seen = set()
@@ -166,7 +145,7 @@ def _gen_samples(seeds, subjects, items, contexts, n: int, rng: random.Random) -
             "subject": subject,
             "action":  action,
             "context": ctx,
-            "lang":    None,  # điền sau
+            "lang":    None, 
         })
 
     return samples
@@ -206,11 +185,9 @@ def split_and_save(samples: list, out_dir: str):
         path = out_dir / fname
         with open(path, "w", encoding="utf-8") as f:
             for item in data:
-                # Bỏ field "lang" khỏi training data (chỉ cần input/subject/action/context)
                 row = {k: v for k, v in item.items() if k != "lang"}
                 f.write(json.dumps(row, ensure_ascii=False) + "\n")
 
-        # Thống kê per-language
         lang_counts = {}
         for s in data:
             lang_counts[s.get("lang", "?")] = lang_counts.get(s.get("lang", "?"), 0) + 1

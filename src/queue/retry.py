@@ -1,8 +1,3 @@
-# src/queue/retry.py
-"""
-Exponential backoff retry decorator dùng cho mọi API call.
-"""
-
 import asyncio
 import functools
 import logging
@@ -17,13 +12,7 @@ def retry_with_backoff(
     max_delay: float = 30.0,
     exceptions: tuple[Type[Exception], ...] = (Exception,),
 ):
-    """
-    Decorator: retry async function với exponential backoff.
 
-    Usage:
-        @retry_with_backoff(max_attempts=3, base_delay=1.0)
-        async def call_llm(prompt): ...
-    """
     def decorator(func: Callable):
         @functools.wraps(func)
         async def wrapper(*args, **kwargs):

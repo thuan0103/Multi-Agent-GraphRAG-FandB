@@ -1,10 +1,3 @@
-"""
-B1.3 — Ingest Menu CSV
-Folder: services/ingestion/ingest_menu.py
-
-Expected CSV columns (tối thiểu):
-  id, name, price, size, category, ingredients, description
-"""
 import csv
 import uuid
 import logging
@@ -34,7 +27,7 @@ DELETE_CATEGORY = "MATCH (c:Category) WHERE NOT (c)<-[:BELONGS_TO]-() DELETE c"
 async def ingest_menu_csv(path: str, driver):
     rows = []
     with open(path, encoding="utf-8") as f:
-        next(f)          # bỏ dòng chữ cái cột (A,B,C,D,E,F,G) từ Excel export
+        next(f)         
         reader = csv.DictReader(f)
         for row in reader:
             rows.append(row)
@@ -60,7 +53,6 @@ async def ingest_menu_csv(path: str, driver):
     embeddings = await embed_texts(texts)
 
     async with driver.session() as session:
-        # Xóa toàn bộ data cũ trước khi insert mới (full replace)
         await session.run(DELETE_MENU)
         await session.run(DELETE_CATEGORY)
         logger.info("Cleared existing MenuItems and orphaned Categories")

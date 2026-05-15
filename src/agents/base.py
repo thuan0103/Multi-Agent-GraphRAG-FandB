@@ -1,9 +1,3 @@
-# src/agents/base.py
-"""
-Abstract base class cho tất cả agents.
-Định nghĩa interface chung, mọi agent phải implement.
-"""
-
 import logging
 import os
 import time
@@ -15,11 +9,6 @@ from openai import AsyncOpenAI
 
 
 def _make_openai_client() -> tuple[AsyncOpenAI, str]:
-    """
-    Return (client, model_name).
-    - Nếu LLM_BASE_URL được set → dùng local vLLM/SGLang (OpenAI-compatible)
-    - Ngược lại → dùng OpenAI API (gpt-4o-mini)
-    """
     base_url = os.getenv("LLM_BASE_URL", "").strip()
     model = os.getenv("LLM_MODEL", "gpt-4o-mini")
     if base_url:
@@ -31,7 +20,6 @@ logger = logging.getLogger(__name__)
 
 @dataclass
 class AgentResponse:
-    """Chuẩn hóa output của mọi agent."""
     text: str                        # response trả cho user
     agent_type: str                  # "order" | "consultant" | "faq"
     session_id: str
@@ -42,11 +30,6 @@ class AgentResponse:
 
 
 class BaseAgent(ABC):
-    """
-    Abstract base agent.
-    Mọi specialized agent kế thừa từ đây.
-    """
-
     def __init__(self, config: dict):
         self.config = config
         self.logger = logging.getLogger(self.__class__.__name__)
@@ -54,7 +37,6 @@ class BaseAgent(ABC):
     @property
     @abstractmethod
     def agent_type(self) -> str:
-        """Tên agent: order | consultant | faq"""
         ...
 
     @abstractmethod
@@ -107,10 +89,6 @@ class BaseAgent(ABC):
             )
 
     def _detect_language(self, text: str) -> str:
-        """
-        Detect ngôn ngữ đơn giản dựa trên unicode range.
-        Tiếng Việt có các ký tự đặc trưng ngoài ASCII.
-        """
         vietnamese_chars = set("àáâãèéêìíòóôõùúýăđơưạảấầẩẫậắằẳẵặẹẻẽếềểễệỉịọỏốồổỗộớờởỡợụủứừửữựỳỵỷỹ")
         text_lower = text.lower()
         vi_count = sum(1 for c in text_lower if c in vietnamese_chars)
@@ -122,7 +100,6 @@ class BaseAgent(ABC):
         return "Sorry, I encountered an issue processing your request. Please try again."
 
     def _build_history_context(self, history: list[dict]) -> str:
-        """Format history thành string context cho LLM."""
         if not history:
             return ""
         lines = ["[Conversation history]"]

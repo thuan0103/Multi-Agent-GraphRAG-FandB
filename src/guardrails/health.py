@@ -1,12 +1,3 @@
-"""
-C3: Health check endpoints cho tất cả services.
-/health/router    — kiểm tra Router model
-/health/generator — kiểm tra LLM Generator (SGLang/vLLM)
-/health/graph     — kiểm tra Neo4j connection
-/health/cache     — kiểm tra Semantic Cache
-/health           — overall aggregated health
-"""
-
 import asyncio
 import logging
 import time
@@ -21,10 +12,6 @@ HealthStatus = Literal["healthy", "degraded", "unhealthy"]
 
 router = APIRouter(prefix="/health", tags=["health"])
 
-
-# ---------------------------------------------------------------------------
-# Individual checkers
-# ---------------------------------------------------------------------------
 
 async def check_router_model(timeout: float = 2.0) -> Dict[str, Any]:
     """Kiểm tra Router model đang load và có thể inference."""

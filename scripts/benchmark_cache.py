@@ -1,15 +1,3 @@
-"""
-C2.2 — Semantic Cache Hit Rate Benchmark
-Chạy: python scripts/benchmark_cache.py
-
-Pipeline:
-  1. Warm-up: đưa 1 mẫu/group vào cache (giả lập response đã có)
-  2. Query: với các mẫu còn lại, đo HIT / MISS
-  3. Report: hit rate tổng, per-group, latency p50/p90
-
-Target: hit rate ≥ 60%
-"""
-
 import sys, os, json, time
 from pathlib import Path
 from collections import defaultdict
@@ -19,8 +7,6 @@ sys.path.insert(0, str(Path(__file__).parent.parent))
 from src.cache import SemanticCache, EmbeddingProvider, CacheEntry
 from src.intent_extraction import IntentExtractor
 
-
-# ── Load test set ─────────────────────────────────────────────────────
 def load_test_set(path: str) -> list[dict]:
     samples = []
     with open(path, encoding="utf-8") as f:
@@ -30,8 +16,6 @@ def load_test_set(path: str) -> list[dict]:
                 samples.append(json.loads(line))
     return samples
 
-
-# ── Format fake response template (warm-up) ──────────────────────────
 _TEMPLATES = {
     "đặt bàn":                  "Dạ để mình đặt bàn cho bạn nhé! Bạn muốn đặt cho mấy người?",
     "đặt bàn tiệc sinh nhật":   "Tuyệt! Quán có thể tổ chức tiệc sinh nhật. Bạn dự kiến bao nhiêu khách?",
@@ -60,7 +44,6 @@ def run_benchmark():
     samples = load_test_set(test_path)
     print(f"\n► Loaded {len(samples)} test samples")
 
-    # ── Init components ──────────────────────────────────────────────
     print("► Initializing embedding + cache...")
     embedder = EmbeddingProvider()
     cache = SemanticCache(embedder, threshold=0.92)
@@ -71,7 +54,6 @@ def run_benchmark():
     print(f"  Extractor: {extractor_mode}")
     print(f"  Cache threshold: 0.92")
 
-    # ── Warm-up: lưu 1 mẫu/group vào cache ──────────────────────────
     print("\n► Warming up cache (1 sample/group)...")
     groups: dict[str, list[dict]] = defaultdict(list)
     for s in samples:
@@ -88,7 +70,6 @@ def run_benchmark():
 
     print(f"  Warmed up {warmup_count} groups")
 
-    # ── Query: test remaining samples ────────────────────────────────
     print(f"\n► Querying {len(samples) - warmup_count} non-warmup samples...")
 
     total = 0
@@ -100,7 +81,7 @@ def run_benchmark():
     misclassified = []
 
     for gid, group_samples in groups.items():
-        for sample in group_samples[1:]:   # skip first (warmup)
+        for sample in group_samples[1:]:  
             t0 = time.perf_counter()
             extracted = extractor.extract(sample["input"])
             action_key = extracted.action
@@ -123,7 +104,6 @@ def run_benchmark():
                     "group_id": gid,
                 })
 
-    # ── Metrics ──────────────────────────────────────────────────────
     hit_rate = hits / total if total > 0 else 0
     latencies.sort()
     p50 = latencies[int(len(latencies) * 0.50)] if latencies else 0
@@ -132,7 +112,7 @@ def run_benchmark():
 
     print(f"\n{'─'*60}")
     print(f"  Overall Hit Rate: {hit_rate:.1%}  ({hits}/{total})")
-    status = "✅ XUẤT SẮC" if hit_rate >= 0.70 else ("⚠️ ĐẠT" if hit_rate >= 0.60 else "❌ CHƯA ĐẠT")
+    status = "XUẤT SẮC" if hit_rate >= 0.70 else ("⚠️ ĐẠT" if hit_rate >= 0.60 else "❌ CHƯA ĐẠT")
     print(f"  Status: {status}  (target ≥ 60%)")
     print(f"{'─'*60}")
 
@@ -156,16 +136,13 @@ def run_benchmark():
             print(f"           action_gt={m['action_gt']!r}")
             print(f"           extracted={m['action_extracted']!r}")
 
-    # ── Also test with action_gt directly (upper bound) ──────────────
     print(f"\n► Upper-bound test: dùng action_gt trực tiếp làm cache key...")
     ub_hits = 0
     ub_total = 0
     cache2 = SemanticCache(embedder, threshold=0.92)
-    # Warm-up with action_gt
     for gid, group_samples in groups.items():
         template = _TEMPLATES.get(group_samples[0]["action_gt"], group_samples[0]["action_gt"])
         cache2.put(group_samples[0]["action_gt"], template)
-    # Query remaining
     for gid, group_samples in groups.items():
         for sample in group_samples[1:]:
             entry = cache2.query(sample["action_gt"])
@@ -175,7 +152,6 @@ def run_benchmark():
     ub_rate = ub_hits / ub_total if ub_total > 0 else 0
     print(f"  Upper-bound hit rate (action_gt): {ub_rate:.1%}  ({ub_hits}/{ub_total})")
 
-    # ── Save results ──────────────────────────────────────────────────
     results = {
         "hit_rate": hit_rate,
         "hits": hits,

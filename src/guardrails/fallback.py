@@ -1,17 +1,9 @@
-"""
-C3: Graceful Degradation — fallback khi Generator quá tải.
-Router vẫn classify được intent, dùng template cứng thay vì gọi LLM.
-"""
-
 import logging
 import time
 from typing import Optional
 
 logger = logging.getLogger(__name__)
 
-# ---------------------------------------------------------------------------
-# Fallback templates theo intent
-# ---------------------------------------------------------------------------
 
 FALLBACK_TEMPLATES = {
     "order": (

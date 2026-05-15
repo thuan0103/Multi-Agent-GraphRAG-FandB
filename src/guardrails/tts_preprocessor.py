@@ -6,26 +6,7 @@ C3: TTS Preprocessor — normalize text trước khi gửi TTS.
 import re
 from typing import Optional
 
-
-# ---------------------------------------------------------------------------
-# Normalization rules
-# ---------------------------------------------------------------------------
-
 class TTSPreprocessor:
-    """
-    Chuẩn hóa text cho TTS tiếng Việt trong môi trường F&B.
-
-    Thứ tự áp dụng rules:
-    1. Giá tiền VNĐ
-    2. Đơn vị size
-    3. Từ viết tắt / ký hiệu đặc biệt
-    4. Số điện thoại / URL
-    5. Ký tự không phát âm được
-    """
-
-    # -----------------------------------------------------------------------
-    # Price rules: 49.000đ → 49k, 1.500.000đ → 1 triệu 5, ...
-    # -----------------------------------------------------------------------
 
     def _normalize_price(self, text: str) -> str:
         # 49.000đ / 49,000đ / 49000đ → 49k
@@ -55,10 +36,6 @@ class TTSPreprocessor:
         )
         return text
 
-    # -----------------------------------------------------------------------
-    # Size rules
-    # -----------------------------------------------------------------------
-
     SIZE_MAP = {
         r"\bS\b": "size ét",
         r"\bM\b": "size mờ",
@@ -72,9 +49,7 @@ class TTSPreprocessor:
             text = re.sub(pattern, replacement, text)
         return text
 
-    # -----------------------------------------------------------------------
-    # Abbreviation rules
-    # -----------------------------------------------------------------------
+
 
     ABBREV_MAP = {
         r"\bVAT\b": "thuế",

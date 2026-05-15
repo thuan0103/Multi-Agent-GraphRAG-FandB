@@ -1,7 +1,3 @@
-"""
-B1.2 — Reranker Service (FastAPI)
-Folder: services/reranker/main.py
-"""
 import os
 import logging
 from typing import List
@@ -40,10 +36,8 @@ class ScoredDoc(BaseModel):
     text: str
     score: float
 
-
 class RerankResponse(BaseModel):
     results: List[ScoredDoc]
-
 
 @app.post("/rerank", response_model=RerankResponse)
 async def rerank(req: RerankRequest):

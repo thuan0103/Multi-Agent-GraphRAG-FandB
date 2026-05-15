@@ -1,12 +1,3 @@
-"""
-B1.2 — Hybrid Search Pipeline
-Folder: services/graph_rag/search.py
-
-Pipeline:
-  1. Dual-Domain vector search (MenuItem + Chunk)
-  2. Graph Expansion via NEXT/PREV + MENTIONS
-  3. Late Reranking (threshold ≥ 0.7)
-"""
 import os
 import logging
 import httpx
@@ -18,7 +9,6 @@ EMBEDDING_URL = os.getenv("EMBEDDING_URL", "http://embedding:8001")
 RERANKER_URL = os.getenv("RERANKER_URL", "http://reranker:8002")
 RERANK_THRESHOLD = float(os.getenv("RERANK_THRESHOLD", "0.7"))
 TOP_K = 5
-
 
 async def get_embedding(text: str) -> List[float]:
     async with httpx.AsyncClient(timeout=30) as client:
@@ -41,15 +31,12 @@ async def hybrid_search(query: str, driver) -> List[Dict[str, Any]]:
     """Full hybrid search pipeline."""
     query_emb = await get_embedding(query)
 
-    # ── Step 1: Dual-Domain vector search ──────────────────────
     menu_results = await _vector_search_menu(query_emb, driver, top_k=TOP_K)
     chunk_results = await _vector_search_chunks(query_emb, driver, top_k=TOP_K)
 
-    # ── Step 2: Graph Expansion ─────────────────────────────────
     chunk_ids = [r["id"] for r in chunk_results]
     expanded = await _graph_expand(chunk_ids, driver)
 
-    # Merge all results, deduplicate by id
     all_results: Dict[str, Dict] = {}
     for r in menu_results + chunk_results + expanded:
         rid = r.get("id", r.get("text", "")[:50])
@@ -58,7 +45,6 @@ async def hybrid_search(query: str, driver) -> List[Dict[str, Any]]:
 
     candidates = list(all_results.values())
 
-    # ── Step 3: Late Reranking ──────────────────────────────────
     texts = [_result_to_text(r) for r in candidates]
     if not texts:
         return []

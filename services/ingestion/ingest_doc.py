@@ -1,13 +1,3 @@
-"""
-B1.3 — Ingest PDF / DOCX
-Folder: services/ingestion/ingest_doc.py
-
-- Semantic chunking (gradient breakpoint)
-- Entity extraction via LLM
-- Entity deduplication (Jaccard ≥ 0.85)
-- NEXT/PREV relationships between consecutive chunks
-- MENTIONS relationships chunk → entity
-"""
 import os
 import uuid
 import json

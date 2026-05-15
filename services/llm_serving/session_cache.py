@@ -1,7 +1,3 @@
-"""
-B2.3 — Session Cache (Layer 4 — In-Memory via Redis)
-Folder: services/llm_serving/session_cache.py
-"""
 import json
 import os
 from typing import List, Dict
@@ -9,7 +5,6 @@ import redis.asyncio as aioredis
 
 SESSION_TTL = int(os.getenv("SESSION_TTL", "3600"))
 SESSION_PREFIX = "session:"
-
 
 class SessionCache:
     def __init__(self, redis_url: str):
@@ -24,7 +19,6 @@ class SessionCache:
     async def append_message(self, session_id: str, role: str, content: str):
         history = await self.get_history(session_id)
         history.append({"role": role, "content": content})
-        # Keep last 20 messages to bound token usage
         history = history[-20:]
         await self.redis.setex(
             f"{SESSION_PREFIX}{session_id}",

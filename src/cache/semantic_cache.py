@@ -1,11 +1,3 @@
-"""
-C2.2 + B2.3: Semantic Cache với FAISS.
-- C2.2: Threshold ≥ 0.92 trên phần {action} của intent
-- B2.3: Threshold ≥ 0.95 cho full query cache
-
-Lưu toàn bộ trong RAM. Thread-safe.
-"""
-
 import json
 import logging
 import threading

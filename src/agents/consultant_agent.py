@@ -1,10 +1,3 @@
-# src/agents/consultant_agent.py
-"""
-Consultant Agent: tư vấn món uống.
-Pipeline ưu tiên: fulltext entity search → vector search (graph_rag:8004)
-Fallback: in-memory keyword search từ data/menu.json
-"""
-
 import os
 import re
 import json
@@ -102,8 +95,6 @@ class ConsultantAgent(BaseAgent):
             "source":      "neo4j_fulltext",
         } for it in items]
 
-    # ── Secondary: vector search via /search ──────────────────────────
-
     async def _search_graph_rag(self, query: str) -> tuple[list[dict], bool]:
         """Call graph_rag:8004/search, filter MenuItem nodes."""
         async with httpx.AsyncClient(timeout=8.0) as client:
@@ -136,7 +127,7 @@ class ConsultantAgent(BaseAgent):
         fulltext search → vector search → in-memory fallback.
         Returns (docs, source_label).
         """
-        # 1. Fulltext entity search
+
         try:
             docs = await self._search_menu_fulltext(query)
             if docs:
@@ -144,7 +135,6 @@ class ConsultantAgent(BaseAgent):
         except Exception as e:
             logger.warning(f"[ConsultantAgent] fulltext search failed: {e}")
 
-        # 2. Vector search
         try:
             docs, _ = await self._search_graph_rag(query)
             if docs:
@@ -152,11 +142,8 @@ class ConsultantAgent(BaseAgent):
         except Exception as e:
             logger.warning(f"[ConsultantAgent] vector search failed: {e}")
 
-        # 3. In-memory fallback
         docs = self._retrieve_relevant_local(query)
         return docs, "fallback"
-
-    # ── Fallback: in-memory keyword search ───────────────────────────
 
     def _retrieve_relevant_local(self, query: str, top_k: int = 4) -> list[dict]:
         query_lower = query.lower()
@@ -175,8 +162,6 @@ class ConsultantAgent(BaseAgent):
         scored.sort(key=lambda x: x[0], reverse=True)
         return [d for _, d in scored[:top_k]]
 
-    # ── Format context ────────────────────────────────────────────────
-
     def _format_menu_context(self, docs: list[dict]) -> str:
         lines = []
         for doc in docs:
@@ -187,8 +172,6 @@ class ConsultantAgent(BaseAgent):
                 f"  {extra}"
             )
         return "\n".join(lines)
-
-    # ── Main process ──────────────────────────────────────────────────
 
     async def _process(
         self,

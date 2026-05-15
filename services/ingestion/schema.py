@@ -1,9 +1,3 @@
-"""
-B1.1 — Graph Database Schema
-Folder: services/ingestion/schema.py
-Node types: MenuItem, Chunk, Entity, Category
-Relationships: BELONGS_TO, NEXT, MENTIONS
-"""
 from neo4j import AsyncGraphDatabase
 import logging
 

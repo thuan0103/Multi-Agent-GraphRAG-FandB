@@ -1,10 +1,3 @@
-"""
-C2.1 + C2.2: Parse output của SLM thành 3 thành phần cấu trúc.
-Output chuẩn: {"subject": str, "action": str, "context": str}
-Phần "action" dùng làm cache key.
-Phần "context" gửi kèm sang Agent.
-"""
-
 import json
 import re
 import time
@@ -28,20 +21,15 @@ class IntentResult:
     from_finetuned: bool
 
 
-# ---------------------------------------------------------------------------
-# Parse helpers
-# ---------------------------------------------------------------------------
-
 def _parse_json_output(text: str) -> Optional[dict]:
     """Tìm và parse JSON từ output của model."""
     text = text.strip()
-    # Thử parse trực tiếp
+
     try:
         return json.loads(text)
     except json.JSONDecodeError:
         pass
 
-    # Tìm JSON object trong text
     m = re.search(r"\{[^{}]*\}", text, re.DOTALL)
     if m:
         try:
@@ -49,7 +37,6 @@ def _parse_json_output(text: str) -> Optional[dict]:
         except json.JSONDecodeError:
             pass
 
-    # Fallback: regex từng field
     result = {}
     for field in ("subject", "action", "context"):
         m = re.search(

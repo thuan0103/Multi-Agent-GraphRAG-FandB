@@ -1,9 +1,3 @@
-# src/queue/request_queue.py
-"""
-RequestQueue: giới hạn concurrent LLM requests, tránh OOM.
-FIFO với timeout và graceful error handling.
-"""
-
 import asyncio
 import logging
 import time
@@ -12,7 +6,6 @@ from dataclasses import dataclass, field
 from typing import Any, Callable, Optional
 
 logger = logging.getLogger(__name__)
-
 
 @dataclass
 class QueuedRequest:
@@ -28,14 +21,6 @@ class QueuedRequest:
 
 
 class RequestQueue:
-    """
-    Async request queue với:
-    - Semaphore giới hạn concurrent LLM calls
-    - FIFO ordering
-    - Per-request timeout
-    - Graceful timeout error (không raise exception thô)
-    """
-
     def __init__(
         self,
         max_concurrent: int = 3,
@@ -50,10 +35,6 @@ class RequestQueue:
         self._total_errors = 0
 
     async def submit(self, func: Callable, *args, **kwargs) -> Any:
-        """
-        Submit 1 request vào queue.
-        Block nếu đạt max_concurrent, timeout sau request_timeout giây.
-        """
         request_id = str(uuid.uuid4())[:8]
         enqueued_at = time.time()
         acquired = False
@@ -61,7 +42,6 @@ class RequestQueue:
         logger.debug(f"Request {request_id} queued (active={self._active_count}/{self.max_concurrent})")
 
         try:
-            # Chờ semaphore với timeout
             try:
                 await asyncio.wait_for(
                     self.semaphore.acquire(),
@@ -82,7 +62,6 @@ class RequestQueue:
             logger.debug(f"Request {request_id} started (waited {wait_time:.1f}s)")
 
             try:
-                # Execute với timeout
                 result = await asyncio.wait_for(
                     func(*args, **kwargs),
                     timeout=self.request_timeout,
@@ -101,7 +80,6 @@ class RequestQueue:
                 raise
 
         finally:
-            # Chỉ release nếu semaphore đã được acquire thành công
             if acquired:
                 self.semaphore.release()
                 self._active_count = max(0, self._active_count - 1)

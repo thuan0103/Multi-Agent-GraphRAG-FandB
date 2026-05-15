@@ -16,7 +16,7 @@ logger = logging.getLogger(__name__)
 load_dotenv()
 
 GRAPH_RAG_URL = os.getenv("GRAPH_RAG_URL", "http://localhost:8004")
-MENU_TTL = 300  # refresh cached full menu every 5 minutes (fallback only)
+MENU_TTL = 300 
 
 _FULLTEXT_STOPWORDS = frozenset({
     'tôi', 'muốn', 'cho', 'một', 'cái', 'ly', 'cốc', 'ơi', 'bạn',
@@ -41,11 +41,8 @@ class OrderAgent(BaseAgent):
         super().__init__(config)
         self.client, self.llm_model = _make_openai_client()
         self._menu_path = menu_path
-        # Bootstrap from JSON — fallback when Neo4j unavailable
         self._menu_items: list[dict] = self._bootstrap_from_json()
-        self._menu_loaded_at: float = 0  # = 0 → force refresh on first fallback use
-
-    # ── Bootstrap ─────────────────────────────────────────────────────
+        self._menu_loaded_at: float = 0
 
     def _bootstrap_from_json(self) -> list[dict]:
         path = Path(self._menu_path)
@@ -70,9 +67,7 @@ class OrderAgent(BaseAgent):
         except Exception as e:
             logger.warning(f"[OrderAgent] bootstrap JSON failed: {e}")
             return []
-
-    # ── Cached full-menu fallback (Neo4j via /menu/all) ───────────────
-
+        
     async def _fetch_menu_from_graph_rag(self) -> list[dict]:
         async with httpx.AsyncClient(timeout=10.0) as client:
             resp = await client.get(f"{GRAPH_RAG_URL}/menu/all")
@@ -96,13 +91,7 @@ class OrderAgent(BaseAgent):
         except Exception as e:
             logger.warning(f"[OrderAgent] Cannot refresh menu: {e} — using cached")
 
-    # ── Primary: entity-based fulltext search ─────────────────────────
-
     async def _search_menu_for_context(self, query: str) -> tuple[list[dict], str]:
-        """
-        Try /menu/fulltext with cleaned query → return matched items.
-        Falls back to cached full menu if fulltext returns nothing.
-        """
         clean_q = _clean_for_fulltext(query)
         if clean_q:
             try:
@@ -120,11 +109,8 @@ class OrderAgent(BaseAgent):
             except Exception as e:
                 logger.warning(f"[OrderAgent] fulltext search failed: {e}")
 
-        # Fallback: cached full menu
         await self._ensure_fresh_menu()
         return self._menu_items, "cached_full"
-
-    # ── Format ─────────────────────────────────────────────────────────
 
     def _format_items(self, items: list[dict]) -> str:
         if not items:
@@ -157,7 +143,6 @@ class OrderAgent(BaseAgent):
         lines.append(f"TOTAL: {total:,}đ")
         return "\n".join(lines)
 
-    # ── Main process ───────────────────────────────────────────────────
 
     async def _process(
         self,
@@ -203,8 +188,6 @@ class OrderAgent(BaseAgent):
             },
             language=language,
         )
-
-    # ── Cart helpers ───────────────────────────────────────────────────
 
     def _extract_cart_from_history(self, history: list[dict]) -> list[dict]:
         for turn in reversed(history):

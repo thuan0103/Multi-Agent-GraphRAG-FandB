@@ -145,7 +145,7 @@ def startup() -> None:
     print("► Sync dữ liệu từ CSV...")
     _sync_data_from_csv()
 
-    print("► Đang load Router model (Llama3-1B, log-prob scoring)...")
+    print("► Đang load Router model (Qwen2.5-1.5B + PEFT, log-prob scoring)...")
     print("  Có thể mất 1-2 phút lần đầu...\n")
 
     router_classifier.load()

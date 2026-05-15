@@ -1,8 +1,3 @@
-"""
-C2.1: SLM model cho Intent Extraction.
-Load fine-tuned model (Qwen2.5-0.5B hoặc tương đương) từ local path.
-Nếu model chưa có, is_loaded() = False → extractor dùng rule-based fallback.
-"""
 
 import json
 import logging
@@ -16,14 +11,6 @@ logger = logging.getLogger(__name__)
 
 
 class IntentExtractionModel:
-    """
-    Singleton wrapper cho fine-tuned SLM intent extraction.
-
-    Cách dùng:
-        model = IntentExtractionModel.get_instance("training/checkpoints/intent_merged")
-        if model.is_loaded():
-            raw = model.infer_raw("Cho anh đặt bàn tối nay 7h")
-    """
 
     _instance: Optional["IntentExtractionModel"] = None
     _instance_path: Optional[str] = None
@@ -43,7 +30,6 @@ class IntentExtractionModel:
         self._loaded = False
         self._try_load()
 
-    # ─── Load ────────────────────────────────────────────────────────
     def _try_load(self) -> None:
         path = Path(self._model_path)
         if not path.exists():
@@ -83,7 +69,6 @@ class IntentExtractionModel:
             self._tokenizer = None
             self._loaded = False
 
-    # ─── Inference ───────────────────────────────────────────────────
     def infer_raw(self, user_input: str, max_new_tokens: int = 128) -> str:
         """
         Chạy inference, trả về raw string từ model.
@@ -125,7 +110,6 @@ class IntentExtractionModel:
         new_tokens = output_ids[0][inputs["input_ids"].shape[-1]:]
         return self._tokenizer.decode(new_tokens, skip_special_tokens=True).strip()
 
-    # ─── Status ──────────────────────────────────────────────────────
     def is_loaded(self) -> bool:
         return self._loaded
 

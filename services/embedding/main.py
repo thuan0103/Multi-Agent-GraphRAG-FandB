@@ -1,7 +1,3 @@
-"""
-B1.2 — Embedding Service (FastAPI)
-Folder: services/embedding/main.py
-"""
 import os
 import logging
 from typing import List, Union

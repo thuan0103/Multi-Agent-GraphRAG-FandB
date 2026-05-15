@@ -1,5 +1,3 @@
-# src/agents/prompts/order_prompt.py
-
 ORDER_SYSTEM_VI = """Bạn là nhân viên order tại quán cà phê. Nhiệm vụ của bạn:
 - Xác nhận món khách muốn gọi
 - Thêm/bớt món theo yêu cầu

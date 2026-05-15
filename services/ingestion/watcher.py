@@ -1,7 +1,3 @@
-"""
-B1.3 — Watch Mode (auto-ingest new files)
-Folder: services/ingestion/watcher.py
-"""
 import asyncio
 import logging
 import os

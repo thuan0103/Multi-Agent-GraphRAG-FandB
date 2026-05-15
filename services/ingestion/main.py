@@ -1,7 +1,3 @@
-"""
-B1.3 — Ingestion Service Entrypoint
-Folder: services/ingestion/main.py
-"""
 import asyncio
 import logging
 import os
@@ -32,7 +28,6 @@ driver = None
 
 
 async def _clear_rag_cache():
-    """Xóa semantic cache của graph_rag sau khi data thay đổi."""
     try:
         async with httpx.AsyncClient(timeout=5.0) as client:
             resp = await client.delete(f"{GRAPH_RAG_URL}/cache")
@@ -65,14 +60,12 @@ async def lifespan(app: FastAPI):
     driver = AsyncGraphDatabase.driver(NEO4J_URI, auth=(NEO4J_USER, NEO4J_PASSWORD))
     await init_schema(NEO4J_URI, NEO4J_USER, NEO4J_PASSWORD)
 
-    # Auto-ingest existing data files
     for fname in ["menu.csv", "faq.csv"]:
         fpath = os.path.join(DATA_DIR, fname)
         if os.path.exists(fpath):
             logger.info(f"Auto-ingesting {fpath}")
             await auto_ingest(fpath)
 
-    # Auto-ingest docs (PDF / DOCX / TXT) from /data/docs/
     docs_dir = os.path.join(DATA_DIR, "docs")
     if os.path.isdir(docs_dir):
         for fname in sorted(os.listdir(docs_dir)):
@@ -81,15 +74,12 @@ async def lifespan(app: FastAPI):
                 logger.info(f"Auto-ingesting doc: {fpath}")
                 await auto_ingest(fpath)
 
-    # Start watch mode
     os.makedirs(WATCH_DIR, exist_ok=True)
     asyncio.create_task(start_watcher(WATCH_DIR, auto_ingest))
     yield
     await driver.close()
 
-
 app = FastAPI(title="Ingestion Service", version="1.0", lifespan=lifespan)
-
 
 @app.post("/ingest/menu")
 async def ingest_menu(path: str):
@@ -99,7 +89,6 @@ async def ingest_menu(path: str):
     await _clear_rag_cache()
     return {"ingested": count, "type": "menu"}
 
-
 @app.post("/ingest/faq")
 async def ingest_faq(path: str):
     if not os.path.exists(path):
@@ -107,7 +96,6 @@ async def ingest_faq(path: str):
     count = await ingest_faq_csv(path, driver)
     await _clear_rag_cache()
     return {"ingested": count, "type": "faq"}
-
 
 @app.post("/ingest/doc")
 async def ingest_doc(path: str):
@@ -117,7 +105,6 @@ async def ingest_doc(path: str):
     await _clear_rag_cache()
     return {"ingested": count, "type": "document"}
 
-
 @app.post("/ingest/upload")
 async def ingest_upload(bg: BackgroundTasks, file: UploadFile = File(...)):
     dest = os.path.join(WATCH_DIR, file.filename)
@@ -125,7 +112,6 @@ async def ingest_upload(bg: BackgroundTasks, file: UploadFile = File(...)):
         f.write(await file.read())
     bg.add_task(auto_ingest, dest)
     return {"message": f"Queued: {file.filename}"}
-
 
 @app.get("/health")
 async def health():

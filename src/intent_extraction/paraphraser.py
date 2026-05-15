@@ -1,23 +1,7 @@
-"""
-C2.2: Cache Hit Path — Paraphraser.
-Kết hợp response template từ cache + {context} từ extractor,
-sinh câu trả lời hoàn chỉnh tự nhiên, thân thiện, phù hợp F&B và TTS.
-Xử lý hoàn toàn trong RAM, KHÔNG gọi LLM Generator.
-"""
-
 import random
 import re
 from typing import Optional
 
-
-# ---------------------------------------------------------------------------
-# Template engine
-# ---------------------------------------------------------------------------
-
-# Mỗi loại action_category có bộ template riêng
-# {response} = nội dung từ cache
-# {context}  = thông tin ngữ cảnh từ extractor
-# {subject}  = chủ ngữ
 
 PARAPHRASE_TEMPLATES = {
     "đặt bàn": [
@@ -54,8 +38,6 @@ PARAPHRASE_TEMPLATES = {
     ],
 }
 
-
-# Filler phrases cho context
 CONTEXT_FILLERS = [
     "{context}",
     "Thông tin thêm: {context}.",

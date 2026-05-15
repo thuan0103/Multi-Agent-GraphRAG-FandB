@@ -1,12 +1,3 @@
-"""
-A1.1 + B2.4 — Router Accuracy & Latency Benchmark
-Chạy: python scripts/benchmark_router.py
-
-Output:
-  - Accuracy tổng, per-class F1, confusion matrix
-  - Latency p50/p90/p99 (ms)
-  - Kết quả lưu vào data/benchmark_results.json
-"""
 import torch
 print(torch.cuda.is_available())
 print(torch.cuda.get_device_name(0) if torch.cuda.is_available() else "CPU only")
@@ -19,9 +10,8 @@ sys.path.insert(0, str(Path(__file__).parent.parent))
 
 from src.router import IntentClassifier
 
-# ── Test set (100 samples, 25/intent) ─────────────────────────────────
 TEST_SAMPLES = [
-    # order (25)
+    # order (25 VI + 10 EN + 10 KO = 45)
     ("Cho anh 1 ly cà phê sữa đá", "order"),
     ("Em ơi tính tiền đi", "order"),
     ("Thêm 1 cái bánh croissant nữa nhé", "order"),
@@ -47,8 +37,19 @@ TEST_SAMPLES = [
     ("Please add a brownie to my order", "order"),
     ("Đặt 1 bạc xỉu và 1 bánh mì thịt", "order"),
     ("Mình lấy combo sáng có không?", "order"),
+    # Korean - order
+    ("아이스 아메리카노 한 잔 주세요", "order"),
+    ("카페라떼 두 잔이랑 크루아상 하나 추가해 주세요", "order"),
+    ("주문 취소해 주세요", "order"),
+    ("라지 사이즈로 바꿔 주실 수 있어요?", "order"),
+    ("치즈케이크 하나 더 주문할게요", "order"),
+    ("그린티 라떼 두 개 포장이요", "order"),
+    ("샌드위치 빼 주세요", "order"),
+    ("지금까지 주문한 거 계산해 주세요", "order"),
+    ("에스프레소 샷 추가해 주세요", "order"),
+    ("카라멜 마키아토 한 잔 주세요", "order"),
 
-    # consultant (25)
+    # consultant (25 VI + 10 EN + 10 KO = 45)
     ("Có gì ngon không em?", "consultant"),
     ("Gợi ý cho mình uống gì mùa hè đi", "consultant"),
     ("Tôi không uống được cà phê thì uống gì?", "consultant"),
@@ -74,8 +75,19 @@ TEST_SAMPLES = [
     ("Có gì vừa ngon vừa bổ không?", "consultant"),
     ("Tôi dị ứng sữa nên uống gì?", "consultant"),
     ("Recommend something with no caffeine", "consultant"),
+    # Korean - consultant
+    ("더운 날씨에 뭐가 좋을까요?", "consultant"),
+    ("커피 못 마시는데 뭐 마시면 좋을까요?", "consultant"),
+    ("달콤한 거 추천해 주세요", "consultant"),
+    ("카페인 없는 음료 뭐가 있어요?", "consultant"),
+    ("졸린데 뭐 마시면 좋을까요?", "consultant"),
+    ("유제품 알레르기가 있는데 뭐 마실 수 있어요?", "consultant"),
+    ("여기서 제일 인기 있는 메뉴가 뭐예요?", "consultant"),
+    ("다이어트 중인데 칼로리 낮은 거 추천해 주세요", "consultant"),
+    ("친구랑 같이 왔는데 둘 다 좋아할 만한 거 추천해 주세요", "consultant"),
+    ("처음 왔는데 뭐부터 시작하면 좋을까요?", "consultant"),
 
-    # faq (25)
+    # faq (25 VI + 10 EN + 10 KO = 45)
     ("Wifi tên gì mật khẩu là gì?", "faq"),
     ("Quán mở cửa lúc mấy giờ?", "faq"),
     ("Quán ở địa chỉ nào?", "faq"),
@@ -101,8 +113,19 @@ TEST_SAMPLES = [
     ("Có giảm giá sinh viên không?", "faq"),
     ("Làm thẻ thành viên ở đâu?", "faq"),
     ("Quán có cho hút thuốc không?", "faq"),
+    # Korean - faq
+    ("와이파이 비밀번호가 뭐예요?", "faq"),
+    ("몇 시에 문 닫아요?", "faq"),
+    ("여기 주소가 어떻게 돼요?", "faq"),
+    ("카드 결제 되나요?", "faq"),
+    ("주차 공간 있나요?", "faq"),
+    ("배달도 되나요?", "faq"),
+    ("콘센트 사용할 수 있나요?", "faq"),
+    ("반려동물 입장 가능한가요?", "faq"),
+    ("멤버십 혜택이 어떻게 되나요?", "faq"),
+    ("학생 할인 되나요?", "faq"),
 
-    # ignore (25)
+    # ignore (25 VI + 10 EN + 10 KO = 45)
     ("Ừm...", "ignore"),
     ("Hello", "ignore"),
     ("haha", "ignore"),
@@ -128,15 +151,29 @@ TEST_SAMPLES = [
     ("oke bạn", "ignore"),
     ("k", "ignore"),
     ("thks", "ignore"),
+    # Korean - ignore
+    ("안녕하세요", "ignore"),
+    ("감사합니다", "ignore"),
+    ("ㅋㅋㅋ", "ignore"),
+    ("네", "ignore"),
+    ("알겠어요", "ignore"),
+    ("잠깐만요", "ignore"),
+    ("어...", "ignore"),
+    ("ㅇㅇ", "ignore"),
+    ("잘 있어요", "ignore"),
+    ("좋아요 감사해요", "ignore"),
 ]
 
 HARD_SAMPLES = [
-    ("Có gì vừa ngon vừa rẻ không?", "consultant"),   # ambiguous order vs consultant
+    ("Có gì vừa ngon vừa rẻ không?", "consultant"),   
     ("Cho mình ly gì đó không caffeine", "consultant"),
     ("Mình muốn gọi cái gì đó phù hợp thời tiết này", "consultant"),
     ("Quán có gì ăn sáng không?", "consultant"),
     ("Tính tiền hết bao nhiêu?", "order"),
     ("Mình đặt 1 ly cà phê nhé?", "order"),
+    ("뭔가 달달한 거 시켜도 될까요?", "consultant"),    
+    ("오늘 날씨에 맞는 거 한 잔 주문할게요", "order"),   
+    ("아무거나 맛있는 걸로 주세요", "consultant"),
 ]
 
 
@@ -172,7 +209,6 @@ def run_benchmark():
             fn[expected] += 1
             errors.append({"text": text, "expected": expected, "predicted": predicted, "latency_ms": lat})
 
-    # ── Metrics ──────────────────────────────────────────────────────
     total = len(TEST_SAMPLES)
     correct = sum(tp.values())
     accuracy = correct / total
@@ -215,7 +251,6 @@ def run_benchmark():
         if len(errors) > 10:
             print(f"    ... và {len(errors)-10} cases khác")
 
-    # ── Hard samples ──────────────────────────────────────────────────
     print(f"\n► Hard samples ({len(HARD_SAMPLES)} cases):")
     hard_correct = 0
     for text, expected in HARD_SAMPLES:
@@ -228,7 +263,6 @@ def run_benchmark():
     hard_acc = hard_correct / len(HARD_SAMPLES)
     print(f"  Hard accuracy: {hard_acc:.1%}  (target ≥ 75%)")
 
-    # ── Save results ──────────────────────────────────────────────────
     results = {
         "accuracy": accuracy,
         "correct": correct,

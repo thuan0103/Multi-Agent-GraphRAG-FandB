@@ -1,10 +1,3 @@
-# src/agents/faq_agent.py
-"""
-FAQ Agent: hỏi đáp chung với Hybrid RAG + Graph Expansion.
-Pipeline ưu tiên: graph_rag:8004 (Neo4j + bge-m3 + reranker + NEXT/MENTIONS expand)
-Fallback: in-memory keyword/semantic search từ data/faq.json
-"""
-
 import logging
 import os
 import json

@@ -1,26 +1,8 @@
-"""
-Sinh bộ 500 câu hỏi F&B thực tế có biến thể ngữ cảnh,
-dùng để đo cache hit rate ≥ 60% (tiêu chí C2).
-
-Format: data/cache_test_set/cache_test_500.jsonl
-Mỗi dòng:
-{
-  "input": "<câu hỏi>",
-  "action_gt": "<action chuẩn>",  # cache key ground-truth
-  "group_id": "<id nhóm>",        # các câu cùng nhóm nên cache hit nhau
-  "domain": "menu|order|faq"
-}
-"""
-
 import json
 import random
 from pathlib import Path
 
 random.seed(2026)
-
-# ---------------------------------------------------------------------------
-# Core action groups — mỗi group = 1 intent thực sự, nhiều biến thể ngữ cảnh
-# ---------------------------------------------------------------------------
 
 ACTION_GROUPS = [
     {
@@ -165,7 +147,7 @@ def generate() -> list:
 
     for group in ACTION_GROUPS:
         templates = group["templates"]
-        count = max(1, 500 // len(ACTION_GROUPS) + 5)  # ~50 per group
+        count = max(1, 500 // len(ACTION_GROUPS) + 5) 
 
         attempts = 0
         generated = 0
@@ -189,7 +171,6 @@ def generate() -> list:
             })
             generated += 1
 
-    # Trim / pad đến đúng 500
     random.shuffle(samples)
     return samples[:500]
 
@@ -204,7 +185,6 @@ def main():
         for s in samples:
             f.write(json.dumps(s, ensure_ascii=False) + "\n")
 
-    # Stats
     from collections import Counter
     groups = Counter(s["group_id"] for s in samples)
     print(f"[data] Sinh {len(samples)} samples → {out_path}")

@@ -1,8 +1,3 @@
-"""
-C2.2 + B2.3: Tracking cache hit rate, miss rate, latency.
-Thread-safe counters. Expose metrics cho health check và benchmark.
-"""
-
 import threading
 import time
 from dataclasses import dataclass, field

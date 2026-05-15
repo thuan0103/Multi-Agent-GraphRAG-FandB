@@ -1,13 +1,3 @@
-"""
-B2.1~B2.4 — LLM Serving API
-Folder: services/llm_serving/main.py
-
-- RAG-augmented generation
-- True token streaming via SSE
-- Clause-level streaming (split at . ? ! ; ,)
-- Session cache (Redis)
-- Zero hallucination: chỉ trả lời dựa trên RAG context
-"""
 import asyncio
 import json
 import logging
@@ -53,9 +43,6 @@ async def lifespan(app: FastAPI):
 
 app = FastAPI(title="LLM Serving", version="1.0", lifespan=lifespan)
 
-
-# ── Request / Response models ────────────────────────────────────
-
 class ChatRequest(BaseModel):
     query: str
     session_id: Optional[str] = None
@@ -68,9 +55,6 @@ class ChatResponse(BaseModel):
     answer: str
     context_used: List[Dict[str, Any]]
     latency_ms: float
-
-
-# ── RAG context retrieval ────────────────────────────────────────
 
 async def retrieve_context(query: str) -> List[Dict]:
     async with httpx.AsyncClient(timeout=10) as client:
@@ -96,9 +80,6 @@ def format_context(results: List[Dict]) -> str:
             parts.append(f"[{i}] {r.get('text', '')}")
     return "\n".join(parts)
 
-
-# ── Generator call (SSE-compatible) ─────────────────────────────
-
 async def call_generator_stream(messages: List[Dict]) -> AsyncGenerator[str, None]:
     """Stream tokens from vLLM/SGLang OpenAI-compatible API."""
     payload = {
@@ -120,7 +101,7 @@ async def call_generator_stream(messages: List[Dict]) -> AsyncGenerator[str, Non
                 if not line.startswith("data:"):
                     continue
                 data = line[5:].strip()
-                if data == "[DONE]":   # B2.2: không parse [DONE] như JSON
+                if data == "[DONE]":  
                     return
                 try:
                     chunk = json.loads(data)
@@ -146,20 +127,15 @@ async def call_generator_full(messages: List[Dict]) -> str:
         return r.json()["choices"][0]["message"]["content"]
 
 
-# ── SSE Streaming endpoint — B2.2 ───────────────────────────────
-
 async def stream_response(query: str, session_id: str) -> AsyncGenerator[str, None]:
-    # 1. Retrieve context
     context_docs = await retrieve_context(query)
     context_str = format_context(context_docs)
 
-    # 2. Build message history
     history = await session_cache.get_history(session_id)
     messages = [{"role": "system", "content": f"{SYSTEM_PROMPT}\n\nCONTEXT:\n{context_str}"}]
     messages.extend(history)
     messages.append({"role": "user", "content": query})
 
-    # 3. Stream tokens, emit SSE events
     full_response = []
     clause_buffer = []
 
@@ -167,10 +143,8 @@ async def stream_response(query: str, session_id: str) -> AsyncGenerator[str, No
         full_response.append(token)
         clause_buffer.append(token)
 
-        # Emit token
         yield f"data: {json.dumps({'type': 'token', 'text': token})}\n\n"
 
-        # B2.2 clause-level streaming for TTS
         buffered = "".join(clause_buffer)
         parts = CLAUSE_SPLIT_RE.split(buffered)
         if len(parts) > 1:
@@ -180,13 +154,11 @@ async def stream_response(query: str, session_id: str) -> AsyncGenerator[str, No
                     yield f"data: {json.dumps({'type': 'clause', 'text': clause})}\n\n"
             clause_buffer = [parts[-1]]
 
-    # Flush remaining clause
     if clause_buffer:
         remaining = "".join(clause_buffer).strip()
         if remaining:
             yield f"data: {json.dumps({'type': 'clause', 'text': remaining})}\n\n"
 
-    # Save to session
     complete = "".join(full_response)
     await session_cache.append_message(session_id, "user", query)
     await session_cache.append_message(session_id, "assistant", complete)
@@ -245,9 +217,6 @@ async def clear_session(session_id: str):
 @app.get("/health")
 async def health():
     return {"status": "ok"}
-
-
-# ── B2.3 Cache analysis endpoint ────────────────────────────────
 
 @app.get("/cache/info")
 async def cache_info():

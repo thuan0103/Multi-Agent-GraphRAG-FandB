@@ -1,8 +1,3 @@
-# src/session/cleanup.py
-"""
-Background cleanup task: xóa expired sessions định kỳ.
-"""
-
 import asyncio
 import logging
 
@@ -10,10 +5,6 @@ logger = logging.getLogger(__name__)
 
 
 class SessionCleanup:
-    """
-    Chạy background task dọn dẹp sessions hết TTL.
-    Tự động start/stop cùng app lifecycle.
-    """
 
     def __init__(self, session_store, interval_seconds: int = 120):
         self.store = session_store
@@ -22,13 +13,11 @@ class SessionCleanup:
         self._running = False
 
     async def start(self) -> None:
-        """Gọi lúc app startup."""
         self._running = True
         self._task = asyncio.create_task(self._run())
         logger.info(f"Session cleanup started (interval={self.interval}s)")
 
     async def stop(self) -> None:
-        """Gọi lúc app shutdown."""
         self._running = False
         if self._task:
             self._task.cancel()
@@ -49,7 +38,6 @@ class SessionCleanup:
                 logger.error(f"Cleanup error: {e}", exc_info=True)
 
     async def _cleanup(self) -> None:
-        """Xóa tất cả sessions đã expired."""
         async with self.store._lock:
             expired_ids = [
                 sid for sid, session in self.store._sessions.items()

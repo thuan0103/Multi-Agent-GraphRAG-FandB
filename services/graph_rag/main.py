@@ -1,7 +1,3 @@
-"""
-B1.1 / B1.2 — Graph RAG API
-Folder: services/graph_rag/main.py
-"""
 import os
 import logging
 from contextlib import asynccontextmanager
@@ -116,17 +112,14 @@ async def fulltext_menu_search(q: str, limit: int = 5):
 
 @app.post("/search", response_model=SearchResponse)
 async def search(req: SearchRequest):
-    # ── Semantic cache check ──────────────────────────────────
     query_emb = await get_embedding(req.query)
     if req.use_cache:
         cached = await sem_cache.get(query_emb)
         if cached:
             return SearchResponse(query=req.query, results=cached, from_cache=True)
 
-    # ── Full hybrid search pipeline ───────────────────────────
     results = await hybrid_search(req.query, driver)
 
-    # Store in semantic cache
     if req.use_cache:
         await sem_cache.set(query_emb, results, req.query)
 

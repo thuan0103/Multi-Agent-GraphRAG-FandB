@@ -1,10 +1,3 @@
-"""
-B2.3 — Semantic Cache (Layer 4 / bonus)
-Folder: services/graph_rag/semantic_cache.py
-
-- Lưu embedding + response vào Redis
-- Tìm kiếm cosine similarity ≥ 0.95 → trả cache ngay
-"""
 import json
 import logging
 import os
@@ -15,7 +8,7 @@ import redis.asyncio as aioredis
 logger = logging.getLogger(__name__)
 
 THRESHOLD = float(os.getenv("SEMANTIC_CACHE_THRESHOLD", "0.95"))
-CACHE_TTL = 3600  # 1 hour
+CACHE_TTL = 3600  
 CACHE_PREFIX = "sem_cache:"
 MAX_CACHE_ENTRIES = 1000
 
@@ -26,13 +19,11 @@ def cosine_sim(a: List[float], b: List[float]) -> float:
     nb = math.sqrt(sum(x ** 2 for x in b))
     return dot / (na * nb + 1e-9)
 
-
 class SemanticCache:
     def __init__(self, redis_url: str):
         self.redis = aioredis.from_url(redis_url, decode_responses=True)
 
     async def get(self, query_embedding: List[float]) -> Optional[dict]:
-        """Return cached result if similarity ≥ threshold."""
         keys = await self.redis.keys(f"{CACHE_PREFIX}*")
         for key in keys[:MAX_CACHE_ENTRIES]:
             try:

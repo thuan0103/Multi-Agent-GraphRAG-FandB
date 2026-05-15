@@ -1,9 +1,3 @@
-"""
-B2.4 — Benchmark TTFT & Throughput
-Folder: services/llm_serving/benchmark.py
-
-Chạy: python benchmark.py --url http://localhost:8000 --concurrency 5
-"""
 import asyncio
 import argparse
 import json
@@ -26,7 +20,6 @@ TEST_QUERIES = [
 
 
 async def measure_ttft(client: httpx.AsyncClient, url: str, query: str) -> float:
-    """Measure Time-To-First-Token via SSE."""
     t0 = time.perf_counter()
     first_token_time = None
     async with client.stream(
@@ -59,7 +52,6 @@ async def measure_total(client: httpx.AsyncClient, url: str, query: str) -> floa
 async def run_benchmark(url: str, concurrency: int, n_requests: int):
     print(f"\n=== Benchmark: url={url}, concurrency={concurrency}, n={n_requests} ===\n")
     async with httpx.AsyncClient() as client:
-        # TTFT
         ttft_results = []
         for i in range(min(10, n_requests)):
             q = TEST_QUERIES[i % len(TEST_QUERIES)]
@@ -67,7 +59,6 @@ async def run_benchmark(url: str, concurrency: int, n_requests: int):
             ttft_results.append(t)
             print(f"  TTFT [{i+1}]: {t*1000:.1f}ms  query={q[:30]}")
 
-        # Total latency (concurrent)
         total_results = []
         semaphore = asyncio.Semaphore(concurrency)
 
